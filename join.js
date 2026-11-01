@@ -22,7 +22,7 @@
 
   /* vendor / organizer switch */
   function applyType(){var t=type();qa('[data-v]').forEach(function(e){e.hidden=t!=='vendor';});qa('[data-o]').forEach(function(e){e.hidden=t!=='organizer';});
-    $('pSubject').value='JVE profile: '+t;$('pName').placeholder=t==='vendor'?'e.g. Tidewater Candle Co.':'e.g. Riverside Holiday Market';preview();}
+    $('pSubject').value='New profile: '+t;$('pName').placeholder=t==='vendor'?'e.g. Tidewater Candle Co.':'e.g. Riverside Holiday Market';preview();}
   qa('input[name=profile_type]').forEach(function(r){r.addEventListener('change',applyType);});
 
   /* organizer: pick events from the directory */

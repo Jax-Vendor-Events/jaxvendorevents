@@ -13,6 +13,7 @@
       if(bad){say('Please fill in the highlighted fields.',true);bad.focus();return;}
       var hp=f.querySelector('[name=_honey]');if(hp&&hp.value){say('Thanks! We got it.');f.reset();return;}
       var data={_subject:f.getAttribute('data-fs'),_template:'table',_captcha:'false',page:location.pathname.split('/').pop()||'index.html'};
+      var ar=f.querySelector('[name=_autoresponse]');if(ar&&ar.value)data._autoresponse=ar.value; /* FormSubmit emails this confirmation to the address in the field named "email" */
       Array.prototype.forEach.call(f.elements,function(el){if(!el.name||el.name.charAt(0)==='_'||el.type==='submit')return;if(el.type==='checkbox'){data[el.name]=el.checked?'yes':'no';return;}data[el.name]=String(el.value||'').trim().slice(0,2000);});
       var b=f.querySelector('button[type=submit]'),label=b?b.innerHTML:'';if(b){b.disabled=true;b.textContent='Sending\u2026';}
       fetch(AJAX,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})

@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  /* Weekly email signup. Posts name + email (nothing else) to FormSubmit, which forwards it to Tab's inbox. No email is sent to the subscriber. */
+  /* Weekly email signup. Posts name + email (nothing else) to FormSubmit, which forwards it to the team inbox and sends the subscriber a short confirmation (_autoresponse). */
   var AJAX='https://formsubmit.co/ajax/porchlight+jax@mail.tab.bot';
   var RE=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
   function msgFor(f){var n=f.nextElementSibling;return n&&n.classList.contains('msg')?n:null;}
@@ -16,6 +16,7 @@
       if(em)em.removeAttribute('aria-invalid');
       if(val(f,'_honey')){say(m,'Thanks! You\u2019re on the list.');f.reset();return;}
       var data={email:email,name:val(f,'name').slice(0,80),source:val(f,'source'),_subject:val(f,'_subject'),_template:'table',_captcha:'false',_honey:''};
+      if(val(f,'_autoresponse'))data._autoresponse=val(f,'_autoresponse'); /* FormSubmit emails this confirmation to the subscriber */
       var label=b?b.textContent:'';if(b){b.disabled=true;b.textContent='Signing up\u2026';}
       say(m,'');
       fetch(AJAX,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
