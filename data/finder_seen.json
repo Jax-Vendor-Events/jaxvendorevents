@@ -1,0 +1,357 @@
+{
+ "items": {
+  "https://allevents.in/jacksonville/first-wednesday-art-walk/200030398820041": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-04",
+   "of": "fl-0026",
+   "status": "duplicate"
+  },
+  "https://allevents.in/jacksonville/kensinglony-craft-fair/200030925183126": {
+   "first_seen": "2026-11-01",
+   "id": "af-kensinglony-craft-fair-2026-11-14",
+   "last_date": "2026-11-15",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-bunnell-holiday-market": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-28",
+   "of": "sc-bunnell-holiday-market-2026-11-28",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-fleming-island-autumn-saturday-market": {
+   "first_seen": "2026-11-01",
+   "id": "af-fleming-island-autumn-saturday-market-2026-11-07",
+   "last_date": "2026-11-07",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-fleming-island-holiday-saturday-market": {
+   "first_seen": "2026-11-01",
+   "id": "af-fleming-island-holiday-saturday-market-2026-12-05",
+   "last_date": "2026-12-05",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-green-cove-springs-holiday-market-in-the-park": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-21",
+   "of": "sc-gcs-holiday-winter-market-in-the-park-2026",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-green-cove-springs-winter-market-in-the-park": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-12-19",
+   "of": "sc-gcs-holiday-winter-market-in-the-park-2026",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-hastings-fall-harvest-festival": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-06",
+   "of": "sc-hastings-fall-harvest-festival-2026-11-07",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-jacksonville-beach-holiday-arts-market": {
+   "first_seen": "2026-11-01",
+   "id": "af-jacksonville-beach-holiday-arts-market-2026-11-21",
+   "last_date": "2026-11-21",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-jacksonville-christmas-made-in-the-south": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-29",
+   "of": "sc-christmas-made-in-the-south-jax-2026",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-jacksonville-holiday-arts-and-farmers-market": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-14",
+   "of": "sc-ram-holiday-arts-farmers-2026-11-14",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-jacksonville-holiday-market": {
+   "first_seen": "2026-11-01",
+   "id": "af-jacksonville-holiday-market-2026-12-12",
+   "last_date": "2026-12-12",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-jacksonville-holly-jolly-community-event": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-12-13",
+   "of": "sc-holly-jolly-community-event-riverside-2026-12-13",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-jacksonville-mistletoe-holiday-market": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-21",
+   "of": "sc-jbc-jacksonville-mistletoe-market-2026-11-21",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-jacksonville-second-saturday-arts-and-farmers-market": {
+   "first_seen": "2026-11-01",
+   "id": "af-jacksonville-second-saturday-arts-and-farmers-mark-2026-12-12",
+   "last_date": "2026-12-12",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-north-beaches-christmas-art-walk": {
+   "first_seen": "2026-11-01",
+   "id": "af-north-beaches-christmas-art-walk-2026-12-17",
+   "last_date": "2026-12-17",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-north-beaches-holiday-art-walk": {
+   "first_seen": "2026-11-01",
+   "id": "af-north-beaches-holiday-art-walk-2026-11-19",
+   "last_date": "2026-11-19",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-northside-fall-market": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-07",
+   "of": "ej-the-northside-market",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-northside-holiday-market": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-12-05",
+   "of": "sc-northside-holiday-market-2026-12-12",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-orange-park-holiday-market": {
+   "first_seen": "2026-11-01",
+   "id": "af-orange-park-holiday-market-2026-12-05",
+   "last_date": "2026-12-05",
+   "status": "added"
+  },
+  "https://fairsandfestivals.net/events/details/2026-riverside-fall-market": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-08",
+   "of": "sc-jbc-riverside-fall-market-2026-11-08",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2026-saint-augustine-mistletoe-market": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-12-06",
+   "of": "sc-florida-mistletoe-market-silverleaf-nov7",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2027-green-cove-springs-bbq-and-bacon-fest": {
+   "first_seen": "2026-11-01",
+   "last_date": "2027-01-31",
+   "of": "fl-0010",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2027-green-cove-springs-strawberry-fest": {
+   "first_seen": "2026-11-01",
+   "last_date": "2027-03-07",
+   "of": "fl-0011",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2027-jacksonville-holistic-wellness-expo": {
+   "first_seen": "2026-11-01",
+   "last_date": "2027-02-27",
+   "of": "sc-jax-holistic-wellness-expo-2027-02-27",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/2027-palm-coast-strawberry-fest": {
+   "first_seen": "2026-11-01",
+   "last_date": "2027-03-14",
+   "of": "fl-0060",
+   "status": "duplicate"
+  },
+  "https://fairsandfestivals.net/events/details/saint-johns-pawpalooza-2027": {
+   "first_seen": "2026-11-01",
+   "last_date": "2027-02-20",
+   "of": "sc-jbcc-st-johns-pawpalooza-2027-02-20",
+   "status": "duplicate"
+  },
+  "https://festivalnet.com/48154/saint-augustine-florida/craft-shows/saint-augustine-beach-artisan-market-february": {
+   "first_seen": "2026-11-01",
+   "id": "af-saint-augustine-beach-artisan-market-2027-01-09",
+   "last_date": "2027-04-11",
+   "status": "added"
+  },
+  "https://festivalnet.com/49043/saint-augustine-florida/craft-shows/saint-augustine-beach-artisan-market-march": {
+   "first_seen": "2026-11-01",
+   "id": "af-saint-augustine-beach-artisan-market-2027-01-09",
+   "last_date": "2027-04-11",
+   "status": "added"
+  },
+  "https://festivalnet.com/8036/jacksonville-florida/holiday-celebrations/christmas-made-in-the-south-jacksonville": {
+   "first_seen": "2026-11-01",
+   "last_date": "2026-11-29",
+   "of": "sc-christmas-made-in-the-south-jax-2026",
+   "status": "duplicate"
+  },
+  "https://festivalnet.com/80412/green-cove-springs-florida/specialty-theme-events/11th-annual-clay-county-strawberry-fest": {
+   "first_seen": "2026-11-01",
+   "last_date": "2027-03-07",
+   "of": "fl-0011",
+   "status": "duplicate"
+  },
+  "https://festivalnet.com/94521/green-cove-springs-florida/festivals/bbq-bacon-fest-green-cove-springs": {
+   "first_seen": "2026-11-01",
+   "last_date": "2027-01-31",
+   "of": "fl-0010",
+   "status": "duplicate"
+  },
+  "https://festivalnet.com/97031/saint-augustine-florida/craft-shows/saint-augustine-beach-artisan-market-january": {
+   "first_seen": "2026-11-01",
+   "id": "af-saint-augustine-beach-artisan-market-2027-01-09",
+   "last_date": "2027-04-11",
+   "status": "added"
+  },
+  "https://festivalnet.com/97032/saint-augustine-florida/craft-shows/saint-augustine-beach-artisan-market-april": {
+   "first_seen": "2026-11-01",
+   "id": "af-saint-augustine-beach-artisan-market-2027-01-09",
+   "last_date": "2027-04-11",
+   "status": "added"
+  },
+  "https://festivalnet.com/99169/palm-coast-florida/festivals/10th-annual-palm-coast-strawberry-fest": {
+   "first_seen": "2026-11-01",
+   "last_date": "2027-03-14",
+   "of": "fl-0060",
+   "status": "duplicate"
+  }
+ },
+ "last_run": {
+  "added": [
+   {
+    "city": "Fleming Island",
+    "dates": [
+     "2026-11-07"
+    ],
+    "id": "af-fleming-island-autumn-saturday-market-2026-11-07",
+    "name": "Fleming Island Autumn Saturday Market",
+    "via": [
+     "fairsandfestivals.net"
+    ]
+   },
+   {
+    "city": "Jacksonville",
+    "dates": [
+     "2026-11-14",
+     "2026-11-15"
+    ],
+    "id": "af-kensinglony-craft-fair-2026-11-14",
+    "name": "Kensinglony Craft Fair",
+    "via": [
+     "allevents.in"
+    ]
+   },
+   {
+    "city": "Neptune Beach",
+    "dates": [
+     "2026-11-19"
+    ],
+    "id": "af-north-beaches-holiday-art-walk-2026-11-19",
+    "name": "North Beaches Holiday Art Walk",
+    "via": [
+     "fairsandfestivals.net"
+    ]
+   },
+   {
+    "city": "Jacksonville Beach",
+    "dates": [
+     "2026-11-21"
+    ],
+    "id": "af-jacksonville-beach-holiday-arts-market-2026-11-21",
+    "name": "Jacksonville Beach Holiday Arts Market",
+    "via": [
+     "fairsandfestivals.net"
+    ]
+   },
+   {
+    "city": "Fleming Island",
+    "dates": [
+     "2026-12-05"
+    ],
+    "id": "af-fleming-island-holiday-saturday-market-2026-12-05",
+    "name": "Fleming Island Holiday Saturday Market",
+    "via": [
+     "fairsandfestivals.net"
+    ]
+   },
+   {
+    "city": "Orange Park",
+    "dates": [
+     "2026-12-05"
+    ],
+    "id": "af-orange-park-holiday-market-2026-12-05",
+    "name": "Orange Park Holiday Market",
+    "via": [
+     "fairsandfestivals.net"
+    ]
+   },
+   {
+    "city": "Jacksonville",
+    "dates": [
+     "2026-12-12"
+    ],
+    "id": "af-jacksonville-second-saturday-arts-and-farmers-mark-2026-12-12",
+    "name": "Jacksonville Second Saturday Arts and Farmers Market",
+    "via": [
+     "fairsandfestivals.net"
+    ]
+   },
+   {
+    "city": "Jacksonville",
+    "dates": [
+     "2026-12-12"
+    ],
+    "id": "af-jacksonville-holiday-market-2026-12-12",
+    "name": "Jacksonville Holiday Market",
+    "via": [
+     "fairsandfestivals.net"
+    ]
+   },
+   {
+    "city": "Neptune Beach",
+    "dates": [
+     "2026-12-17"
+    ],
+    "id": "af-north-beaches-christmas-art-walk-2026-12-17",
+    "name": "North Beaches Christmas Art Walk",
+    "via": [
+     "fairsandfestivals.net"
+    ]
+   },
+   {
+    "city": "St. Augustine",
+    "dates": [
+     "2027-01-09",
+     "2027-01-10",
+     "2027-02-13",
+     "2027-02-14",
+     "2027-03-13",
+     "2027-03-14",
+     "2027-04-10",
+     "2027-04-11"
+    ],
+    "id": "af-saint-augustine-beach-artisan-market-2027-01-09",
+    "name": "Saint Augustine Beach Artisan Market",
+    "via": [
+     "festivalnet.com"
+    ]
+   }
+  ],
+  "run_at": "2026-11-01T22:17:28Z",
+  "skipped": {
+   "already listed": 18,
+   "not a vendor event": 79,
+   "outside the 7 counties": 804
+  },
+  "sources": {
+   "allevents.in": {
+    "fetched": 77,
+    "ok": true
+   },
+   "fairsandfestivals.net": {
+    "fetched": 800,
+    "ok": true
+   },
+   "festivalnet.com": {
+    "fetched": 43,
+    "ok": true
+   }
+  },
+  "today": "2026-11-01"
+ }
+}
