@@ -4,10 +4,12 @@ name: Find new events
 # counties every 2 hours, adds them as "Unverified" (found_by: auto-finder), then
 # runs the hourly refresh so the counts stay right. The daily check verifies them
 # against the organizer's own page. Shares the "hourly-refresh" concurrency group so
-# the two robots never push at the same time.
+# the two robots never push at the same time. Second slot at :53 is a backup in case
+# GitHub's scheduler skips the :23 run. (Schedule re-registered Nov 1, 2026.)
 on:
   schedule:
     - cron: "23 */2 * * *"
+    - cron: "53 */2 * * *"
   workflow_dispatch: {}
 
 permissions:
