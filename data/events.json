@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-01",
- "window": "Upcoming from Nov 2, 2026",
+ "window": "Upcoming from Nov 1, 2026",
  "counties": [
   "Duval",
   "St. Johns",
@@ -7330,5 +7330,15 @@
    "url": "http://www.myfloridalicense.com/DBPR/hotels-restaurants/licensing/temporaryevent-guide/"
   }
  ],
- "common_permits_verified_on": "2026-10-25"
+ "common_permits_verified_on": "2026-10-25",
+ "stats": {
+  "upcoming": 192,
+  "verified": 156,
+  "deadlines_30d": 3,
+  "hidden": 21,
+  "total_listings": 213
+ },
+ "updated_at": "2026-11-01T21:41:11Z",
+ "checked_at": "2026-11-01T21:41:11Z",
+ "auto_refresh": "Hourly on GitHub Actions (scripts/refresh.py)"
 }
