@@ -2,10 +2,13 @@ name: Hourly refresh
 
 # Keeps the listings current around the clock: drops past dates, rolls weekly and
 # monthly markets forward, recomputes the counts and stamps the time.
-# Runs at 7 minutes past every hour (GitHub may start scheduled runs a few minutes late).
+# Runs at 7 and 41 minutes past every hour. GitHub's scheduler can start runs late or
+# skip one when it is busy, so the second slot is a backup; a run with nothing to change
+# commits nothing. (Schedule re-registered Nov 1, 2026.)
 on:
   schedule:
     - cron: "7 * * * *"
+    - cron: "41 * * * *"
   workflow_dispatch: {}
 
 permissions:
