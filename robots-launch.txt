@@ -1,0 +1,7 @@
+# LAUNCH VERSION — at go-public, copy this over robots.txt (and remove the noindex meta tags + gate).
+User-agent: *
+Allow: /
+Disallow: /plan.html
+Disallow: /outreach.html
+Disallow: /newsletter-2.html
+Sitemap: https://jaxvendors.com/sitemap.xml

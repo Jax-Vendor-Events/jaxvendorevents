@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- READY FOR LAUNCH: replace the base URL with the real domain, then reference it from robots.txt. Not linked while the site is private. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://cresl1.github.io/jax-vendor-events/</loc><lastmod>2026-11-01</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/newsletter.html</loc><lastmod>2026-11-01</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/city.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/profiles.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/list.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/pricing.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/sponsor.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/about.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/terms.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://cresl1.github.io/jax-vendor-events/join.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq></url>
+</urlset>
