@@ -23,7 +23,7 @@
       if(u){a.setAttribute('href',u);a.setAttribute('target','_blank');a.setAttribute('rel','noopener');a.classList.add('live');}
       else{a.setAttribute('href','pricing.html?tier='+encodeURIComponent(id)+(a.getAttribute('data-offer')?'&offer='+a.getAttribute('data-offer'):'')+'#get-featured');a.removeAttribute('target');a.classList.remove('live');}});
     each('[data-buynote]',function(n){var u=url(n.getAttribute('data-buynote')),s=n.querySelector('span');
-      if(s)s.textContent=u?'Secure card checkout · opens in a new tab':'Pick your dates, we email a secure payment link';n.classList.toggle('live',!!u);});
+      if(s)s.textContent=u?'Secure card checkout by Stripe':'Pick your dates, we email a secure payment link';n.classList.toggle('live',!!u);});
     document.documentElement.classList.add('ck-ready');
   }
   function load(){

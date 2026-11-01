@@ -51,7 +51,7 @@ Fonts: Fraunces and Inter (SIL Open Font License), self-hosted in fonts/.
 - **Empty value = request form.** The button opens "Book your spot" on `pricing.html#get-featured` with that tier picked (hidden field `tier`, subject `Get featured request: Jax Vendor Events (<tier>)`, same auto-reply). So no button is ever dead, with or without Stripe.
 - `thanks.html?tier=<id>` confirms payment, says what happens next for that tier (live within 24 h, we email when it is up) and has a short details form (subject `Paid placement details: Jax Vendor Events (<tier>)`, auto-reply on). Like every page it is behind the gate until launch, so a real customer can only reach it after go-public.
 - `pricing.html` shows one audience at a time (Organizer / Business / Vendor switch; `#organizers`, `#businesses`, `#vendors` open each one; `?tier=<id>` opens the form).
-- Service worker cache key `jve-rv1`.
+- Service worker cache key `jve-rv2`.
 
 ## Go-public checklist (only after Luis says so)
 
