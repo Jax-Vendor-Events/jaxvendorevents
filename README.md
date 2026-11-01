@@ -47,3 +47,12 @@ Note: the password gate is client-side and this repository is public, so page so
 - The home page badge reads "Updated X min ago" from `checked_at`.
 - It does not discover new events or re-check organizer pages; that stays with the weekly data check.
 - GitHub pauses scheduled workflows in a repo with no activity for 60 days; the hourly commits count as activity.
+
+## Navigation redesign (Nov 1, 2026)
+
+- Five destinations on every page: **Events · Deadlines · Saved · Newsletter · More** (bottom bar on phones, top bar on desktop). Events, Deadlines and Saved are views of `index.html` (`#deadlines`, `#saved`) that switch without a reload; the back button closes the event sheet and steps back through views (`#e=<id>` opens an event).
+- Events home: sticky search + one row of chips (This weekend / Next weekend on Sundays, Next 2 weeks, Free, County, Category, Deadlines soon; "My matches" appears only when profile preferences exist) and a Sort menu (Soonest, Deadline, Free first, Near me by device location).
+- No settings page: the old Settings sheet (5 color themes, dark-mode switch, home county) is gone. Appearance is the sun/moon button in the header (dark by default, remembered as `jve_look`). Everything for organizers/advertisers/about lives in the **More** sheet built by `theme.js`.
+- Styles for this layer are in `ui.css` (loaded after `styles.css`; charcoal dark palette `#12141a` / cards `#1e222a`, teal accent).
+- The newsletter "Send test to me" panel is internal: it only shows after opening any page once with `?admin=1`.
+- Data files, `scripts/refresh.py`, `scripts/find_new.py` and the workflows are unchanged. Service worker cache key `jve-nx1`.
