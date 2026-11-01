@@ -6966,20 +6966,19 @@
   },
   {
    "id": "af-kensinglony-craft-fair-2026-11-14",
-   "name": "Kensinglony Craft Fair",
+   "name": "Kensington Community Craft Fair",
    "organizer": null,
    "dates": [
-    "2026-11-14",
-    "2026-11-15"
+    "2026-11-14"
    ],
-   "end_date": "2026-11-15",
+   "end_date": null,
    "schedule": null,
    "recurring": false,
    "county": "Duval",
    "city": "Jacksonville",
-   "venue": "Kensington Hoa",
-   "fee": null,
-   "fee_bucket": "unknown",
+   "venue": "Kensington HOA, 1665 Kensington Gardens Blvd",
+   "fee": "$30",
+   "fee_bucket": "under50",
    "deadline": null,
    "deadline_note": null,
    "apply": null,
@@ -6994,8 +6993,8 @@
    "verify_status": "unverified",
    "verified_on": null,
    "source_url": "https://allevents.in/jacksonville/kensinglony-craft-fair/200030925183126",
-   "verify_note": "Found automatically on allevents.in on 2026-11-01; not yet checked against the organizer's own page.",
-   "time": null,
+   "verify_note": "Found automatically on allevents.in on 2026-11-01; not yet checked against the organizer's own page. Spot-check Nov 1, 2026: community posts and the HOA's Facebook event say Sat Nov 14, 10 AM–4 PM, vendor spaces $30 (allevents showed the name as \"Kensinglony\" and a 2-day range). Still to confirm on the organizer's page.",
+   "time": "10 AM–4 PM",
    "found_by": "auto-finder",
    "found_on": "2026-11-01",
    "found_via": [
@@ -7139,10 +7138,10 @@
    "handmade": false,
    "projected": false,
    "address": "Thrasher-Horne Center",
-   "verify_status": "unverified",
+   "verify_status": "removed",
    "verified_on": null,
    "source_url": "https://www.fairsandfestivals.net/events/details/2026-orange-park-holiday-market",
-   "verify_note": "Found automatically on fairsandfestivals.net on 2026-11-01; not yet checked against the organizer's own page.",
+   "verify_note": "Duplicate of 13th Annual Holiday Market in the South (Orange Park, Dec 5), already listed; removed by Tab's spot-check Nov 1, 2026.",
    "time": null,
    "found_by": "auto-finder",
    "found_on": "2026-11-01",
@@ -7710,13 +7709,13 @@
  ],
  "common_permits_verified_on": "2026-10-25",
  "stats": {
-  "upcoming": 202,
+  "upcoming": 201,
   "verified": 156,
   "deadlines_30d": 3,
-  "hidden": 21,
+  "hidden": 22,
   "total_listings": 223
  },
- "updated_at": "2026-11-01T22:17:50Z",
- "checked_at": "2026-11-01T22:17:50Z",
+ "updated_at": "2026-11-01T22:19:04Z",
+ "checked_at": "2026-11-01T22:19:04Z",
  "auto_refresh": "Hourly on GitHub Actions (scripts/refresh.py)"
 }

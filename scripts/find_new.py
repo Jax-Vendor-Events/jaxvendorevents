@@ -348,6 +348,7 @@ def main(argv):
     for e in events:
         ds = [x for x in (e.get("dates") or []) if isinstance(x, str) and re.match(r"\d{4}-\d{2}-\d{2}$", x)]
         existing.append({"toks": name_key(e.get("name")), "dates": ds, "county": e.get("county"),
+                         "city": re.sub(r"\s*\(.*\)$", "", (e.get("city") or "").lower()).strip(),
                          "urls": {norm_url(e.get("source_url")), norm_url(e.get("source")), norm_url(e.get("apply"))} - {""},
                          "active": e.get("verify_status") not in ("past", "cancelled", "removed"),
                          "recurring": bool(e.get("recurring")), "id": e.get("id")})
@@ -417,6 +418,12 @@ def main(argv):
                     or (x["toks"][0] == c["toks"][0] and near(c["dates"], x["dates"], 30))
                     or (not x["active"] and near(c["dates"], x["dates"], 120))):
                 dup = x; break
+        if not dup and (c["city"] or "").lower() not in ("jacksonville", ""):
+            # small towns: same town, same day, same kind of event (e.g. "holiday market") = same event
+            for x in existing:
+                if x.get("city") == (c["city"] or "").lower() and set(c["dates"]) & set(x["dates"]) and \
+                        len(c["toks"][0] & x["toks"][0]) >= 2:
+                    dup = x; break
         if dup:
             for u in urls:
                 seen["items"][u] = {"status": "duplicate", "of": dup["id"], "first_seen": t_iso, "last_date": c["dates"][-1]}
@@ -448,7 +455,7 @@ def main(argv):
             "found_by": "auto-finder", "found_on": t_iso, "found_via": sorted({s["source"] for s in srcs}),
         }
         added.append(e)
-        existing.append({"toks": c["toks"], "dates": c["dates"], "county": c["county"], "urls": urls, "active": True, "recurring": False, "id": nid})
+        existing.append({"toks": c["toks"], "dates": c["dates"], "county": c["county"], "city": (c["city"] or "").lower(), "urls": urls, "active": True, "recurring": False, "id": nid})
         for u in urls:
             seen["items"][u] = {"status": "added", "id": nid, "first_seen": t_iso, "last_date": c["dates"][-1]}
         report["added"].append({"id": nid, "name": c["name"], "dates": c["dates"], "city": c["city"],
