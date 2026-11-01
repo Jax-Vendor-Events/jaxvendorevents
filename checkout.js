@@ -53,6 +53,9 @@
   function grpOf(id){var c=document.getElementById('t-'+id);var g=c&&c.closest('[data-grp]');return g?g.getAttribute('data-grp'):'';}
   /* ---- clicks: live link opens Stripe (native <a target=_blank>), empty link opens the form ---- */
   document.addEventListener('click',function(e){
+    var rq=e.target.closest&&e.target.closest('[data-req]');
+    if(rq&&form){e.preventDefault();pick(rq.getAttribute('data-req'),rq.getAttribute('data-offer')==='launch',true);return;} /* offers that need a reply first always use the request form */
+    if(rq)return;
     var a=e.target.closest&&e.target.closest('[data-buy]');if(!a)return;
     var id=a.getAttribute('data-buy');
     if(map&&url(id)){if(a.getAttribute('href')!==url(id)){e.preventDefault();window.open(url(id),'_blank','noopener');}return;} /* real checkout link opens in a new tab */

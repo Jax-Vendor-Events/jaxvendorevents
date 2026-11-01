@@ -36,7 +36,7 @@ Fonts: Fraunces and Inter (SIL Open Font License), self-hosted in fonts/.
 - Every paid tier has one big button (`data-buy="<tier id>"`) on `pricing.html`, `sponsor.html`, `list.html` (upgrade card + after-submit upsell), the event sheet ("Run this market? Get it featured") and the vendor directory. `checkout.js` wires them all.
 - **Prices/links live in `data/checkout.json`**, one line per tier:
 
-  | tier id | what | draft price |
+  | tier id | what | price |
   |---|---|---|
   | `featured-event` | Featured event | $20/week |
   | `deadline-spotlight` | Deadline spotlight | $10 |
@@ -47,6 +47,7 @@ Fonts: Fraunces and Inter (SIL Open Font License), self-hosted in fonts/.
   | `vendor-pro` | Vendor Pro | $5/month |
 
 - **To switch on card checkout for a tier:** paste its Stripe Payment Link (must start with `https://`) as the value, e.g. `"featured-event": "https://buy.stripe.com/..."`, and commit. Nothing else changes; the file is read fresh on every page load (the service worker never caches it). In Stripe, set each Payment Link's *After payment → Redirect* to `https://cresl1.github.io/jax-vendor-events/thanks.html?tier=<tier id>` (the real domain after launch).
+- **Live since Nov 1, 2026 (commit 874189b):** all 7 tiers carry real Stripe Payment Links. The launch offer (pricing) and founding-sponsor offer (media kit) always open the request form, because they need a reply before anyone pays; so does “Ask us” (tier `not-sure`).
 - **Empty value = request form.** The button opens "Book your spot" on `pricing.html#get-featured` with that tier picked (hidden field `tier`, subject `Get featured request: Jax Vendor Events (<tier>)`, same auto-reply). So no button is ever dead, with or without Stripe.
 - `thanks.html?tier=<id>` confirms payment, says what happens next for that tier (live within 24 h, we email when it is up) and has a short details form (subject `Paid placement details: Jax Vendor Events (<tier>)`, auto-reply on). Like every page it is behind the gate until launch, so a real customer can only reach it after go-public.
 - `pricing.html` shows one audience at a time (Organizer / Business / Vendor switch; `#organizers`, `#businesses`, `#vendors` open each one; `?tier=<id>` opens the form).
