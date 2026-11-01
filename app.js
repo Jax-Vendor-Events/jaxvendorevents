@@ -51,9 +51,9 @@
   var fC=$('fCounty'),fK=$('fCat'),fS=$('fSort'),fQ=$('fQ');
   var VIEWS={events:['Vendor events','Markets, craft fairs and pop-ups across Northeast Florida'],deadlines:['Deadlines','Apply before these close. Soonest first.'],saved:['Saved','Events you hearted. Saved on this phone.']};
   function chipsOn(){return Object.keys(F).some(function(k){return F[k];})||!!fC.value||!!fK.value||!!fQ.value.trim();}
-  function badges(e,full){
+  function badges(e,full,mode){
     var b=[];var cd=hasDl(e)?LG.countdown(floor,e.deadline):null;
-    if(cd&&(dlSoon(e)||full)) b.push('<span class="b hot'+(cd.urgent?' urgent':'')+'" title="Apply by '+short(e.deadline)+'">'+ico('clock')+cd.text+'</span>');
+    if(cd&&mode!=='dl'&&(dlSoon(e)||full)) b.push('<span class="b hot'+(cd.urgent?' urgent':'')+'" title="Apply by '+short(e.deadline)+'">'+ico('clock')+cd.text+'</span>');
     b.push('<span class="b fee'+(e.fee_bucket==='free'?' free':'')+'">'+esc(feeLabel(e))+'</span>');
     if(e.verified) b.push('<span class="b ok">'+ico('check')+'Checked</span>');
     if(full){b.push('<span class="b county">'+esc(e.county)+' County</span>');if(e.recurring)b.push('<span class="b rec">'+ico('repeat')+'Recurring</span>');if(e.host_type)b.push('<span class="b city">'+ico('shield')+(e.host_type==='county'?'County event':'City event')+'</span>');if(!e.verified)b.push('<span class="b unv">Not checked yet</span>');}
@@ -72,7 +72,7 @@
     return '<article class="xc" style="--i:'+Math.min(i,10)+'"><button class="xhit" type="button" data-id="'+esc(e.id)+'" data-a="'+(anchor||'')+'" aria-label="'+label+': details"></button>'+dbox+
       '<div class="xb"><h3>'+esc(e.name)+'</h3><p class="xm">'+ico('pin','sm')+'<span>'+place+'</span></p>'+(when?'<p class="xw">'+when+'</p>':'')+'</div>'+
       '<button class="heart'+(sv?' on':'')+'" type="button" data-save="'+esc(e.id)+'" aria-pressed="'+sv+'" aria-label="'+(sv?'Remove from saved: ':'Save: ')+esc(e.name)+'">'+HEART+'</button>'+
-      '<div class="xf"><div class="xt">'+badges(e)+'</div>'+(ap?'<a class="xapply" href="'+esc(ap)+'" target="_blank" rel="noopener" aria-label="Apply: '+esc(e.name)+' (opens organizer page)">Apply'+ico('ext','sm')+'</a>':'<button class="xapply ghost" type="button" data-id="'+esc(e.id)+'" data-a="'+(anchor||'')+'">Details</button>')+'</div>'+'</article>';
+      '<div class="xf"><div class="xt">'+badges(e,false,mode)+'</div>'+(ap?'<a class="xapply" href="'+esc(ap)+'" target="_blank" rel="noopener" aria-label="Apply: '+esc(e.name)+' (opens organizer page)">Apply'+ico('ext','sm')+'</a>':'<button class="xapply ghost" type="button" data-id="'+esc(e.id)+'" data-a="'+(anchor||'')+'">Details</button>')+'</div>'+'</article>';
   }
   function filtered(){
     var c=fC.value,k=fK.value,q=fQ.value.trim().toLowerCase(),rows=[];
