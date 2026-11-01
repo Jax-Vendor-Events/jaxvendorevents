@@ -38,7 +38,7 @@
     chev:'<path d="M9.5 6l6 6-6 6"/>'};
   var LINKS=[
     ['For vendors',[['profiles.html','users','Vendor & organizer directory','Browse local makers and markets'],['join.html','user','Create your profile','Logo, links and the events you want'],['city.html','shield','City & county vendor signup','Official permits, fees and steps']]],
-    ['For organizers',[['list.html','send','List your event','Free. We check it against your page'],['pricing.html','star','Advertise & get featured','Draft prices'],['sponsor.html','kit','Sponsor media kit','Audience and placements']]],
+    ['For organizers',[['list.html','send','List your event','Free. We check it against your page'],['pricing.html','star','Advertise & get featured','Featured spots from $10'],['sponsor.html','kit','Sponsor media kit','Audience and placements']]],
     ['About',[['about.html','info','About Jax Vendor Events',''],['terms.html','doc','Terms & Privacy','']]]];
   function current(){var p=(location.pathname.split('/').pop()||'index.html');var h=location.hash;
     if(p==='index.html'||p===''){return h==='#deadlines'?'deadlines':h==='#saved'?'saved':'events';}

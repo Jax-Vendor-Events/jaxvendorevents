@@ -24,12 +24,33 @@ Fonts: Fraunces and Inter (SIL Open Font License), self-hosted in fonts/.
 - `list.html` "List your event" → subject **New event listing: Jax Vendor Events** (AJAX via `forms.js`).
 - `pricing.html#get-featured` "Get featured" → subject **Get featured request: Jax Vendor Events**.
 - Newsletter signup (newsletter page + every footer) → **New signup: Jax Vendor Events weekly email** (`signup.js`). At launch these move to the newsletter tool.
-- Nothing is charged on the site; paid placements are confirmed by email with a payment link.
+- Paid placements: buy buttons open the Stripe Payment Link in `data/checkout.json` when one is set, otherwise the "Book your spot" request form (see "Checkout and buy buttons").
 
 ## Pages added Nov 1, 2026
 
 - `pricing.html` (advertise, draft prices), `sponsor.html` (media kit), `about.html`, `terms.html` (Terms + Privacy), `newsletter-2.html` (Issue #2 draft).
 - Internal only (remove before launch): `plan.html` (business plan), `outreach.html` (outreach drafts), `newsletter-2.html` until it is sent.
+
+## Checkout and buy buttons (added Nov 1, 2026)
+
+- Every paid tier has one big button (`data-buy="<tier id>"`) on `pricing.html`, `sponsor.html`, `list.html` (upgrade card + after-submit upsell), the event sheet ("Run this market? Get it featured") and the vendor directory. `checkout.js` wires them all.
+- **Prices/links live in `data/checkout.json`**, one line per tier:
+
+  | tier id | what | draft price |
+  |---|---|---|
+  | `featured-event` | Featured event | $20/week |
+  | `deadline-spotlight` | Deadline spotlight | $10 |
+  | `organizer-plus` | Organizer Plus | $29/month |
+  | `newsletter-sponsor` | Newsletter sponsor | $35/issue |
+  | `directory-sponsor` | Directory sponsor | $75/month |
+  | `featured-vendor` | Featured vendor | $10/week |
+  | `vendor-pro` | Vendor Pro | $5/month |
+
+- **To switch on card checkout for a tier:** paste its Stripe Payment Link (must start with `https://`) as the value, e.g. `"featured-event": "https://buy.stripe.com/..."`, and commit. Nothing else changes; the file is read fresh on every page load (the service worker never caches it). In Stripe, set each Payment Link's *After payment → Redirect* to `https://cresl1.github.io/jax-vendor-events/thanks.html?tier=<tier id>` (the real domain after launch).
+- **Empty value = request form.** The button opens "Book your spot" on `pricing.html#get-featured` with that tier picked (hidden field `tier`, subject `Get featured request: Jax Vendor Events (<tier>)`, same auto-reply). So no button is ever dead, with or without Stripe.
+- `thanks.html?tier=<id>` confirms payment, says what happens next for that tier (live within 24 h, we email when it is up) and has a short details form (subject `Paid placement details: Jax Vendor Events (<tier>)`, auto-reply on). Like every page it is behind the gate until launch, so a real customer can only reach it after go-public.
+- `pricing.html` shows one audience at a time (Organizer / Business / Vendor switch; `#organizers`, `#businesses`, `#vendors` open each one; `?tier=<id>` opens the form).
+- Service worker cache key `jve-rv1`.
 
 ## Go-public checklist (only after Luis says so)
 

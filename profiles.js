@@ -26,7 +26,7 @@
     var feat=all.filter(function(p){return p.type==='vendor'&&LG.featuredNow(p,today);});
     var fb=$('pFeat');
     if(feat.length)feat.slice(0,3).forEach(function(p){fb.appendChild(card(p));});
-    else fb.appendChild(el('a',{cls:'feat fv',href:'pricing.html#vendor-spotlight'},[el('span',{cls:'ft'},[ico('star','sm'),' Featured vendor']),el('h3',{text:'Your business here'}),el('p',{text:'Top of the vendor directory for a week, with a Featured badge. $10.'}),el('span',{cls:'go'},[ico('arrow')])]));
+    else fb.appendChild(el('a',{cls:'feat fv',href:'pricing.html?tier=featured-vendor#get-featured','data-buy':'featured-vendor'},[el('span',{cls:'ft'},[ico('star','sm'),' Featured vendor']),el('h3',{text:'Your business here'}),el('p',{text:'Top of the vendor directory for a week, with a Featured badge. $10.'}),el('span',{cls:'go'},[ico('arrow')])]));
     function draw(){var qv=$('pQ').value.trim().toLowerCase(),c=$('pCat').value;
       document.querySelectorAll('.pseg button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.t===t));});
       var rows=all.filter(function(p){return p.type===t&&(!c||cats(p).indexOf(c)>-1)&&(!qv||[p.name,p.tagline,p.products,p.city,p.county,cats(p).join(' ')].join(' ').toLowerCase().indexOf(qv)>-1);});
@@ -80,6 +80,6 @@
       var ap=[el('p',{text:AL[p.apply_method]||'Contact the organizer'}),p.apply_note?el('p',{cls:'hint',text:p.apply_note}):null];var au=LG.socialUrl('website',p.apply_url);if(au&&!p.sample)ap.push(el('a',{cls:'btn',href:au,target:'_blank',rel:'noopener noreferrer'},['Apply to vend ',ico('ext','sm')]));
       body.appendChild(sec('How to apply','send',ap));
     }
-    if(!p.sample&&LG.featuredNow(p,today)===false&&p.type==='vendor')body.appendChild(el('a',{cls:'feat fv slim',href:'pricing.html#vendor-spotlight'},[el('span',{cls:'ft'},[ico('star','sm'),' Is this your business?']),el('p',{text:'Feature it at the top of the directory for a week, $10.'}),el('span',{cls:'go'},[ico('arrow')])]));
+    if(!p.sample&&LG.featuredNow(p,today)===false&&p.type==='vendor')body.appendChild(el('a',{cls:'feat fv slim',href:'pricing.html?tier=featured-vendor#get-featured','data-buy':'featured-vendor'},[el('span',{cls:'ft'},[ico('star','sm'),' Is this your business?']),el('p',{text:'Feature it at the top of the directory for a week, $10.'}),el('span',{cls:'go'},[ico('arrow')])]));
   }
 })();

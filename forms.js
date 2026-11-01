@@ -18,7 +18,7 @@
       var b=f.querySelector('button[type=submit]'),label=b?b.innerHTML:'';if(b){b.disabled=true;b.textContent='Sending\u2026';}
       fetch(AJAX,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
         .then(function(r){return r.json().catch(function(){return {};}).then(function(j){return {ok:r.ok,j:j};});})
-        .then(function(x){if(x.ok&&String(x.j.success)==='true'){say(f.getAttribute('data-ok')||'Thanks! We got it and will reply by email within 2 days.');f.reset();}else{say('That didn\u2019t go through just now. Please try again in a minute.',true);}})
+        .then(function(x){if(x.ok&&String(x.j.success)==='true'){say(f.getAttribute('data-ok')||'Thanks! We got it and will reply by email within 2 days.');f.reset();var nx=f.getAttribute('data-next')&&document.getElementById(f.getAttribute('data-next'));if(nx){nx.hidden=false;setTimeout(function(){nx.scrollIntoView({behavior:'smooth',block:'center'});},600);}try{f.dispatchEvent(new CustomEvent('fs:ok',{bubbles:true}));}catch(_){}}else{say('That didn\u2019t go through just now. Please try again in a minute.',true);}})
         .catch(function(){say(navigator.onLine===false?'You\u2019re offline. Connect and try again.':'That didn\u2019t go through just now. Please try again in a minute.',true);})
         .then(function(){if(b){b.disabled=false;b.innerHTML=label;}});
     });

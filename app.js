@@ -180,7 +180,7 @@
       row('link','Apply / contact',contact.join('<br>')||'Link not on file yet')+
       row('user','Organizer',esc(e.organizer))+
       row('ext','Source',src)+
-      (e.verified?'<p class="sh-note ok">'+ico('shield')+'<span>Checked'+(e.verified_on?' '+short(e.verified_on):'')+' against the '+(e.host_type?'official':'organizer\'s own')+' page. Still confirm details before you pay.</span></p>':'<p class="sh-note">'+ico('info')+'<span>Not checked yet: from a public post or web scan. Confirm with the organizer before you pay.</span></p>');
+      (e.verified?'<p class="sh-note ok">'+ico('shield')+'<span>Checked'+(e.verified_on?' '+short(e.verified_on):'')+' against the '+(e.host_type?'official':'organizer\'s own')+' page. Still confirm details before you pay.</span></p>':'<p class="sh-note">'+ico('info')+'<span>Not checked yet: from a public post or web scan. Confirm with the organizer before you pay.</span></p>')+'<p class="sh-own">'+ico('star','sm')+'<span>Run this market? <a data-buy="featured-event" href="pricing.html?tier=featured-event&amp;event='+encodeURIComponent(e.name||'')+'#get-featured">Get it featured, from $20/week</a></span></p>';
     var ap=$('shApply'),ext=ap.querySelector('svg'),dest=apply||safeUrl(e.source_url)||safeUrl(e.source);ap.classList.toggle('off',!dest);ext.style.display=dest?'':'none';
     if(dest){ap.href=dest;ap.removeAttribute('aria-disabled');ap.removeAttribute('tabindex');ap.firstChild.textContent=apply?(e.host_type?'How to sign up ':'Apply '):'Organizer page ';}
     else{ap.removeAttribute('href');ap.setAttribute('aria-disabled','true');ap.setAttribute('tabindex','-1');ap.firstChild.textContent=e.contact?'Contact organizer (see above)':'Apply link not on file yet';}

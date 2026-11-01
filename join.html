@@ -17,8 +17,8 @@
 <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css?v=bp1">
-<link rel="stylesheet" href="ui.css?v=nx1">
-<script src="theme.js?v=nx1"></script>
+<link rel="stylesheet" href="ui.css?v=rv1">
+<script src="theme.js?v=rv1"></script>
 <script src="gate.js"></script>
 
 </head>
@@ -108,7 +108,7 @@
   <input type="hidden" name="categories" data-join="categories"><input type="hidden" name="service_counties" data-join="service_counties"><input type="hidden" name="event_types" data-join="event_types"><input type="hidden" name="days" data-join="days"><input type="hidden" name="max_booth_fee" id="hMaxFee"><input type="hidden" name="indoor_outdoor" id="hIo"><input type="hidden" name="email_alerts" id="hAl"><input type="hidden" name="wants_categories" data-join="wants_categories">
 
   <h2 class="fh"><span class="n">5</span>Send</h2>
-  <label class="check"><input type="checkbox" id="pSpot" name="spotlight_interest" value="yes"> <span>I'm interested in a <b>$10 featured spotlight</b> (top of the directory for a week). <a href="pricing.html#vendor-spotlight">Details</a></span></label>
+  <label class="check"><input type="checkbox" id="pSpot" name="spotlight_interest" value="yes"> <span>I'm interested in a <b>$10 featured spotlight</b> (top of the directory for a week). <a href="pricing.html?tier=featured-vendor#get-featured">Details</a></span></label>
   <label class="check"><input type="checkbox" id="pOk" required> <span>This is my business, I can share this logo and info, and it's OK to show it publicly once approved. <em class="req">required</em></span></label>
   <div class="fbtns"><button class="btn" type="submit" id="pSend">Send my profile for review <svg class="ico sm" aria-hidden="true"><use href="#i-arrow"/></svg></button><button class="btn ghost" type="button" id="pSavePrefs" data-v><svg class="ico sm" aria-hidden="true"><use href="#i-filter"/></svg>Just save my preferences</button></div>
   <div id="pMsg" class="formmsg" role="status" aria-live="polite"><svg class="ico " aria-hidden="true"><use href="#i-info"/></svg><span></span></div>
