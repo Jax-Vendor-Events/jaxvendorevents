@@ -39,3 +39,11 @@ Fonts: Fraunces and Inter (SIL Open Font License), self-hosted in fonts/.
 4. Wire the signup forms to the newsletter tool; bump the cache key in `sw.js`.
 
 Note: the password gate is client-side and this repository is public, so page source (including `plan.html`) is readable on GitHub by anyone who looks for it. Make the repo private (needs a paid GitHub plan for Pages) or keep internal pages out of it if that matters.
+
+## Hourly auto-refresh (added Nov 1, 2026)
+
+- `.github/workflows/hourly-refresh.yml` runs `scripts/refresh.py` at 7 minutes past every hour (and on demand from the Actions tab → "Hourly refresh" → Run workflow). It costs nothing: public repos get free Actions minutes.
+- The script (Python stdlib only, New York time) drops past dates, hides one-off listings whose last date has passed (`verify_status: "past"`, kept in the data), rolls weekly / "Nth weekday" markets forward ~10 weeks, dedupes by id, recomputes `stats`, stamps `checked_at` every run and `updated_at` when listings change, rewrites `data/events.json` + `data/events.js` and validates both. It commits only when the files changed; a push that races another commit is rebuilt on the latest copy.
+- The home page badge reads "Updated X min ago" from `checked_at`.
+- It does not discover new events or re-check organizer pages; that stays with the weekly data check.
+- GitHub pauses scheduled workflows in a repo with no activity for 60 days; the hourly commits count as activity.

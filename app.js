@@ -45,6 +45,12 @@
   $('nAll').textContent=ev.length;$('nWk').textContent=ev.filter(inWeekend).length;$('nFree').textContent=ev.filter(function(e){return e.fee_bucket==='free';}).length;$('nDl').textContent=ev.filter(dlSoon).length;
   function countMatches(){var nm=$('nMatch');if(nm)nm.textContent=LG.hasPrefs(prefs)?ev.filter(function(e){return !!LG.matchDates(e,prefs,e.up);}).length:'';}countMatches();
   var nV=$('nVer'),nCi=$('nCity');if(nV)nV.textContent=ev.filter(function(e){return e.verified;}).length;if(nCi)nCi.textContent=ev.filter(function(e){return e.host_type;}).length;var sV=$('stVer');if(sV)sV.textContent=ev.filter(function(e){return e.verified;}).length;
+  // "Updated X min ago" from the hourly refresh stamp (scripts/refresh.py)
+  (function(){var el=$('updTxt');if(!el)return;var t=Date.parse(D.checked_at||D.updated_at||'');if(isNaN(t))return;
+    function rel(){var m=Math.max(0,Math.round((Date.now()-t)/6e4));
+      el.textContent='Updated '+(m<1?'just now':m<60?m+' min ago':m<1440?Math.round(m/60)+' hr ago':Math.round(m/1440)+' days ago')+' · refreshes hourly';
+      $('updBadge').title='Last refresh '+new Date(t).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' ET';}
+    rel();setInterval(rel,60000);})();
   // deadline strip
   var dls=ev.filter(hasDl).sort(function(a,b){return a.deadline<b.deadline?-1:1;}).slice(0,10);
   $('dlStrip').innerHTML=dls.map(function(e){var n=days(floor,e.deadline);
