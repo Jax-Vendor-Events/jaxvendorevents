@@ -249,7 +249,7 @@
       $('shBody').innerHTML=row('cal','When',[when,extra.join(' · ')].filter(Boolean).join('<br>')||'See dates above')+
         row('tag','Vendor fee',e.fee?esc(e.fee):(e.fee_bucket==='free'?'Free':'Fee not listed'))+row('clock','Applications',appl.join('<br>'))+
         row('pin','Area',esc([e.city,e.county?e.county+' County':''].filter(Boolean).join(', ')))+
-        '<div class="locked-card"><b>🔒 Event name, exact place, organizer and apply link</b> are part of Vendor Pro ($6/month). Every market in Northeast Florida, with the links to apply.</div>';
+        '<div class="locked-card"><b>🔒 Event name, exact place, organizer and apply link</b> are part of Vendor Pro ($6/month). Every market in Florida, with the links to apply.</div>';
       ap.href='#';ap.setAttribute('data-unlock','vendor-pro');ap.classList.remove('off');ap.removeAttribute('aria-disabled');ap.removeAttribute('tabindex');ext.style.display='none';ap.firstChild.textContent='Unlock · $6/mo ';
     } else ap.removeAttribute('data-unlock');
     $('shIcs').disabled=!curA;syncSheetSave();
