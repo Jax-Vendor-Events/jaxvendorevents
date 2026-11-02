@@ -105,7 +105,7 @@ html[data-mode=dark] .mcpv.on{background:rgba(var(--sun-rgb),.16)}
 .mc2 .mc2h{display:block;font-size:15px;color:var(--ink);margin:3px 0 4px}.mc2 p b{color:var(--ink);font-weight:650}
 .mc2 p{margin:0 0 10px;font-size:13.5px;line-height:1.45;color:var(--ink2)}
 .mcgos{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.mcgos .btn{margin:0;flex:1 1 0;min-width:0;min-height:46px;height:auto;padding:10px 14px;font-size:14.5px;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
+.mcgos .btn{margin:0;flex:1 1 0;min-width:0;white-space:nowrap;min-height:46px;height:auto;padding:10px 12px;font-size:14.5px;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
 .mcgo2{font-size:13px;font-weight:600;color:var(--sea);text-decoration:none;padding:6px 2px}
 .mctip{margin:8px 0 0!important;font-size:12.5px!important;color:var(--mut)!important}
 .mcpaste{margin:4px 0 0!important;width:100%;min-height:56px;height:56px;border-radius:var(--lx-r,16px);font-size:17px;font-weight:700;display:flex!important;align-items:center;justify-content:center;gap:9px;background:var(--sun);color:var(--onacc);box-shadow:0 8px 20px -10px rgba(var(--sun-rgb),.8)}
