@@ -8,7 +8,11 @@
    - Organizer form: shown on ?t= organizer links and to admins. Writing a fee link needs an admin, or a signed-in account
      whose VERIFIED email matches the listing's organizer email (server-checked in event_fee_set; the ?t= token alone
      grants nothing since Nov 2 2026). Others see "Sign in with j***@… to set a payment link".
-   Free members and visitors see a locked teaser instead (server refuses them the data). Hook: app.js fillSheet -> JVE_TRK.sheet(e,d). */
+   Free members and visitors see a locked teaser instead (server refuses them the data). Hook: app.js fillSheet -> JVE_TRK.sheet(e,d).
+   Nov 2 2026 (Connect Square): organizers who connected their own Square account (Account → Payments) can turn on
+   "Charge booth fees through Square" on their listing; Pro vendors then get "Pay booth fee · $X with Square", which asks
+   the square-booth-checkout Edge Function for a payment link made ON THE ORGANIZER'S Square account (money goes straight
+   to the organizer). Paid is set by Square's webhook, with a status check when the vendor comes back (?sqret=). */
 (function(){
   'use strict';
   var A=window.JVE_AUTH;if(!A||!A.ready)return;
@@ -25,6 +29,31 @@
   function proc(u){var h=(String(u).match(/^https:\/\/([^\/?#]+)/)||[])[1]||'';for(var i=0;i<PROC.length;i++)if(PROC[i][0].test(h))return PROC[i][1];return 'their payment link';}
   function toast(t){var el=document.getElementById('toast');if(!el)return;el.textContent=t;el.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(function(){el.classList.remove('show');},2600);}
   function copy(t){if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(t);return Promise.reject(new Error('no clipboard'));}
+  function fn(name,body){
+    var C=window.JVE_SB||{};
+    return A.sb.auth.getSession().then(function(s){
+      var tk=s&&s.data&&s.data.session&&s.data.session.access_token;if(!tk)throw new Error('Sign in first.');
+      return fetch(C.url+'/functions/v1/'+name,{method:'POST',headers:{'Content-Type':'application/json',apikey:C.key,Authorization:'Bearer '+tk},body:JSON.stringify(body||{}),cache:'no-store'});
+    }).then(function(r){return r.json().catch(function(){return {};}).then(function(j){if(!r.ok)throw new Error(j.message||'Something went wrong. Try again.');return j;});});
+  }
+  function markPaidLocal(id){var t=track[id];if(t){t.paid=true;if(t.status!=='done')t.status='paid';}else track[id]={event_id:id,status:'paid',paid:true};}
+  /* back from Square's checkout: index.html?sqret=<checkout id>. The webhook usually marked it paid already; ask once or twice to be sure. */
+  function sqReturn(){
+    var q=new URLSearchParams(location.search),k=q.get('sqret');if(!k||!/^[0-9a-f-]{36}$/i.test(k))return;
+    q.delete('sqret');['checkoutId','orderId','referenceId','transactionId'].forEach(function(x){q.delete(x);});
+    var qs=q.toString();try{history.replaceState(history.state,'',location.pathname+(qs?'?'+qs:'')+location.hash);}catch(_){}
+    sb.from('square_checkouts').select('id,event_id,status').eq('id',k).maybeSingle().then(function(r){
+      var row=r&&r.data;if(!row)return;var eid=row.event_id,n=0;
+      function done(){markPaidLocal(eid);toast('Booth fee paid ✓ Marked in My applications');render();if(!location.hash||location.hash.indexOf('#e=')!==0)location.hash='e='+encodeURIComponent(eid);}
+      if(row.status==='paid'){done();return;}
+      toast('Checking your Square payment…');
+      (function poll(){fn('square-booth-checkout',{action:'status',event_id:eid}).then(function(j){
+        if(j.paid){done();return;}
+        if(++n<4){setTimeout(poll,2500);return;}
+        toast('Square hasn’t confirmed the payment yet. It will show as paid once it does.');if(!location.hash)location.hash='e='+encodeURIComponent(eid);
+      }).catch(function(){});})();
+    });
+  }
   var sb=null,full=false,ready=false,track={},kit=null,share=null,fees={},lastE=null,lastD=null,panel=null;
   var TOK=new URLSearchParams(location.search).get('t'),TOK_E=decodeURIComponent((location.hash.match(/^#e=([^&]+)/)||[])[1]||'');
 
@@ -71,7 +100,12 @@
       h+='<div class="trow"><button type="button" class="btn" data-kitapply>'+ico('send')+' Apply with my kit</button>'+
         (t?'<select data-trkst aria-label="Application status">'+ST.map(function(s){return '<option value="'+s[0]+'"'+(t.status===s[0]?' selected':'')+'>'+(t.status===s[0]?'Tracking · ':'')+s[1]+'</option>';}).join('')+'</select>'
           :'<button type="button" class="btn ghost" data-track>'+ico('list')+' Track this</button>')+'</div>';
-      if(f){var pn=proc(f.pay_url);
+      if(f&&f.square_on){var paidSq=!!(t&&t.paid);
+        h+='<div class="pay sq">'+(paidSq?'<p class="paidok">'+ico('check')+' Booth fee paid'+(f.amount_cents?' · '+money(f.amount_cents):'')+'</p>':
+          '<button type="button" class="btn" data-sqpay>'+ico('tag')+' Pay booth fee'+(f.amount_cents?' · '+money(f.amount_cents):'')+' with Square</button>')+(f.covers?'<span class="cov">'+esc(f.covers)+'</span>':'')+
+          (paidSq?'<small class="payee">Paid to <b>'+esc(f.square_merchant||'the organizer')+'</b> on Square</small>':
+          '<small class="payee">Pays <b>'+esc(f.square_merchant||'the organizer')+'</b> on Square · goes straight to the organizer</small><small>You pay on Square’s own checkout page. Jax Vendor Events never handles event fees.</small>')+'</div>';}
+      else if(f&&f.pay_url){var pn=proc(f.pay_url);
         h+='<div class="pay"><button type="button" class="btn" data-pay>'+ico('tag')+' Pay booth fee'+(f.amount_cents?' · '+money(f.amount_cents):'')+'</button>'+(f.covers?'<span class="cov">'+esc(f.covers)+'</span>':'')+
           '<small class="payee">Pays <b>'+esc(payee(f.pay_url))+'</b> · goes straight to the organizer'+(pn!=='their payment link'?' ('+esc(pn)+')':'')+'</small><small>Check that’s the organizer’s link before you pay. Jax Vendor Events never handles event fees.</small></div>';}
       if(panel==='kit'){var txt=intro(e,d),em=email(e);
@@ -121,10 +155,50 @@
     if(sw)sw.addEventListener('click',function(){sw.disabled=true;A.signOut('local').then(function(){location.href='login.html?next='+nx;});});
   }
   function editForm(w,e,tok,d){
+    if(d.sq_connected||d.square_on){sqForm(w,e,tok,d);return;}
+    linkForm(w,e,tok,d);
+  }
+  /* Square mode: the fee is charged on the connected organizer's own Square account (Account → Payments). */
+  function sqForm(w,e,tok,d){
+    var other=d.square_on&&!d.square_mine;
+    w.innerHTML='<h3 id="ofH">Vendor fee payment'+(d.via==='admin'?' <small>(admin)</small>':'')+'</h3>'+
+      '<p>Vendors with Pro pay your booth fee on Square’s own checkout and the money lands in '+(d.sq_connected?'your Square account <b>'+esc(d.sq_merchant)+'</b>'+(d.sq_sandbox?' <small>(test mode)</small>':''):'the connected Square account')+'. Jax Vendor Events takes no cut and never holds it.</p>'+
+      (other?'<p class="ofwho">Right now this listing charges through <b>'+esc(d.square_merchant||'another Square account')+'</b>, set up from another account.'+(d.sq_connected?' Saving with Square ON switches it to yours.':'')+'</p>':'')+
+      '<label class="sqtog" for="sqOn"><input type="checkbox" id="sqOn" role="switch"'+(d.sq_connected||d.square_on?'':' disabled')+'><span>Charge booth fees through Square: <b id="sqSt">OFF</b></span></label>'+
+      '<div class="row2"><label class="fl" for="ofAmt">Booth fee ($)<input type="text" id="ofAmt" inputmode="decimal" placeholder="45"></label><label class="fl" for="ofCov">Covers<input type="text" id="ofCov" maxlength="200" placeholder="10x10 booth, both days"></label></div>'+
+      '<div class="apsave"><button type="button" class="btn" id="ofSave">Save</button></div><p class="apmsg" id="ofMsg" role="status" aria-live="polite"></p>'+
+      (d.sq_connected?'':'<p class="ofnew"><a href="account.html#payments">Connect your Square</a> to charge vendors here.</p>');
+    var $=function(id){return w.querySelector('#'+id);};
+    function st(){$('sqSt').textContent=$('sqOn').checked?'ON':'OFF';}
+    /* ON = this listing charges through Square on the caller's own account (or, for someone without a connection, through whichever one) */
+    function fill(r,first){var on=!!(r.square_on&&(r.square_mine||!d.sq_connected));if(first&&!r.square_on&&d.sq_connected)on=true;
+      $('sqOn').checked=on;$('ofAmt').value=r.amount_cents?String(r.amount_cents/100):'';$('ofCov').value=r.covers||'';st();}
+    fill(d,true);
+    $('sqOn').addEventListener('change',st);
+    function msg(t,c){$('ofMsg').textContent=t;$('ofMsg').className='apmsg'+(c?' '+c:'');}
+    $('ofSave').addEventListener('click',function(){
+      var on=$('sqOn').checked,amt=$('ofAmt').value.replace(/[^0-9.]/g,''),c=amt?Math.round(parseFloat(amt)*100):null;
+      if(on&&!d.sq_connected){msg('Connect your Square account first (Account → Payments).','err');return;}
+      if(on&&!(c>=100)){msg('Enter the booth fee, at least $1 (like 45).','err');return;}
+      if(!on&&!d.square_on){msg('Square is off for this listing. Turn it ON to charge vendors here.','');return;}
+      if(!on&&!confirm('Turn off Square booth fees for this listing? Vendors will no longer see the Pay button.'))return;
+      $('ofSave').disabled=true;msg('Saving…');
+      A.sb.rpc('event_fee_square',{eid:e.id,turn_on:on,amount_cents:on?c:null,covers:$('ofCov').value}).then(function(r){$('ofSave').disabled=false;
+        if(r.error){msg(r.error.message||'Couldn’t save.','err');return;}
+        var x=r.data||{};d=x;
+        if(x.square_on&&x.status==='live'){fees[e.id]={event_id:e.id,amount_cents:x.amount_cents,covers:x.covers,pay_url:'',square_on:true,square_merchant:x.square_merchant};
+          msg('Saved ✓ Square is ON. Vendors now see “Pay booth fee · '+money(x.amount_cents)+' with Square”.','ok');}
+        else if(x.square_on){msg('Saved. It’s pending review and vendors won’t see it yet.','ok');}
+        else{delete fees[e.id];msg('Square is OFF for this listing. Vendors no longer see a Pay button.','ok');}
+        other=false;fill(x,false);render();});
+    });
+  }
+  function linkForm(w,e,tok,d){
     w.innerHTML='<h3 id="ofH">Vendor fee payment'+(d.via==='admin'?' <small>(admin)</small>':'')+'</h3><p>Vendors see a “Pay booth fee” button on this listing, with your link’s address shown under it. Use your own Square, PayPal, Zettle, Stripe, Venmo or Cash App link: the money goes straight to you, never through us.</p>'+
       '<div class="row2"><label class="fl" for="ofAmt">Fee ($)<input type="text" id="ofAmt" inputmode="decimal" placeholder="45"></label><label class="fl" for="ofCov">Covers<input type="text" id="ofCov" maxlength="200" placeholder="10x10 booth, both days"></label></div>'+
       '<label class="fl" for="ofUrl">Payment link<input type="url" id="ofUrl" maxlength="500" inputmode="url" placeholder="https://square.link/u/…" autocapitalize="off"></label>'+
-      '<div class="apsave"><button type="button" class="btn" id="ofSave">Save</button><button type="button" class="btn ghost" id="ofClear" hidden>Remove</button></div><p class="apmsg" id="ofMsg" role="status" aria-live="polite"></p>';
+      '<div class="apsave"><button type="button" class="btn" id="ofSave">Save</button><button type="button" class="btn ghost" id="ofClear" hidden>Remove</button></div><p class="apmsg" id="ofMsg" role="status" aria-live="polite"></p>'+
+      '<p class="ofnew">Use Square? <a href="account.html#payments">Connect your Square account</a> and vendors pay you right here.</p>';
     var $=function(id){return w.querySelector('#'+id);};
     function fill(r){if(!r)return;$('ofAmt').value=r.amount_cents?String(r.amount_cents/100):'';$('ofCov').value=r.covers||'';$('ofUrl').value=r.pay_url||'';$('ofClear').hidden=!r.pay_url;}
     fill(d);
@@ -146,7 +220,7 @@
   }
 
   document.addEventListener('click',function(ev){
-    var b=ev.target.closest&&ev.target.closest('.trk [data-kitapply],.trk [data-track],.trk [data-pay],.trk [data-recopy],.trk [data-paidyes],.trk [data-paidno]');if(!b||!lastE)return;
+    var b=ev.target.closest&&ev.target.closest('.trk [data-kitapply],.trk [data-track],.trk [data-pay],.trk [data-recopy],.trk [data-paidyes],.trk [data-paidno],.trk [data-sqpay]');if(!b||!lastE)return;
     var e=lastE,d=lastD;
     if(b.hasAttribute('data-kitapply')){
       if(!ready){toast('One sec, loading your kit…');return;}
@@ -167,6 +241,14 @@
       var fe=fees[e.id]||{};var p={status:'paid',paid:true};if(fe.amount_cents)p.fee_cents=fe.amount_cents;
       upsertTrack(e,d,Object.assign({source:track[e.id]?undefined:'fee'},p)).then(function(){panel='paiddone';render();toast('Marked paid');}).catch(function(){toast('Couldn’t save. Try again.');});
     }else if(b.hasAttribute('data-paidno')){panel=null;render();}
+    else if(b.hasAttribute('data-sqpay')){
+      b.disabled=true;var lbl=b.innerHTML;b.textContent='Opening Square checkout…';
+      fn('square-booth-checkout',{action:'create',event_id:e.id}).then(function(j){
+        if(j.paid){markPaidLocal(e.id);toast('Already paid ✓');render();return;}
+        try{sessionStorage.setItem('jve_sq_ev',e.id);}catch(_){}
+        location.assign(j.url);
+      }).catch(function(x){b.disabled=false;b.innerHTML=lbl;toast((x&&x.message)||'Couldn’t open Square. Try again.');});
+    }
   });
   document.addEventListener('change',function(ev){
     var s=ev.target.closest&&ev.target.closest('.trk [data-trkst]');if(!s||!lastE)return;var e=lastE,p={status:s.value};if(s.value==='paid')p.paid=true;
@@ -184,13 +266,13 @@
       sb.from('app_tracker').select('id,event_id,status,paid,fee_cents').not('event_id','is',null),
       sb.from('apply_kits').select('business_name,category,description,website,instagram,booth_size,booth_other,electricity,tent,price_range').maybeSingle(),
       sb.from('kit_shares').select('id,token,expires_at,revoked_at,created_at').is('revoked_at',null).order('created_at',{ascending:false}),
-      sb.from('event_fees').select('event_id,amount_cents,covers,pay_url')
+      sb.from('event_fees').select('event_id,amount_cents,covers,pay_url,square_on,square_merchant')
     ]).then(function(r){
       (r[0].data||[]).forEach(function(x){track[x.event_id]=x;});
       kit=r[1].data||null;
       share=(r[2].data||[]).filter(function(s){return !s.expires_at||new Date(s.expires_at)>new Date(Date.now()+864e5);}).sort(function(a,b){return (a.expires_at?1:0)-(b.expires_at?1:0);})[0]||null;
       (r[3].data||[]).forEach(function(x){fees[x.event_id]=x;});
-      ready=true;render();
+      ready=true;render();sqReturn();
     }).catch(function(){ready=true;render();});
   });
 })();
