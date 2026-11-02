@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="locked">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#0B0F17">
+<title>Style B · style preview · Jax Vendor Events</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<script src="/gate.js"></script>
+<style>
+html.locked body>*:not(#gate){display:none!important} html:not(.locked) #gate{display:none}
+#gate{position:fixed;inset:0;display:grid;place-items:center;padding:24px;background:#111;color:#fff;font:16px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif}
+#gate form{display:grid;gap:12px;width:100%;max-width:320px} #gate input,#gate button{font:inherit;padding:14px;border-radius:12px;border:0}
+#gate button{background:#fff;color:#111;font-weight:600} #gateErr{color:#ffb4a8;min-height:1.5em}
+
+:root{--bg:#0B0F17;--card:#161B26;--line:#262D3B;--ink:#FFFFFF;--mute:#A6AEBD;--acc:#22E3C4;--accink:#04211C}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none} .ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.pv{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 20px;background:#05070B;font-size:13px;color:var(--mute)}
+.pv b{color:var(--acc)} .pv nav{display:flex;gap:4px} .pv a{padding:2px 9px;border-radius:6px;font-weight:700} .pv a.on{background:var(--acc);color:var(--accink)}
+header.top{position:sticky;top:0;z-index:5;background:var(--bg);padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;font-size:16px;letter-spacing:1.5px;text-transform:uppercase} .brand i{font-style:normal;color:var(--acc)}
+.avatar{width:36px;height:36px;border-radius:50%;background:var(--card);display:grid;place-items:center;color:var(--mute)}
+main{padding:8px 20px 110px}
+h1{font-size:40px;line-height:1;letter-spacing:-1px;margin:8px 0 6px;font-weight:900;text-transform:uppercase} .sub{color:var(--mute);margin:0 0 20px;font-size:16px}
+.search{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;color:var(--mute);margin-bottom:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;margin:0 -20px 16px;padding:0 20px;scrollbar-width:none} .chips::-webkit-scrollbar{display:none}
+.chip{flex:none;background:var(--card);border-radius:10px;padding:9px 14px;font-size:15px;font-weight:600;white-space:nowrap;color:#D6DBE4;display:flex;align-items:center;gap:4px}
+.chip.on{background:var(--acc);color:var(--accink)} .chip .ic{width:16px;height:16px}
+.fold{width:100%;display:flex;align-items:center;justify-content:space-between;background:var(--card);border:0;border-radius:14px;padding:14px 16px;font:inherit;color:var(--ink);font-weight:700;margin-bottom:24px}
+.fold small{color:var(--mute);font-weight:500;font-size:15px} .fold .ic{color:var(--acc)}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:2px;color:var(--acc);margin:0 0 14px;font-weight:800}
+.card{display:block;background:var(--card);border-radius:20px;overflow:hidden;margin-bottom:18px}
+.art{position:relative;height:128px;display:flex;align-items:flex-end;padding:14px 16px}
+.when{position:absolute;top:14px;left:14px;background:rgba(5,7,11,.72);border-radius:12px;padding:6px 12px;text-align:center;line-height:1.1}
+.when small{display:block;font-size:12px;font-weight:800;letter-spacing:1.5px;color:var(--acc)} .when b{display:block;font-size:26px;font-weight:900;line-height:1.05}
+.pill{position:absolute;top:16px;right:14px;background:rgba(5,7,11,.72);color:#fff;font-size:13px;font-weight:700;border-radius:99px;padding:5px 11px}
+.body{padding:16px 16px 18px}
+.card h3{margin:0 0 4px;font-size:21px;line-height:1.25;font-weight:800;letter-spacing:-.3px}
+.meta{color:var(--mute);font-size:16px;margin:0 0 14px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;font-weight:800;font-size:16px;padding:13px 18px;border:0;font-family:inherit;background:var(--acc);color:var(--accink)}
+.btn.big{padding:17px;font-size:17px;border-radius:14px;text-transform:uppercase;letter-spacing:1px}
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:5;background:#05070B;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:9px 4px calc(9px + env(safe-area-inset-bottom))}
+.tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;color:#7D8596;font-weight:600} .tabbar a.on{color:var(--acc)}
+/* detail */
+#event-v{margin:-8px -20px 0}
+.hero{position:relative;height:300px;padding:20px;display:flex;flex-direction:column;justify-content:space-between}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(11,15,23,0) 35%,var(--bg))}
+.hero>*{position:relative;z-index:1}
+.htop{display:flex;justify-content:space-between} .row{display:flex;gap:8px}
+.iconbtn{width:42px;height:42px;border-radius:50%;background:rgba(5,7,11,.6);display:grid;place-items:center;color:#fff}
+.hero .kick{font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--acc);margin:0 0 6px}
+.hero h1{font-size:34px;margin:0;line-height:1.05}
+.dbody{padding:12px 20px 120px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px} .tag{font-size:13px;font-weight:700;border-radius:8px;padding:5px 10px;background:var(--card);color:#D6DBE4} .tag.ok{background:rgba(34,227,196,.14);color:var(--acc)}
+dl{margin:0 0 24px;background:var(--card);border-radius:18px;padding:4px 16px} .fact{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)} .fact:last-child{border-bottom:0} .fact .ic{color:var(--acc);margin-top:2px}
+dt{font-size:12px;color:var(--mute);font-weight:700;text-transform:uppercase;letter-spacing:1px} dd{margin:0;font-size:17px;font-weight:600}
+.about p{margin:0;color:#C9CFDA}
+.cta{position:fixed;left:0;right:0;bottom:62px;padding:12px 20px;background:var(--bg);border-top:1px solid var(--line)}
+
+.cta{z-index:4}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:5} .dock .tabbar{position:static} .dock .cta{position:static} [hidden]{display:none!important}</style>
+</head>
+<body>
+<div id="gate"><div id="gbox"><p style="font-weight:700;font-size:20px;margin:0 0 12px">Jax Vendor Events · preview</p><form id="gateForm"><label for="gatePw" style="position:absolute;left:-9999px">Password</label><input id="gatePw" type="password" autocomplete="current-password" placeholder="Password" required><button type="submit">Unlock</button><div id="gateErr" role="alert"></div></form></div></div><div class="pv"><span>Style preview · <b>B</b> Bold dark</span><nav aria-label="Other styles"><a href="a.html" class="" aria-current="false">A</a><a href="b.html" class="on" aria-current="page">B</a><a href="c.html" class="" aria-current="false">C</a></nav></div><header class="top"><span class="brand">Jax <i>Vendor</i> Events</span><span class="avatar"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.6"/><path d="M5 20c1.2-3.4 4-5 7-5s5.8 1.6 7 5"/></svg></span></header>
+<main><section id="list"><h1>Events</h1><p class="sub">42 vendor events near Jacksonville</p>
+<div class="search"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg><span>Search markets, cities</span></div>
+<div class="chips"><span class="chip on">All</span><span class="chip">This weekend</span><span class="chip">Apply soon</span><span class="chip">Free</span><span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Northeast FL</span></div>
+<button class="fold" data-toggle="mycal" aria-expanded="false"><span>My calendar <small>· 3 upcoming</small></span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button><div id="mycal" hidden></div>
+<h2>Coming up</h2><article class="card"><div class="art" style="background:radial-gradient(120% 90% at 85% 10%,hsl(52 90% 60%) 0,transparent 55%),linear-gradient(135deg,hsl(12 85% 45%),hsl(312 70% 22%))"><div class="when"><small>NOV · SAT</small><b>7</b></div><span class="pill">$45</span></div><div class="body"><h3>Riverside Makers Market</h3><p class="meta">Jacksonville · 10 AM – 3 PM</p><a class="btn" href="#event">View event</a></div></article><article class="card"><div class="art" style="background:radial-gradient(120% 90% at 85% 10%,hsl(230 90% 60%) 0,transparent 55%),linear-gradient(135deg,hsl(190 85% 45%),hsl(130 70% 22%))"><div class="when"><small>NOV · SUN</small><b>8</b></div><span class="pill">$35</span></div><div class="body"><h3>Beachside Sunday Market</h3><p class="meta">Atlantic Beach · 10 AM – 2 PM</p><a class="btn" href="#event">View event</a></div></article><article class="card"><div class="art" style="background:radial-gradient(120% 90% at 85% 10%,hsl(25 90% 60%) 0,transparent 55%),linear-gradient(135deg,hsl(345 85% 45%),hsl(285 70% 22%))"><div class="when"><small>NOV · SAT</small><b>14</b></div><span class="pill">$60</span></div><div class="body"><h3>Holiday Craft Fair at the Commons</h3><p class="meta">Orange Park · 9 AM – 4 PM</p><a class="btn" href="#event">View event</a></div></article><article class="card"><div class="art" style="background:radial-gradient(120% 90% at 85% 10%,hsl(305 90% 60%) 0,transparent 55%),linear-gradient(135deg,hsl(265 85% 45%),hsl(205 70% 22%))"><div class="when"><small>NOV · FRI</small><b>20</b></div><span class="pill">$50</span></div><div class="body"><h3>Night Market on the Square</h3><p class="meta">St. Augustine · 5 – 10 PM</p><a class="btn" href="#event">View event</a></div></article><article class="card"><div class="art" style="background:radial-gradient(120% 90% at 85% 10%,hsl(80 90% 60%) 0,transparent 55%),linear-gradient(135deg,hsl(40 85% 45%),hsl(340 70% 22%))"><div class="when"><small>NOV · SAT</small><b>28</b></div><span class="pill">Free</span></div><div class="body"><h3>Small Business Saturday Pop-Up</h3><p class="meta">Fernandina Beach · 10 AM – 4 PM</p><a class="btn" href="#event">View event</a></div></article><article class="card"><div class="art" style="background:radial-gradient(120% 90% at 85% 10%,hsl(190 90% 60%) 0,transparent 55%),linear-gradient(135deg,hsl(150 85% 45%),hsl(90 70% 22%))"><div class="when"><small>DEC · SAT</small><b>5</b></div><span class="pill">$75</span></div><div class="body"><h3>Winter Wonderland Vendor Fair</h3><p class="meta">Palm Coast · 10 AM – 5 PM</p><a class="btn" href="#event">View event</a></div></article></section><section id="detail" hidden><div id="event-v"><div class="hero" style="background:radial-gradient(120% 90% at 85% 10%,hsl(25 90% 60%) 0,transparent 55%),linear-gradient(135deg,hsl(345 85% 45%),hsl(285 70% 22%))"><div class="htop"><a class="iconbtn" href="#" aria-label="Back"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 6-6 6 6 6"/></svg></a><div class="row"><span class="iconbtn" aria-label="Save"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span><span class="iconbtn" aria-label="More"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="18" cy="12" r="1.4"/></svg></span></div></div>
+<div><p class="kick">Sat · NOV 14 · Orange Park</p><h1>Holiday Craft Fair at the Commons</h1></div></div>
+<div class="dbody"><div class="tags"><span class="tag ok">✓ Checked this week</span><span class="tag">Holiday</span><span class="tag">Indoor + outdoor</span></div>
+<dl><div class="fact"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="15" rx="2.5"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg><div><dt>When</dt><dd>Saturday, Nov 14 · 9 AM – 4 PM</dd></div></div><div class="fact"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12V5a1 1 0 0 1 1-1h7l8 8-8 8z"/><circle cx="8.5" cy="8.5" r="1.4"/></svg><div><dt>Vendor fee</dt><dd>$60 · 10×10 booth</dd></div></div><div class="fact"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20a.5.5 0 0 1-.5.5h-10A.5.5 0 0 1 7 20z"/><path d="M14 3.5V8h4"/></svg><div><dt>Applications</dt><dd>Apply by Mon, Nov 9 · online form</dd></div></div><div class="fact"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><div><dt>Where</dt><dd>Town Center lawn & hall, Orange Park (Clay County)</dd></div></div><div class="fact"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="3"/><path d="M3.5 19c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/><circle cx="16.5" cy="8" r="2.4"/><path d="M15.5 13.2c2.3-.3 4.4 1 5 3.8"/></svg><div><dt>Crowd</dt><dd>About 3,000 shoppers last year (organizer)</dd></div></div></dl><div class="about"><h2>About</h2><p>A one-day holiday fair with about 90 vendors indoors and on the lawn. Gifts, jewelry, home goods and treats. Booths are assigned on approval; set-up starts at 7 AM.</p></div></div></div>
+</section></main>
+<div class="dock"><div class="cta" id="cta" hidden><a class="btn big" href="#">How to sign up</a></div><nav class="tabbar" aria-label="Main"><a href="#" class="" ><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#" class="on" aria-current=page><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="15" rx="2.5"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg><span>Events</span></a><a href="#" class="" ><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Saved</span></a><a href="#" class="" ><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 2.4 5 5.4.6-4 3.7 1.1 5.4L12 16l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><span>Pro</span></a><a href="#" class="" ><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.6"/><path d="M5 20c1.2-3.4 4-5 7-5s5.8 1.6 7 5"/></svg><span>Account</span></a></nav></div><script>
+(function(){function show(){var d=location.hash==='#event';document.getElementById('list').hidden=d;document.getElementById('detail').hidden=!d;document.getElementById('cta').hidden=!d;window.scrollTo(0,0);}
+window.addEventListener('hashchange',show);show();
+document.querySelectorAll('[data-toggle]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.getAttribute('data-toggle'));var o=t.hidden;t.hidden=!o;b.setAttribute('aria-expanded',o);});});})();
+</script>
+</body>
+</html>
