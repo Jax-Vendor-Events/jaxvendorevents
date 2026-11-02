@@ -43,7 +43,8 @@
 <script src="theme.js?v=nv2"></script>
 <script src="gate.js"></script>
 <link rel="stylesheet" href="auth.css?v=au1">
-<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script><script type="jve/boot" data-src="account.js?v=au1"></script>
+<link rel="stylesheet" href="mycal.css?v=mc1">
+<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script><script src="mycal.js?v=mc1" defer></script><script type="jve/boot" data-src="account.js?v=au1"></script>
 
 
 </head>
@@ -102,6 +103,7 @@
     <button class="btn" type="submit">Save profile</button><div class="amsg" id="profileMsg"></div></form>
   <p class="hint">Want a public vendor profile in the directory? <a href="join.html">Create it here</a>.</p></div>
 
+<div class="acard" id="calCard" aria-label="My calendar"></div>
 <div class="acard"><h2>My requests</h2><ul class="alist" id="reqList"><li><small>Loading…</small></li></ul></div>
 <div class="acard"><h2>Purchases</h2><ul class="alist" id="payList"><li><small>Loading…</small></li></ul></div>
 

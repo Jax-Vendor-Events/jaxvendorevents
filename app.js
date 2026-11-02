@@ -54,7 +54,7 @@
       $('updBadge').title='Last refresh '+new Date(t).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' ET';}
     rel();setInterval(rel,60000);})();
   /* ---- state ---- */
-  var view='home',F={matches:false,weekend:false,'2wk':false,free:false,campus:false,dl:false};
+  var view='home',F={matches:false,weekend:false,'2wk':false,free:false,campus:false,dl:false,day:false};
   var fC=$('fCounty'),fK=$('fCat'),fS=$('fSort'),fQ=$('fQ');
   var VIEWS={home:['Find your next market','Markets, craft fairs, pop-ups and campus events across Florida.'],events:['Vendor events','Search, filter and apply. Pick a region to see what’s near you.'],deadlines:['Deadlines','Apply before these close. Soonest first.'],saved:['Saved','Events you hearted. Saved on this phone.']};
   function chipsOn(){return Object.keys(F).some(function(k){return F[k];})||!!fC.value||!!fK.value||!!fQ.value.trim();}
@@ -97,6 +97,7 @@
       if(F.dl&&!dlSoon(e)) return;
       if(q&&[e.name,e.city,e.venue,e.county,e.organizer,e.host_agency].join(' ').toLowerCase().indexOf(q)<0) return;
       var a=e.up;
+      if(F.day){if(!inRange(e,F.day,F.day))return;a=[F.day];} /* My calendar: tap a day */
       if(F.matches&&LG.hasPrefs(prefs)){var mm=LG.matchDates(e,prefs,e.up);if(!mm)return;if(mm.length)a=mm;}
       if(F.weekend){if(!inRange(e,wkStart,sun))return;var w=a.filter(function(x){return x>=wkStart&&x<=sun;});a=w.length?w:a;}
       else if(F['2wk']){if(!inRange(e,floor,twoWk))return;var w2=a.filter(function(x){return x<=twoWk;});a=w2.length?w2:a;}
@@ -148,7 +149,8 @@
     if(view==='saved'&&rows.length) html='<div class="savedbar"><span><b>'+rows.length+'</b> saved</span><button class="btn" type="button" id="icsAll">'+ico('cal','sm')+'Add all to calendar</button></div>'+html;
     var L=$('list');L.innerHTML=html;
     if(anim){L.classList.remove('xfade');void L.offsetWidth;L.classList.add('xfade');}
-    $('count').innerHTML='<b>'+rows.length+'</b> '+(view==='deadlines'?'with deadlines':view==='saved'?'saved':'event'+(rows.length===1?'':'s'))+(view==='saved'?'':' in '+esc(RG.label(region)))+(F.weekend?' · '+short(wkStart)+(wkStart!==sun?'–'+short(sun):''):F['2wk']?' · through '+short(twoWk):'');
+    $('count').innerHTML='<b>'+rows.length+'</b> '+(view==='deadlines'?'with deadlines':view==='saved'?'saved':'event'+(rows.length===1?'':'s'))+(view==='saved'?'':' in '+esc(RG.label(region)))+(F.weekend?' · '+short(wkStart)+(wkStart!==sun?'–'+short(sun):''):F['2wk']?' · through '+short(twoWk):F.day?' · '+fmt(F.day):'');
+    document.dispatchEvent(new CustomEvent('jve:list',{detail:{view:view,day:F.day||null}}));
     $('fSort').parentNode.hidden=view==='deadlines';
   }
   function setView(v,fromNav){
@@ -284,7 +286,7 @@
         '<div class="locked-card"><b>🔒 Event name, exact place, organizer and apply link</b> are part of Vendor Pro ($6/month). Every market in Florida, with the links to apply.</div>';
       ap.href='#';ap.setAttribute('data-unlock','vendor-pro');ap.classList.remove('off');ap.removeAttribute('aria-disabled');ap.removeAttribute('tabindex');ext.style.display='none';ap.firstChild.textContent='Unlock · $6/mo ';
     } else ap.removeAttribute('data-unlock');
-    $('shIcs').disabled=!curA;syncSheetSave();
+    $('shIcs').disabled=!curA;syncSheetSave();if(window.JVE_CAL&&JVE_CAL.sheet)JVE_CAL.sheet(e,curA);
   }
   function showSheet(id,anchor){var e=byId[id];if(!e)return false;curE=e;curA=anchor||e.up[0]||null;fillSheet(e);
     if(!sheet.classList.contains('open')){lastFocus=document.activeElement;sheet.setAttribute('aria-hidden','false');sheet.classList.add('open');scrim.classList.add('open');document.body.classList.add('noscroll');}
@@ -336,7 +338,7 @@
     var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;
     document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},800);}
   $('shIcs').addEventListener('click',function(){
-    var e=curE;if(!e||!curA)return;
+    var e=curE;if(window.JVE_CAL&&JVE_CAL.icon&&JVE_CAL.icon(e))return;if(!e||!curA)return;
     download(vevent(e,curA),e.name.replace(/[^\w]+/g,'-').replace(/^-|-$/g,'').slice(0,50)+'-'+curA+'.ics');toast('Calendar file downloaded');
   });
   function icsAll(){var L=[],n=0;saved.forEach(function(id){var e=byId[id];if(e&&e.up[0]){L=L.concat(vevent(e,e.up[0]));n++;}});
@@ -370,6 +372,11 @@
   window.addEventListener('hashchange',function(){if(!history.state||!history.state.jveSheet)route();});
   window.addEventListener('pageshow',function(){var np=getPrefs();if(JSON.stringify(np)!==JSON.stringify(prefs)){prefs=np;render();}saved=getSaved();badge();var rg=RG.get();if(rg!==region)regionChanged(rg);});
   window.addEventListener('storage',function(ev2){if(ev2.key===PK){prefs=getPrefs();render();}});
+  /* hooks for mycal.js (My calendar strip + Add to my calendar) */
+  window.JVE_APP={events:function(){return ev;},region:function(){return region;},regionLabel:function(){return RG.label(region);},view:function(){return view;},
+    setDay:function(d){F.day=d||false;if(d){F.weekend=false;F['2wk']=false;}if(view!=='events'&&view!=='deadlines'){setView('events');markNav();}render(true);},
+    ics:function(e,d){download(vevent(e,d),String(e.name||'event').replace(/[^\w]+/g,'-').replace(/^-|-$/g,'').slice(0,50)+'-'+d+'.ics');toast('Calendar file downloaded');}};
+  document.dispatchEvent(new Event('jve:app'));
   document.body.setAttribute('data-view',view);
   badge();
   var h0=location.hash.match(/^#e=(.+)$/);

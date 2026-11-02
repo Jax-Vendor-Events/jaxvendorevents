@@ -1,0 +1,90 @@
+/* Jax Vendor Events: My calendar strip, link card and "Add to my calendar" (mycal.js). Uses the site palette variables only. */
+.mycal{margin:4px 0 14px;padding:14px 0 12px;border-radius:20px;background:var(--card);box-shadow:var(--sh1),0 0 0 1px var(--line) inset}
+.mycal[hidden],body[data-view=home] .mycal,body[data-view=saved] .mycal{display:none!important}
+.mycal svg{width:16px;height:16px;flex:none}
+.mchd{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 14px 10px}
+.mchd h2{margin:0;font:600 16px/1.2 var(--sans);color:var(--ink);display:flex;align-items:center;gap:7px;letter-spacing:-.01em}
+.mchd h2 svg{color:var(--sun)}
+.mchd small{font-weight:500;color:var(--mut);font-size:12.5px}
+.mcact{display:flex;gap:6px;align-items:center}
+.mcib,.mctog{border:0;background:var(--bg2);color:var(--ink2);border-radius:999px;height:32px;min-width:32px;display:inline-flex;align-items:center;justify-content:center;font:600 12.5px var(--sans);padding:0 10px;cursor:pointer}
+.mcib{padding:0}.mcib:disabled{opacity:.4}
+.mctog{color:var(--sun)}
+.mcrow{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 6*6px)/7);gap:6px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 14px;padding:2px 14px 4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.mcrow::-webkit-scrollbar{display:none}
+.mcrow .mcday:nth-child(7n+1){scroll-snap-align:start}
+.mcday{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0;border:0;border-radius:14px;background:var(--bg);color:var(--ink);padding:7px 2px 6px;font:500 11px/1.15 var(--sans);cursor:pointer;box-shadow:0 0 0 1px var(--line) inset;transition:transform .15s var(--ease),background .15s}
+.mcday:active{transform:scale(.96)}
+.mcday .w{font-size:10.5px;color:var(--mut);font-weight:600;letter-spacing:.04em}
+.mcday .n{font:700 17px/1.1 var(--sans);font-variant-numeric:tabular-nums}
+.mcday .t{max-width:100%;padding:0 3px;font-size:9.5px;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:11px}
+.mcday .t.mute{opacity:0}
+.mcday .dots{display:flex;gap:2px;min-height:5px}.mcday .dots i{width:5px;height:5px;border-radius:50%;background:var(--sun)}
+.mcday .fr{font-size:9.5px;font-weight:700;color:var(--free);text-transform:uppercase;letter-spacing:.04em;min-height:11px}
+.mcday .c{display:inline-flex;align-items:center;gap:2px;margin-top:2px;font:700 11px var(--sans);color:var(--sea);font-variant-numeric:tabular-nums}
+.mcday .c svg{width:11px;height:11px}.mcday .c.z{color:var(--chev);font-weight:500}
+.mcday.wk{background:var(--bg2)}
+.mcday.free{background:var(--freebg);box-shadow:0 0 0 1px rgba(19,119,58,.18) inset}
+.mcday.free.wk{box-shadow:0 0 0 2px var(--free) inset}
+.mcday.today .n{color:var(--sun)}
+.mcday.on{background:var(--sun);color:var(--onacc);box-shadow:none}
+.mcday.on .w,.mcday.on .t,.mcday.on .fr,.mcday.on .c,.mcday.on .c.z,.mcday.on.today .n{color:var(--onacc)}.mcday.on .dots i{background:var(--onacc)}
+.mcday.past{opacity:.45}
+.mcmon{padding:0 14px}
+.mcmh{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}.mcmh b{font:600 14px var(--sans)}
+.mcwk,.mcgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.mcwk span{text-align:center;font:600 10.5px var(--sans);color:var(--mut);padding-bottom:2px}
+.mcgrid .mcday{padding:5px 1px 4px;border-radius:11px;min-height:54px}
+.mcgrid .mcday .n{font-size:14px}.mcgrid .mcday .fr{font-size:8.5px}.mcgrid .mcday .c{font-size:10.5px;margin-top:0}
+.mcgrid .mcday.out{opacity:.3;cursor:default;background:none}
+.mcpad{display:block}
+.mckey{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;padding:9px 14px 0;font:500 11.5px var(--sans);color:var(--mut)}
+.mckey span{display:inline-flex;align-items:center;gap:4px}.mckey svg{width:12px;height:12px;color:var(--sea)}
+.mckey i{width:8px;height:8px;border-radius:50%;display:inline-block}.mckey .kb{background:var(--sun)}.mckey .kf{background:var(--free)}
+.mcprompt{margin:0 14px 10px;padding:12px;border-radius:14px;background:var(--sunbg);display:flex;flex-direction:column;gap:9px}
+.mcprompt p{margin:0;display:flex;flex-direction:column;gap:2px}.mcprompt b{font-size:14.5px;color:var(--ink)}.mcprompt span{font-size:12.5px;color:var(--ink2)}
+.mcprompt div{display:flex;gap:8px}.mcprompt .btn{margin:0;width:auto;flex:1;min-height:40px;height:40px;font-size:14px}
+.mcdet{margin:10px 14px 0;padding:10px 12px;border-radius:14px;background:var(--bg);box-shadow:0 0 0 1px var(--line) inset;display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
+.mcdet b{font-size:14px}.mcdet ul{margin:4px 0 0;padding:0;list-style:none;font-size:13px;color:var(--ink2)}.mcdet li{padding:1px 0}
+.mcdet p{margin:4px 0 0;font-size:12.5px}
+.mcclr{border:0;background:var(--bg2);color:var(--ink2);width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:none;cursor:pointer}
+.mcfree{color:var(--free);font-weight:600}
+.mcmut{color:var(--mut);font-size:13px}
+.mcwarn{color:var(--hot);font-size:12.5px}
+/* link card */
+#calCard .mch2,.mcbody .mch2{display:flex;align-items:center;gap:8px}#calCard .mch2 svg,.mcbody .mch2 svg{width:20px;height:20px;color:var(--sun)}
+.mcform{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.mcform input{width:100%;box-sizing:border-box;height:48px;border-radius:12px;border:1px solid var(--line2);background:var(--surf);color:var(--ink);padding:0 12px;font:15px var(--sans)}
+.mcform .btn{margin-top:0}
+.mcerr{margin:8px 0 0;padding:9px 11px;border-radius:10px;background:var(--hotbg);color:var(--hot);font-size:13.5px}
+.mcok{display:flex;align-items:center;gap:7px;margin:8px 0 2px}.mcdot{width:9px;height:9px;border-radius:50%;background:var(--free);display:inline-block}
+.mcbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.mcbtns .btn{margin:0;width:auto;flex:1 1 auto;min-height:42px;height:42px;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.mcbtns svg{width:16px;height:16px}.mcb.danger{color:var(--hot)}
+.mclink{display:inline-flex;align-items:center;gap:4px;margin-top:12px;font-weight:600;color:var(--sea);text-decoration:none}.mclink svg{width:14px;height:14px}
+.mchelp{margin-top:12px;border-radius:12px;background:var(--bg);box-shadow:0 0 0 1px var(--line) inset;padding:0 12px}
+.mchelp summary{cursor:pointer;padding:12px 0;font-weight:600;color:var(--sea);list-style:none}.mchelp summary::-webkit-details-marker{display:none}
+.mchelp summary::after{content:' ▾';font-size:12px}.mchelp[open] summary::after{content:' ▴'}
+.mcstep{padding:4px 0 10px;border-top:1px solid var(--line)}.mcstep b{display:flex;align-items:center;gap:7px;margin:8px 0 2px}.mcstep b svg{width:18px;height:18px}
+.mcstep ol{margin:4px 0 0;padding-left:20px;font-size:13.5px;line-height:1.45;color:var(--ink2)}.mcstep li{margin:3px 0}
+.mcpriv{display:flex;gap:8px;align-items:flex-start;margin:12px 0 0;font-size:12.5px;color:var(--mut)}.mcpriv svg{width:15px;height:15px;flex:none;margin-top:1px}
+/* link sheet on Events */
+.mcsheet{position:fixed;inset:0;z-index:80;pointer-events:none}
+.mcscrim{position:absolute;inset:0;background:rgba(var(--scrim-rgb),.5);opacity:0;transition:opacity .2s}
+.mcpanel{position:absolute;left:0;right:0;bottom:0;max-height:88vh;overflow:auto;background:var(--card);border-radius:22px 22px 0 0;padding:6px 4px calc(18px + var(--sab));transform:translateY(105%);transition:transform .28s var(--ease);box-shadow:var(--sh3)}
+.mcsheet.open{pointer-events:auto}.mcsheet.open .mcscrim{opacity:1}.mcsheet.open .mcpanel{transform:none}
+.mcpanel .acard{box-shadow:none;margin:0;padding:14px 16px;background:none}
+.mcpanel .acard h2{font:600 20px/1.2 var(--disp);margin:6px 0 4px}
+.mcx{position:absolute;right:12px;top:12px;width:34px;height:34px;border-radius:50%;border:0;background:var(--bg2);color:var(--ink2);display:flex;align-items:center;justify-content:center;z-index:1}.mcx svg{width:16px;height:16px}
+@media(min-width:720px){.mcpanel{left:50%;right:auto;width:520px;bottom:auto;top:50%;transform:translate(-50%,-40%) scale(.98);opacity:0;border-radius:22px}.mcsheet.open .mcpanel{transform:translate(-50%,-50%);opacity:1}}
+/* add to my calendar (event sheet) */
+.mcadd{margin:0 0 12px;padding:12px;border-radius:14px;background:var(--bg);box-shadow:0 0 0 1px var(--line) inset}
+.mcaddh{margin:0 0 8px;font:600 13px var(--sans);color:var(--ink2)}
+.mcaddb{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.mcab{display:flex;align-items:center;justify-content:center;gap:6px;height:42px;border-radius:11px;border:0;background:var(--card);color:var(--ink);font:600 13px var(--sans);text-decoration:none;box-shadow:0 0 0 1px var(--line2) inset;cursor:pointer;white-space:nowrap}
+.mcab svg{width:17px;height:17px;flex:none}
+.mclock{display:grid!important;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:10px;align-items:center;text-align:left;margin:0!important;height:auto!important;min-height:52px;padding:8px 14px!important;width:100%}
+.mclock svg{grid-row:1/3;width:20px;height:20px;color:var(--gold)}.mclock span{font-weight:600}.mclock small{color:var(--sun);font-weight:600;font-size:12.5px}
+.mcfit{display:flex;align-items:center;gap:6px;margin:0 0 9px;font-size:13px;font-weight:600}.mcfit svg{width:15px;height:15px}
+.mcfit.free{color:var(--free)}.mcfit.busy{color:var(--hot)}
+.mctoast{position:fixed;left:50%;bottom:calc(84px + var(--sab));transform:translate(-50%,20px);opacity:0;background:var(--ink);color:var(--inv);padding:10px 16px;border-radius:999px;font:600 14px var(--sans);transition:.2s;z-index:90;pointer-events:none}
+.mctoast.show{opacity:1;transform:translate(-50%,0)}

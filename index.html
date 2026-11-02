@@ -41,14 +41,15 @@
 <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css?v=bp1">
 <link rel="stylesheet" href="ui.css?v=hm1">
+<link rel="stylesheet" href="mycal.css?v=mc1">
 <script src="theme.js?v=nv2"></script>
 <script src="gate.js"></script>
 <link rel="stylesheet" href="auth.css?v=au1">
-<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script>
+<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script><script src="mycal.js?v=mc1" defer></script>
 <script type="jve/boot" data-src="paid.js?v=pd1"></script>
 <script type="jve/boot" data-src="checkout.js?v=rv3"></script>
 <script type="jve/boot" data-src="logic.js?v=bp1"></script>
-<script type="jve/boot" data-src="app.js?v=hm1"></script><script type="jve/boot" data-src="signup.js?v=ar1"></script>
+<script type="jve/boot" data-src="app.js?v=mc1"></script><script type="jve/boot" data-src="signup.js?v=ar1"></script>
 </head>
 <body>
 <div id="authwait" role="status" aria-live="polite"><div class="aw-box"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo"/></svg><b>Jax Vendor Events</b><p id="authwaitMsg">Checking your login…</p><div class="aw-spin" aria-hidden="true"></div><p><a id="authwaitBtn" class="alink" href="login.html" hidden>Log in</a></p></div></div>
@@ -71,6 +72,7 @@
   <div class="xh-tools"><span class="xchip xsel xreg" id="cRegion"><svg class="ico sm" aria-hidden="true"><use href="#i-pin"/></svg><span class="xl" id="regLbl">Northeast FL</span><svg class="ico sm" aria-hidden="true"><use href="#i-down"/></svg><select id="fRegion" data-region aria-label="Region"><option value="ne">Northeast FL</option></select></span><button type="button" class="xhs" data-go="search" aria-label="Search all events"><svg class="ico sm" aria-hidden="true"><use href="#i-search"/></svg><span>Search</span></button><nav class="xseg" aria-label="Show"><a href="#events" data-seg="events">All</a><a href="#deadlines" data-seg="deadlines">Deadlines</a></nav></div>
 </section>
 <div id="home" class="xhomev" aria-live="polite"></div>
+<div id="mycal" class="mycal" aria-label="My calendar"></div>
 <section class="xfind" id="disc" aria-label="Find events">
   <div class="xsearch"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><label for="fQ" class="sr">Search</label><input id="fQ" type="search" placeholder="Search markets, towns, venues" autocomplete="off" enterkeyhint="search"><button type="button" class="xq-x" id="fQx" aria-label="Clear search" hidden><svg class="ico sm" aria-hidden="true"><use href="#i-x"/></svg></button></div>
   <div class="xchips" id="chips" role="group" aria-label="Filters">
