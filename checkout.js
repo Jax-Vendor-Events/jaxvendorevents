@@ -11,7 +11,7 @@
     'newsletter-sponsor':['Newsletter sponsor','$35/issue'],
     'directory-sponsor':['Directory sponsor','$75/month'],
     'featured-vendor':['Featured vendor','$10/week'],
-    'vendor-pro':['Vendor Pro','$5/month'],
+    'vendor-pro':['Vendor Pro','$6/month'],
     'not-sure':['Not sure yet','']
   };
   var map=null,waiting=[];

@@ -44,7 +44,7 @@ Fonts: Fraunces and Inter (SIL Open Font License), self-hosted in fonts/.
   | `newsletter-sponsor` | Newsletter sponsor | $35/issue |
   | `directory-sponsor` | Directory sponsor | $75/month |
   | `featured-vendor` | Featured vendor | $10/week |
-  | `vendor-pro` | Vendor Pro | $5/month |
+  | `vendor-pro` | Vendor Pro | $6/month |
 
 - **To switch on card checkout for a tier:** paste its Stripe Payment Link (must start with `https://`) as the value, e.g. `"featured-event": "https://buy.stripe.com/..."`, and commit. Nothing else changes; the file is read fresh on every page load (the service worker never caches it). In Stripe, set each Payment Link's *After payment → Redirect* to `https://jaxvendorevents.com/thanks.html?tier=<tier id>` (the custom domain, live since Nov 1, 2026).
 - **Live since Nov 1, 2026 (commit 874189b):** all 7 tiers carry real Stripe Payment Links. The launch offer (pricing) and founding-sponsor offer (media kit) always open the request form, because they need a reply before anyone pays; so does “Ask us” (tier `not-sure`).
