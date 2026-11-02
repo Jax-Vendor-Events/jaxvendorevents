@@ -1,5 +1,5 @@
 /* Jax Vendor Events service worker: offline copy of the app shell + listings. Network first, cache fallback. */
-var CACHE='jve-pd1';
+var CACHE='jve-dm1';
 var SHELL=['./','index.html','newsletter.html','list.html','pricing.html','about.html','terms.html','sponsor.html','thanks.html','checkout.js?v=rv2','thanks.js?v=pd1','forms.js?v=rv1','city.html','join.html','profiles.html','profile.html','styles.css?v=bp1','ui.css?v=pd1','theme.js?v=rv1','logic.js?v=bp1','app.js?v=pd1','signup.js?v=ar1','list.js?v=bp1','join.js?v=ar1','profiles.js?v=pd1','gate.js','paid.js?v=pd1','data/paid.js?v=pd1','data/events.js?v=bp1','data/events.json','data/profiles.js?v=bp1','data/profiles.json','manifest.webmanifest','fonts/fraunces.woff2','fonts/inter.woff2','icons/logo.svg','icons/apple-touch-icon.png','icons/icon-192.png'];
 self.addEventListener('install',function(e){e.waitUntil(caches.open(CACHE).then(function(c){return Promise.all(SHELL.map(function(u){return c.add(u).catch(function(){});}));}).then(function(){return self.skipWaiting();}));});
 self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.filter(function(k){return k.indexOf('jve-')===0&&k!==CACHE;}).map(function(k){return caches.delete(k);}));}).then(function(){return self.clients.claim();}));});

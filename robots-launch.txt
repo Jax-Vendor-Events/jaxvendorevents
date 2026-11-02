@@ -4,4 +4,4 @@ Allow: /
 Disallow: /plan.html
 Disallow: /outreach.html
 Disallow: /newsletter-2.html
-Sitemap: https://jaxvendors.com/sitemap.xml
+Sitemap: https://jaxvendorevents.com/sitemap.xml

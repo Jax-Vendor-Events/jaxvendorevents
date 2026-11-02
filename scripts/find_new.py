@@ -35,7 +35,7 @@ JSON_PATH = os.path.join(ROOT, "data", "events.json")
 SEEN_PATH = os.path.join(ROOT, "data", "finder_seen.json")
 MAX_ADD = 25
 HORIZON_DAYS = 366
-UA = "Mozilla/5.0 (compatible; JaxVendorEventsFinder/1.0; +https://cresl1.github.io/jax-vendor-events/)"
+UA = "Mozilla/5.0 (compatible; JaxVendorEventsFinder/1.0; +https://jaxvendorevents.com/)"
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 DELAY = 1.5
 
