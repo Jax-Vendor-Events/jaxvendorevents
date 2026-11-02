@@ -4,7 +4,8 @@
      Tap a day to filter the list to that date. Days with nothing on the member's calendar say "Free".
    - Event sheet: "Add to my calendar" (Google link, .ics for Apple/Outlook, Outlook web link) for events the visitor
      can see in full; locked teasers show "Unlock with Vendor Pro".
-   - account.html: the "My calendar" card (#calCard) to paste / refresh / unlink the private iCal link.
+   - account.html: the "My calendar" card (#calCard) to link / refresh / unlink the private iCal link. Linking is
+     one-tap style (Nov 2 2026): Google / Apple / Outlook buttons → open the right settings page → "Paste & link".
    The link itself is fetched and parsed only on the server (my-calendar function); it is stored encrypted and never
    comes back to the browser. Self-contained: needs auth.js (JVE_AUTH) and, on index.html, app.js (window.JVE_APP). */
 (function(){
@@ -25,6 +26,8 @@
     lock:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>',
     x:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
     chev:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>',
+    clip:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="2.5"/><path d="M9 4.5h6V3H9zM9.5 13l2 2 3.5-4"/></svg>',
+    chk:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
     tent:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M5 20l7-14 7 14M12 6v14"/></svg>',
     g:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.4 14a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9z"/><path fill="#EA4335" d="M12 6c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.5L6.4 10C7.2 7.7 9.4 6 12 6z"/></svg>',
     ap:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.2 1-4 2.4-1.7 3-.4 7.4 1.3 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.7-1-2.7-4z"/><path d="M14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg>',
@@ -61,10 +64,44 @@
   window.JVE_CAL={state:state,load:load,on:function(f){subs.push(f);},busyOn:busyOn};
 
   /* ---------- link card (account.html #calCard, and the Events "Link calendar" sheet) ---------- */
-  var HELP='<details class="mchelp"><summary>How do I find this?</summary>'+
-    '<div class="mcstep"><b>'+SV.g+' Google Calendar</b><ol><li>On a computer, open <b>calendar.google.com</b> (the phone app doesn’t show this link).</li><li>Click the gear → <b>Settings</b>, then click your calendar under <b>Settings for my calendars</b>.</li><li>Scroll to <b>Integrate calendar</b> and copy <b>Secret address in iCal format</b>.</li><li>Paste it above. (Keep it secret: anyone with it can see that calendar.)</li></ol></div>'+
-    '<div class="mcstep"><b>'+SV.ap+' Apple / iCloud</b><ol><li>On iPhone, open <b>Calendar</b> and tap <b>Calendars</b> at the bottom.</li><li>Tap the <b>ⓘ</b> next to the calendar you use.</li><li>Turn on <b>Public Calendar</b>, tap <b>Share Link…</b> → <b>Copy</b>.</li><li>Paste it above (it starts with webcal://). Tip: make a separate “Markets” calendar if you’d rather not publish your main one.</li></ol></div>'+
-    '<div class="mcstep"><b>'+SV.ol+' Outlook</b><ol><li>Open <b>Outlook on the web</b> (outlook.com or Microsoft 365).</li><li>Gear → <b>Calendar</b> → <b>Shared calendars</b>.</li><li>Under <b>Publish a calendar</b>, pick your calendar and <b>Can view all details</b> (or “when I’m busy”), then <b>Publish</b>.</li><li>Copy the <b>ICS</b> link and paste it above.</li></ol></div></details>';
+  /* ---------- one-tap link (Nov 2 2026, owner: "Make this a one tap to link") ----------
+     Three provider buttons → a 2-step card for that provider: (1) a button that opens the exact page where the link
+     lives, (2) "Paste & link" reads the clipboard and links at once (no Save tap). Pasting into the box links too.
+     Falls back to the paste box when the browser won't let a page read the clipboard. */
+  var IOS=/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1),
+      MAC=/Macintosh/.test(navigator.userAgent)&&!IOS;
+  var PROV={
+    google:{n:'Google',ic:'g',
+      go:[{t:'Open Google settings',u:'https://calendar.google.com/calendar/r/settings'}],
+      s1:'Tap your calendar under <b>Settings for my calendars</b> → <b>Integrate calendar</b> → copy <b>Secret address in iCal format</b>.',
+      tip:'On a phone, if Google opens its app or a basic page, switch your browser to “Desktop site”.',
+      help:['Open <b>calendar.google.com</b> (on a phone, use your browser’s “Desktop site”; the Google Calendar app doesn’t show this link).','Gear → <b>Settings</b> → click your calendar under <b>Settings for my calendars</b>.','Scroll to <b>Integrate calendar</b> and copy <b>Secret address in iCal format</b> (it ends in <b>basic.ics</b>).']},
+    apple:{n:'Apple',ic:'ap',
+      go:IOS||MAC?[{t:'Open the Calendar app',u:'calshow://'},{t:'or iCloud.com',u:'https://www.icloud.com/calendar/',small:1}]:[{t:'Open iCloud Calendar',u:'https://www.icloud.com/calendar/'}],
+      s1:IOS||MAC?'In Calendar: tap <b>Calendars</b> → <b>ⓘ</b> next to yours → turn on <b>Public Calendar</b> → <b>Share Link</b> → <b>Copy</b>.':'On iCloud.com: tap the share icon next to your calendar → tick <b>Public Calendar</b> → <b>Copy Link</b>.',
+      help:['iPhone: <b>Calendar</b> app → <b>Calendars</b> at the bottom → <b>ⓘ</b> next to the calendar you use.','Turn on <b>Public Calendar</b> → <b>Share Link…</b> → <b>Copy</b> (it starts with webcal://).','Rather not publish your main calendar? Make a separate “Markets” calendar and share that one.']},
+    outlook:{n:'Outlook',ic:'ol',
+      go:[{t:'Outlook.com',u:'https://outlook.live.com/calendar/0/options/calendar/SharedCalendars'},{t:'Work / school',u:'https://outlook.office.com/calendar/options/calendar/SharedCalendars'}],
+      s1:'Under <b>Publish a calendar</b> pick your calendar → <b>Can view all details</b> → <b>Publish</b> → copy the <b>ICS</b> link.',
+      help:['Opens Outlook on the web → Settings → Calendar → <b>Shared calendars</b> (sign in if asked).','Under <b>Publish a calendar</b> choose your calendar and <b>Can view all details</b> (or “Can view when I’m busy”), then <b>Publish</b>.','Copy the <b>ICS</b> link (the HTML one works too, we switch it for you).']}
+  };
+  function provOf(u){var h='';try{h=new URL(u.replace(/^webcals?:/i,'https:')).hostname.toLowerCase();}catch(_){}
+    if(/(^|\.)google\.com$/.test(h))return 'google';if(/(^|\.)icloud\.com$/.test(h))return 'apple';
+    if(/(^|\.)(outlook\.live\.com|outlook\.office365\.com|outlook\.office\.com|live\.com|office365\.com|hotmail\.com)$/.test(h))return 'outlook';return '';}
+  /* clean a pasted text into a calendar link, or explain (in plain words) what to copy instead */
+  function cleanLink(raw){
+    var t=String(raw||'').trim(),m=t.match(/(webcals?|https?):\/\/[^\s<>"']+/i);
+    if(!m)return {err:t?'That isn’t a link. Copy the calendar link in step 1, then tap Paste & link again.':'Your clipboard is empty. Copy the calendar link in step 1, then tap Paste & link.'};
+    var u=m[0].replace(/[).,;]+$/,''),p=provOf(u),l=u.toLowerCase();
+    if(p==='google'){
+      if(/\/calendar\/(u\/\d+\/)?embed/.test(l)||/[?&]cid=/.test(l))return {err:'That’s Google’s share/embed link. Copy the “Secret address in iCal format” instead (it ends in basic.ics).',p:p};
+      if(!/\/ical\//.test(l))return {err:'That’s a Google Calendar page, not the calendar link. Copy “Secret address in iCal format” (it ends in basic.ics).',p:p};
+    }
+    if(p==='outlook'&&/\/calendar\.html(\?|$)/.test(l))u=u.replace(/\/calendar\.html(\?|$)/i,'/calendar.ics$1');
+    if(p==='apple'&&/www\.icloud\.com\/(calendar|iclouddrive)/.test(l)&&!/caldav/.test(l))return {err:'That’s an iCloud page link. Turn on Public Calendar and copy its link (it starts with webcal://).',p:p};
+    return {url:u,p:p};
+  }
+  function canRead(){return !!(navigator.clipboard&&navigator.clipboard.readText&&window.isSecureContext);}
   function card(el,opts){
     opts=opts||{};
     function draw(){
@@ -73,29 +110,52 @@
       if(state.linked===null){el.innerHTML=head+'<p class="mcmut">Loading…</p>';return;}
       if(state.linked&&!el._edit){
         var n=(state.busy||[]).length;
-        el.innerHTML=head+'<p class="mcok"><span class="mcdot ok"></span><b>Linked:</b> '+esc(state.label||'your calendar')+'</p>'+
+        el.innerHTML=head+(el._just?'<p class="mcdone big" role="status">'+esc(el._just)+'</p>':'')+'<p class="mcok"><span class="mcdot ok"></span><b>Linked:</b> '+esc(state.label||'your calendar')+'</p>'+
           '<p class="mcmut">'+n+' busy item'+(n===1?'':'s')+' in the next 60 days'+(state.fetched?' · updated '+ago(state.fetched):'')+'. It shows above the Events list. Only you can see it.</p>'+
           (state.warn?'<p class="mcwarn">'+esc(state.warn)+'</p>':'')+
           '<div class="mcbtns"><button type="button" class="btn ghost mcb" data-mc="refresh">'+SV.ref+' Refresh</button><button type="button" class="btn ghost mcb" data-mc="change">Change link</button><button type="button" class="btn ghost mcb danger" data-mc="unlink">Unlink</button></div>'+
           (opts.inSheet?'<button type="button" class="btn mcb" data-mc="close">Done</button>':'<a class="mclink" href="index.html#events">See it on the Events tab '+SV.chev+'</a>');
         return;
       }
-      el.innerHTML=head+'<p>Paste your calendar’s private iCal link once. Your busy days then show above the Events list, with how many markets fall on each day, so open weekends stand out without switching apps.</p>'+
-        '<form class="mcform" novalidate><label class="sr" for="mcUrl'+(opts.inSheet?'S':'')+'">Calendar link</label><input id="mcUrl'+(opts.inSheet?'S':'')+'" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://… or webcal://… (.ics link)" required>'+
-        '<button class="btn" type="submit">Link calendar</button>'+(state.linked?'<button type="button" class="btn ghost mcb" data-mc="cancel">Cancel</button>':'')+'</form>'+
-        '<p class="mcerr" role="alert" hidden></p>'+HELP+
-        '<p class="mcpriv">'+SV.lock+'<span>Works with Google, Apple iCloud and Outlook. We keep the link encrypted, read it only to show <b>you</b> your busy days, and never show it to anyone. Unlink any time.</span></p>';
-      var f=el.querySelector('form');f.addEventListener('submit',function(ev){ev.preventDefault();
-        var inp=f.querySelector('input'),v=inp.value.trim(),er=el.querySelector('.mcerr'),b=f.querySelector('button[type=submit]');
-        if(!/^(https?|webcals?):\/\/\S+$/i.test(v)){er.hidden=false;er.textContent='Paste the full link. It starts with https:// or webcal://';inp.focus();return;}
-        er.hidden=true;b.disabled=true;b.textContent='Checking your calendar…';
-        api('link',{url:v}).then(function(d){el._edit=false;apply(d);cacheSet({linked:true,label:d.label,busy:d.busy,fetched_at:d.fetched_at});toastMsg('Calendar linked: '+(d.busy||[]).length+' busy items found');},
-          function(err){b.disabled=false;b.textContent='Link calendar';er.hidden=false;er.textContent=(err&&err.msg)||'That link did not work. Check it and try again.';});
-      });
+      var sid=opts.inSheet?'S':'',pk=el._prov||'',P=PROV[pk];
+      var go=P?P.go.map(function(g,i){return '<a class="'+(g.small?'mcgo2':'btn mcgo'+(i?' ghost':''))+'" href="'+g.u+'" target="_blank" rel="noopener">'+esc(g.t)+(g.small?'':' <span aria-hidden="true">↗</span>')+'</a>';}).join(''):'';
+      el.innerHTML=head+'<p class="mclede">See your busy and free days right above the Events list. Pick your calendar:</p>'+
+        '<div class="mcprov" role="group" aria-label="Your calendar">'+['google','apple','outlook'].map(function(k){return '<button type="button" class="mcpv'+(k===pk?' on':'')+'" data-pv="'+k+'" aria-pressed="'+(k===pk)+'">'+SV[PROV[k].ic]+'<span>'+PROV[k].n+'</span></button>';}).join('')+'</div>'+
+        (P?'<ol class="mc2">'+
+          '<li><span class="mcn">1</span><div><b class="mc2h">Copy your '+P.n+' calendar link</b><p>'+P.s1+'</p><div class="mcgos">'+go+'</div>'+(P.tip?'<p class="mctip">'+P.tip+'</p>':'')+'</div></li>'+
+          '<li><span class="mcn">2</span><div><b class="mc2h">Come back and tap</b><button type="button" class="btn mcpaste" data-mc="paste">'+SV.clip+'<span>Paste &amp; link</span></button></div></li></ol>':'')+
+        '<form class="mcform" novalidate><label class="mcpl" for="mcUrl'+sid+'">'+(P?'Or paste it here':'Already copied it? Paste here')+'</label><input id="mcUrl'+sid+'" type="url" inputmode="url" enterkeyhint="go" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://… or webcal://…"></form>'+
+        '<p class="mcerr" role="alert" hidden></p><p class="mcdone" role="status" hidden></p>'+
+        (state.linked?'<button type="button" class="btn ghost mcb mccancel" data-mc="cancel">Cancel</button>':'')+
+        (P?'<details class="mchelp"><summary>Need help?</summary><div class="mcstep"><b>'+SV[P.ic]+' '+P.n+', step by step</b><ol>'+P.help.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ol></div></details>':'')+
+        '<p class="mcpriv">'+SV.lock+'<span>Kept encrypted and private: only <b>you</b> see your busy days. Unlink any time.</span></p>';
+      var f=el.querySelector('form'),inp=f.querySelector('input'),er=el.querySelector('.mcerr'),ok=el.querySelector('.mcdone'),busy=false,last='';
+      function msg(t){ok.hidden=true;er.hidden=!t;er.textContent=t||'';}
+      function go2(raw,src){
+        if(busy)return;if(src!=='clip'&&!String(raw||'').trim()){msg('Paste your calendar link first.');return;}var c=cleanLink(raw);
+        if(c.err){msg(c.err);if(src==='clip'){inp.value='';}return;}
+        if(c.url===last&&src==='input')return;last=c.url;
+        if(c.p&&c.p!==el._prov&&src!=='clip'){/* auto-detect: highlight the right provider */var bb=el.querySelectorAll('.mcpv');for(var i=0;i<bb.length;i++){var on=bb[i].getAttribute('data-pv')===c.p;bb[i].classList.toggle('on',on);bb[i].setAttribute('aria-pressed',on);}}
+        inp.value=c.url;busy=true;msg('');ok.hidden=false;ok.className='mcdone wait';ok.innerHTML='<span class="mcspin"></span> Linking'+(c.p?' your '+PROV[c.p].n+' calendar':'')+'…';
+        var pb=el.querySelector('.mcpaste');if(pb)pb.disabled=true;inp.disabled=true;
+        api('link',{url:c.url}).then(function(d){
+          var n=(d.busy||[]).length;el._edit=false;el._prov='';el._just='Linked ✓ '+n+' event'+(n===1?'':'s')+' found';
+          apply(d);cacheSet({linked:true,label:d.label,busy:d.busy,fetched_at:d.fetched_at});
+        },function(err){busy=false;last='';if(pb)pb.disabled=false;inp.disabled=false;msg((err&&err.msg)||'That link didn’t work. Copy it again and retry.');});
+      }
+      el._go=go2;
+      f.addEventListener('submit',function(ev){ev.preventDefault();go2(inp.value,'submit');});
+      inp.addEventListener('paste',function(ev){var t=ev.clipboardData&&ev.clipboardData.getData('text');if(t){ev.preventDefault();inp.value=t.trim();go2(t,'paste');}});
+      inp.addEventListener('input',function(){clearTimeout(inp._t);var v=inp.value.trim();if(/^(webcals?|https?):\/\/\S{12,}$/i.test(v))inp._t=setTimeout(function(){go2(v,'input');},700);else if(!v)msg('');});
     }
-    el.addEventListener('click',function(ev){var b=ev.target.closest('[data-mc]');if(!b)return;var k=b.getAttribute('data-mc');
-      if(k==='refresh'){b.disabled=true;b.lastChild.textContent=' Refreshing…';load(true);}
-      else if(k==='change'){el._edit=true;draw();var i=el.querySelector('input');if(i)i.focus();}
+    el.addEventListener('click',function(ev){var pv=ev.target.closest('[data-pv]');
+      if(pv){var k2=pv.getAttribute('data-pv');el._prov=el._prov===k2?'':k2;draw();var c2=el.querySelector('.mc2');if(c2&&c2.scrollIntoView&&opts.inSheet)c2.scrollIntoView({block:'nearest',behavior:'smooth'});return;}
+      var b=ev.target.closest('[data-mc]');if(!b)return;var k=b.getAttribute('data-mc');
+      if(k==='refresh'){el._just='';b.disabled=true;b.lastChild.textContent=' Refreshing…';load(true);}
+      else if(k==='change'){el._edit=true;el._just='';draw();}
+      else if(k==='paste'){var inp=el.querySelector('.mcform input'),done=function(){};
+        if(!canRead()){inp.focus();el.querySelector('.mcerr').hidden=false;el.querySelector('.mcerr').textContent='Your browser won’t let us read the clipboard. Long-press the box above and tap Paste.';return;}
+        navigator.clipboard.readText().then(function(t){el._go(t,'clip');},function(){inp.focus();var e=el.querySelector('.mcerr');e.hidden=false;e.textContent='Paste wasn’t allowed. Long-press the box above and tap Paste. It links by itself.';});}
       else if(k==='cancel'){el._edit=false;draw();}
       else if(k==='close'){closeSheet();}
       else if(k==='unlink'){if(!confirm('Unlink your calendar? Your busy days will stop showing on Events.'))return;b.disabled=true;
@@ -113,7 +173,7 @@
       document.body.appendChild(mcs);mcs.addEventListener('click',function(e){if(e.target.closest('[data-mcclose]'))closeSheet();});
       document.addEventListener('keydown',function(k){if(k.key==='Escape'&&mcs.classList.contains('open'))closeSheet();});
       card(mcs.querySelector('.mcbody'),{inSheet:true});}
-    mcs.classList.add('open');document.body.classList.add('noscroll');setTimeout(function(){var i=mcs.querySelector('input');if(i&&!state.linked)i.focus();},250);
+    mcs.classList.add('open');document.body.classList.add('noscroll');
   }
   function closeSheet(){if(mcs){mcs.classList.remove('open');document.body.classList.remove('noscroll');}}
 
