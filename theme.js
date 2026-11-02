@@ -65,7 +65,8 @@
   I.mail='<rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3.8 7.2l8.2 5.8 8.2-5.8"/>';
   I.login='<path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/>';
   I.out='<path d="M15 17l5-5-5-5M20 12H8"/><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"/>';
-  function li(l){return '<li><a href="'+l[0]+'"'+(l[4]||'')+'><span class="mi">'+svg(I[l[1]])+'</span><span class="mt"><b>'+esc(l[2])+'</b>'+(l[3]?'<small>'+esc(l[3])+'</small>':'')+'</span><span class="mc">'+svg(I.chev)+'</span></a></li>';}
+  var MEMBER=/^(list|join|profiles)\.html/;   /* pages that ask for a free account first (auth.js data-auth="member") */
+  function li(l){return '<li><a href="'+l[0]+'"'+(l[4]||'')+(MEMBER.test(l[0])?' data-member':'')+'><span class="mi">'+svg(I[l[1]])+'</span><span class="mt"><b>'+esc(l[2])+'</b>'+(l[3]?'<small>'+esc(l[3])+'</small>':'')+'</span><span class="mc">'+svg(I.chev)+'</span></a></li>';}
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
   var TN={'featured-event':'Featured event','deadline-spotlight':'Deadline spotlight','organizer-plus':'Organizer Plus','newsletter-sponsor':'Newsletter sponsor','directory-sponsor':'Directory sponsor','featured-vendor':'Featured vendor','vendor-pro':'Vendor Pro'};
   var authDone=false;
