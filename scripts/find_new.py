@@ -10,7 +10,13 @@ What it does:
     is checked every run) - today: FairsAndFestivals.net (Florida list) and
     FestivalNet (Florida list), both vendor-centric show directories, plus
     Allevents Jacksonville (market / craft-fair pages, strict keyword filter);
-  * keeps only future events in the 7 Northeast Florida counties (by city);
+  * FFEA (Florida Festivals & Events Association, ffea.com/events): its own public
+    JSON calendar feed (services/eventsservice.asmx, the same calls its events page
+    makes), statewide; vendor-relevant festivals/fairs/markets only;
+  * keeps only future events: the 7 Northeast Florida counties for the Jacksonville
+    sources, all of Florida for statewide sources (FFEA); every listing is tagged
+    with its county and region (scripts/fl_places.json) and new ones with the
+    town-center lat/lng (never the venue's exact point);
   * skips anything already in data/events.json (same source URL, or a similar
     name with a nearby date, or the same active listing) and anything it has
     seen before (data/finder_seen.json);
@@ -33,7 +39,7 @@ import urllib.error
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JSON_PATH = os.path.join(ROOT, "data", "events.json")
 SEEN_PATH = os.path.join(ROOT, "data", "finder_seen.json")
-MAX_ADD = 25
+MAX_ADD = 40
 HORIZON_DAYS = 366
 UA = "Mozilla/5.0 (compatible; JaxVendorEventsFinder/1.0; +https://jaxvendorevents.com/)"
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
@@ -58,6 +64,13 @@ for county, names in {
 }.items():
     for n in names.split("|"):
         CITY_COUNTY[n] = county
+
+# all of Florida: place -> [county, lat, lng] (town centers), county -> region (scripts/fl_places.json)
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fl_places.json"), encoding="utf-8") as _f:
+    FL = json.load(_f)
+NE_COUNTIES = ("Duval", "St. Johns", "Clay", "Nassau", "Baker", "Flagler", "Putnam")
+REGION_OF = FL["county_region"]
+FL_PLACES = FL["places"]
 
 MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september",
           "october", "november", "december"]
@@ -145,6 +158,37 @@ def county_of(city):
     c = re.sub(r",?\s*(fl|florida)\.?$", "", c).strip()
     return CITY_COUNTY.get(c)
 
+
+def _miles(a, b):
+    import math
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 3958.8 * 2 * math.asin(math.sqrt(h))
+
+
+def place_of(city, lat=None, lng=None):
+    """-> (county, town-center lat, lng) anywhere in Florida, or (None, None, None).
+    The Northeast Florida table above wins (it knows neighborhoods); then Census places;
+    then, when the source gives coordinates, the nearest Census place within 15 miles."""
+    c = (city or "").strip().lower()
+    c = re.sub(r",?\s*(fl|florida)\.?$", "", c).strip()
+    c = re.sub(r"\s+", " ", c)
+    variants = [c, c.replace("saint ", "st. "), re.sub(r"^st ", "st. ", c), c.replace("st. ", "saint "),
+                re.sub(r"^ft\.? ", "fort ", c), re.sub(r"\s+(beach|springs)$", "", c)]
+    hit = next((FL_PLACES[v] for v in variants if v in FL_PLACES), None)
+    ne = CITY_COUNTY.get(c)
+    if ne:
+        if hit and hit[0] == ne:
+            return ne, hit[1], hit[2]
+        k = FL["county_center"].get(ne)
+        return ne, k[0], k[1]
+    if hit:
+        return hit[0], hit[1], hit[2]
+    if lat is not None and lng is not None and 24.3 <= lat <= 31.1 and -87.7 <= lng <= -79.8:
+        best = min(FL_PLACES.values(), key=lambda p: _miles((lat, lng), (p[1], p[2])))
+        if _miles((lat, lng), (best[1], best[2])) <= 15:
+            return best[0], best[1], best[2]
+    return None, None, None
 
 def nice_city(city):
     c = clean(city) or ""
@@ -265,8 +309,95 @@ def src_allevents():
     return out
 
 
+# FFEA: the calendar's own JSON service (the calls ffea.com/events makes in the browser). Statewide.
+FFEA_SVC = "https://www.ffea.com/services/eventsservice.asmx/"
+FFEA_PAGE = "https://www.ffea.com/events"
+# FFEA lists every kind of member event; keep festivals, fairs, markets and other events that take vendors
+FFEA_KEEP = re.compile(
+    r"fest\b|festival|\bfair\b|bazaar|market|art show|art in the park|arts? (?:walk|night)|car.{0,30}show|"
+    r"craft|food truck|\bbbq\b|barbecue|pig jam|seafood|oyster|fun day|first friday|river nights|noche buena|"
+    r"christmas in|holiday nights|winter ?wonderland|light up|ranchapalooza|expo\b", re.I)
+FFEA_DROP = re.compile(
+    r"opera|theater|theatre|dinner|dining|giveaway|\bball\b|\btours?\b|parade|tree lighting|golf|basketball|"
+    r"disco|ceremony|salute|orientation|concert|band\b|open house|anniversary|reenactment|exhibit|showcase|"
+    r"networking|mixer|cocktail|webinar|meetup|seminar|committee|sponsorships? (?:now )?available|air show|"
+    r"film festival|fringe|winter ?wonderland|holiday nights|polar express|grinch|snoopy|scrooge", re.I)
+FFEA_DROP_CATS = {14, 45, 47}     # FFEA's own member events, sports, networking
+
+
+def _ffea_post(method, body):
+    url = FFEA_SVC + method
+    if not allowed(url):
+        raise RuntimeError("robots.txt disallows " + url)
+    time.sleep(DELAY)
+    req = urllib.request.Request(url, data=body.encode("utf-8"), method="POST", headers={
+        "User-Agent": UA, "Content-Type": "application/json; charset=utf-8", "Accept": "application/json",
+        "Referer": FFEA_PAGE})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.loads(r.read().decode("utf-8", "replace"))["d"]
+
+
+def src_ffea():
+    flags = ("'keywords':'%25%25','isFeatured':'false','fanPicks':'false','pastEvents':'false','allEvents':'false',"
+             "'memberEvents':'false','memberOnly':'false','showCategoryExceptionID':0,'isolatedSchedule':0,"
+             "'customFieldFilters':[], 'searchInDescription':true")
+    days = _ffea_post("GetEventDays", "{'day':'','startDate':'','endDate':'','categoryID':0,'currentUserItems':'false',"
+                                      "'tagID':0,'myPicks':'false'," + flags + "}")
+    if not days:
+        return []
+    d = _ffea_post("GetEventDaysByList", "{'dates':'" + ",".join(days) + "','day':'','categoryID':0,'tagID':0," + flags + "}")
+    by_id = {}
+    for day in d.get("Days") or []:
+        m = re.match(r"(\d\d)/(\d\d)/(\d{4})$", day.get("DateString") or "")
+        if not m:
+            continue
+        iso = f"{m.group(3)}-{m.group(1)}-{m.group(2)}"
+        for t in day.get("Times") or []:
+            for it in t.get("Items") or []:
+                if it.get("EventID") is None:
+                    continue
+                e = by_id.setdefault(it["EventID"], {"it": it, "dates": set()})
+                e["dates"].add(iso)
+    out = []
+    for e in by_id.values():
+        it = e["it"]
+        if it.get("IsPrivate") or it.get("IsMemberOnly"):
+            continue
+        name = clean(it.get("Name"))
+        if not name:
+            continue
+        name = re.sub(r"\?(?=\w)", " ", name).strip()          # their feed turns some spaces into "?"
+        cats = {c.get("CategoryID") for c in it.get("CategoryMaps") or []}
+        if cats & FFEA_DROP_CATS or FFEA_DROP.search(name) or not FFEA_KEEP.search(name):
+            out.append({"name": name, "dates": [], "skip": "not a vendor event"})
+            continue
+        loc = next((L for L in it.get("Locations") or [] if L.get("City") or L.get("Latitude")), {}) or {}
+        if (loc.get("State") or "FL").strip().upper() not in ("FL", "FLORIDA"):
+            continue
+        city = clean(loc.get("City")) or ""
+        if city.isupper():
+            city = city.title()
+        tags = [t.get("Tag") for t in it.get("Tags") or [] if t.get("Tag")]
+        url = it.get("DetailURL") or FFEA_PAGE
+        out.append({
+            "name": name, "dates": sorted(e["dates"]), "city": nice_city(city),
+            "venue": clean(loc.get("Name")), "address": clean((loc.get("AddressLine1") or "").replace("?", " ")),
+            "time": clean(it.get("EventTimeRangeString")), "url": url, "source": "ffea",
+            "organizer_site": clean(it.get("ExternalLink")),
+            "desc": (clean(it.get("ShortDescription")) or "")[:300], "vendor_site": True,
+            "scope": "florida", "lat": loc.get("Latitude"), "lng": loc.get("Longitude"), "ffea_tags": tags,
+        })
+    return out
+
+
 SOURCES = [("fairsandfestivals.net", src_fairsandfestivals), ("festivalnet.com", src_festivalnet),
-           ("allevents.in", src_allevents)]
+           ("allevents.in", src_allevents), ("ffea", src_ffea)]
+# Note (Nov 1, 2026): FestivalNet, AllEvents and FairsAndFestivals.net all forbid scraping in their terms of
+# use; they stay limited to the Northeast Florida pages they were already read for (not expanded statewide)
+# pending the owner's call. Set JVE_FINDER_SKIP="festivalnet.com,allevents.in,fairsandfestivals.net" to turn
+# any of them off without a code change.
+_SKIP = {x.strip() for x in os.environ.get("JVE_FINDER_SKIP", "").split(",") if x.strip()}
+SOURCES = [(n, f) for n, f in SOURCES if n not in _SKIP]
 
 
 # ---------- matching ----------
@@ -355,7 +486,7 @@ def main(argv):
     ids = {e.get("id") for e in events}
 
     report = {"run_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-              "today": t_iso, "sources": {}, "added": [], "skipped": {}}
+              "today": t_iso, "sources": {}, "added": [], "added_by_region": {}, "skipped": {}}
 
     # 1) gather
     cands = []
@@ -377,9 +508,14 @@ def main(argv):
     for c in cands:
         if not c.get("name"):
             continue
-        county = county_of(c.get("city"))
+        if c.get("skip"):
+            skip(c["skip"]); continue
+        county, plat, plng = place_of(c.get("city"), c.get("lat"), c.get("lng"))
         if not county:
+            skip("place not found in Florida"); continue
+        if c.get("scope") != "florida" and county not in NE_COUNTIES:
             skip("outside the 7 counties"); continue
+        c["plat"], c["plng"] = plat, plng
         ds = sorted(x for x in c["dates"] if t_iso <= x <= horizon)
         if not ds:
             skip("past or too far out"); continue
@@ -453,25 +589,41 @@ def main(argv):
             "verify_status": "unverified", "verified_on": None, "source_url": c["url"], "verify_note": note,
             "time": c.get("time") or next((s.get("time") for s in srcs if s.get("time")), None),
             "found_by": "auto-finder", "found_on": t_iso, "found_via": sorted({s["source"] for s in srcs}),
+            "region": REGION_OF.get(c["county"]),
+            "lat": round(c["plat"], 3) if c.get("plat") is not None else None,
+            "lng": round(c["plng"], 3) if c.get("plng") is not None else None,
         }
         added.append(e)
         existing.append({"toks": c["toks"], "dates": c["dates"], "county": c["county"], "city": (c["city"] or "").lower(), "urls": urls, "active": True, "recurring": False, "id": nid})
         for u in urls:
             seen["items"][u] = {"status": "added", "id": nid, "first_seen": t_iso, "last_date": c["dates"][-1]}
         report["added"].append({"id": nid, "name": c["name"], "dates": c["dates"], "city": c["city"],
-                                "via": e["found_via"]})
+                                "county": c["county"], "region": e["region"], "via": e["found_via"]})
+        rg = e["region"] or "?"
+        report["added_by_region"][rg] = report["added_by_region"].get(rg, 0) + 1
 
     # forget seen items whose dates have passed (keeps the file small)
     seen["items"] = {k: v for k, v in seen["items"].items() if (v.get("last_date") or "9999") >= t_iso}
     seen["last_run"] = report
 
-    log(f"added {len(added)} | skipped {json.dumps(report['skipped'])}")
+    log(f"added {len(added)} | by region {json.dumps(report['added_by_region'])} | skipped {json.dumps(report['skipped'])}")
     for a in report["added"]:
         log("  +", ",".join(a["dates"]), a["city"], "|", a["name"], "|", ",".join(a["via"]))
     if dry:
         return 0
 
-    if added:
+    # every listing carries its region (backward-compatible extra field; counties map to regions in fl_places.json)
+    tagged = 0
+    for ev in events:
+        if not ev.get("region") and REGION_OF.get(ev.get("county")):
+            ev["region"] = REGION_OF[ev["county"]]
+            tagged += 1
+    if data.get("regions") != FL["regions"]:
+        data["regions"] = FL["regions"]
+        tagged += 1
+    if tagged:
+        log(f"region tagged on {tagged} existing listing(s)")
+    if added or tagged:
         data["events"] = events + added
         out = json.dumps(data, indent=1, ensure_ascii=False)
         assert len(json.loads(out)["events"]) == len(events) + len(added)
