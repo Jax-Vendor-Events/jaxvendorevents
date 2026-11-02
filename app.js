@@ -220,6 +220,8 @@
     html+='<section class="horg2"><span class="horg-ic" aria-hidden="true">'+ico('mega')+'</span><div class="horg-t"><span class="hk">For organizers</span><h3>Run a market?</h3><p>List it free so vendors across Florida find it. Want more applicants? Get featured.</p>'+
       '<div class="hbtns"><a class="btn sm" href="list.html">List it free</a><a class="btn ghost sm" href="pricing.html#organizers">Get featured</a></div></div></section>';
     H.innerHTML=html;
+    /* logged in: their own dashboard on top (dash.js) */
+    if(window.JVE_DASH&&window.JVE_DASH.on())window.JVE_DASH.mount(H,{ev:ev,mine:mine,floor:floor,byId:byId,PX:PX,inRange:inRange,hasDl:hasDl,days:days,go:go,getSaved:getSaved,regionLabel:RG.label(region)});
   }
   function go(k){
     Object.keys(F).forEach(function(x){F[x]=false;});fC.value=fK.value='';fQ.value='';
