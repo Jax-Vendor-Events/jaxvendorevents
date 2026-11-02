@@ -90,3 +90,10 @@ small,.sub,.tnote,.hint,.note,.mut{line-height:1.45}
 /* Saved: one count line, not two (the list header already says "3 saved") */
 body[data-view=saved] .savedbar>span{display:none}
 body[data-view=saved] .savedbar{justify-content:flex-start}
+
+/* Pro page sample cards: the little date badge lines no longer collide */
+.prdate{height:50px!important;gap:2px}
+.prdate small{font-size:11px!important;line-height:1.15!important}
+.prdate b{line-height:1.1!important}
+.prplan .pp small{font-size:12.5px!important}
+.prq small{font-size:13.5px!important;line-height:1.4!important}
