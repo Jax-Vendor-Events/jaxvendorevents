@@ -58,7 +58,7 @@
     if(rq)return;
     var a=e.target.closest&&e.target.closest('[data-buy]');if(!a)return;
     var id=a.getAttribute('data-buy');
-    if(map&&url(id)){if(a.getAttribute('href')!==url(id)){e.preventDefault();window.open(url(id),'_blank','noopener');}return;} /* real checkout link opens in a new tab */
+    if(map&&url(id)){if((a.getAttribute('href')||'').split('?')[0]!==url(id)){e.preventDefault();window.open(url(id),'_blank','noopener');}return;} /* real checkout link opens in a new tab */
     if(!map){e.preventDefault();waiting.push(function(){var u=url(id);if(u)location.href=u;else if(!pick(id,a.getAttribute('data-offer')==='launch',true))location.href=a.getAttribute('href');});return;}
     if(form){e.preventDefault();pick(id,a.getAttribute('data-offer')==='launch',true);try{history.replaceState(null,'','?tier='+encodeURIComponent(id)+'#get-featured');}catch(_){}}
   });
