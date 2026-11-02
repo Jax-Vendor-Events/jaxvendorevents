@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="locked">
+<html lang="en" class="locked" data-auth="public">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -17,15 +17,34 @@
 <meta name="apple-mobile-web-app-title" content="Jax Vendors">
 <meta name="application-name" content="Jax Vendor Events">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>Outreach kit — Jax Vendor Events</title>
-<meta name="description" content="Internal outreach drafts. Private draft.">
+<title>Jax Vendor Events — every vendor market in Northeast Florida</title>
+<meta name="description" content="Every vendor market, craft fair and pop-up in Northeast Florida with booth fees and deadlines. Free account; Vendor Pro unlocks names and apply links.">
+<!-- share -->
+<link rel="canonical" href="https://jaxvendorevents.com/welcome.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jax Vendor Events">
+<meta property="og:title" content="Jax Vendor Events — every vendor market in Northeast Florida">
+<meta property="og:description" content="Every vendor market, craft fair and pop-up in Northeast Florida with booth fees and deadlines. Free account; Vendor Pro unlocks names and apply links.">
+<meta property="og:url" content="https://jaxvendorevents.com/welcome.html">
+<meta property="og:image" content="https://jaxvendorevents.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jax Vendor Events — every vendor market in Northeast Florida, one place">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jax Vendor Events — every vendor market in Northeast Florida">
+<meta name="twitter:description" content="Every vendor market, craft fair and pop-up in Northeast Florida with booth fees and deadlines. Free account; Vendor Pro unlocks names and apply links.">
+<meta name="twitter:image" content="https://jaxvendorevents.com/img/og.jpg">
+<!-- /share -->
 <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css?v=bp1">
 <link rel="stylesheet" href="ui.css?v=pd1">
 <script src="theme.js?v=ac1"></script>
 <script src="gate.js"></script>
-<script src="data/paid.js?v=pd1" defer></script><script src="paid.js?v=pd1" defer></script>
+<link rel="stylesheet" href="auth.css?v=au1">
+<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script>
+
 
 </head>
 <body>
@@ -42,54 +61,19 @@
 </div>
 <header class="top"><div class="wrap"><a class="brand" href="index.html" aria-label="Jax Vendor Events home"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo"/></svg><span class="wm"><b>Jax Vendor Events</b><small>Northeast Florida</small></span></a><nav class="nav" aria-label="Main"><a href="index.html" data-nav="events"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Events</span></a><a href="index.html#deadlines" data-nav="deadlines"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12.5" r="8.5"/><path d="M12 8v4.5l3 2"/></svg><span>Deadlines</span></a><a href="index.html#saved" data-nav="saved"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.5 8 3.6 4.5 7.2 4.5c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.6 0 5.7 3.5 4.5 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/></svg><span>Saved</span></a><a href="newsletter.html" data-nav="newsletter"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3.8 7.2l8.2 5.8 8.2-5.8"/></svg><span>Newsletter</span></a><button type="button" data-open-more data-nav="more" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="12" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="18.5" cy="12" r="1.5" fill="currentColor"/></svg><span>More</span></button></nav></div></header>
 <main class="wrap" id="main">
-<section class="ph">
-  <span class="eyebrow"><svg class="ico sm" aria-hidden="true"><use href="#i-send"/></svg> Outreach kit · internal · <span class="tag" style="margin-left:4px">DRAFTS</span></span>
-  <h1>Ready-to-send drafts</h1>
-  <p class="lead">Copy, personalize and send from your own accounts. Nothing here has been sent. Replace [site link] once the domain is live. Removed before launch.</p>
+<section class="welcome-hero">
+  <span class="eyebrow"><svg class="ico sm" aria-hidden="true"><use href="#i-star"/></svg> Northeast Florida</span>
+  <h1>Every vendor market in Northeast Florida, one place.</h1>
+  <p>Markets, craft fairs, pop-ups and festivals across Duval, St. Johns, Clay, Nassau, Baker, Flagler and Putnam, with booth fees and application deadlines, checked against each organizer’s own page.</p>
+  <div class="btnrow" style="margin-top:16px"><a class="btn" href="login.html?mode=signup" style="width:auto;padding:0 22px">Create a free account</a><a class="btn ghost" href="login.html" style="width:auto;padding:0 22px">Log in</a></div>
 </section>
-<nav class="toc"><a href="#dms">10 vendor DMs</a><a href="#fb">Facebook post</a><a href="#org">Organizer email</a><a href="#spon">Sponsor email</a></nav><h2 class="pricegroup" id="dms">10 personal DMs to vendors</h2><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>1. A vendor you set up next to at a market</b><button class="btn ghost" type="button" data-copy="t22186064" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t22186064" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hey [Name]! It was good being next to you at [market]. I put every vendor market in NE Florida in one list (fees, deadlines, apply links), plus a short email every Monday. Want me to add you? It&#x27;s free: [site link]. And if you know a market I&#x27;m missing, tell me and I&#x27;ll add it.</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>2. A jewelry/accessories vendor you follow</b><button class="btn ghost" type="button" data-copy="t72285936" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t72285936" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hi [Name], love your pieces. Quick one: I built a free list of every vendor market from Fernandina to Palm Coast, with the booth fee and deadline for each. Comes as one email on Mondays. Want in? [site link]</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>3. A food or baked-goods vendor</b><button class="btn ghost" type="button" data-copy="t54859072" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t54859072" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hey [Name]! I made a free weekly list of NE Florida markets and pop-ups, with which ones take food vendors, the fee and the deadline. Thought it might save you some scrolling: [site link]. Any market you love that I should add?</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>4. A candle/soap/body-care vendor</b><button class="btn ghost" type="button" data-copy="t60932602" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t60932602" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hi [Name], I&#x27;ve been putting together every vendor market in Jax + St. Johns + Clay in one place, holiday markets included. Free, one email a week. Want me to send it your way? [site link]</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>5. A boutique/clothing vendor</b><button class="btn ghost" type="button" data-copy="t36521827" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t36521827" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hey [Name]! Holiday market season is nuts, so I built one list of every NE FL market with fees and deadlines. It&#x27;s free: [site link]. If it&#x27;s useful, I&#x27;d love for you to share it with your vendor friends.</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>6. A vendor who mentioned they&#x27;re looking for markets</b><button class="btn ghost" type="button" data-copy="t73558068" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t73558068" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">[Name], you said you were looking for more markets. I finally put them all in one place: [site link]. Filter by county and fee, and there&#x27;s a free Monday email with the deadlines coming up.</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>7. A newer vendor</b><button class="btn ghost" type="button" data-copy="t15832666" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t15832666" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hi [Name]! Starting out, the hardest part is finding markets and knowing what they cost. I made a free list for NE Florida with fees, deadlines and how to sign up with the city: [site link]. Hope it helps!</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>8. A vendor who does St. Augustine / St. Johns</b><button class="btn ghost" type="button" data-copy="t87258047" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t87258047" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hey [Name], I built a free list of every vendor market around NE Florida, St. Augustine and Ponte Vedra included, checked every week. One email on Mondays: [site link]. Know any St. Johns markets I&#x27;m missing?</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>9. A vendor friend who runs a group chat</b><button class="btn ghost" type="button" data-copy="t29599341" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t29599341" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hey [Name]! Made something for the vendor crew: every NE FL market in one list with fees + deadlines, free weekly email. Mind dropping it in your group? [site link] Tell me if anything&#x27;s wrong and I&#x27;ll fix it.</div></div><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>10. An artist/maker vendor</b><button class="btn ghost" type="button" data-copy="t21462623" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t21462623" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hi [Name], I put together a free directory of art and vendor markets across Northeast Florida (Duval to Flagler), with deadlines and apply links. Weekly email on Mondays: [site link]. Any art markets I should add?</div></div><h2 class="pricegroup" id="fb">Facebook group post</h2><p class="note">Check each group's rules first; post as a vendor, not an ad.</p><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>Facebook group post</b><button class="btn ghost" type="button" data-copy="t36628804" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t36628804" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Hi everyone! I&#x27;m a Jacksonville jewelry vendor and I got tired of hunting through a dozen groups every week to find markets, so I put every vendor market I could find in Northeast Florida in one free list: Duval, St. Johns, Clay, Nassau, Baker, Flagler and Putnam.
-
-Each listing has the date, the booth fee (when the organizer posts it), the application deadline and a link to apply. We check the next 3 weeks against each organizer&#x27;s page every week.
-
-There&#x27;s also a free email every Monday with this week&#x27;s markets, deadlines coming up and free-to-vend spots.
-
-[site link]
-
-If you run a market or know one I&#x27;m missing, comment below and I&#x27;ll add it. Free to list, always. (Admins: happy to remove this if it&#x27;s not allowed here.)</div></div><h2 class="pricegroup" id="org">Organizer pitch email</h2><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>Organizer email</b><button class="btn ghost" type="button" data-copy="t46803916" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t46803916" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Subject: Free listing for [Event name] on Jax Vendor Events
-
-Hi [Organizer name],
-
-I&#x27;m Luis, a Jacksonville vendor. I run Jax Vendor Events, a free list of every vendor market in Northeast Florida plus a weekly email that vendors use to plan their next markets and catch deadlines.
-
-[Event name] on [date] is already listed here: [listing link]. Could you check the details (fee, deadline, apply link) and tell me if anything&#x27;s off?
-
-If you still have booths to fill, two easy options:
-- Featured listing: pinned at the top of the events page and in that week&#x27;s email, $20/week.
-- Deadline spotlight: your application deadline in our &quot;Deadlines coming up&quot; section, $10.
-
-Launch offer: the first 5 organizers get their first featured month free, in exchange for a short quote about how it went.
-
-Basic listings stay free either way. To add another event, use [site link]/list.html.
-
-Thanks,
-Luis
-Jax Vendor Events
-[site link]</div></div><h2 class="pricegroup" id="spon">Sponsor pitch email</h2><p class="note">Attach the one-page sponsor PDF.</p><div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><b>Sponsor email</b><button class="btn ghost" type="button" data-copy="t44575154" style="min-height:40px;padding:0 14px">Copy</button></div><div id="t44575154" style="white-space:pre-wrap;font-size:14.5px;line-height:1.55;margin-top:10px;color:var(--ink2)">Subject: Reach Jacksonville-area market vendors every Monday
-
-Hi [Name],
-
-I&#x27;m Luis, a Jacksonville market vendor. I run Jax Vendor Events: a free list of every vendor market in Northeast Florida and a short email that goes out every Monday to the small sellers who do these markets (jewelry, candles, clothing, food, crafts, art).
-
-They&#x27;re exactly the people who buy [tents and displays / card readers / banners and labels / vendor insurance], usually right when they&#x27;re planning their next market.
-
-Each issue has one sponsor slot at the top: your logo, 2 lines and a link. Launch rate is $35 an issue (4 issues for the price of 3). The first sponsor who books 4 issues keeps that rate for 6 months as the list grows. One-page media kit attached.
-
-Would you like to try one issue in [month]?
-
-Thanks,
-Luis
-Jax Vendor Events
-[site link]</div></div><script>document.addEventListener('click',function(e){var b=e.target.closest('[data-copy]');if(!b)return;var t=document.getElementById(b.getAttribute('data-copy')).innerText;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1500);}).catch(function(){var r=document.createRange();r.selectNodeContents(document.getElementById(b.getAttribute('data-copy')));var s=getSelection();s.removeAllRanges();s.addRange(r);});});</script>
+<ul class="wlist">
+  <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span><b>Browse free</b>Dates, towns, booth fees and deadline countdowns for every listing. <a href="index.html">See the events</a></span></li>
+  <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 3.8l2.5 5.2 5.6.8-4.1 4 1 5.6-5-2.7-5 2.7 1-5.6-4.1-4 5.6-.8z"/></svg></span><span><b>Vendor Pro, $6/month</b>Unlocks every event name, place, organizer and apply link, plus deadline reminder emails, the weekly email a day early and a gold PRO badge.</span></li>
+  <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 3L10.5 13.5M21 3l-6.5 18-4-7.5L3 9.5z"/></svg></span><span><b>Organizers list free</b>Add your event in a minute. Organizer Plus manages your own listings, with a verified badge and featured weeks.</span></li>
+  <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></span><span><b>Your own private account</b>One login per person, your own email and password. Nobody else sees your details.</span></li>
+</ul>
+<p class="hint" style="text-align:center;margin:20px 0"><a href="pricing.html">All prices</a> · <a href="about.html">About</a> · <a href="terms.html">Terms &amp; Privacy</a></p>
 </main>
 <footer><div class="wrap"><div class="fb"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo"/></svg><b>Jax Vendor Events</b></div>Every vendor market in Northeast Florida: Duval, St. Johns, Clay, Nassau, Baker, Flagler, Putnam. Listings link to each organizer's own page; always confirm details with the organizer.<a class="flink" href="city.html"><svg class="ico sm" aria-hidden="true"><use href="#i-shield"/></svg>Vendor signup with the city &amp; county</a><a class="flink" href="join.html"><svg class="ico sm" aria-hidden="true"><use href="#i-user"/></svg>Create your vendor or organizer profile</a><div class="flinks2"><a href="about.html">About</a><a href="pricing.html">Advertise</a><a href="sponsor.html">Media kit</a><a href="terms.html">Terms &amp; Privacy</a><a href="list.html">List your event</a></div><div class="fsu"><b id="fsuT">Get the weekly email</b><form class="fsuf" data-signup action="https://formsubmit.co/porchlight+jax@mail.tab.bot" method="POST" aria-labelledby="fsuT"><input type="hidden" name="_subject" value="New signup: Jax Vendor Events weekly email"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_next" value="https://jaxvendorevents.com/newsletter.html?subscribed=1#su"><input type="hidden" name="source" value="footer"><div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div><label for="fsuEmail" class="sr">Email</label><input id="fsuEmail" name="email" type="email" required placeholder="you@email.com" autocomplete="email" inputmode="email" maxlength="120"><button class="btn" type="submit">Sign up</button></form><div class="msg fmsg" role="status" aria-live="polite"></div></div></div></footer>
 <nav class="tabbar five" aria-label="Main"><a href="index.html" data-nav="events"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Events</span></a><a href="index.html#deadlines" data-nav="deadlines"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12.5" r="8.5"/><path d="M12 8v4.5l3 2"/></svg><span>Deadlines</span></a><a href="index.html#saved" data-nav="saved"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.5 8 3.6 4.5 7.2 4.5c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.6 0 5.7 3.5 4.5 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/></svg><span>Saved</span></a><a href="newsletter.html" data-nav="newsletter"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3.8 7.2l8.2 5.8 8.2-5.8"/></svg><span>Newsletter</span></a><button type="button" data-open-more data-nav="more" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="12" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="18.5" cy="12" r="1.5" fill="currentColor"/></svg><span>More</span></button></nav>

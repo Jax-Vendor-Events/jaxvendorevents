@@ -5,3 +5,8 @@ password*
 node_modules/
 .DS_Store
 qa/
+
+# Listings, profiles, paid placements and finder memory live in the member database (Supabase), not in this
+# public repo. GitHub Actions pull them into data/ for a run (scripts/db_sync.py) and push them back.
+data/*
+!data/checkout.json

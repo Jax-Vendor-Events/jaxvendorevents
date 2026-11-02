@@ -191,6 +191,13 @@
     var ap=$('shApply'),ext=ap.querySelector('svg'),dest=apply||safeUrl(e.source_url)||safeUrl(e.source);ap.classList.toggle('off',!dest);ext.style.display=dest?'':'none';
     if(dest){ap.href=dest;ap.removeAttribute('aria-disabled');ap.removeAttribute('tabindex');ap.firstChild.textContent=apply?(e.host_type?'How to sign up ':'Apply '):'Organizer page ';}
     else{ap.removeAttribute('href');ap.setAttribute('aria-disabled','true');ap.setAttribute('tabindex','-1');ap.firstChild.textContent=e.contact?'Contact organizer (see above)':'Apply link not on file yet';}
+    if(e.locked){ /* teaser for free/anonymous visitors: the server never sent name, venue, organizer or links */
+      $('shBody').innerHTML=row('cal','When',[when,extra.join(' · ')].filter(Boolean).join('<br>')||'See dates above')+
+        row('tag','Vendor fee',e.fee?esc(e.fee):(e.fee_bucket==='free'?'Free':'Fee not listed'))+row('clock','Applications',appl.join('<br>'))+
+        row('pin','Area',esc([e.city,e.county?e.county+' County':''].filter(Boolean).join(', ')))+
+        '<div class="locked-card"><b>🔒 Event name, exact place, organizer and apply link</b> are part of Vendor Pro ($6/month). Every market in Northeast Florida, with the links to apply.</div>';
+      ap.href='#';ap.setAttribute('data-unlock','vendor-pro');ap.classList.remove('off');ap.removeAttribute('aria-disabled');ap.removeAttribute('tabindex');ext.style.display='none';ap.firstChild.textContent='Unlock · $6/mo ';
+    } else ap.removeAttribute('data-unlock');
     $('shIcs').disabled=!curA;syncSheetSave();
   }
   function showSheet(id,anchor){var e=byId[id];if(!e)return false;curE=e;curA=anchor||e.up[0]||null;fillSheet(e);

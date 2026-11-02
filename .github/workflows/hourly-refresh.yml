@@ -12,7 +12,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: hourly-refresh
@@ -31,30 +31,20 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh listings
+      # The listings live in the member database now (not in this public repo):
+      # pull them, refresh, push back. A push refused because someone edited meanwhile
+      # (exit 3) pulls again and redoes the run. Nothing is committed to git.
+      - name: Refresh listings in the member database
         env:
           TZ: America/New_York
-        run: python3 scripts/refresh.py
-
-      - name: Commit if anything changed
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
-          if git diff --quiet -- data/; then
-            echo "No change."
-            exit 0
-          fi
-          git config user.name "jve-refresh-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/events.json data/events.js
-          git commit -m "Hourly refresh $(TZ=America/New_York date '+%b %-d %-I:%M %p ET')"
-          for i in 1 2 3; do
-            if git push; then exit 0; fi
-            echo "Push refused (someone else committed); rebuilding on the latest copy."
-            git fetch origin "${GITHUB_REF_NAME}"
-            git reset --hard "origin/${GITHUB_REF_NAME}"
-            python3 scripts/refresh.py
-            if git diff --quiet -- data/; then exit 0; fi
-            git add data/events.json data/events.js
-            git commit -m "Hourly refresh $(TZ=America/New_York date '+%b %-d %-I:%M %p ET')"
-            sleep $((i * 5))
+          for i in 1 2 3 4; do
+            python3 scripts/db_sync.py pull events || exit 1
+            python3 scripts/refresh.py > /dev/null || exit 1
+            python3 scripts/db_sync.py push events && exit 0
+            rc=$?; [ "$rc" -eq 3 ] || exit "$rc"
+            sleep $((i * 7))
           done
           exit 1

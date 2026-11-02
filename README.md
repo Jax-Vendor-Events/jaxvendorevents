@@ -1,5 +1,13 @@
 # Jax Vendor Events (private draft)
 
+> **Since Nov 2, 2026: accounts + member database.** Listings, vendor profiles, paid placements and the finder's memory
+> live in the member database (Supabase, Row Level Security on every table), not in this repo. Pages get them through
+> `auth.js` (login, tiers, paywall); free and logged-out visitors only receive teasers. GitHub Actions use
+> `scripts/db_sync.py` (pull → run → push, with a version lock) and the `SUPABASE_URL` / `SUPABASE_SERVICE_KEY` secrets.
+> Tools that edit `data/*.json` (e.g. `tools/add_profile.py`) run on a pulled copy: `db_sync.py pull profiles`, edit, `db_sync.py push profiles`.
+> Only the public publishable key is in this repo (`auth-config.js`). Notes below about committing data files are historical.
+
+
 Static directory of vendor markets in Northeast Florida. Data in `data/events.json` (mirrored to `data/events.js` for the page). Draft only: noindex, robots Disallow, password gate. Not public yet.
 
 

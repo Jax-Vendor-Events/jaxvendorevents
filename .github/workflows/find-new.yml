@@ -13,7 +13,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: hourly-refresh
@@ -32,39 +32,22 @@ jobs:
         with:
           python-version: "3.12"
 
+      # The listings live in the member database now (not in this public repo):
+      # pull, find + refresh, push back (retry when someone edited meanwhile). Nothing is committed to git,
+      # and the log prints counts only, never listings.
       - name: Find new events
         env:
           TZ: America/New_York
-        run: python3 scripts/find_new.py
-
-      - name: Refresh listings
-        env:
-          TZ: America/New_York
-        run: python3 scripts/refresh.py
-
-      - name: Commit if anything changed
-        env:
-          TZ: America/New_York
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
-          if git diff --quiet -- data/ && [ -z "$(git status --porcelain -- data/)" ]; then
-            echo "No change."
-            exit 0
-          fi
-          git config user.name "jve-finder-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          msg() { echo "Find new events $(date '+%b %-d %-I:%M %p ET'): $(python3 -c 'import json;r=json.load(open("data/finder_seen.json"))["last_run"];print(len(r["added"]),"added")')"; }
-          git add data/events.json data/events.js data/finder_seen.json
-          git commit -m "$(msg)"
-          for i in 1 2 3; do
-            if git push; then exit 0; fi
-            echo "Push refused (someone else committed); redoing the run on the latest copy."
-            git fetch origin "${GITHUB_REF_NAME}"
-            git reset --hard "origin/${GITHUB_REF_NAME}"
-            python3 scripts/find_new.py
-            python3 scripts/refresh.py
-            if git diff --quiet -- data/ && [ -z "$(git status --porcelain -- data/)" ]; then exit 0; fi
-            git add data/events.json data/events.js data/finder_seen.json
-            git commit -m "$(msg)"
-            sleep $((i * 5))
+          for i in 1 2 3 4; do
+            python3 scripts/db_sync.py pull events finder_seen || exit 1
+            python3 scripts/find_new.py > /dev/null || exit 1
+            python3 scripts/refresh.py > /dev/null || exit 1
+            python3 -c 'import json;r=json.load(open("data/finder_seen.json")).get("last_run",{});print(len(r.get("added",[])),"added")' || true
+            python3 scripts/db_sync.py push events finder_seen && exit 0
+            rc=$?; [ "$rc" -eq 3 ] || exit "$rc"
+            sleep $((i * 7))
           done
           exit 1
