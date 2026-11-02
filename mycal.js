@@ -207,7 +207,7 @@
 
   /* ---------- boot ---------- */
   function boot(){
-    var cc=document.getElementById('calCard');if(cc){card(cc);if(location.hash==='#calendar')setTimeout(function(){cc.scrollIntoView({behavior:'smooth',block:'start'});},300);}
+    var cc=document.getElementById('calCard');if(cc){card(cc);if(location.hash==='#calendar'||location.hash==='#calCard')setTimeout(function(){var sec=cc.closest('.asec');if(sec&&!sec.classList.contains('open')){var bt=sec.querySelector('.ash');if(bt)bt.click();else sec.classList.add('open');}setTimeout(function(){cc.scrollIntoView({behavior:'smooth',block:'start'});},250);},300);}
     var st=document.getElementById('mycal');
     if(st){var go=function(){strip(st);};
       if(window.JVE_APP)go();else document.addEventListener('jve:app',go,{once:true});}
