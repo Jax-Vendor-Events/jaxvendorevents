@@ -164,32 +164,64 @@
   function emptyRegion(){return empty('pin','We’re just getting started in '+esc(RG.label(region)),'Know a market or campus event here? Organizers can list it free, and it shows up for every vendor in the region.','<a class="btn" href="list.html">List an event · free</a> <button class="btn ghost" type="button" data-region-pick>Change region</button>');}
   function proUser(){var A=window.JVE_AUTH;return !!(A&&(A.admin||(A.has&&(A.has('vendor-pro')||A.has('organizer-plus')||A.has('directory-sponsor')))));}
   function hsec(title,sub,go,goLabel,body){return '<section class="hsec"><div class="hsh"><h2>'+title+(sub?' <small>'+sub+'</small>':'')+'</h2>'+(go?'<button type="button" class="hall" data-go="'+go+'">'+goLabel+ico('right','sm')+'</button>':'')+'</div>'+body+'</section>';}
+  /* Home is a dashboard (Events is the full list): greeting hero, 3 stat tiles, a swipe row for the weekend,
+     a deadline countdown strip, category tiles, Pro + organizer cards; the weekly email section follows. */
+  var HI={farmers:'<path d="M5 19c0-7.5 5-12.5 14-14-.6 9-5.6 14-13 14z"/><path d="M5 19c3-4 6-6.5 10-8.5"/>',
+    craft:'<path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.9-.8 1.9-1.8 0-.5-.2-.9-.5-1.3-.3-.3-.5-.8-.5-1.3 0-1 .8-1.8 1.9-1.8h2.2a4 4 0 0 0 4-4C20.5 7 16.7 3.5 12 3.5z"/><circle cx="7.5" cy="11.5" r="1.2"/><circle cx="10.5" cy="7.5" r="1.2"/><circle cx="15.5" cy="8" r="1.2"/>',
+    holiday:'<rect x="3.5" y="8.5" width="17" height="4" rx="1"/><path d="M5 12.5v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7M12 8.5v12M12 8.5S10.5 4 8 4.5 7 8.5 12 8.5zM12 8.5s1.5-4.5 4-4 1 4-4 4z"/>',
+    campus:'<path d="M2.5 9.5L12 5l9.5 4.5L12 14z"/><path d="M6.5 11.5v4.3c1.5 1.5 3.4 2.2 5.5 2.2s4-.7 5.5-2.2v-4.3M21.5 9.5v5"/>',
+    free:'<path d="M3.5 12.3V4.5a1 1 0 0 1 1-1h7.8l8.2 8.2a1.5 1.5 0 0 1 0 2.1l-6.1 6.1a1.5 1.5 0 0 1-2.1 0z"/><circle cx="8" cy="8" r="1.4"/>',
+    festival:'<path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/>',
+    cal:'<rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+    clock:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+    chev:'<path d="M9.5 6l6 6-6 6"/>'};
+  function hi(k,c){return '<svg class="hico'+(c?' '+c:'')+'" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">'+(HI[k]||HI.cal)+'</svg>';}
+  function kindOf(e){if(isCampus(e))return 'campus';var t=e.types||[];return t.indexOf('holiday')>-1?'holiday':t.indexOf('farmers')>-1?'farmers':t.indexOf('craft')>-1?'craft':t.indexOf('festival')>-1?'festival':'cal';}
+  function hello(){var h=new Date().getHours(),g=h<5?'Good evening':h<12?'Good morning':h<17?'Good afternoon':'Good evening';
+    var A=window.JVE_AUTH,n=A&&A.user&&A.profile&&String(A.profile.full_name||'').trim().split(/\s+/)[0];return g+(n?', '+n:'');}
   function renderHome(){
     var H=$('home');if(!H)return;
     var mine=ev.filter(function(e){return e.rg===region;}),lab=esc(RG.label(region)),html='';
     var locked=mine.filter(function(e){return e.locked;}).length;
-    html+='<button type="button" class="hsearch" data-go="search">'+ico('search')+'<span>Search markets, towns, venues</span></button>';
-    html+='<div class="hgo" role="group" aria-label="Quick filters"><button type="button" data-go="weekend">'+ico('cal','sm')+(isSun?'Next weekend':'This weekend')+'</button><button type="button" data-go="free">'+ico('tag','sm')+'Free to vend</button><button type="button" data-go="deadlines">'+ico('clock','sm')+'Deadlines</button><button type="button" data-go="campus">'+ico('star','sm')+'Campus</button></div>';
+    $('vTitle').textContent=hello();$('vSub').textContent=mine.length?'Your vendor week in '+RG.label(region)+'.':'Pick a region to see what’s near you.';
     if(!mine.length){html+=emptyRegion();}
     else{
       var wk=[];mine.forEach(function(e){if(inRange(e,wkStart,sun)){var w=e.up.filter(function(x){return x>=wkStart&&x<=sun;});wk.push({e:e,a:w[0]||e.up[0]||null});}});
-      var wkT=isSun?'Next weekend':'This weekend',wkGo='weekend';
-      if(!wk.length){mine.forEach(function(e){if(inRange(e,floor,twoWk))wk.push({e:e,a:e.up[0]||null});});wkT='Coming up';wkGo='2wk';}
+      var wkT=isSun?'Next weekend':'This weekend',wkGo='weekend',wkL=isSun?'next weekend':'this weekend';
+      if(!wk.length){mine.forEach(function(e){if(inRange(e,floor,twoWk))wk.push({e:e,a:e.up[0]||null});});wkT='Coming up';wkGo='2wk';wkL='next 2 weeks';}
       wk.sort(function(x,y){var fx=PX.featured(x.e.id)?0:1,fy=PX.featured(y.e.id)?0:1;if(fx!==fy)return fx-fy;return (x.a||'9999')<(y.a||'9999')?-1:(x.a||'9999')>(y.a||'9999')?1:0;});
-      if(wk.length)html+=hsec(wkT+' near you',lab,wkGo,'See all '+wk.length,'<div class="xgrid">'+wk.slice(0,4).map(function(r,i){return card(r.e,r.a,i);}).join('')+'</div>');
-      var dl=mine.filter(function(e){return hasDl(e)&&days(floor,e.deadline)<=21;}).sort(function(a,b){return a.deadline<b.deadline?-1:a.deadline>b.deadline?1:0;});
-      if(dl.length)html+=hsec('Apply soon','closing in 3 weeks','deadlines','All '+dl.length,'<div class="xgrid">'+dl.slice(0,3).map(function(e,i){return card(e,e.up[0]||null,i,'dl');}).join('')+'</div>');
+      var soon=mine.filter(dlSoon).sort(function(a,b){return a.deadline<b.deadline?-1:a.deadline>b.deadline?1:0;});
+      var camp=mine.filter(isCampus).length;
+      function tile(cls,go,ic,n,l){return '<button type="button" class="hst '+cls+'" data-go="'+go+'"><span class="hst-ic">'+hi(ic)+'</span><b>'+n+'</b><span>'+l+'</span></button>';}
+      html+='<div class="hstats" role="group" aria-label="At a glance">'+tile('t1',wkGo,'cal',wk.length,wkL)+tile('t2','dl','clock',soon.length,'deadlines soon')+tile('t3','campus','campus',camp,'campus events')+'</div>';
+      if(wk.length){var top=wk.slice(0,10);
+        html+=hsec(wkT,lab,wkGo,'See all','<div class="hrail" role="list">'+top.map(function(r){var e=r.e,d=r.a?pd(r.a):null,k=kindOf(e);
+          return '<button type="button" role="listitem" class="hw k-'+k+(PX.featured(e.id)?' isfeat':'')+'" data-id="'+esc(e.id)+'" data-a="'+(r.a||'')+'" aria-label="'+esc(e.name)+(r.a?', '+fmt(r.a):'')+', '+esc(e.city||e.county)+': details">'+
+            '<span class="hw-top"><span class="hw-d">'+(d?'<small>'+WD[d.getDay()]+'</small>'+MO[d.getMonth()]+' '+d.getDate():'<small>Open</small>dates')+'</span>'+hi(k)+'</span>'+
+            '<span class="hw-n">'+esc(e.name)+'</span><span class="hw-p">'+ico('pin','sm')+esc(e.city||e.county||'')+'</span>'+
+            '<span class="hw-f'+(e.fee_bucket==='free'?' free':'')+'">'+esc(feeLabel(e))+'</span></button>';}).join('')+
+          (wk.length>top.length?'<button type="button" class="hw hw-more" data-go="'+wkGo+'"><b>+'+(wk.length-top.length)+'</b><span>more '+wkL+'</span>'+hi('chev')+'</button>':'')+'</div>');}
+      var next=mine.filter(hasDl).sort(function(a,b){return a.deadline<b.deadline?-1:a.deadline>b.deadline?1:0;});
+      if(next.length){
+        html+=hsec('Apply soon','next applications to close','','','<div class="hdl">'+next.slice(0,4).map(function(e){var n=days(floor,e.deadline);
+          return '<button type="button" class="hdr" data-id="'+esc(e.id)+'" data-a="'+(e.up[0]||'')+'" aria-label="'+esc(e.name)+', apply by '+fmt(e.deadline)+': details"><span class="hdn'+(n<=3?' urgent':n<=10?' warm':'')+'">'+(n<=0?'<b>!</b><small>today</small>':'<b>'+n+'</b><small>'+(n===1?'day':'days')+'</small>')+'</span>'+
+            '<span class="hdt"><b>'+esc(e.name)+'</b><small>Apply by '+short(e.deadline)+(e.up[0]?' · event '+short(e.up[0]):'')+(e.city?' · '+esc(e.city):'')+'</small></span>'+hi('chev','hch')+'</button>';}).join('')+
+          '<button type="button" class="hdall" data-go="deadlines">See all '+next.length+' deadlines'+hi('chev')+'</button></div>');}
+      var cats=[['farmers','Farmers','cat:farmers'],['craft','Craft fairs','cat:craft'],['holiday','Holiday','cat:holiday'],['campus','Campus','campus'],['free','Free to vend','free']];
+      html+=hsec('Browse by type','','','','<div class="hcats" role="group" aria-label="Browse by type">'+cats.map(function(c){
+        var n=c[0]==='campus'?camp:c[0]==='free'?mine.filter(function(e){return e.fee_bucket==='free';}).length:mine.filter(function(e){return e.types.indexOf(c[0])>-1;}).length;
+        return '<button type="button" class="hct k-'+c[0]+'" data-go="'+c[2]+'"><span class="hct-ic">'+hi(c[0])+'</span><b>'+c[1]+'</b><small>'+n+'</small></button>';}).join('')+'</div>');
     }
-    if(!proUser())html+='<section class="hcard hpro"><span class="hk">'+ico('star','sm')+'Vendor Pro · $6/mo</span><h3>'+(locked?'Unlock the '+locked+' market'+(locked===1?'':'s')+' near you':'Never miss an application deadline')+'</h3>'+
+    if(!proUser())html+='<section class="hcard hpro"><span class="hpro-badge" aria-hidden="true">'+ico('star')+'</span><span class="hk">Vendor Pro · $6/mo</span><h3>'+(locked?'Unlock the '+locked+' market'+(locked===1?'':'s')+' near you':'Never miss an application deadline')+'</h3>'+
       '<ul><li>'+ico('check','sm')+'Event names, exact places and organizers</li><li>'+ico('check','sm')+'One-tap apply links</li><li>'+ico('check','sm')+'Deadline reminders by email</li></ul>'+
       '<a class="btn" href="pricing.html#vendors">See Vendor Pro</a></section>';
-    html+='<section class="hcard horg"><span class="hk">'+ico('mega','sm')+'For organizers</span><h3>Run a market or event?</h3><p>List it free and vendors across Florida can find it. Want more applicants? Get featured at the top.</p>'+
-      '<div class="hbtns"><a class="btn" href="list.html">List it free</a><a class="btn ghost" href="pricing.html#organizers">Get featured</a></div></section>';
+    html+='<section class="horg2"><span class="horg-ic" aria-hidden="true">'+ico('mega')+'</span><div class="horg-t"><span class="hk">For organizers</span><h3>Run a market?</h3><p>List it free so vendors across Florida find it. Want more applicants? Get featured.</p>'+
+      '<div class="hbtns"><a class="btn sm" href="list.html">List it free</a><a class="btn ghost sm" href="pricing.html#organizers">Get featured</a></div></div></section>';
     H.innerHTML=html;
   }
   function go(k){
     Object.keys(F).forEach(function(x){F[x]=false;});fC.value=fK.value='';fQ.value='';
-    var t='events';if(k==='deadlines')t='deadlines';else if(F.hasOwnProperty(k))F[k]=true;
+    var t='events';if(k==='deadlines')t='deadlines';else if(/^cat:/.test(k)){var cv=k.slice(4);if(![].some.call(fK.options,function(o){return o.value===cv;})){var lo=(LG.TYPES.filter(function(x){return x[0]===cv;})[0]||[cv,cv]);var op=document.createElement('option');op.value=cv;op.textContent=lo[1];fK.appendChild(op);}fK.value=cv;}else if(F.hasOwnProperty(k))F[k]=true;
     try{history.pushState({v:t},'',location.pathname+location.search+'#'+t);}catch(_){location.hash=t;}
     setView(t,true);markNav();window.scrollTo({top:0,behavior:'auto'});
     if(k==='search')setTimeout(function(){fQ.focus();},60);
