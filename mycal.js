@@ -40,7 +40,7 @@
   function api(action,extra){
     var body=Object.assign({action:action,tz:TZ},extra||{});
     return A.sb.functions.invoke('my-calendar',{body:body}).then(function(r){
-      if(!r.error)return r.data;
+      if(!r.error){if(r.data&&r.data.ok===false)throw r.data;return r.data;}
       var res=r.error.context;
       if(res&&res.json)return res.json().then(function(j){throw j;},function(){throw {msg:'Something went wrong. Try again in a minute.'};});
       throw {msg:'Could not reach the calendar service. Check your connection.'};
