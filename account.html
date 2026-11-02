@@ -40,16 +40,18 @@
 <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css?v=bp1">
 <link rel="stylesheet" href="ui.css?v=hm1">
-<script src="theme.js?v=nv3"></script>
+<script src="theme.js?v=cm1"></script>
 <script src="gate.js"></script>
 <link rel="stylesheet" href="auth.css?v=sq1">
 <link rel="stylesheet" href="brand.css?v=bp2">
 <link rel="stylesheet" href="mycal.css?v=mc6">
-<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au2"></script><script src="mycal.js?v=mc6" defer></script><script type="jve/boot" data-src="account.js?v=bp2"></script><script type="jve/boot" data-src="acct-apps.js?v=ak1"></script><script type="jve/boot" data-src="acct-pay.js?v=sq1"></script><script type="jve/boot" data-src="brand.js?v=bp2"></script><script type="jve/boot" data-src="account-brand.js?v=bp2"></script>
+<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au2"></script><script src="mycal.js?v=mc6" defer></script><script type="jve/boot" data-src="account.js?v=cm1"></script><script type="jve/boot" data-src="acct-apps.js?v=cm1"></script><script type="jve/boot" data-src="acct-pay.js?v=sq1"></script><script type="jve/boot" data-src="brand.js?v=bp2"></script><script type="jve/boot" data-src="account-brand.js?v=bp2"></script>
 
 
 <link rel="stylesheet" href="lux.css?v=lx1">
 <link rel="stylesheet" href="tidy.css?v=cl2">
+<link rel="stylesheet" href="calm.css?v=cm1">
+<script type="jve/boot" data-src="calm.js?v=cm1"></script>
 </head>
 <body>
 <div id="authwait" role="status" aria-live="polite"><div class="aw-box"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo"/></svg><b>Jax Vendor Events</b><p id="authwaitMsg">Checking your login…</p><div class="aw-spin" aria-hidden="true"></div><p><a id="authwaitBtn" class="alink" href="login.html" hidden>Log in</a></p></div></div>
@@ -69,8 +71,8 @@
 <div class="authpage acct2" style="max-width:640px">
 <section class="ph"><span class="eyebrow"><svg class="ico sm" aria-hidden="true"><use href="#i-user"/></svg> My account</span><h1>Your account</h1><p class="lead"><span id="pEmail"></span> <span class="rolepill" id="pRole"></span></p></section>
 <div class="amsg" id="topMsg" role="status"></div>
-<section class="asec open" id="sec-brand">
-  <h2 class="ash-h"><button type="button" class="ash" aria-expanded="true" aria-controls="asb-brand"><span class="ash-i"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg></span><span class="ash-t"><b>Profile &amp; branding</b><small>Your public page, logo, colors, links</small></span><svg class="ico chev" aria-hidden="true"><use href="#i-down"/></svg></button></h2>
+<section class="asec" id="sec-brand">
+  <h2 class="ash-h"><button type="button" class="ash" aria-expanded="false" aria-controls="asb-brand"><span class="ash-i"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg></span><span class="ash-t"><b>Profile &amp; branding</b><small>Your public page, logo, colors, links</small></span><svg class="ico chev" aria-hidden="true"><use href="#i-down"/></svg></button></h2>
   <div class="asb" id="asb-brand"><div class="asi">
 <!-- brand profile (branded-profiles worker) -->
 <div class="acard brandcard" id="brand"><h3 class="acard-h">Brand profile</h3><div id="brandBox"><p class="hint">Loading…</p></div></div>

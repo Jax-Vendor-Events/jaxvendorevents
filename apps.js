@@ -250,7 +250,7 @@
     el.innerHTML=shares.map(function(s){var on=live(s);var st=s.revoked_at?'Revoked':(!on?'Expired':(s.expires_at?'Until '+short(String(s.expires_at).slice(0,10)):'Active'));
       return '<div class="lnk'+(on?'':' off')+'"><div class="lt"><span>'+esc(s.label||'Share link')+'</span><i>'+st+'</i></div><input type="text" readonly value="'+esc(shareUrl(s))+'" aria-label="Share link">'+
         '<small>Opened '+(s.open_count||0)+'×'+(s.last_opened_at?' · last '+short(String(s.last_opened_at).slice(0,10)):'')+'</small>'+
-        (on?'<div class="dact"><button type="button" data-copylink="'+esc(s.id)+'">Copy link</button><button type="button" data-openlink="'+esc(s.id)+'">Preview</button><button type="button" data-revoke="'+esc(s.id)+'">Revoke</button></div>':'')+'</div>';}).join('');
+        (on?'<div class="dact"><button type="button" class="btn sm" data-copylink="'+esc(s.id)+'">Copy link</button><details class="cm-lm"><summary aria-label="More for this link"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg></summary><div><button type="button" data-openlink="'+esc(s.id)+'">Preview</button><button type="button" data-revoke="'+esc(s.id)+'">Revoke</button></div></details></div>':'')+'</div>';}).join('');
   }
   function copy(t){if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(t);return Promise.reject();}
   function mkShare(){

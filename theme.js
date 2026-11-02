@@ -166,6 +166,11 @@
     }
   }
   // offline: cache the app on this device (network first, so updates show right away)
-  if('serviceWorker' in navigator&&location.protocol==='https:'){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
+  if('serviceWorker' in navigator&&location.protocol==='https:'){
+    /* Nov 2 2026: a phone that keeps the app open (home-screen app resumed from memory) could keep showing an old page.
+       Check for a new version whenever the app comes back to the screen; sw.js reloads open pages once when a new version takes over. */
+    var swReg=null,swLast=Date.now();
+    document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible'&&swReg&&Date.now()-swLast>60e3){swLast=Date.now();swReg.update().catch(function(){});}});
+    window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(function(r){swReg=r;}).catch(function(){});});}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',build);else build();
 })();

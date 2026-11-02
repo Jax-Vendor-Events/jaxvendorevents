@@ -9,7 +9,7 @@
   function fmt(d){if(!d)return '';var x=new Date(d+(d.length===10?'T12:00:00':''));return x.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}
   var html=document.documentElement;
   /* ---------- collapsible sections (open state kept per device) ---------- */
-  var KO='jve_acct_open';
+  var KO='jve_acct_open2'; /* Nov 2 2026 calm layout: every section starts closed */
   function getOpen(){try{return JSON.parse(localStorage.getItem(KO)||'null');}catch(_){return null;}}
   function setOpen(ids){try{localStorage.setItem(KO,JSON.stringify(ids));}catch(_){}}
   function toggle(sec,on){sec.classList.toggle('open',on);var b=sec.querySelector('.ash');if(b)b.setAttribute('aria-expanded',String(on));}
