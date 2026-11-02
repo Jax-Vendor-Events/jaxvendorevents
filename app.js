@@ -216,7 +216,7 @@
     }
     if(!proUser())html+='<section class="hcard hpro"><span class="hpro-badge" aria-hidden="true">'+ico('star')+'</span><span class="hk">Vendor Pro · $6/mo</span><h3>'+(locked?'Unlock the '+locked+' market'+(locked===1?'':'s')+' near you':'Never miss an application deadline')+'</h3>'+
       '<ul><li>'+ico('check','sm')+'Event names, exact places and organizers</li><li>'+ico('check','sm')+'One-tap apply links</li><li>'+ico('check','sm')+'Deadline reminders by email</li></ul>'+
-      '<a class="btn" href="pricing.html#vendors">See Vendor Pro</a></section>';
+      '<a class="btn" href="pro.html">See Vendor Pro</a></section>';
     html+='<section class="horg2"><span class="horg-ic" aria-hidden="true">'+ico('mega')+'</span><div class="horg-t"><span class="hk">For organizers</span><h3>Run a market?</h3><p>List it free so vendors across Florida find it. Want more applicants? Get featured.</p>'+
       '<div class="hbtns"><a class="btn sm" href="list.html">List it free</a><a class="btn ghost sm" href="pricing.html#organizers">Get featured</a></div></div></section>';
     H.innerHTML=html;

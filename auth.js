@@ -80,7 +80,7 @@
   function applyTierMarks(){
     html.setAttribute('data-tiers',A.tiers.join(' '));
     html.classList.toggle('is-admin',A.admin);
-    Array.prototype.forEach.call(document.querySelectorAll('[data-tier]'),function(el){
+    Array.prototype.forEach.call(document.querySelectorAll('[data-tier]:not(option):not(section.tier)'),function(el){
       var need=el.getAttribute('data-tier').split(/\s+/),ok=A.admin||need.some(function(t){return A.has(t);});
       el.hidden=!ok;});
     Array.prototype.forEach.call(document.querySelectorAll('[data-tier-lock]'),function(el){

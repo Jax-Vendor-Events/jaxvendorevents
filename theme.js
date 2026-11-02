@@ -95,7 +95,7 @@
   function current(){var p=(location.pathname.split('/').pop()||'index.html');var h=location.hash;
     if(p==='index.html'||p===''){if(/^#e=/.test(h)){var st=history.state||{};return st.v==='saved'?'saved':st.v==='home'||!st.v?'':'events';}
       return /^#(events|deadlines|matches)$/.test(h)?'events':h==='#saved'?'saved':'home';}
-    if(p==='pricing.html')return 'pro';
+    if(p==='pricing.html'||p==='pro.html')return 'pro';
     if(/^(account|login|admin|reset|welcome)\.html$/.test(p))return 'account';
     return '';}
   function markNav(){var c=current();if(!c&&/^#e=/.test(location.hash))return;var a=document.querySelectorAll('[data-nav]');for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===c)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
