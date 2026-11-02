@@ -114,3 +114,15 @@ html.calm .cm-su .cm-sub{font:400 14px/1 var(--sans);color:var(--mut);margin-lef
 html.calm .cm-su .xsignup{margin:4px 0 8px!important}
 html.calm body[data-view=saved] .cm-su,html.calm body[data-view=deadlines] .cm-su{display:none}
 .lnk .dact>button.btn[data-copylink]{background:linear-gradient(135deg,var(--sun) 0%,var(--sun3) 100%)!important;color:var(--onacc,#fff)!important;border:0!important;box-shadow:none!important;font-weight:600}
+
+/* Home hero: one calm block instead of a banner + a big card */
+html.calm body[data-view=home] .xhead{padding-top:14px!important;padding-bottom:14px!important;min-height:0!important}
+html.calm body[data-view=home] .xhead .xh-tools{margin-top:0!important}
+html.calm #home .dh{background:transparent!important;box-shadow:none!important;border:0!important;padding:8px 4px 0!important;margin-top:8px!important}
+html.calm #home .dh::before,html.calm #home .dh::after{display:none!important}
+html.calm #home .dh .dh-row{gap:14px!important;align-items:center!important}
+html.calm #home .dh .dh-logo{width:52px!important;height:52px!important;min-width:52px!important;font-size:19px!important;border-radius:14px!important}
+html.calm #home .dh h2{font-size:24px!important;line-height:1.2!important;margin:2px 0 6px!important;overflow-wrap:anywhere}
+html.calm #home .dh .dh-hi{font-size:13px!important}
+html.calm #home .dh .dh-pill{font-size:13px!important;padding:3px 10px!important}
+html.calm #home .dh .dh-plan{margin:14px 0 0!important;padding:12px 0 0!important;border-top:1px solid var(--line)!important;background:transparent!important;box-shadow:none!important;font-size:14px!important}
