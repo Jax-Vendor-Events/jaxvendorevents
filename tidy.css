@@ -1,0 +1,92 @@
+/* Jax Vendor Events: clean-up layer (Nov 2 2026, owner: "too disorganized … everything is on top of everything" — "fix it").
+   Loaded LAST on every page, after styles.css, ui.css, lux.css and the page's own CSS. Layout/readability only:
+   no features, routes, ids or paywall rules change here.
+   1) solid bars: the header, bottom tab bar and sheet footers no longer show the page through them (the "on top of
+      each other" look); search/filter/tab strips scroll with the page instead of stacking a second sticky layer;
+   2) one spacing scale (8/16/24/32) and readable type: body 16px / 1.5, nothing under 13px;
+   3) cards with room: event cards put their badges + action on their own full-width row, tracker rows stack on
+      phones, date badges stop touching;
+   4) safe areas: content always ends above the tab bar and any floating button. */
+
+:root{--cl-1:8px;--cl-2:16px;--cl-3:24px;--cl-4:32px;
+  --lx-t-xs:13px;--lx-t-sm:14px;--lx-t-md:16px;--lx-t-lg:18px}
+body{font-size:16px;line-height:1.5}
+p,li,dd{line-height:1.5}
+
+/* ===== 1. solid bars, one sticky layer ===== */
+.top{background:var(--bar)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-bottom:1px solid var(--line2)!important}
+.tabbar,.tabbar.five{background:var(--bar)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-top:1px solid var(--line2)!important;box-shadow:0 -6px 18px -14px rgba(var(--shd-rgb),.5)}
+.tabbar.five a,.tabbar.five button{font-size:12px;gap:4px}
+.xfind,.disc,.aptabs{position:relative!important;top:auto!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:none!important;background:transparent!important}
+.sh-foot{background:var(--card)!important}
+html[data-mode=dark] .sh-foot{background:#1b1f26!important}
+.prsticky{-webkit-backdrop-filter:none;backdrop-filter:none}
+/* content always clears the tab bar (+ the floating Pro button when it shows) */
+body{padding-bottom:calc(96px + var(--sab,0px))!important}
+body:has(.prsticky.on){padding-bottom:calc(168px + var(--sab,0px))!important}
+@media (min-width:821px){body{padding-bottom:var(--cl-4)!important}body:has(.prsticky.on){padding-bottom:120px!important}}
+
+/* ===== 2. type: nothing tiny ===== */
+small,.sub,.tnote,.hint,.note,.mut{line-height:1.45}
+.xd .m,.xd .w{font-size:12.5px!important;line-height:1.2!important;letter-spacing:.04em}
+.xd .d{line-height:1.1!important;margin:3px 0!important}
+
+/* ===== 3. event cards (Events, Saved, Deadlines) ===== */
+.xlist{display:grid;gap:var(--cl-2)}
+.xc{grid-template-columns:52px minmax(0,1fr) auto!important;grid-template-areas:"d b h" "f f f"!important;column-gap:12px!important;row-gap:0;padding:var(--cl-2)!important;align-items:start}
+.xd{height:62px!important}
+.xb h3{font-size:17px!important;line-height:1.3!important;margin:2px 0 6px!important}
+.xb .xm,.xb .xw{font-size:14px;line-height:1.4;margin:0 0 2px}
+.xf{margin-top:var(--cl-2)!important;padding-top:12px;border-top:1px solid var(--line);align-items:center!important;gap:12px!important}
+.xt{gap:6px!important}
+.xt .b{height:28px!important;font-size:13px!important;padding:0 10px}
+.xapply{height:40px!important;padding:0 16px!important;font-size:14.5px!important}
+
+/* ===== 2b. type floors for the small labels the audit found (were 9.5–12.5px) ===== */
+.ds-day small,.ds-n,.ds-day .ds-n,.mcday .w,.mcday .c{font-size:12px!important;line-height:1.25!important}
+.hw-d small,.hw-f,.hw-p,.hct b,.hct small,.hst span,.fw-d,.fw small,.hdt small,.xgh small,.dh-pill,.prstat small,.ash-t small,.br-count{font-size:13px!important;line-height:1.35!important}
+.hdn small{font-size:12px!important}
+.kv dt,.dr-h,.dr-blk h3{font-size:12.5px!important;letter-spacing:.08em}
+.tkgroup h3{font-size:13px!important;line-height:1.3!important}
+.tkgroup h3 b{font-size:12px!important}
+.preb,.prcmp span.on,span.preb{font-size:12px!important}
+.fl small{font-size:13px!important}
+.row>label,.form label,.apcard label.fl,.row2>label.fl,label.fl{font-size:14px!important;line-height:1.35!important}
+.hint,.form .hint,p.hint{font-size:14px!important;line-height:1.45!important}
+.apcard>p.sub{font-size:15px!important;line-height:1.5!important}
+.flinks2 a,a.flink{font-size:14px!important}
+.trk .tnote,.trk .pay small,.trk .tlock small{font-size:14px!important;line-height:1.45!important}
+.tki .tkm small{font-size:14px!important}
+.tki .chip{font-size:13px!important}
+.sh-note{font-size:14px!important;line-height:1.45}
+.sh-head .sub{font-size:15px}
+.sh-own{font-size:14px}
+
+/* ===== 3b. My applications rows: stacked on phones, nothing squeezed ===== */
+.tklist{gap:12px!important}
+.tki{padding:var(--cl-2)!important;gap:12px!important}
+@media (max-width:560px){
+  .tki{grid-template-columns:minmax(0,1fr)!important}
+  .tkr{justify-content:flex-start}
+  .tkr .tks{flex:1 1 auto;min-width:0}
+}
+.tkgroup{margin:0 0 var(--cl-3)!important}
+.tkcount{margin-bottom:var(--cl-2)!important}
+
+.tki .tkm small>span{display:inline-flex;align-items:center;gap:4px}
+.tki .tkm small .ico{display:inline-block;flex:none;width:14px;height:14px}
+
+/* event sheet: the two Pro buttons each get a full row on phones (no 2-line squeeze) */
+@media (max-width:480px){.trk .trow{grid-template-columns:minmax(0,1fr)!important}}
+.trk{gap:12px!important;margin-bottom:var(--cl-3)!important}
+/* event cards line up: actions sit at the bottom of every card in a grid row */
+.xc{grid-template-rows:auto 1fr}
+.xf{align-self:end}
+
+/* account brand editor: the Upload button no longer sits on the logo's ring */
+.br-media{gap:var(--cl-2)!important}
+.br-logo{margin-bottom:12px}
+
+/* Saved: one count line, not two (the list header already says "3 saved") */
+body[data-view=saved] .savedbar>span{display:none}
+body[data-view=saved] .savedbar{justify-content:flex-start}
