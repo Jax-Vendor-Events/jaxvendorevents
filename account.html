@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="auth.css?v=au1">
 <link rel="stylesheet" href="brand.css?v=bp2">
 <link rel="stylesheet" href="mycal.css?v=mc6">
-<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au2"></script><script src="mycal.js?v=mc6" defer></script><script type="jve/boot" data-src="account.js?v=bp2"></script><script type="jve/boot" data-src="brand.js?v=bp2"></script><script type="jve/boot" data-src="account-brand.js?v=bp2"></script>
+<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au2"></script><script src="mycal.js?v=mc6" defer></script><script type="jve/boot" data-src="account.js?v=bp2"></script><script type="jve/boot" data-src="acct-apps.js?v=ak1"></script><script type="jve/boot" data-src="brand.js?v=bp2"></script><script type="jve/boot" data-src="account-brand.js?v=bp2"></script>
 
 
 <link rel="stylesheet" href="lux.css?v=lx1">
@@ -123,6 +123,10 @@
     <div class="two row"><div><label for="spUrl">Link</label><input id="spUrl" placeholder="https://"></div><div><label for="spLogo">Logo link (optional)</label><input id="spLogo" placeholder="https://…png"></div></div>
     <button class="btn" type="submit">Send details</button><div class="amsg" id="spMsg"></div></form></div>
   <p class="hint" data-tier-lock="newsletter-sponsor directory-sponsor" style="margin-top:0">This form opens once you have a sponsor placement.</p></div>
+<div class="acard" id="akCard"><h3 class="acard-h">Apply kit &amp; My applications <span class="tierpill gold" style="vertical-align:middle">PRO</span></h3>
+  <div id="akOn" hidden><p>Your one-tap apply kit and every market you’ve applied to.</p><p class="hint" id="akSum" style="margin-top:0"></p><div class="btnrow"><a class="btn sm" href="apps.html#kit">Apply kit</a><a class="btn sm ghost" href="apps.html#tracker">My applications</a></div></div>
+  <div class="locked-card" id="akOff"><b>Part of Vendor Pro.</b> One apply kit (photos, booth needs, insurance, tax certificate) to share with any organizer, plus a tracker for every application with reminders.
+    <a class="btn sm" data-unlock="vendor-pro" href="pro.html">Unlock · $6/mo</a></div></div>
 <div class="acard"><h3 class="acard-h">My requests</h3><ul class="alist" id="reqList"><li><small>Loading…</small></li></ul></div>
   </div></div>
 </section>
@@ -136,6 +140,11 @@
     <form class="form"><label class="check"><input type="checkbox" id="proRemind"> <span>Email me deadline reminders</span></label></form><div class="amsg" id="proMsg"></div></div>
   <div class="locked-card" data-tier-lock="vendor-pro"><b>Part of Vendor Pro.</b> Email reminders before application deadlines close, the weekly email a day early, and a gold PRO badge on your profile.
     <a class="btn sm" data-upgrade="vendor-pro" href="pricing.html">Get Vendor Pro</a></div></div>
+<div class="acard" id="trkRemCard"><h3 class="acard-h">Tracker reminders <span class="tierpill gold" style="vertical-align:middle">PRO</span></h3>
+  <div id="trkOn" hidden><p>Emails about your own tracked applications: deadlines and fees due in 3 days or 1 day, and events tomorrow. One email at most per run.</p>
+    <form class="form"><label class="check"><input type="checkbox" id="trkRemind"> <span>Email me tracker reminders</span></label></form><div class="amsg" id="trkMsg"></div></div>
+  <div class="locked-card" id="trkOff"><b>Part of Vendor Pro.</b> Reminders for the markets in your tracker: deadlines, fees due and event days.
+    <a class="btn sm" data-unlock="vendor-pro" href="pro.html">Unlock · $6/mo</a></div></div>
 <div id="calSlot"><div class="acard" id="calCard" aria-label="My calendar"></div></div>
   </div></div>
 </section>

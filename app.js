@@ -288,7 +288,7 @@
         '<div class="locked-card"><b>🔒 Event name, exact place, organizer and apply link</b> are part of Vendor Pro ($6/month). Every market in Florida, with the links to apply.</div>';
       ap.href='#';ap.setAttribute('data-unlock','vendor-pro');ap.classList.remove('off');ap.removeAttribute('aria-disabled');ap.removeAttribute('tabindex');ext.style.display='none';ap.firstChild.textContent='Unlock · $6/mo ';
     } else ap.removeAttribute('data-unlock');
-    $('shIcs').disabled=!curA;syncSheetSave();if(window.JVE_CAL&&JVE_CAL.sheet)JVE_CAL.sheet(e,curA);
+    $('shIcs').disabled=!curA;syncSheetSave();if(window.JVE_CAL&&JVE_CAL.sheet)JVE_CAL.sheet(e,curA);if(window.JVE_TRK&&JVE_TRK.sheet)JVE_TRK.sheet(e,curA);
   }
   function showSheet(id,anchor){var e=byId[id];if(!e)return false;curE=e;curA=anchor||e.up[0]||null;fillSheet(e);
     if(!sheet.classList.contains('open')){lastFocus=document.activeElement;sheet.setAttribute('aria-hidden','false');sheet.classList.add('open');scrim.classList.add('open');document.body.classList.add('noscroll');}
