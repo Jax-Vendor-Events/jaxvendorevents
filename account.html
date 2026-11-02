@@ -43,8 +43,9 @@
 <script src="theme.js?v=nv2"></script>
 <script src="gate.js"></script>
 <link rel="stylesheet" href="auth.css?v=au1">
+<link rel="stylesheet" href="brand.css?v=bp2">
 <link rel="stylesheet" href="mycal.css?v=mc1">
-<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script><script src="mycal.js?v=mc1" defer></script><script type="jve/boot" data-src="account.js?v=au1"></script>
+<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script><script src="mycal.js?v=mc1" defer></script><script type="jve/boot" data-src="account.js?v=bp2"></script><script type="jve/boot" data-src="brand.js?v=bp2"></script><script type="jve/boot" data-src="account-brand.js?v=bp2"></script>
 
 
 </head>
@@ -63,19 +64,44 @@
 </div>
 <header class="top"><div class="wrap"><a class="brand" href="index.html" aria-label="Jax Vendor Events home"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo"/></svg><span class="wm"><b>Jax Vendor Events</b><small>Northeast Florida</small></span></a><nav class="nav" aria-label="Main"><a href="index.html" data-nav="home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5L12 4l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5H15v-6h-6v6H5.5A1.5 1.5 0 0 1 4 19z"/></svg><span>Home</span></a><a href="index.html#events" data-nav="events"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Events</span></a><a href="index.html#saved" data-nav="saved"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.5 8 3.6 4.5 7.2 4.5c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.6 0 5.7 3.5 4.5 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/></svg><span>Saved</span></a><a href="pricing.html#vendors" data-nav="pro"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.8l2.5 5.2 5.6.8-4.1 4 1 5.6-5-2.7-5 2.7 1-5.6-4.1-4 5.6-.8z"/></svg><span>Pro</span></a><button type="button" data-open-more data-nav="account" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="10" r="3.2"/><path d="M6.3 18.3c1.3-2.3 3.3-3.4 5.7-3.4s4.4 1.1 5.7 3.4"/></svg><span>Account</span></button></nav></div></header>
 <main class="wrap" id="main">
-<div class="authpage" style="max-width:640px">
-<section class="ph"><span class="eyebrow"><svg class="ico sm" aria-hidden="true"><use href="#i-user"/></svg> My account</span><h1>Your account</h1><p class="lead" id="pEmail"></p></section>
+<div class="authpage acct2" style="max-width:640px">
+<section class="ph"><span class="eyebrow"><svg class="ico sm" aria-hidden="true"><use href="#i-user"/></svg> My account</span><h1>Your account</h1><p class="lead"><span id="pEmail"></span> <span class="rolepill" id="pRole"></span></p></section>
 <div class="amsg" id="topMsg" role="status"></div>
-<div class="acard"><h2>Your plan</h2><div id="planPills"></div>
-  <p class="hint" style="margin-top:10px">Paid extras unlock on this account automatically right after checkout. <a href="pricing.html">See all options</a></p></div>
-
-<div class="acard"><h2>Deadline reminders <span class="tierpill gold" style="vertical-align:middle">PRO</span></h2>
-  <div data-tier="vendor-pro"><p>We email you before vendor application deadlines close, plus the weekly email a day early.</p>
-    <form class="form"><label class="check"><input type="checkbox" id="proRemind"> <span>Email me deadline reminders</span></label></form><div class="amsg" id="proMsg"></div></div>
-  <div class="locked-card" data-tier-lock="vendor-pro"><b>Part of Vendor Pro ($6/month).</b> Email reminders before application deadlines close, the weekly email a day early, and a gold PRO badge on your profile.
-    <a class="btn sm" data-upgrade="vendor-pro" href="pricing.html">Get Vendor Pro</a></div></div>
-
-<div class="acard"><h2>Manage my listings</h2>
+<section class="asec open" id="sec-brand">
+  <h2 class="ash-h"><button type="button" class="ash" aria-expanded="true" aria-controls="asb-brand"><span class="ash-i"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg></span><span class="ash-t"><b>Profile &amp; branding</b><small>Your public page, logo, colors, links</small></span><svg class="ico chev" aria-hidden="true"><use href="#i-down"/></svg></button></h2>
+  <div class="asb" id="asb-brand"><div class="asi">
+<!-- brand profile (branded-profiles worker) -->
+<div class="acard brandcard" id="brand"><h3 class="acard-h">Brand profile</h3><div id="brandBox"><p class="hint">Loading…</p></div></div>
+<!-- /brand profile -->
+<div class="acard"><h3 class="acard-h">Account details</h3>
+  <form class="form" id="profileForm" novalidate>
+    <div><label for="pName">Your name</label><input id="pName" maxlength="120" autocomplete="name"></div>
+    <div class="row"><label for="pBiz">Business or event name</label><input id="pBiz" maxlength="160" autocomplete="organization"></div>
+    <div class="two row"><div><label for="pType">I am a…</label><select id="pType"><option value="vendor">Vendor</option><option value="organizer">Organizer</option><option value="business">Business</option></select></div>
+      <div><label for="pWeb">Website</label><input id="pWeb" maxlength="300" placeholder="https://"></div></div>
+    <p class="hint">Private. Only you and the site admin see these. Your role decides which tools this page shows.</p>
+    <button class="btn" type="submit">Save details</button><div class="amsg" id="profileMsg"></div></form></div>
+  </div></div>
+</section>
+<section class="asec" id="sec-plan">
+  <h2 class="ash-h"><button type="button" class="ash" aria-expanded="false" aria-controls="asb-plan"><span class="ash-i"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></span><span class="ash-t"><b>Subscription</b><small>Your plan, what it includes, upgrades</small></span><svg class="ico chev" aria-hidden="true"><use href="#i-down"/></svg></button></h2>
+  <div class="asb" id="asb-plan"><div class="asi">
+<div class="acard"><h3 class="acard-h">Your plan</h3><div id="planPills"></div><ul class="incl" id="planIncl"></ul>
+  <p class="hint" style="margin-top:10px">Paid extras attach to this account automatically right after checkout.</p></div>
+<div class="acard"><h3 class="acard-h">Upgrade</h3><div class="upgrid" id="upGrid"></div><p class="hint"><a href="pricing.html">Compare every option</a></p></div>
+<div class="acard"><h3 class="acard-h">Manage or cancel</h3><p class="hint" style="margin-top:0">Monthly plans renew each month and you can cancel any time: it stops at the end of the month you paid for. To cancel or change a plan, reply to any of our emails (or your payment receipt) and we take care of it the same day.</p></div>
+<div class="acard"><h3 class="acard-h">Purchases</h3><ul class="alist" id="payList"><li><small>Loading…</small></li></ul></div>
+  </div></div>
+</section>
+<section class="asec" id="sec-stuff">
+  <h2 class="ash-h"><button type="button" class="ash" aria-expanded="false" aria-controls="asb-stuff"><span class="ash-i"><svg class="ico" aria-hidden="true"><use href="#i-list"/></svg></span><span class="ash-t"><b>My stuff</b><small><span id="stuffSub">Saved events, listings, placements</span></small></span><svg class="ico chev" aria-hidden="true"><use href="#i-down"/></svg></button></h2>
+  <div class="asb" id="asb-stuff"><div class="asi">
+<div class="acard" data-role="vendor"><h3 class="acard-h">Saved events</h3><p id="savedTxt" class="hint" style="margin-top:0">Loading…</p><a class="btn sm" href="index.html#saved">Open Saved</a></div>
+<div class="acard" data-role="vendor"><h3 class="acard-h">Directory listing</h3><p class="hint" style="margin-top:0" id="dirTxt">Your brand profile is your listing in the Vendor &amp; organizer directory.</p>
+  <div class="btnrow"><a class="btn sm ghost" href="profiles.html">Open the directory</a><a class="btn sm ghost" data-upgrade="featured-vendor" href="pricing.html?tier=featured-vendor#get-featured">Get featured</a></div></div>
+<div class="acard" data-role="organizer"><h3 class="acard-h">My listings</h3><ul class="alist" id="myEvents"><li><small>Loading…</small></li></ul>
+  <div class="btnrow" style="margin-top:10px"><a class="btn sm" href="list.html">List an event (free)</a><a class="btn sm ghost" data-upgrade="featured-event" href="pricing.html?tier=featured-event#get-featured">Get featured</a></div></div>
+<div class="acard" data-role="organizer"><h3 class="acard-h">Manage my listings</h3>
   <div data-tier="organizer-plus"><p>Update dates, fees, deadline or application link for an event you run, or ask us to take one down. Changes go live after a quick check.</p>
     <form class="form" id="opForm" novalidate>
       <div><label for="opEvent">Event</label><select id="opEvent"></select></div>
@@ -84,35 +110,45 @@
       <div class="two row"><div><label for="opDeadline">Application deadline</label><input id="opDeadline" type="date"></div><div><label for="opApply">Application link</label><input id="opApply" placeholder="https://"></div></div>
       <div class="row"><label for="opNote">Notes for vendors</label><textarea id="opNote" rows="2"></textarea></div>
       <button class="btn" type="submit">Send update</button><div class="amsg" id="opMsg"></div></form></div>
-  <div class="locked-card" data-tier-lock="organizer-plus"><b>Part of Organizer Plus ($29/month).</b> Manage your own listings, a verified organizer badge, a deadline spotlight on every event and 2 featured weeks a month. Anyone can still <a href="list.html">list an event free</a>.
+  <div class="locked-card" data-tier-lock="organizer-plus"><b>Part of Organizer Plus.</b> Manage your own listings, a verified organizer badge, a deadline spotlight on every event and 2 featured weeks a month. Anyone can still <a href="list.html">list an event free</a>.
     <a class="btn sm" data-upgrade="organizer-plus" href="pricing.html">Get Organizer Plus</a></div></div>
-
-<div class="acard" data-tier="newsletter-sponsor directory-sponsor"><h2>Sponsor details</h2><p>Your name, one line and a link for the sponsor spot.</p>
+<div class="acard" data-role="business"><h3 class="acard-h">Sponsor placements</h3><ul class="alist" id="spLive"><li><small>Loading…</small></li></ul>
+  <div class="btnrow" style="margin-top:10px"><a class="btn sm ghost" data-upgrade="newsletter-sponsor" href="pricing.html?tier=newsletter-sponsor#get-featured">Sponsor an issue</a><a class="btn sm ghost" data-upgrade="directory-sponsor" href="pricing.html?tier=directory-sponsor#get-featured">Directory sponsor</a><a class="btn sm ghost" href="sponsor.html">Media kit</a></div></div>
+<div class="acard" data-role="business"><h3 class="acard-h">Sponsor details</h3>
+  <div data-tier="newsletter-sponsor directory-sponsor"><p>Your name, one line and a link for the sponsor spot.</p>
   <form class="form" id="spForm" novalidate>
     <div><label for="spName">Business name</label><input id="spName" maxlength="80"></div>
     <div class="row"><label for="spLine">One line (140 characters)</label><input id="spLine" maxlength="140"></div>
     <div class="two row"><div><label for="spUrl">Link</label><input id="spUrl" placeholder="https://"></div><div><label for="spLogo">Logo link (optional)</label><input id="spLogo" placeholder="https://…png"></div></div>
     <button class="btn" type="submit">Send details</button><div class="amsg" id="spMsg"></div></form></div>
-
-<div class="acard"><h2>Profile</h2>
-  <form class="form" id="profileForm" novalidate>
-    <div><label for="pName">Your name</label><input id="pName" maxlength="120" autocomplete="name"></div>
-    <div class="row"><label for="pBiz">Business or event name</label><input id="pBiz" maxlength="160" autocomplete="organization"></div>
-    <div class="two row"><div><label for="pType">I am a…</label><select id="pType"><option value="vendor">Vendor</option><option value="organizer">Organizer</option><option value="business">Business</option></select></div>
-      <div><label for="pWeb">Website</label><input id="pWeb" maxlength="300" placeholder="https://"></div></div>
-    <button class="btn" type="submit">Save profile</button><div class="amsg" id="profileMsg"></div></form>
-  <p class="hint">Want a public vendor profile in the directory? <a href="join.html">Create it here</a>.</p></div>
-
-<div class="acard" id="calCard" aria-label="My calendar"></div>
-<div class="acard"><h2>My requests</h2><ul class="alist" id="reqList"><li><small>Loading…</small></li></ul></div>
-<div class="acard"><h2>Purchases</h2><ul class="alist" id="payList"><li><small>Loading…</small></li></ul></div>
-
-<div class="acard"><h2>Login &amp; security</h2>
+  <p class="hint" data-tier-lock="newsletter-sponsor directory-sponsor" style="margin-top:0">This form opens once you have a sponsor placement.</p></div>
+<div class="acard"><h3 class="acard-h">My requests</h3><ul class="alist" id="reqList"><li><small>Loading…</small></li></ul></div>
+  </div></div>
+</section>
+<section class="asec" id="sec-settings">
+  <h2 class="ash-h"><button type="button" class="ash" aria-expanded="false" aria-controls="asb-settings"><span class="ash-i"><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg></span><span class="ash-t"><b>App settings</b><small>Appearance, region, reminders, calendar</small></span><svg class="ico chev" aria-hidden="true"><use href="#i-down"/></svg></button></h2>
+  <div class="asb" id="asb-settings"><div class="asi">
+<div class="acard"><h3 class="acard-h">Appearance</h3><div class="aseg" id="setMode" role="radiogroup" aria-label="Appearance"><button type="button" role="radio" data-mode="auto">Auto</button><button type="button" role="radio" data-mode="light">Light</button><button type="button" role="radio" data-mode="dark">Dark</button></div></div>
+<div class="acard"><h3 class="acard-h">Default region</h3><div class="pill"><label for="setRegion" class="sr">Default region</label><select id="setRegion"></select></div><p class="hint">Home and Events open on this part of Florida.</p><div class="amsg" id="regMsg"></div></div>
+<div class="acard"><h3 class="acard-h">Deadline reminders <span class="tierpill gold" style="vertical-align:middle">PRO</span></h3>
+  <div data-tier="vendor-pro"><p>We email you before vendor application deadlines close, plus the weekly email a day early.</p>
+    <form class="form"><label class="check"><input type="checkbox" id="proRemind"> <span>Email me deadline reminders</span></label></form><div class="amsg" id="proMsg"></div></div>
+  <div class="locked-card" data-tier-lock="vendor-pro"><b>Part of Vendor Pro.</b> Email reminders before application deadlines close, the weekly email a day early, and a gold PRO badge on your profile.
+    <a class="btn sm" data-upgrade="vendor-pro" href="pricing.html">Get Vendor Pro</a></div></div>
+<div id="calSlot"><div class="acard" id="calCard" aria-label="My calendar"></div></div>
+  </div></div>
+</section>
+<section class="asec" id="sec-security">
+  <h2 class="ash-h"><button type="button" class="ash" aria-expanded="false" aria-controls="asb-security"><span class="ash-i"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span><span class="ash-t"><b>Security</b><small>Password, email, log out</small></span><svg class="ico chev" aria-hidden="true"><use href="#i-down"/></svg></button></h2>
+  <div class="asb" id="asb-security"><div class="asi">
+<div class="acard"><h3 class="acard-h">Password &amp; email</h3>
   <form class="form" id="pwForm" novalidate><div><label for="nPw">New password</label><div class="pwrap"><input id="nPw" type="password" autocomplete="new-password" required minlength="10" placeholder="10+ characters, letters and numbers"><button type="button" class="peek" aria-label="Show password">Show</button></div></div>
     <div class="row"><label for="nPw2">Type it again</label><div class="pwrap"><input id="nPw2" type="password" autocomplete="new-password" required minlength="10" placeholder=""><button type="button" class="peek" aria-label="Show password">Show</button></div></div><button class="btn ghost" type="submit">Change password</button><div class="amsg" id="pwMsg"></div></form>
-  <form class="form" id="emForm" novalidate style="margin-top:16px"><div><label for="nEm">Change email</label><input id="nEm" type="email" autocomplete="email" placeholder="new@email.com"></div><button class="btn ghost" type="submit">Change email</button><div class="amsg" id="emMsg"></div></form>
-  <div class="btnrow" style="margin-top:16px"><a class="btn sm ghost" href="#" data-logout>Log out</a><a class="btn sm dark" href="#" data-logout="global">Log out on every device</a></div>
+  <form class="form" id="emForm" novalidate style="margin-top:16px"><div><label for="nEm">Change email</label><input id="nEm" type="email" autocomplete="email" placeholder="new@email.com"></div><button class="btn ghost" type="submit">Change email</button><div class="amsg" id="emMsg"></div></form></div>
+<div class="acard"><h3 class="acard-h">Log out</h3><div class="btnrow"><a class="btn sm ghost" href="#" data-logout>Log out</a><a class="btn sm dark" href="#" data-logout="global">Log out on every device</a></div>
   <p class="hint">Your account is just for you. Logging in somewhere new logs out any other device. To delete your account, reply to any of our emails.</p></div>
+  </div></div>
+</section>
 <p class="hint adm-only" style="text-align:center;margin-top:16px"><a href="admin.html">Admin</a></p>
 </div>
 </main>

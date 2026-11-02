@@ -13,7 +13,16 @@
     function show(n){Array.prototype.forEach.call(tabs,function(b){var on=b.getAttribute('data-p')===n;b.setAttribute('aria-selected',on);$('p-'+b.getAttribute('data-p')).hidden=!on;});LOAD[n]&&LOAD[n]();}
     Array.prototype.forEach.call(tabs,function(b){b.addEventListener('click',function(){show(b.getAttribute('data-p'));});});
     function tierOpts(){return Object.keys(T).map(function(k){return '<option value="'+k+'">'+esc(T[k])+'</option>';}).join('');}
+    var brands=[];
     var LOAD={
+      brands:async function(){var r=await sb.rpc('admin_brands');if(r.error)return msg(r.error.message,'err');var rows=r.data||[],BR=window.JVE_BRAND;brands=rows;
+        $('bCount').textContent=rows.length+' profiles \u00b7 '+rows.filter(function(x){return x.hidden;}).length+' hidden';
+        function im(p,label,hid){var u=BR&&BR.img(p);if(!u)return '';var off=hid.indexOf(p)>=0;return '<div class="bm-img'+(off?' off':'')+'" data-path="'+esc(p)+'"><img src="'+esc(u)+'" alt="'+esc(label)+'" loading="lazy"><small>'+esc(label)+'</small><button type="button" data-act="bimg">'+(off?'Unhide':'Hide')+'</button></div>';}
+        $('bList').innerHTML=rows.length?rows.map(function(x){var hid=x.hidden_paths||[];var imgs=[im(x.raw_logo,'logo',hid),im(x.raw_cover,'cover',hid)].concat((x.raw_photos||[]).map(function(p,i){return im(p,'photo '+(i+1),hid);})).join('');
+          return '<div class="bm-row" data-uid="'+esc(x.user_id)+'"><div class="bm-head">'+(BR&&BR.img(x.raw_logo)?'<img class="bl-logo" src="'+esc(BR.img(x.raw_logo))+'" alt="" style="--bc:'+esc(BR.color(x.color))+'">':'<span class="bl-logo bl-mono" style="background:'+esc(BR?BR.color(x.color):'#0d6e6e')+';color:#fff">'+esc((x.name||'?').charAt(0).toUpperCase())+'</span>')+
+            '<div><div class="who">'+esc(x.name)+(x.hidden?' <span class="st rejected">hidden</span>':'')+(x.listed?'':' <span class="st">not listed</span>')+'</div><div class="meta">'+esc(x.kind)+' \u00b7 '+esc(x.email||'')+' \u00b7 <a href="profile.html?u='+encodeURIComponent(x.slug)+'" target="_blank" rel="noopener">/'+esc(x.slug)+'</a></div></div></div>'+
+            (x.tagline?'<div class="meta">'+esc(x.tagline)+'</div>':'')+(imgs?'<div class="bm-imgs">'+imgs+'</div>':'')+
+            '<div class="btnrow"><button class="btn sm '+(x.hidden?'':'ghost')+'" data-act="bhide">'+(x.hidden?'Unhide profile':'Hide profile')+'</button></div></div>';}).join(''):'<p class="meta">No brand profiles yet.</p>';},
       users:async function(){var r=await sb.rpc('admin_users');if(r.error)return msg(r.error.message,'err');users=r.data||[];
         var f=($('uFind').value||'').toLowerCase();
         var list=users.filter(function(x){return !f||(x.email+' '+x.full_name+' '+x.business_name).toLowerCase().indexOf(f)>=0;});
@@ -55,6 +64,11 @@
           var r2=await sb.rpc('admin_review_request',{req:id,approve:act==='approve',why:note});if(r2.error)throw r2.error;msg(act==='approve'?'Approved and live.':'Rejected.','ok');LOAD.reqs();}
         else if(act==='assign'){var li2=b.closest('li'),uid2=li2.querySelector('select').value;if(!uid2)return msg('Pick the account first.','err');
           var r3=await sb.rpc('admin_assign_payment',{pay:li2.getAttribute('data-pay'),target:uid2});if(r3.error)throw r3.error;msg('Attached; the tier is on that account now.','ok');users=[];LOAD.sales();}
+        else if(act==='bhide'||act==='bimg'){var row5=b.closest('.bm-row'),uid5=row5.getAttribute('data-uid'),x5=brands.filter(function(z){return z.user_id===uid5;})[0];if(!x5)return;
+          var hid5=(x5.hidden_paths||[]).slice(),hide5=!!x5.hidden;
+          if(act==='bhide'){hide5=!hide5;if(hide5&&!confirm('Hide '+x5.name+' from the directory and its public page?'))return;}
+          else{var pth=b.closest('.bm-img').getAttribute('data-path');var k5=hid5.indexOf(pth);if(k5>=0)hid5.splice(k5,1);else hid5.push(pth);}
+          var r5=await sb.rpc('admin_brand_moderate',{uid:uid5,hide:hide5,hidden_paths:hid5,note:null});if(r5.error)throw r5.error;msg(act==='bhide'?(hide5?'Profile hidden.':'Profile visible again.'):'Image updated.','ok');LOAD.brands();}
         else if(act==='unpaid'){var li3=b.closest('li');if(!confirm('Take this placement down now?'))return;
           var r4=await sb.rpc('admin_paid_remove',{list:li3.getAttribute('data-list'),idx:+li3.getAttribute('data-idx'),why:'admin page'});if(r4.error)throw r4.error;msg('Removed.','ok');LOAD.paid();}
       }catch(err){msg(err.message||String(err),'err');}});

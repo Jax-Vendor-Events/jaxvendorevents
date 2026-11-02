@@ -43,7 +43,8 @@
 <script src="theme.js?v=nv2"></script>
 <script src="gate.js"></script>
 <link rel="stylesheet" href="auth.css?v=au1">
-<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script><script type="jve/boot" data-src="admin.js?v=au1"></script>
+<link rel="stylesheet" href="brand.css?v=bp2">
+<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au1"></script><script type="jve/boot" data-src="brand.js?v=bp2"></script><script type="jve/boot" data-src="admin.js?v=bp2"></script>
 
 
 </head>
@@ -65,11 +66,12 @@
 <div class="authpage" style="max-width:760px">
 <section class="ph"><span class="eyebrow"><svg class="ico sm" aria-hidden="true"><use href="#i-shield"/></svg> Admin</span><h1>Admin</h1><p class="lead">Members, tiers, sales and approvals. Passwords are never visible to anyone.</p></section>
 <div class="amsg" id="admMsg" role="status" aria-live="polite"></div>
-<div class="adm-tabs" role="tablist"><button data-p="users" aria-selected="true">Users</button><button data-p="sales">Sales</button><button data-p="reqs">Approvals</button><button data-p="paid">Paid placements</button><button data-p="log">Activity</button></div>
+<div class="adm-tabs" role="tablist"><button data-p="users" aria-selected="true">Users</button><button data-p="sales">Sales</button><button data-p="reqs">Approvals</button><button data-p="paid">Paid placements</button><button data-p="brands">Profiles</button><button data-p="log">Activity</button></div>
 <div class="acard" id="p-users"><h2>Users</h2><p id="uCount"></p><form class="form" onsubmit="return false"><input id="uFind" type="search" placeholder="Search email, name, business"></form><div id="uList" style="margin-top:8px"></div></div>
 <div class="acard" id="p-sales" hidden><h2>Sales</h2><div class="stat" id="sStats"></div><ul class="alist" id="sList"></ul></div>
 <div class="acard" id="p-reqs" hidden><h2>Approvals</h2><p id="rCount"></p><ul class="alist" id="rList"></ul></div>
 <div class="acard" id="p-paid" hidden><h2>Paid placements</h2><p>Live on the site now. Remove takes it down at once.</p><ul class="alist" id="pList"></ul></div>
+<div class="acard" id="p-brands" hidden><h2>Profiles</h2><p id="bCount"></p><p class="hint" style="margin-top:0">Hide a whole profile, or a single logo or photo. Hidden items vanish from the directory and public pages at once; the member sees a note.</p><div id="bList"></div></div>
 <div class="acard" id="p-log" hidden><h2>Activity</h2><ul class="alist" id="lList"></ul></div>
 </div>
 </main>
