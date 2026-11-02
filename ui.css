@@ -324,3 +324,6 @@ html[data-mode=dark]:not(.authed) .mlist a[data-member] .mt small::after{color:v
 .brand .wm b,.brand .wm small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media (max-width:420px){.top .wrap{gap:8px}.brand{gap:8px}.brand .mark{width:34px;height:34px}.brand .wm b{font-size:17px}.brand .wm small{font-size:9.5px;letter-spacing:.12em}.acctbtn{margin-right:6px}.acctbtn.out{padding:0 12px}}
 @media (max-width:350px){.brand .wm b{font-size:15.5px}.brand .wm small{display:none}}
+
+/* account + admin pages: their .acard boxes are blocks, not the Account sheet's flex row (it pushed the tab bar off-screen on phones) (lf2) */
+.authpage .acard{display:block}
