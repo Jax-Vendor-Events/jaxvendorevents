@@ -1,4 +1,4 @@
-/* Jax Vendor Events: appearance (follows the phone's light/dark setting by default; the header button overrides) + the "More" sheet + the 5-tab navigation. Runs in <head> before paint. */
+/* Jax Vendor Events: appearance (follows the phone's light/dark setting by default; the header button overrides) + the Account sheet (was "More"), Florida regions + the 5-tab navigation (Home · Events · Saved · Pro · Account). Runs in <head> before paint. */
 (function(){
   'use strict';
   var root=document.documentElement,KA='jve_look2',THEME='ocean';
@@ -36,14 +36,68 @@
     doc:'<path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.5z"/><path d="M14 3.5v5h5M9 13h6M9 16.5h4"/>',
     pin:'<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
     chev:'<path d="M9.5 6l6 6-6 6"/>'};
+  /* ---- Florida regions (Luis, Nov 1 2026: the site covers all of Florida). An event's own "region" wins; else its county decides. ---- */
+  var REG=[['ne','Northeast FL','Duval|St. Johns|Clay|Nassau|Baker|Flagler|Putnam|Bradford|Union'],
+    ['panhandle','Panhandle','Escambia|Santa Rosa|Okaloosa|Walton|Holmes|Washington|Bay|Jackson|Calhoun|Gulf|Liberty|Franklin|Gadsden|Leon|Wakulla|Jefferson'],
+    ['nc','North Central','Alachua|Columbia|Suwannee|Hamilton|Madison|Taylor|Lafayette|Dixie|Gilchrist|Levy|Marion'],
+    ['central','Central / Orlando','Orange|Seminole|Osceola|Lake|Volusia|Brevard|Sumter|Polk'],
+    ['tampa','Tampa Bay','Hillsborough|Pinellas|Pasco|Hernando|Citrus|Manatee'],
+    ['sw','Southwest','Lee|Collier|Charlotte|Sarasota|DeSoto|Glades|Hendry|Hardee|Highlands'],
+    ['se','Southeast / Miami','Miami-Dade|Broward|Palm Beach|Martin|St. Lucie|Indian River|Okeechobee'],
+    ['keys','Keys','Monroe']];
+  function ck(s){return String(s||'').toLowerCase().replace(/\bcounty\b/g,'').replace(/\bsaint\b/g,'st').replace(/[^a-z]/g,'');}
+  var C2R={},R2={},RK='jve_region';
+  REG.forEach(function(r){r[2].split('|').forEach(function(c){C2R[ck(c)]=r[0];});
+    [r[0],r[1],r[1].replace(/ FL$/,'')].concat(r[1].split('/')).forEach(function(a){R2[ck(a)]=r[0];});});
+  R2.northeast=R2.northeastflorida=R2.jax=R2.jacksonville='ne';R2.orlando=R2.central='central';R2.tampa='tampa';R2.miami=R2.southeast='se';R2.floridakeys='keys';
+  function regionOf(e){if(!e)return 'ne';var r=e.region&&R2[ck(e.region)];if(r)return r;return C2R[ck(e.county)]||'ne';}
+  function regionGet(){var v=get(RK);if(v&&R2[v]===v)return v;var A=window.JVE_AUTH,p=A&&A.profile&&A.profile.region;return (p&&R2[ck(p)])||'ne';}
+  function regionSet(v){if(R2[v]!==v)return;put(RK,v);try{document.dispatchEvent(new CustomEvent('jve:region',{detail:v}));}catch(_){}
+    var s=document.querySelectorAll('select[data-region]');for(var i=0;i<s.length;i++)s[i].value=v;}
+  function regionLabel(v){for(var i=0;i<REG.length;i++)if(REG[i][0]===v)return REG[i][1];return 'Northeast FL';}
+  window.JVE_REGIONS={list:REG.map(function(r){return {id:r[0],label:r[1],counties:r[2].split('|')};}),of:regionOf,get:regionGet,set:regionSet,label:regionLabel};
+  function regionOptions(){return REG.map(function(r){return '<option value="'+r[0]+'">'+r[1]+'</option>';}).join('');}
+  /* ---- the Account sheet (was "More"): account, plan, organizer + vendor tools, settings, help ---- */
   var LINKS=[
-    ['For vendors',[['profiles.html','users','Vendor & organizer directory','Browse local makers and markets'],['join.html','user','Create your profile','Logo, links and the events you want'],['city.html','shield','City & county vendor signup','Official permits, fees and steps']]],
-    ['For organizers',[['list.html','send','List your event','Free. We check it against your page'],['pricing.html','star','Advertise & get featured','Featured spots from $10'],['sponsor.html','kit','Sponsor media kit','Audience and placements']]],
-    ['About',[['about.html','info','About Jax Vendor Events',''],['terms.html','doc','Terms & Privacy','']]]];
+    ['For organizers',[['list.html','send','List your event','Free · we check it against your page'],['pricing.html#organizers','star','Get featured','Top spots from $10'],['sponsor.html','kit','Sponsor media kit','Audience and placements']]],
+    ['For vendors',[['profiles.html','users','Vendor & organizer directory','Browse makers and markets'],['join.html','user','Create your vendor profile','Logo, links and the events you want'],['city.html','shield','City & county vendor signup','Official permits, fees and steps'],['newsletter.html','mail','Weekly email','New markets + deadlines every Monday · free']]],
+    ['Help',[['about.html','info','About Jax Vendor Events',''],['terms.html','doc','Terms & Privacy','']]]];
+  I.mail='<rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3.8 7.2l8.2 5.8 8.2-5.8"/>';
+  I.login='<path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/>';
+  I.out='<path d="M15 17l5-5-5-5M20 12H8"/><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"/>';
+  function li(l){return '<li><a href="'+l[0]+'"'+(l[4]||'')+'><span class="mi">'+svg(I[l[1]])+'</span><span class="mt"><b>'+esc(l[2])+'</b>'+(l[3]?'<small>'+esc(l[3])+'</small>':'')+'</span><span class="mc">'+svg(I.chev)+'</span></a></li>';}
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  var TN={'featured-event':'Featured event','deadline-spotlight':'Deadline spotlight','organizer-plus':'Organizer Plus','newsletter-sponsor':'Newsletter sponsor','directory-sponsor':'Directory sponsor','featured-vendor':'Featured vendor','vendor-pro':'Vendor Pro'};
+  var authDone=false;
+  function drawAcct(){
+    var box=document.getElementById('macct');if(!box)return;
+    var A=window.JVE_AUTH,h='',plan='';
+    if(!A||!A.sb){
+      h='<div class="acard"><span class="aav">'+svg(I.user)+'</span><span class="at"><b>Free accounts are almost ready</b><small>Soon you can log in, keep your saved events on every phone and unlock Pro.</small></span></div>';
+      plan=li(['pricing.html#vendors','star','Vendor Pro · $6/mo','Every market name, place + apply link']);
+    }else if(!authDone){
+      h='<div class="acard"><span class="aav">'+svg(I.user)+'</span><span class="at"><b>Checking your login…</b><small>One moment</small></span></div>';
+    }else if(!A.user){
+      h='<div class="acard"><span class="aav">'+svg(I.user)+'</span><span class="at"><b>Welcome! You’re not logged in</b><small>A free account keeps your saved events and region on every device.</small></span></div>'+
+        '<div class="abtns"><a class="btn" href="login.html?mode=signup">Create free account</a><a class="btn ghost" href="login.html">Log in</a></div>';
+      plan=li(['pricing.html#vendors','star','Vendor Pro · $6/mo','Every market name, place + apply link']);
+    }else{
+      var P=A.profile||{},n=(P.full_name||P.business_name||A.user.email||'?').trim(),tiers=(A.tiers||[]);
+      var role=P.role?(' · '+String(P.role).charAt(0).toUpperCase()+String(P.role).slice(1)):'';
+      h='<a class="acard" href="account.html"><span class="aav txt">'+esc(n.charAt(0).toUpperCase())+'</span><span class="at"><b>'+esc(n)+(A.has&&A.has('vendor-pro')?' <i class="apro">PRO</i>':'')+'</b><small>'+esc((tiers.length?tiers.map(function(t){return TN[t]||t;}).join(', '):'Free member')+role)+'</small></span><span class="mc">'+svg(I.chev)+'</span></a>'+
+        '<div class="abtns"><a class="btn" href="account.html">My account</a><a class="btn ghost" href="#" data-logout>Log out</a></div>';
+      plan=(A.has&&A.has('vendor-pro'))?li(['account.html','star','Vendor Pro is on','Manage your plan and reminders']):li(['pricing.html#vendors','star','Go Vendor Pro · $6/mo','Every market name, place + apply link']);
+      if(A.admin)plan+=li(['admin.html','shield','Admin','Users, plans, sales, approvals']);
+    }
+    box.innerHTML=h+(plan?'<p class="mgrp">Your plan</p><ul class="mlist">'+plan+'</ul>':'');
+  }
   function current(){var p=(location.pathname.split('/').pop()||'index.html');var h=location.hash;
-    if(p==='index.html'||p===''){return h==='#deadlines'?'deadlines':h==='#saved'?'saved':'events';}
-    if(p.indexOf('newsletter')===0)return 'newsletter';return 'more';}
-  function markNav(){var c=current();var a=document.querySelectorAll('[data-nav]');for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===c)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
+    if(p==='index.html'||p===''){if(/^#e=/.test(h)){var st=history.state||{};return st.v==='saved'?'saved':st.v==='home'||!st.v?'':'events';}
+      return /^#(events|deadlines|matches)$/.test(h)?'events':h==='#saved'?'saved':'home';}
+    if(p==='pricing.html')return 'pro';
+    if(/^(account|login|admin|reset|welcome)\.html$/.test(p))return 'account';
+    return '';}
+  function markNav(){var c=current();if(!c&&/^#e=/.test(location.hash))return;var a=document.querySelectorAll('[data-nav]');for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===c)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
   function build(){
     markNav();window.addEventListener('hashchange',markNav);
     var hdr=document.querySelector('.top .wrap');
@@ -52,19 +106,35 @@
     if(document.getElementById('moreSheet'))return;
     var sc=document.createElement('div');sc.className='tsheet-scrim';sc.id='moreScrim';
     var sh=document.createElement('div');sh.className='tsheet more';sh.id='moreSheet';sh.setAttribute('role','dialog');sh.setAttribute('aria-modal','true');sh.setAttribute('aria-labelledby','moreTitle');sh.hidden=true;
-    var h='<div class="grab" aria-hidden="true"></div><button type="button" class="x" id="moreClose" aria-label="Close">'+X+'</button><h2 id="moreTitle">More</h2>';
-    LINKS.forEach(function(g){h+='<p class="mgrp">'+g[0]+'</p><ul class="mlist">';g[1].forEach(function(l){h+='<li><a href="'+l[0]+'"><span class="mi">'+svg(I[l[1]])+'</span><span class="mt"><b>'+l[2]+'</b>'+(l[3]?'<small>'+l[3]+'</small>':'')+'</span><span class="mc">'+svg(I.chev)+'</span></a></li>';});h+='</ul>';});
-    sh.innerHTML=h;document.body.appendChild(sc);document.body.appendChild(sh);sync();
+    var h='<div class="grab" aria-hidden="true"></div><button type="button" class="x" id="moreClose" aria-label="Close">'+X+'</button><h2 id="moreTitle">Account</h2><div class="macct" id="macct"></div>';
+    LINKS.forEach(function(g,gi){
+      if(gi===2){h+='<p class="mgrp">Settings</p>'+
+        '<div class="mrow"><span class="mlab">Region<small>Home and Events open here</small></span><span class="hsel"><select id="mRegion" data-region aria-label="Region">'+regionOptions()+'</select></span></div>'+
+        '<div class="mrow"><span class="mlab">Appearance</span><div class="mseg" role="radiogroup" aria-label="Appearance">'+
+        ['auto','light','dark'].map(function(m){return '<button type="button" role="radio" data-mode="'+m+'" aria-checked="false">'+ICO[m]+'<span>'+(m==='auto'?'Auto':m==='light'?'Light':'Dark')+'</span></button>';}).join('')+'</div></div>';}
+      h+='<p class="mgrp">'+g[0]+'</p><ul class="mlist">';g[1].forEach(function(l){h+=li(l);});h+='</ul>';});
+    sh.innerHTML=h;document.body.appendChild(sc);document.body.appendChild(sh);
+    drawAcct();sync();
+    var rs=document.getElementById('mRegion');rs.value=regionGet();rs.addEventListener('change',function(){regionSet(rs.value);});
+    Array.prototype.forEach.call(sh.querySelectorAll('.mseg button'),function(bt){bt.addEventListener('click',function(){window.JVE_THEMES.setMode(bt.getAttribute('data-mode'));});});
+    var A=window.JVE_AUTH;if(A&&A.ready&&A.ready.then)A.ready.then(function(){authDone=true;drawAcct();});
+    document.addEventListener('jve:auth',function(){authDone=true;drawAcct();});
     var last=null,pushed=false;
-    function open(){if(!sh.hidden&&sh.classList.contains('open'))return;last=document.activeElement;sh.hidden=false;void sh.offsetWidth;sh.classList.add('open');sc.classList.add('open');document.body.classList.add('noscroll');
+    function open(){if(!sh.hidden&&sh.classList.contains('open'))return;last=document.activeElement;drawAcct();rs.value=regionGet();sh.hidden=false;void sh.offsetWidth;sh.classList.add('open');sc.classList.add('open');document.body.classList.add('noscroll');
+      var ab=document.querySelectorAll('[data-nav=account]');for(var i=0;i<ab.length;i++)ab[i].setAttribute('aria-expanded','true');
       try{history.pushState({jveMore:1},'',location.href);pushed=true;}catch(_){pushed=false;}
       var c=sh.querySelector('#moreClose');if(c)c.focus({preventScroll:true});}
-    function shut(){sh.classList.remove('open');sc.classList.remove('open');document.body.classList.remove('noscroll');setTimeout(function(){if(!sh.classList.contains('open'))sh.hidden=true;},380);if(last&&last.focus)last.focus({preventScroll:true});}
+    function shut(){sh.classList.remove('open');sc.classList.remove('open');document.body.classList.remove('noscroll');setTimeout(function(){if(!sh.classList.contains('open'))sh.hidden=true;},380);
+      var ab=document.querySelectorAll('[data-nav=account]');for(var i=0;i<ab.length;i++)ab[i].setAttribute('aria-expanded','false');
+      if(last&&last.focus)last.focus({preventScroll:true});}
     function close(){if(!sh.classList.contains('open'))return;if(pushed){pushed=false;history.back();}else shut();}
     window.addEventListener('popstate',function(){if(sh.classList.contains('open')){pushed=false;shut();}});
     sc.addEventListener('click',close);document.getElementById('moreClose').addEventListener('click',close);
     document.addEventListener('click',function(e){var t=e.target.closest('[data-open-more]');if(t){e.preventDefault();open();}});
-    sh.addEventListener('click',function(e){var a=e.target.closest('.mlist a');if(a&&pushed){e.preventDefault();var u=a.getAttribute('href');pushed=false;shut();try{history.replaceState(null,'',location.href);}catch(_){}location.href=u;}});
+    sh.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||a.hasAttribute('data-logout'))return;var u=a.getAttribute('href');if(!u||u==='#')return;
+      if(pushed){e.preventDefault();pushed=false;shut();try{history.replaceState(null,'',location.href);}catch(_){}
+        var here=location.pathname.split('/').pop()||'index.html',tp=u.split('#')[0];
+        if(tp===here&&u.indexOf('#')>-1){location.hash=u.split('#')[1];}else location.href=u;}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&sh.classList.contains('open')){e.stopPropagation();close();}},true);
     var y0=null,dy=0;sh.addEventListener('touchstart',function(t){if(sh.scrollTop>0)return;y0=t.touches[0].clientY;dy=0;},{passive:true});
     sh.addEventListener('touchmove',function(t){if(y0===null)return;dy=Math.max(0,t.touches[0].clientY-y0);if(dy>0){sh.style.transition='none';sh.style.transform='translateY('+dy+'px)';}},{passive:true});

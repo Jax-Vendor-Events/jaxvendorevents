@@ -1,4 +1,4 @@
-/* Jax Vendor Events: home (events, deadlines, saved) as one page. Views switch by #hash without reloads; the back button closes the event sheet and returns to the previous view. */
+/* Jax Vendor Events: home + events (with deadlines) + saved as one page. Views switch by #hash without reloads; the back button closes the event sheet and returns to the previous view. */
 (function(){
   'use strict';
   var D=window.JVE_DATA||{events:[]};
@@ -38,6 +38,12 @@
   function inRange(e,a,b){return e.up.some(function(x){return x>=a&&x<=b;})||(e.end_date&&e.up.length&&e.up[0]<=b&&e.end_date>=a);}
   function feeLabel(e){if(e.fee_bucket==='free')return 'Free';if(!e.fee)return 'Fee not listed';if(e.fee.length<=14)return e.fee;var m=e.fee.match(/\$[\d.,]*\d/);return m?m[0]+'+':'Fee: see details';}
   function applyUrl(e){return safeUrl(e.signup_url)||safeUrl(e.apply);}
+  /* Florida regions (theme.js JVE_REGIONS) + campus events */
+  var RG=window.JVE_REGIONS||{of:function(){return 'ne';},get:function(){return 'ne';},set:function(){},label:function(){return 'Northeast FL';},list:[{id:'ne',label:'Northeast FL',counties:[]}]};
+  var region=RG.get();
+  var CAMPUS_RE=/\b(college|university|campus|student union|UNF|FSCJ|UF|FSU|UCF|USF|FIU|FAU|FGCU|FAMU|UWF)\b/i;
+  function isCampus(e){return e.campus===true||/campus/i.test(String(e.category||e.type||''))||(e.types||[]).indexOf('campus')>-1||CAMPUS_RE.test([e.name,e.venue,e.organizer,e.host_agency].join(' '));}
+  ev.forEach(function(e){e.rg=RG.of(e);});
   // category options from the listings' own names
   var catN={};ev.forEach(function(e){e.types.forEach(function(t){catN[t]=(catN[t]||0)+1;});});
   LG.TYPES.forEach(function(t){if(!catN[t[0]])return;var o=document.createElement('option');o.value=t[0];o.textContent=t[1];$('fCat').appendChild(o);});
@@ -48,9 +54,9 @@
       $('updBadge').title='Last refresh '+new Date(t).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' ET';}
     rel();setInterval(rel,60000);})();
   /* ---- state ---- */
-  var view='events',F={matches:false,weekend:false,'2wk':false,free:false,dl:false};
+  var view='home',F={matches:false,weekend:false,'2wk':false,free:false,campus:false,dl:false};
   var fC=$('fCounty'),fK=$('fCat'),fS=$('fSort'),fQ=$('fQ');
-  var VIEWS={events:['Vendor events','Markets, craft fairs and pop-ups across Northeast Florida'],deadlines:['Deadlines','Apply before these close. Soonest first.'],saved:['Saved','Events you hearted. Saved on this phone.']};
+  var VIEWS={home:['Find your next market','Markets, craft fairs, pop-ups and campus events across Florida.'],events:['Vendor events','Search, filter and apply. Pick a region to see what’s near you.'],deadlines:['Deadlines','Apply before these close. Soonest first.'],saved:['Saved','Events you hearted. Saved on this phone.']};
   function chipsOn(){return Object.keys(F).some(function(k){return F[k];})||!!fC.value||!!fK.value||!!fQ.value.trim();}
   function badges(e,full,mode){
     var b=[];var cd=hasDl(e)?LG.countdown(floor,e.deadline):null;
@@ -83,6 +89,8 @@
     ev.forEach(function(e){
       if(view==='saved'&&!isSaved(e.id)) return;
       if(view==='deadlines'&&!hasDl(e)) return;
+      if(view!=='saved'&&e.rg!==region) return;
+      if(F.campus&&!isCampus(e)) return;
       if(c&&e.county!==c) return;
       if(k&&e.types.indexOf(k)<0) return;
       if(F.free&&e.fee_bucket!=='free') return;
@@ -122,8 +130,9 @@
     $('fQx').hidden=!fQ.value;
     var mb=document.querySelector('.xchip[data-f="matches"]');if(mb)mb.hidden=!LG.hasPrefs(prefs);
     if(!rows.length){
-      if(view==='saved'&&!saved.length)html=empty('heart','No saved events yet','Tap the heart on any event to keep it here.','<a class="btn ghost" href="#">Browse events</a>');
-      else if(view==='deadlines'&&!on)html=empty('clock','No deadlines on file','Most markets take vendors on a rolling basis. Check each event for how to apply.','<a class="btn ghost" href="#">Browse events</a>');
+      if(view==='saved'&&!saved.length)html=empty('heart','No saved events yet','Tap the heart on any event to keep it here.','<a class="btn ghost" href="#events">Browse events</a>');
+      else if(view!=='saved'&&!regionCount())html=emptyRegion();
+      else if(view==='deadlines'&&!on)html=empty('clock','No deadlines on file','Most markets take vendors on a rolling basis. Check each event for how to apply.','<a class="btn ghost" href="#events">Browse events</a>');
       else html=empty('search','Nothing matches','Try fewer filters or another search.','<button class="btn ghost" type="button" data-clear>Clear filters</button>');
     }else if(view==='deadlines'){
       var sp=rows.filter(function(r){return PX.spotlight(r.e.id);}),rest=sp.length?rows.filter(function(r){return !PX.spotlight(r.e.id);}):rows;
@@ -139,16 +148,61 @@
     if(view==='saved'&&rows.length) html='<div class="savedbar"><span><b>'+rows.length+'</b> saved</span><button class="btn" type="button" id="icsAll">'+ico('cal','sm')+'Add all to calendar</button></div>'+html;
     var L=$('list');L.innerHTML=html;
     if(anim){L.classList.remove('xfade');void L.offsetWidth;L.classList.add('xfade');}
-    $('count').innerHTML='<b>'+rows.length+'</b> '+(view==='deadlines'?'with deadlines':view==='saved'?'saved':'event'+(rows.length===1?'':'s'))+(F.weekend?' · '+short(wkStart)+(wkStart!==sun?'–'+short(sun):''):F['2wk']?' · through '+short(twoWk):'');
+    $('count').innerHTML='<b>'+rows.length+'</b> '+(view==='deadlines'?'with deadlines':view==='saved'?'saved':'event'+(rows.length===1?'':'s'))+(view==='saved'?'':' in '+esc(RG.label(region)))+(F.weekend?' · '+short(wkStart)+(wkStart!==sun?'–'+short(sun):''):F['2wk']?' · through '+short(twoWk):'');
     $('fSort').parentNode.hidden=view==='deadlines';
   }
   function setView(v,fromNav){
-    if(!VIEWS[v])v='events';var changed=v!==view;view=v;
+    if(!VIEWS[v])v='home';var changed=v!==view;view=v;
     document.body.setAttribute('data-view',v);
     $('vTitle').textContent=VIEWS[v][0];$('vSub').textContent=VIEWS[v][1];
-    render(changed);
+    document.querySelectorAll('[data-seg]').forEach(function(a){if(a.getAttribute('data-seg')===v)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
+    if(v==='home')renderHome();else render(changed);
     if(changed&&fromNav){var top=$('main').getBoundingClientRect().top+scrollY-8;if(scrollY>top)window.scrollTo({top:Math.max(0,top),behavior:'auto'});}
   }
+  /* ---- Home: this weekend near you, applications closing soon, Pro + organizer cards (newsletter section follows) ---- */
+  function regionCount(){var n=0;ev.forEach(function(e){if(e.rg===region)n++;});return n;}
+  function emptyRegion(){return empty('pin','We’re just getting started in '+esc(RG.label(region)),'Know a market or campus event here? Organizers can list it free, and it shows up for every vendor in the region.','<a class="btn" href="list.html">List an event · free</a> <button class="btn ghost" type="button" data-region-pick>Change region</button>');}
+  function proUser(){var A=window.JVE_AUTH;return !!(A&&(A.admin||(A.has&&(A.has('vendor-pro')||A.has('organizer-plus')||A.has('directory-sponsor')))));}
+  function hsec(title,sub,go,goLabel,body){return '<section class="hsec"><div class="hsh"><h2>'+title+(sub?' <small>'+sub+'</small>':'')+'</h2>'+(go?'<button type="button" class="hall" data-go="'+go+'">'+goLabel+ico('right','sm')+'</button>':'')+'</div>'+body+'</section>';}
+  function renderHome(){
+    var H=$('home');if(!H)return;
+    var mine=ev.filter(function(e){return e.rg===region;}),lab=esc(RG.label(region)),html='';
+    var locked=mine.filter(function(e){return e.locked;}).length;
+    html+='<button type="button" class="hsearch" data-go="search">'+ico('search')+'<span>Search markets, towns, venues</span></button>';
+    html+='<div class="hgo" role="group" aria-label="Quick filters"><button type="button" data-go="weekend">'+ico('cal','sm')+(isSun?'Next weekend':'This weekend')+'</button><button type="button" data-go="free">'+ico('tag','sm')+'Free to vend</button><button type="button" data-go="deadlines">'+ico('clock','sm')+'Deadlines</button><button type="button" data-go="campus">'+ico('star','sm')+'Campus</button></div>';
+    if(!mine.length){html+=emptyRegion();}
+    else{
+      var wk=[];mine.forEach(function(e){if(inRange(e,wkStart,sun)){var w=e.up.filter(function(x){return x>=wkStart&&x<=sun;});wk.push({e:e,a:w[0]||e.up[0]||null});}});
+      var wkT=isSun?'Next weekend':'This weekend',wkGo='weekend';
+      if(!wk.length){mine.forEach(function(e){if(inRange(e,floor,twoWk))wk.push({e:e,a:e.up[0]||null});});wkT='Coming up';wkGo='2wk';}
+      wk.sort(function(x,y){var fx=PX.featured(x.e.id)?0:1,fy=PX.featured(y.e.id)?0:1;if(fx!==fy)return fx-fy;return (x.a||'9999')<(y.a||'9999')?-1:(x.a||'9999')>(y.a||'9999')?1:0;});
+      if(wk.length)html+=hsec(wkT+' near you',lab,wkGo,'See all '+wk.length,'<div class="xgrid">'+wk.slice(0,4).map(function(r,i){return card(r.e,r.a,i);}).join('')+'</div>');
+      var dl=mine.filter(function(e){return hasDl(e)&&days(floor,e.deadline)<=21;}).sort(function(a,b){return a.deadline<b.deadline?-1:a.deadline>b.deadline?1:0;});
+      if(dl.length)html+=hsec('Apply soon','closing in 3 weeks','deadlines','All '+dl.length,'<div class="xgrid">'+dl.slice(0,3).map(function(e,i){return card(e,e.up[0]||null,i,'dl');}).join('')+'</div>');
+    }
+    if(!proUser())html+='<section class="hcard hpro"><span class="hk">'+ico('star','sm')+'Vendor Pro · $6/mo</span><h3>'+(locked?'Unlock the '+locked+' market'+(locked===1?'':'s')+' near you':'Never miss an application deadline')+'</h3>'+
+      '<ul><li>'+ico('check','sm')+'Event names, exact places and organizers</li><li>'+ico('check','sm')+'One-tap apply links</li><li>'+ico('check','sm')+'Deadline reminders by email</li></ul>'+
+      '<a class="btn" href="pricing.html#vendors">See Vendor Pro</a></section>';
+    html+='<section class="hcard horg"><span class="hk">'+ico('mega','sm')+'For organizers</span><h3>Run a market or event?</h3><p>List it free and vendors across Florida can find it. Want more applicants? Get featured at the top.</p>'+
+      '<div class="hbtns"><a class="btn" href="list.html">List it free</a><a class="btn ghost" href="pricing.html#organizers">Get featured</a></div></section>';
+    H.innerHTML=html;
+  }
+  function go(k){
+    Object.keys(F).forEach(function(x){F[x]=false;});fC.value=fK.value='';fQ.value='';
+    var t='events';if(k==='deadlines')t='deadlines';else if(F.hasOwnProperty(k))F[k]=true;
+    try{history.pushState({v:t},'',location.pathname+location.search+'#'+t);}catch(_){location.hash=t;}
+    setView(t,true);markNav();window.scrollTo({top:0,behavior:'auto'});
+    if(k==='search')setTimeout(function(){fQ.focus();},60);
+  }
+  /* region picker (Events + Home share it; the Account sheet's copy stays in sync through theme.js) */
+  function fillCounties(){var keep=fC.value,have={};ev.forEach(function(e){if(e.rg===region&&e.county)have[e.county]=(have[e.county]||0)+1;});
+    var names=Object.keys(have).sort();fC.innerHTML='<option value="">All counties</option>'+names.map(function(c){return '<option>'+esc(c)+'</option>';}).join('');
+    fC.value=names.indexOf(keep)>-1?keep:'';}
+  function regionChanged(v){if(!v||v===region)return;region=v;var rs=$('fRegion');if(rs)rs.value=v;var rl=$('regLbl');if(rl)rl.textContent=RG.label(v);fillCounties();if(view==='home')renderHome();else render(true);}
+  (function(){var rs=$('fRegion');if(rs){rs.innerHTML=RG.list.map(function(r){return '<option value="'+r.id+'">'+esc(r.label)+'</option>';}).join('');rs.value=region;
+      rs.addEventListener('change',function(){RG.set(rs.value);regionChanged(rs.value);});}
+    var rl=$('regLbl');if(rl)rl.textContent=RG.label(region);fillCounties();
+    document.addEventListener('jve:region',function(e2){regionChanged(e2.detail);});})();
   /* ---- filters ---- */
   document.querySelectorAll('.xchip[data-f]').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.f;F[k]=!F[k];if(k==='weekend'&&F[k])F['2wk']=false;if(k==='2wk'&&F[k])F.weekend=false;render(true);});});
   function clearAll(){Object.keys(F).forEach(function(k){F[k]=false;});fC.value=fK.value='';fQ.value='';render(true);}
@@ -205,7 +259,7 @@
     $('shBody').scrollTop=0;setTimeout(function(){$('shClose').focus({preventScroll:true});},60);return true;}
   function hideSheet(){if(!sheet.classList.contains('open'))return;sheet.classList.remove('open');scrim.classList.remove('open');sheet.setAttribute('aria-hidden','true');sheet.style.transform='';document.body.classList.remove('noscroll');if(lastFocus&&lastFocus.focus)lastFocus.focus({preventScroll:true});}
   function openSheet(id,anchor){if(!showSheet(id,anchor))return;try{history.pushState({jveSheet:id,a:curA,v:view},'',location.pathname+location.search+'#e='+encodeURIComponent(id));sheetPushed=true;}catch(_){}}
-  function closeSheet(){if(!sheet.classList.contains('open'))return;if(sheetPushed){sheetPushed=false;history.back();}else{hideSheet();try{history.replaceState(null,'',location.pathname+location.search+(view==='events'?'':'#'+view));}catch(_){}}}
+  function closeSheet(){if(!sheet.classList.contains('open'))return;if(sheetPushed){sheetPushed=false;history.back();}else{hideSheet();try{history.replaceState(null,'',location.pathname+location.search+(view==='home'?'':'#'+view));}catch(_){}}}
   function saveToggle(id){saved=LG.toggleSaved(getSaved(),id);try{localStorage.setItem(SK,JSON.stringify(saved));}catch(_){}
     var on=isSaved(id);try{if(navigator.vibrate)navigator.vibrate(on?12:6);}catch(_){}
     document.querySelectorAll('.heart[data-save="'+(window.CSS&&CSS.escape?CSS.escape(id):id)+'"]').forEach(function(h){h.classList.toggle('on',on);h.setAttribute('aria-pressed',String(on));h.classList.remove('pop');void h.offsetWidth;h.classList.add('pop');});
@@ -218,13 +272,15 @@
     if(ev2.target.closest('#icsAll')){icsAll();return;}
     var t=ev2.target.closest('[data-id]');if(t&&!t.closest('.sheet')){openSheet(t.dataset.id,t.dataset.a);return;}
     if(ev2.target.closest('[data-clear]')){clearAll();return;}
+    var gb=ev2.target.closest('[data-go]');if(gb){ev2.preventDefault();go(gb.getAttribute('data-go'));return;}
+    if(ev2.target.closest('[data-region-pick]')){var rp=$('fRegion');if(rp){rp.focus();if(rp.showPicker)try{rp.showPicker();}catch(_){}}return;}
     var nv=ev2.target.closest('a[data-nav]');if(nv&&/index\.html/.test(nv.getAttribute('href')||'')){var hh=(nv.getAttribute('href').split('#')[1]||'');ev2.preventDefault();
       if(sheet.classList.contains('open')){sheetPushed=false;hideSheet();}
-      var target=hh||'events';if(target===view&&!location.hash.match(/^#e=/)){window.scrollTo({top:0,behavior:'smooth'});return;}
+      var target=hh||'home';if(target===view&&!location.hash.match(/^#e=/)){window.scrollTo({top:0,behavior:'smooth'});return;}
       try{history.pushState({v:target},'',location.pathname+location.search+(hh?'#'+hh:''));}catch(_){location.hash=hh;}
       setView(target,true);markNav();return;}
   });
-  function markNav(){var a=document.querySelectorAll('[data-nav]');for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===view)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
+  function markNav(){var a=document.querySelectorAll('[data-nav]'),k=view==='deadlines'?'events':view;for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===k)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
   scrim.addEventListener('click',closeSheet);$('shClose').addEventListener('click',closeSheet);
   document.addEventListener('keydown',function(k){if(k.key==='Escape') closeSheet();
     if(k.key==='Tab'&&sheet.classList.contains('open')){var f=sheet.querySelectorAll('a[href],button:not([disabled])');if(!f.length)return;var a=f[0],z=f[f.length-1];if(k.shiftKey&&document.activeElement===a){z.focus();k.preventDefault();}else if(!k.shiftKey&&document.activeElement===z){a.focus();k.preventDefault();}}});
@@ -276,15 +332,15 @@
     if(m){var st=history.state||{};if(st.v&&st.v!==view)setView(st.v);if(!showSheet(decodeURIComponent(m[1]),st.a))hideSheet();markNav();return;}
     if(sheet.classList.contains('open')){sheetPushed=false;hideSheet();}
     if(h==='#matches'){F.matches=true;setView('events');}
-    else setView(h==='#deadlines'?'deadlines':h==='#saved'?'saved':'events');
+    else setView(h==='#deadlines'?'deadlines':h==='#saved'?'saved':h==='#events'?'events':'home');
     markNav();}
   window.addEventListener('popstate',route);
   window.addEventListener('hashchange',function(){if(!history.state||!history.state.jveSheet)route();});
-  window.addEventListener('pageshow',function(){var np=getPrefs();if(JSON.stringify(np)!==JSON.stringify(prefs)){prefs=np;render();}saved=getSaved();badge();});
+  window.addEventListener('pageshow',function(){var np=getPrefs();if(JSON.stringify(np)!==JSON.stringify(prefs)){prefs=np;render();}saved=getSaved();badge();var rg=RG.get();if(rg!==region)regionChanged(rg);});
   window.addEventListener('storage',function(ev2){if(ev2.key===PK){prefs=getPrefs();render();}});
   document.body.setAttribute('data-view',view);
   badge();
   var h0=location.hash.match(/^#e=(.+)$/);
-  if(h0){render();var id0=decodeURIComponent(h0[1]);setTimeout(function(){if(showSheet(id0)){try{history.replaceState(null,'',location.pathname+location.search);history.pushState({jveSheet:id0},'',location.pathname+location.search+'#e='+encodeURIComponent(id0));sheetPushed=true;}catch(_){}}},120);}
+  if(h0){render();renderHome();var id0=decodeURIComponent(h0[1]);setTimeout(function(){if(showSheet(id0)){try{history.replaceState(null,'',location.pathname+location.search);history.pushState({jveSheet:id0},'',location.pathname+location.search+'#e='+encodeURIComponent(id0));sheetPushed=true;}catch(_){}}},120);}
   else route();
 })();
