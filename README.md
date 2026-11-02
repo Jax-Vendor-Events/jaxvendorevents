@@ -51,7 +51,7 @@ Fonts: Fraunces and Inter (SIL Open Font License), self-hosted in fonts/.
 - **Empty value = request form.** The button opens "Book your spot" on `pricing.html#get-featured` with that tier picked (hidden field `tier`, subject `Get featured request: Jax Vendor Events (<tier>)`, same auto-reply). So no button is ever dead, with or without Stripe.
 - `thanks.html?tier=<id>` confirms payment, says what happens next for that tier (live within 24 h, we email when it is up) and has a short details form (subject `Paid placement details: Jax Vendor Events (<tier>)`, auto-reply on). Like every page it is behind the gate until launch, so a real customer can only reach it after go-public.
 - `pricing.html` shows one audience at a time (Organizer / Business / Vendor switch; `#organizers`, `#businesses`, `#vendors` open each one; `?tier=<id>` opens the form).
-- Service worker cache key `jve-rv2`.
+- Service worker cache key `jve-rv2` (now `jve-pd1`, see Paid placements).
 
 ## Go-public checklist (only after Luis says so)
 
@@ -78,3 +78,17 @@ Note: the password gate is client-side and this repository is public, so page so
 - Styles for this layer are in `ui.css` (loaded after `styles.css`; charcoal dark palette `#12141a` / cards `#1e222a`, teal accent).
 - The newsletter "Send test to me" panel is internal: it only shows after opening any page once with `?admin=1`.
 - Data files, `scripts/refresh.py`, `scripts/find_new.py` and the workflows are unchanged. Service worker cache key `jve-nx1`.
+
+## Paid placements: automatic fulfillment (added Nov 1, 2026)
+
+- **`data/paid.json`** (mirrored to `data/paid.js` as `window.JVE_PAID` for the pages) holds every active paid placement. Tab's fulfillment script writes it from Stripe payments (it lives on Tab's machine, not in this repo); you can also edit it by hand. Keys, all lists, dates `YYYY-MM-DD` inclusive:
+  - `featured_events` `{event_id, from, until}` → gold **Featured** badge + pinned **Featured** group at the top of Events.
+  - `deadline_spotlights` `{event_id, from, until}` → pinned **Spotlight** group at the top of Deadlines + badge.
+  - `organizer_plus` `{name, event_ids[], profile_id, until}` → **Verified organizer** badge on those events (and their organizer profile) and a deadline spotlight on every one of them.
+  - `directory_sponsor` `{name, line, url, logo, from, until}` → sponsor banner on the Events view, a sponsor card in the More sheet, and a “Supported by” line in every page footer. One at a time (the first live one shows).
+  - `newsletter_sponsors` `{name, line, url, logo, issue_date}` → used by the weekly email (not shown on the site).
+  - `featured_vendors` `{profile_id, from, until}` → Featured vendor at the top of the Vendors page (merged into `featured_until`).
+  - `vendor_pro` `{profile_id, email_hash, until}` → gold **PRO** badge on that vendor profile. No emails are stored here.
+- Anything outside its `from`–`until` window is hidden by the browser itself (`paid.js`), so an expired spot disappears at midnight even before the script prunes it. `logo` must be `sponsors/<file>` in this repo or an `https://` image URL.
+- Changing paid.json needs **both** files updated (`paid.js` = `window.JVE_PAID=<same JSON>;`). An empty-but-valid file means no paid placements.
+- `paid.js` (site logic) loads on every page right after `gate.js`. Service worker cache key `jve-pd1`.

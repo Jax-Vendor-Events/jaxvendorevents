@@ -2,6 +2,7 @@
 (function(){
   'use strict';
   var LG=window.JVE_LOGIC,P=window.JVE_PROFILES||{profiles:[]},D=window.JVE_DATA||{events:[]};if(!LG)return;
+  if(window.JVE_PAIDX)window.JVE_PAIDX.profiles(P.profiles); /* paid Featured vendor / Vendor Pro / Organizer Plus (data/paid.json) */
   function $(id){return document.getElementById(id);}
   function el(t,a,kids){var e=document.createElement(t);if(a)Object.keys(a).forEach(function(k){if(a[k]==null||a[k]===false)return;if(k==='text')e.textContent=a[k];else if(k==='cls')e.className=a[k];else e.setAttribute(k,a[k]);});(kids||[]).forEach(function(c){if(c)e.appendChild(typeof c==='string'?document.createTextNode(c):c);});return e;}
   function ico(n,c){var s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('class','ico'+(c?' '+c:''));s.setAttribute('aria-hidden','true');var u=document.createElementNS('http://www.w3.org/2000/svg','use');u.setAttribute('href','#i-'+n);s.appendChild(u);return s;}
@@ -14,7 +15,7 @@
   function logo(p,cls){var u=LG.safeLogo(p.logo);return u?el('img',{src:u,alt:p.name+' logo',cls:cls||'plogo',loading:'lazy',width:'96',height:'96'}):el('span',{cls:'pmono '+(cls||''),'aria-hidden':'true',text:LG.initials(p.name)});}
   function place(p){return [p.city,p.county&&p.county!=='Other'?p.county+' County':''].filter(Boolean).join(', ');}
   function cats(p){return p.type==='vendor'?(p.categories||[]):(p.wants_categories||[]);}
-  function badges(p){var b=[];if(p.sample)b.push(el('span',{cls:'b unv',text:'Sample'}));if(LG.featuredNow(p,today))b.push(el('span',{cls:'b feat'},[ico('star'),'Featured']));return b;}
+  function badges(p){var b=[];if(p.sample)b.push(el('span',{cls:'b unv',text:'Sample'}));if(p.pro)b.push(el('span',{cls:'b pro',title:'Vendor Pro member',text:'PRO'}));if(p.verified_org)b.push(el('span',{cls:'b gold'},[ico('shield'),'Verified organizer']));if(LG.featuredNow(p,today))b.push(el('span',{cls:'b gold'},[ico('star'),'Featured']));return b;}
   function card(p){var cs=cats(p);
     return el('a',{cls:'pcard'+(LG.featuredNow(p,today)?' isfeat':''),href:'profile.html?id='+encodeURIComponent(p.id)},[logo(p),el('span',{cls:'pc-b'},[el('span',{cls:'pc-k',text:p.type==='vendor'?'Vendor':'Organizer'}),el('b',{cls:'pc-n',text:p.name}),p.tagline?el('span',{cls:'pc-t',text:p.tagline}):null,place(p)?el('span',{cls:'pc-m'},[ico('pin','sm'),place(p)]):null,
       el('span',{cls:'ptags'},badges(p).concat(cs.slice(0,2).map(function(c){return el('span',{cls:'b',text:c});})))]),ico('right','chev')]);}

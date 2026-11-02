@@ -3,6 +3,7 @@
   'use strict';
   var D=window.JVE_DATA||{events:[]};
   var LG=window.JVE_LOGIC;
+  var PX=window.JVE_PAIDX||{featured:function(){return false;},spotlight:function(){return false;},verifiedOrg:function(){return null;}};
   var SK='jve_saved';function getSaved(){try{return LG.parseSaved(localStorage.getItem(SK));}catch(e){return [];}}
   var saved=getSaved();function isSaved(id){return saved.indexOf(id)>-1;}
   var PK='jve_prefs';function getPrefs(){try{return LG.parsePrefs(localStorage.getItem(PK));}catch(e){return null;}}
@@ -53,10 +54,12 @@
   function chipsOn(){return Object.keys(F).some(function(k){return F[k];})||!!fC.value||!!fK.value||!!fQ.value.trim();}
   function badges(e,full,mode){
     var b=[];var cd=hasDl(e)?LG.countdown(floor,e.deadline):null;
+    if(PX.featured(e.id)&&mode!=='dl') b.push('<span class="b gold">'+ico('star')+'Featured</span>');
+    if(PX.spotlight(e.id)&&hasDl(e)&&(mode==='dl'||full)) b.push('<span class="b gold">'+ico('clock')+'Spotlight</span>');
     if(cd&&mode!=='dl'&&(dlSoon(e)||full)) b.push('<span class="b hot'+(cd.urgent?' urgent':'')+'" title="Apply by '+short(e.deadline)+'">'+ico('clock')+cd.text+'</span>');
     b.push('<span class="b fee'+(e.fee_bucket==='free'?' free':'')+'">'+esc(feeLabel(e))+'</span>');
     if(e.verified) b.push('<span class="b ok">'+ico('check')+'Checked</span>');
-    if(full){b.push('<span class="b county">'+esc(e.county)+' County</span>');if(e.recurring)b.push('<span class="b rec">'+ico('repeat')+'Recurring</span>');if(e.host_type)b.push('<span class="b city">'+ico('shield')+(e.host_type==='county'?'County event':'City event')+'</span>');if(!e.verified)b.push('<span class="b unv">Not checked yet</span>');}
+    if(full){b.push('<span class="b county">'+esc(e.county)+' County</span>');if(e.recurring)b.push('<span class="b rec">'+ico('repeat')+'Recurring</span>');if(e.host_type)b.push('<span class="b city">'+ico('shield')+(e.host_type==='county'?'County event':'City event')+'</span>');if(PX.verifiedOrg(e.id))b.push('<span class="b gold">'+ico('shield')+'Verified organizer</span>');if(!e.verified)b.push('<span class="b unv">Not checked yet</span>');}
     return b.join('');
   }
   function distOf(e){if(!me)return null;var p=LG.place(e);return p?LG.miles(me,p):null;}
@@ -69,7 +72,8 @@
     var when=anchor?(mode==='dl'?'Event '+fmt(anchor):'')+(e.time&&mode!=='dl'?esc(e.time):''):esc(e.schedule||'');
     var sv=isSaved(e.id),ap=applyUrl(e);
     var label=esc(e.name)+(anchor?', '+fmt(anchor):'')+', '+esc(e.city||e.county);
-    return '<article class="xc" style="--i:'+Math.min(i,10)+'"><button class="xhit" type="button" data-id="'+esc(e.id)+'" data-a="'+(anchor||'')+'" aria-label="'+label+': details"></button>'+dbox+
+    var pc=(PX.featured(e.id)&&mode!=='dl'?' isfeat':'')+(PX.spotlight(e.id)&&mode==='dl'&&hasDl(e)?' isspot':'');
+    return '<article class="xc'+pc+'" style="--i:'+Math.min(i,10)+'"><button class="xhit" type="button" data-id="'+esc(e.id)+'" data-a="'+(anchor||'')+'" aria-label="'+label+': details"></button>'+dbox+
       '<div class="xb"><h3>'+esc(e.name)+'</h3><p class="xm">'+ico('pin','sm')+'<span>'+place+'</span></p>'+(when?'<p class="xw">'+when+'</p>':'')+'</div>'+
       '<button class="heart'+(sv?' on':'')+'" type="button" data-save="'+esc(e.id)+'" aria-pressed="'+sv+'" aria-label="'+(sv?'Remove from saved: ':'Save: ')+esc(e.name)+'">'+HEART+'</button>'+
       '<div class="xf"><div class="xt">'+badges(e,false,mode)+'</div>'+(ap?'<a class="xapply" href="'+esc(ap)+'" target="_blank" rel="noopener" aria-label="Apply: '+esc(e.name)+' (opens organizer page)">Apply'+ico('ext','sm')+'</a>':'<button class="xapply ghost" type="button" data-id="'+esc(e.id)+'" data-a="'+(anchor||'')+'">Details</button>')+'</div>'+'</article>';
@@ -122,12 +126,15 @@
       else if(view==='deadlines'&&!on)html=empty('clock','No deadlines on file','Most markets take vendors on a rolling basis. Check each event for how to apply.','<a class="btn ghost" href="#">Browse events</a>');
       else html=empty('search','Nothing matches','Try fewer filters or another search.','<button class="btn ghost" type="button" data-clear>Clear filters</button>');
     }else if(view==='deadlines'){
-      html=group(rows,function(r){return dlLabel(r.e);},'dl');
-    }else if(s==='soon'){
-      html=group(rows,function(r){return weekLabel(r.a);});
+      var sp=rows.filter(function(r){return PX.spotlight(r.e.id);}),rest=sp.length?rows.filter(function(r){return !PX.spotlight(r.e.id);}):rows;
+      html=(sp.length?group(sp,function(){return 'Spotlight';},'dl').replace('<h2 class="xgh">','<h2 class="xgh xpin">'):'')+group(rest,function(r){return dlLabel(r.e);},'dl');
     }else{
-      var lab=s==='deadline'?'By application deadline':s==='near'?(me?'Nearest first · from '+meSrc:'Nearest first'):'Free to vend first';
-      html=group(rows,function(){return lab;});
+      /* paid Featured events are pinned at the top of the events list (data/paid.json) */
+      var ft=view==='events'?rows.filter(function(r){return PX.featured(r.e.id);}):[],rr=ft.length?rows.filter(function(r){return !PX.featured(r.e.id);}):rows;
+      html=ft.length?group(ft,function(){return 'Featured';}).replace('<h2 class="xgh">','<h2 class="xgh xpin">'):'';
+      if(s==='soon') html+=group(rr,function(r){return weekLabel(r.a);});
+      else{var lab=s==='deadline'?'By application deadline':s==='near'?(me?'Nearest first · from '+meSrc:'Nearest first'):'Free to vend first';
+        html+=group(rr,function(){return lab;});}
     }
     if(view==='saved'&&rows.length) html='<div class="savedbar"><span><b>'+rows.length+'</b> saved</span><button class="btn" type="button" id="icsAll">'+ico('cal','sm')+'Add all to calendar</button></div>'+html;
     var L=$('list');L.innerHTML=html;
