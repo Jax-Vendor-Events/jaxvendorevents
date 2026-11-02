@@ -1,7 +1,7 @@
 {
  "name": "Jax Vendor Events",
  "short_name": "Jax Vendors",
- "description": "Every vendor market in Northeast Florida, in one place. Private draft.",
+ "description": "Every vendor market in Northeast Florida, in one place.",
  "start_url": "./index.html",
  "scope": "./",
  "display": "standalone",

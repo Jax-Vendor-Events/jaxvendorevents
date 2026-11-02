@@ -236,7 +236,7 @@
     if(safeUrl(e.apply||e.source)) L.push('URL:'+safeUrl(e.apply||e.source));
     L.push('END:VEVENT');return L;}
   function download(lines,name){
-    var all=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Jax Vendor Events//Draft//EN','CALSCALE:GREGORIAN'].concat(lines,['END:VCALENDAR']);
+    var all=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Jax Vendor Events//Events//EN','CALSCALE:GREGORIAN'].concat(lines,['END:VCALENDAR']);
     var blob=new Blob([all.map(fold).join('\r\n')+'\r\n'],{type:'text/calendar;charset=utf-8'});
     var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;
     document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},800);}

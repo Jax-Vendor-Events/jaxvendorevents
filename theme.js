@@ -1,12 +1,12 @@
-/* Jax Vendor Events: appearance (dark by default, light, or follow the phone) + the "More" sheet + the 5-tab navigation. Runs in <head> before paint. */
+/* Jax Vendor Events: appearance (follows the phone's light/dark setting by default; the header button overrides) + the "More" sheet + the 5-tab navigation. Runs in <head> before paint. */
 (function(){
   'use strict';
-  var root=document.documentElement,KA='jve_look',THEME='ocean';
+  var root=document.documentElement,KA='jve_look2',THEME='ocean';
   var META={dark:'#12141a',light:'#f3f6f5'};
   function get(k){try{return localStorage.getItem(k);}catch(e){return null;}}
   function put(k,v){try{localStorage.setItem(k,v);}catch(e){}}
   var mq=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;
-  function pref(){var m=get(KA);return (m==='light'||m==='dark'||m==='auto')?m:'dark';}
+  function pref(){var m=get(KA);return (m==='light'||m==='dark'||m==='auto')?m:'auto';}
   function dark(){var m=pref();return m==='dark'||(m==='auto'&&!!(mq&&mq.matches));}
   function setMeta(d){var ms=document.querySelectorAll('meta[name="theme-color"]');if(!ms.length){var n=document.createElement('meta');n.name='theme-color';document.head.appendChild(n);ms=[n];}
     for(var i=0;i<ms.length;i++){ms[i].removeAttribute('media');ms[i].setAttribute('content',d?META.dark:META.light);}
