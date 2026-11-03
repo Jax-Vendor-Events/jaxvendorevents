@@ -107,11 +107,11 @@
     $('payList').innerHTML=(pay.data||[]).length?(pay.data||[]).map(function(x){return '<li><b>'+esc(A.TIER_NAMES[x.tier]||x.tier||'Purchase')+'</b> \u00b7 $'+(x.amount_cents/100).toFixed(2)+'<small>'+fmt(x.created_at.slice(0,10))+'</small></li>';}).join(''):'<li><small>No purchases yet.</small></li>';
     /* ---------- app settings ---------- */
     var TH=window.JVE_THEMES,RG=window.JVE_REGIONS;
-    function modeNow(){try{var m=localStorage.getItem('jve_look2');return m==='light'||m==='dark'?m:'auto';}catch(_){return 'auto';}}
+    function modeNow(){if(TH&&TH.modeShown)return TH.modeShown();try{var m=localStorage.getItem('jve_look2');return m==='light'||m==='dark'?m:'auto';}catch(_){return 'auto';}}
     function syncMode(){Array.prototype.forEach.call($('setMode').querySelectorAll('button'),function(b){b.setAttribute('aria-checked',String(b.getAttribute('data-mode')===modeNow()));});}
     $('setMode').addEventListener('click',function(e){var b=e.target.closest('button[data-mode]');if(!b)return;var m=b.getAttribute('data-mode');
       if(TH&&TH.setMode)TH.setMode(m);else{try{localStorage.setItem('jve_look2',m);}catch(_){}location.reload();}syncMode();});
-    syncMode();
+    syncMode();document.addEventListener('jve:theme',syncMode);
     var rs=$('setRegion');
     var RL2=RG&&(typeof RG.list==='function'?RG.list():RG.list);
     if(Array.isArray(RL2)&&RL2.length){var cur=RG.get&&RG.get();RL2.forEach(function(r){var id=r.id,label=r.label;var o=document.createElement('option');o.value=id;o.textContent=label;if(id===cur)o.selected=true;rs.appendChild(o);});

@@ -40,17 +40,18 @@
 <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css?v=bp1">
 <link rel="stylesheet" href="ui.css?v=hm1">
-<script src="theme.js?v=cm1"></script>
+<script src="theme.js?v=th1"></script>
 <script src="gate.js"></script>
 <link rel="stylesheet" href="auth.css?v=sq1">
 <link rel="stylesheet" href="brand.css?v=bp2">
 <link rel="stylesheet" href="mycal.css?v=mc6">
-<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au2"></script><script src="mycal.js?v=mc6" defer></script><script type="jve/boot" data-src="account.js?v=cm1"></script><script type="jve/boot" data-src="acct-apps.js?v=cm1"></script><script type="jve/boot" data-src="acct-pay.js?v=sq1"></script><script type="jve/boot" data-src="brand.js?v=bp2"></script><script type="jve/boot" data-src="account-brand.js?v=bp2"></script>
+<script src="vendor/supabase-2.118.0.js"></script><script src="auth-config.js?v=au1"></script><script src="auth.js?v=au2"></script><script src="mycal.js?v=mc6" defer></script><script type="jve/boot" data-src="account.js?v=th1"></script><script type="jve/boot" data-src="acct-theme.js?v=th1"></script><script type="jve/boot" data-src="acct-apps.js?v=cm1"></script><script type="jve/boot" data-src="acct-pay.js?v=sq1"></script><script type="jve/boot" data-src="brand.js?v=bp2"></script><script type="jve/boot" data-src="account-brand.js?v=bp2"></script>
 
 
 <link rel="stylesheet" href="lux.css?v=lx1">
 <link rel="stylesheet" href="tidy.css?v=cl2">
 <link rel="stylesheet" href="calm.css?v=cm2">
+<link rel="stylesheet" href="themes.css?v=th1">
 <script type="jve/boot" data-src="calm.js?v=cm1"></script>
 </head>
 <body>
@@ -144,7 +145,7 @@
 <section class="asec" id="sec-settings">
   <h2 class="ash-h"><button type="button" class="ash" aria-expanded="false" aria-controls="asb-settings"><span class="ash-i"><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg></span><span class="ash-t"><b>App settings</b><small>Appearance, region, reminders, calendar</small></span><svg class="ico chev" aria-hidden="true"><use href="#i-down"/></svg></button></h2>
   <div class="asb" id="asb-settings"><div class="asi">
-<div class="acard"><h3 class="acard-h">Appearance</h3><div class="aseg" id="setMode" role="radiogroup" aria-label="Appearance"><button type="button" role="radio" data-mode="auto">Auto</button><button type="button" role="radio" data-mode="light">Light</button><button type="button" role="radio" data-mode="dark">Dark</button></div></div>
+<div class="acard" id="theme"><h3 class="acard-h">Appearance</h3><p class="thp-lab" id="thpLab">Color theme</p><div class="thp" id="themePick" role="radiogroup" aria-labelledby="thpLab"></div><div class="amsg" id="thMsg" role="status"></div><p class="thp-lab">Light or dark</p><div class="aseg" id="setMode" role="radiogroup" aria-label="Appearance"><button type="button" role="radio" data-mode="auto">Auto</button><button type="button" role="radio" data-mode="light">Light</button><button type="button" role="radio" data-mode="dark">Dark</button></div></div>
 <div class="acard"><h3 class="acard-h">Default region</h3><div class="pill"><label for="setRegion" class="sr">Default region</label><select id="setRegion"></select></div><p class="hint">Home and Events open on this part of Florida.</p><div class="amsg" id="regMsg"></div></div>
 <div class="acard"><h3 class="acard-h">Deadline reminders <span class="tierpill gold" style="vertical-align:middle">PRO</span></h3>
   <div data-tier="vendor-pro"><p>We email you before vendor application deadlines close, plus the weekly email a day early.</p>

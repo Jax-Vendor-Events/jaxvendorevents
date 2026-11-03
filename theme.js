@@ -1,22 +1,48 @@
-/* Jax Vendor Events: appearance (follows the phone's light/dark setting by default; the header button overrides) + the Account sheet (was "More"), Florida regions + the 5-tab navigation (Home · Events · Saved · Pro · Account). Runs in <head> before paint. */
+/* Jax Vendor Events: appearance (follows the phone's light/dark setting by default; the header button overrides; color themes per account, Nov 3 2026) + the Account sheet (was "More"), Florida regions + the 5-tab navigation (Home · Events · Saved · Pro · Account). Runs in <head> before paint. */
 (function(){
   'use strict';
   var root=document.documentElement,KA='jve_look2',THEME='ocean';
   var META={dark:'#12141a',light:'#f3f6f5'};
   function get(k){try{return localStorage.getItem(k);}catch(e){return null;}}
   function put(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+  function del(k){try{localStorage.removeItem(k);}catch(e){}}
   var mq=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;
   function pref(){var m=get(KA);return (m==='light'||m==='dark'||m==='auto')?m:'auto';}
-  function dark(){var m=pref();return m==='dark'||(m==='auto'&&!!(mq&&mq.matches));}
-  function setMeta(d){var ms=document.querySelectorAll('meta[name="theme-color"]');if(!ms.length){var n=document.createElement('meta');n.name='theme-color';document.head.appendChild(n);ms=[n];}
-    for(var i=0;i<ms.length;i++){ms[i].removeAttribute('media');ms[i].setAttribute('content',d?META.dark:META.light);}
+  /* color theme per account (Nov 3 2026): 'current' (default, the look above with its Auto/Light/Dark) or one of the themes in themes.css.
+     Saved in localStorage (jve_palette) and on the signed-in account (profiles.theme), so it follows the user to other devices. */
+  var KP='jve_palette',KPL='jve_palette_light',KPU='jve_palette_uid';
+  var PALS=[{id:'current',name:'Current'},{id:'clean',name:'Clean light'},{id:'dark',name:'Dark'},{id:'warm',name:'Warm'},{id:'match',name:'Match my phone'}];
+  var PMETA={clean:'#ffffff',dark:'#0b0f17',warm:'#f5ede0'};
+  function okPal(p){for(var i=0;i<PALS.length;i++)if(PALS[i].id===p)return true;return false;}
+  function pal(){var p=get(KP);return okPal(p)?p:'current';}
+  function palEff(){var p=pal();return p==='match'?((mq&&mq.matches)?'dark':'clean'):p;}
+  function dark(){var e=palEff();if(e!=='current')return e==='dark';var m=pref();return m==='dark'||(m==='auto'&&!!(mq&&mq.matches));}
+  function setMeta(d,e){var ms=document.querySelectorAll('meta[name="theme-color"]');if(!ms.length){var n=document.createElement('meta');n.name='theme-color';document.head.appendChild(n);ms=[n];}
+    for(var i=0;i<ms.length;i++){ms[i].removeAttribute('media');ms[i].setAttribute('content',PMETA[e]||(d?META.dark:META.light));}
     var s=document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');if(s)s.setAttribute('content',d?'black-translucent':'default');}
-  function apply(anim){var d=dark();
+  function apply(anim){var d=dark(),e=palEff();
     if(anim){root.classList.add('theming');clearTimeout(apply.t);apply.t=setTimeout(function(){root.classList.remove('theming');},450);}
-    root.setAttribute('data-theme',THEME);root.setAttribute('data-mode',d?'dark':'light');root.style.colorScheme=d?'dark':'light';setMeta(d);sync();}
-  function sync(){var m=pref(),d=root.getAttribute('data-mode')==='dark';
+    root.setAttribute('data-theme',e==='current'?THEME:e);root.setAttribute('data-mode',d?'dark':'light');root.style.colorScheme=d?'dark':'light';setMeta(d,e);sync();}
+  /* what the Auto / Light / Dark buttons show: the current look's own mode, or the closest match for a color theme */
+  function modeShown(){var p=pal();if(p==='current')return pref();if(p==='match')return 'auto';return p==='dark'?'dark':'light';}
+  function sync(){var m=modeShown(),d=root.getAttribute('data-mode')==='dark';
     var b=document.querySelectorAll('.mseg button');for(var i=0;i<b.length;i++)b[i].setAttribute('aria-checked',String(b[i].getAttribute('data-mode')===m));
     var t=document.getElementById('lookBtn');if(t){t.setAttribute('aria-label',d?'Switch to light':'Switch to dark');t.innerHTML=d?ICO.light:ICO.dark;}}
+  function saveRemote(p){var A=window.JVE_AUTH;if(!A||!A.user||!A.sb)return Promise.resolve(false);
+    return A.sb.from('profiles').update({theme:p}).eq('id',A.user.id).then(function(r){if(r.error)throw r.error;if(A.profile)A.profile.theme=p;put(KPU,A.user.id);return true;});}
+  function setPalette(p,local){if(!okPal(p))return Promise.resolve(false);var e0=palEff();if(e0==='clean'||e0==='warm')put(KPL,e0);
+    put(KP,p);apply(true);try{document.dispatchEvent(new CustomEvent('jve:theme',{detail:{theme:p}}));}catch(_){}
+    return local?Promise.resolve(false):saveRemote(p);}
+  /* Light / Dark / Auto (header button, Account sheet, Account page): the current look keeps its own mode; a color theme moves to its light or dark side */
+  function setMode(m){if(m!=='light'&&m!=='dark'&&m!=='auto')return;var p=pal();
+    if(p==='current'){put(KA,m);apply(true);try{document.dispatchEvent(new CustomEvent('jve:theme',{detail:{theme:p}}));}catch(_){}return;}
+    if(m==='auto')return setPalette('match');if(m==='dark')return setPalette('dark');
+    var e=palEff();return setPalette(e==='clean'||e==='warm'?e:(get(KPL)==='warm'?'warm':'clean'));}
+  /* signing in loads the theme saved on the account; signing out returns this device to the default */
+  function fromAuth(){var A=window.JVE_AUTH;if(!A)return;
+    if(A.user){var t=A.profile&&A.profile.theme;put(KPU,A.user.id);if(t&&okPal(t)&&t!==pal()){put(KP,t);apply(true);try{document.dispatchEvent(new CustomEvent('jve:theme',{detail:{theme:t}}));}catch(_){}}}
+    else if(get(KPU)){del(KPU);del(KP);del(KPL);apply(false);}}
+  document.addEventListener('jve:auth',fromAuth);
   apply(false);
   try{if(/[?&]admin=1/.test(location.search))put('jve_admin','1');if(get('jve_admin')==='1')root.classList.add('admin');}catch(_){}
   var ICO={light:'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
@@ -111,7 +137,7 @@
     LINKS.forEach(function(g,gi){
       if(gi===2){h+='<p class="mgrp">Settings</p>'+
         '<div class="mrow"><span class="mlab">Region<small>Home and Events open here</small></span><span class="hsel"><select id="mRegion" data-region aria-label="Region">'+regionOptions()+'</select></span></div>'+
-        '<div class="mrow"><span class="mlab">Appearance</span><div class="mseg" role="radiogroup" aria-label="Appearance">'+
+        '<div class="mrow"><span class="mlab">Appearance<small><a href="account.html#theme" class="mthemes">Color themes</a></small></span><div class="mseg" role="radiogroup" aria-label="Appearance">'+
         ['auto','light','dark'].map(function(m){return '<button type="button" role="radio" data-mode="'+m+'" aria-checked="false">'+ICO[m]+'<span>'+(m==='auto'?'Auto':m==='light'?'Light':'Dark')+'</span></button>';}).join('')+'</div></div>';}
       h+='<p class="mgrp">'+g[0]+'</p><ul class="mlist">';g[1].forEach(function(l){h+=li(l);});h+='</ul>';});
     sh.innerHTML=h;document.body.appendChild(sc);document.body.appendChild(sh);
@@ -143,9 +169,10 @@
     window.JVE_THEMES.open=open;window.JVE_THEMES.close=close;
     extras();
   }
-  window.JVE_THEMES={setMode:function(m){if(m!=='light'&&m!=='dark'&&m!=='auto')return;put(KA,m);apply(true);},mode:pref,effectiveMode:function(){return root.getAttribute('data-mode');},current:function(){return THEME;}};
-  if(mq){var on=function(){if(pref()==='auto')apply(true);};mq.addEventListener?mq.addEventListener('change',on):mq.addListener&&mq.addListener(on);}
-  window.addEventListener('storage',function(e){if(e.key===KA)apply(true);});
+  window.JVE_THEMES={setMode:setMode,mode:pref,modeShown:modeShown,effectiveMode:function(){return root.getAttribute('data-mode');},current:function(){return THEME;},
+    palette:pal,paletteShown:palEff,palettes:function(){return PALS.slice();},setPalette:setPalette};
+  if(mq){var on=function(){if(pal()==='match'||(pal()==='current'&&pref()==='auto'))apply(true);};mq.addEventListener?mq.addEventListener('change',on):mq.addListener&&mq.addListener(on);}
+  window.addEventListener('storage',function(e){if(e.key===KA||e.key===KP)apply(true);});
   function standalone(){try{return (window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;}catch(e){return false;}}
   function extras(){
     // iPhone "Add to Home Screen" hint, shown once (unlocked only)
