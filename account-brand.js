@@ -93,6 +93,12 @@
 ' <p class="br-sub">Public contact (optional)</p>'+
 ' <label class="check"><input type="checkbox" id="brShowC"> <span>Show a contact on my public profile. Your login email and phone are never shown unless you add them here.</span></label>'+
 ' <div class="two row" id="brCRow" hidden><div><label for="brPEm">Public email</label><input id="brPEm" type="email" maxlength="120" inputmode="email"></div><div><label for="brPPh">Public phone</label><input id="brPPh" type="tel" maxlength="20" inputmode="tel"></div></div>'+
+' <fieldset class="br-priv" id="brPriv" style="border:1px solid var(--line,#ddd);border-radius:12px;padding:12px 14px;margin:14px 0"><legend style="font-weight:600;padding:0 6px">Profile privacy</legend>'+
+' <label for="brVis">Who can see my profile</label><select id="brVis"><option value="public">Public: anyone on the web</option><option value="members" selected>Members only: signed-in members</option><option value="private">Only me</option></select>'+
+' <label class="check"><input type="checkbox" id="brShowName" checked> <span>Show my business name</span></label>'+
+' <label class="check"><input type="checkbox" id="brShowEmail" checked> <span>Show my contact email</span></label>'+
+' <label class="check"><input type="checkbox" id="brShowSocial" checked> <span>Show my website &amp; social links</span></label>'+
+' <p class="hint" style="margin:6px 0 0">Enforced by our database, not just hidden on screen. <a href="privacy.html">Privacy Policy</a></p></fieldset>'+
 ' <label class="check"><input type="checkbox" id="brListed"> <span>List my profile in the Vendor &amp; organizer directory</span></label>'+
 ' <div class="br-perk" id="brPerk"></div>'+
 ' <div class="btnrow" style="margin-top:16px"><button class="btn" type="submit" id="brSave">Save brand profile</button></div><div class="amsg" id="brMsg" role="status" aria-live="polite"></div>'+
@@ -102,7 +108,7 @@
     function fill(){var d=st.row||{};
       $('brName').value=d.business_name||prof.business_name||'';$('brTag').value=d.tagline||'';$('brBio').value=d.bio||'';$('brWhat').value=d.what||'';$('brCity').value=d.city||'';
       $('brKind').value=st.kind;$('brWeb').value=d.website||prof.website||'';$('brIg').value=handle(d.instagram);$('brFb').value=handle(d.facebook);$('brTt').value=handle(d.tiktok);
-      $('brPEm').value=d.public_email||'';$('brPPh').value=d.public_phone||'';$('brShowC').checked=!!(d.public_email||d.public_phone);$('brCRow').hidden=!$('brShowC').checked;$('brListed').checked=st.listed;
+      $('brPEm').value=d.public_email||'';$('brPPh').value=d.public_phone||'';$('brShowC').checked=!!(d.public_email||d.public_phone);$('brCRow').hidden=!$('brShowC').checked;$('brListed').checked=st.listed;$('brVis').value=d.visibility||'members';$('brShowName').checked=d.show_name!==false;$('brShowEmail').checked=d.show_email!==false;$('brShowSocial').checked=d.show_social!==false;
       var rs=$('brRegion');REG.forEach(function(x){var o=document.createElement('option');o.value=x;o.textContent=x+' Florida';rs.appendChild(o);});
       var RM={ne:'Northeast',panhandle:'Panhandle',nc:'North Central',central:'Central',tampa:'Tampa Bay',sw:'Southwest',se:'Southeast',keys:'Keys'};
       rs.value=d.region||RM[(window.JVE_REGIONS&&window.JVE_REGIONS.get&&window.JVE_REGIONS.get())||'']||'';}
@@ -175,7 +181,7 @@
       var row={user_id:uid,business_name:name,tagline:clean($('brTag').value,80)||null,bio:cleanBio($('brBio').value)||null,color:st.color,kind:$('brKind').value,
         categories:st.cats.slice(0,60),what:clean($('brWhat').value,200)||null,city:clean($('brCity').value,60)||null,region:$('brRegion').value||null,
         website:links.website,instagram:links.instagram,facebook:links.facebook,tiktok:links.tiktok,public_email:pem||null,public_phone:pph||null,
-        logo_path:st.logo,cover_path:st.cover,photos:st.photos.slice(0,6),listed:$('brListed').checked};
+        logo_path:st.logo,cover_path:st.cover,photos:st.photos.slice(0,6),listed:$('brListed').checked,visibility:$('brVis').value||'members',show_name:$('brShowName').checked,show_email:$('brShowEmail').checked,show_social:$('brShowSocial').checked};
       var btn=$('brSave');btn.disabled=true;msg('Saving\u2026','info');
       try{var res;
         if(st.row){res=await sb.from('brand_profiles').update(row).eq('user_id',uid).select().single();}

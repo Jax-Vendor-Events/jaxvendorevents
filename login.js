@@ -57,13 +57,14 @@
         .catch(function(err){busy(btn,false);msg('loginMsg',nice(err),'err');if(/confirm/i.test(String(err&&err.message)))$('resendBox').hidden=false;});});
     $('resendBtn').addEventListener('click',function(){var em=$('lEmail').value.trim();if(!em)return msg('loginMsg','Type your email above first.','err');
       sb.auth.resend({type:'signup',email:em,options:{emailRedirectTo:SITE+'login.html?verified=1'}}).then(function(r){if(r.error)throw r.error;msg('loginMsg','Sent. Check your inbox (and spam) for the confirmation link.','ok');}).catch(function(err){msg('loginMsg',nice(err),'err');});});
-    /* create account */
+    /* create account: the button stays off until the Terms box is ticked */
+    (function(){var t=$('sTerms'),b=$('signupForm')&&$('signupForm').querySelector('button[type=submit]');if(t&&b){var f=function(){b.disabled=!t.checked;b.setAttribute('aria-disabled',String(!t.checked));};t.addEventListener('change',f);f();}})();
     $('signupForm').addEventListener('submit',function(e){e.preventDefault();var btn=$('signupForm').querySelector('button[type=submit]');
-      var d={full_name:$('sName').value.trim(),business_name:$('sBiz').value.trim(),account_type:$('sType').value};
+      var d={full_name:$('sName').value.trim(),business_name:$('sBiz').value.trim(),account_type:$('sType').value,terms_accepted:'true',terms_version:'2026-11-06'};
       var em=$('sEmail').value.trim(),pw=$('sPw').value;
       if(!d.full_name||!em)return msg('signupMsg','Please fill in your name and email.','err');
       if(!strong(pw))return msg('signupMsg','Use a password of at least 10 characters with letters and numbers. Don\u2019t reuse one from another site.','err');
-      if(!$('sTerms').checked)return msg('signupMsg','Please agree to the Terms & Privacy to continue.','err');
+      if(!$('sTerms').checked)return msg('signupMsg','Please tick \u201cI agree to the Terms and Privacy Policy\u201d to create your account.','err');
       busy(btn,true,'Creating your account…');
       sb.auth.signUp({email:em,password:pw,options:{data:d,emailRedirectTo:SITE+'login.html?verified=1&next='+encodeURIComponent(safeNext())}})
         .then(function(r){if(r.error)throw r.error;
