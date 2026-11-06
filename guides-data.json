@@ -1,0 +1,1357 @@
+{
+ "title": "Florida Vendor Registration Guide",
+ "checked": "2026-11-06",
+ "sources": {
+  "surtax": "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
+  "surtax_rules": "https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx"
+ },
+ "counties": [
+  {
+   "county": "Alachua",
+   "id": "alachua",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Alachua County Tax Collector",
+    "url": "https://www.alachuacollector.com/local-business-tax/",
+    "source": "https://www.alachuacollector.com/local-business-tax/",
+    "note": "The county repealed its Local Business Tax, so no county receipt is needed. Cities can still require one (Alachua, Gainesville and others)."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Gainesville",
+    "url": "https://www.gainesvillefl.gov/Government-Pages/Government/Departments/Financial-Services/Local-Business-Tax"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Baker",
+   "id": "baker",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Baker County Tax Collector",
+    "url": "https://mybakertc.com/occupational-license",
+    "source": "https://mybakertc.com/occupational-license",
+    "note": "The Tax Collector's occupational license page says local licenses are required for most businesses, issued by the county and cities."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Bay",
+   "id": "bay",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Bay County Tax Collector",
+    "url": "https://baycountyfltax.gov/",
+    "source": "https://baycountyfltax.gov/",
+    "note": "We couldn't find a county business tax page on the Tax Collector's site. Panama City says it requires its own receipt."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Panama City",
+    "url": "https://www.panamacity.gov/184/Business-Services"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Bradford",
+   "id": "bradford",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Bradford County Tax Collector",
+    "url": "https://www.bradfordtaxcollector.com/",
+    "source": "https://www.bradfordtaxcollector.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Brevard",
+   "id": "brevard",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "A surtax in this county is scheduled to expire Dec 31, 2026 per DOR's 2026 table. Check the 2027 rate in January.",
+   "btr": {
+    "status": "county",
+    "office": "Brevard County Tax Collector",
+    "url": "https://www.brevardtaxcollector.com/services/business-tax-receipts/",
+    "source": "https://www.brevardtaxcollector.com/services/business-tax-receipts/",
+    "note": "The county BTR comes from the Tax Collector, and you can apply online."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Palm Bay",
+    "url": "https://www.palmbayfl.gov/business/business-resources/business-licensing-taxes"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Broward",
+   "id": "broward",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Broward County Records, Taxes & Treasury",
+    "url": "https://browardtax.org/business-tax-receipt/",
+    "source": "https://browardcountyfl.qscend.com/311/knowledgebase/article/247180",
+    "note": "Broward's 311 help page says you apply for, or update, a county business tax receipt online through BTExpress."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Fort Lauderdale",
+    "url": "https://www.fortlauderdale.gov/Government/Departments/Community-Services/Business-Tax"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Calhoun",
+   "id": "calhoun",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Calhoun County Tax Collector",
+    "url": "https://calhountc.com/",
+    "source": "https://calhountc.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Blountstown",
+    "url": "https://blountstownfl.govoffice3.com/?SEC=88B64DDA-4638-4D21-811B-E8D8A43671C3"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Charlotte",
+   "id": "charlotte",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "A surtax in this county is scheduled to expire Dec 31, 2026 per DOR's 2026 table. Check the 2027 rate in January.",
+   "btr": {
+    "status": "county",
+    "office": "Charlotte County Tax Collector",
+    "url": "https://taxcollector.charlottecountyfl.gov/business-tax",
+    "source": "https://taxcollector.charlottecountyfl.gov/business-tax",
+    "note": "You pay the county local business tax when a business starts operating, and renew it July 1 to Sept 30 each year."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Punta Gorda",
+    "url": "https://www.ci.punta-gorda.fl.us/services/taxes-payments/business-taxes"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Citrus",
+   "id": "citrus",
+   "state_rate": 6,
+   "surtax": 0.0,
+   "total_rate": 6.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Citrus County Tax Collector",
+    "url": "https://www.citrustc.us/services/business-tax-receipts/",
+    "source": "https://www.citrustc.us/services/business-tax-receipts/",
+    "note": "The Tax Collector says anyone selling merchandise or services to the public needs a county BTR."
+   },
+   "event_vendor": {
+    "note": "Mobile vendors selling merchandise need written permission from the owner of the property where they sell.",
+    "source": "https://www.citrustc.us/services/business-tax-receipts/"
+   },
+   "city": {
+    "name": "Inverness",
+    "url": "https://inverness.gov/689/Business-Tax-Receipt-Information"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Clay",
+   "id": "clay",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Clay County Tax Collector",
+    "url": "https://www.claycountytax.com/",
+    "source": "https://www.claycountytax.com/",
+    "note": "We couldn't read the county's business license page (it blocks automated visits). Check with the Tax Collector or with Clay County Planning & Zoning."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Collier",
+   "id": "collier",
+   "state_rate": 6,
+   "surtax": 0.0,
+   "total_rate": 6.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Collier County Tax Collector",
+    "url": "https://colliertaxcollector.com/business-tax-receipts/",
+    "source": "https://colliertaxcollector.com/business-tax-receipts/",
+    "note": "County BTRs run through Sept 30 and renew each year."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Naples",
+    "url": "https://www.naplesgov.com/finance/page/business-tax-receipts-0"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Columbia",
+   "id": "columbia",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Columbia County Tax Collector",
+    "url": "https://www.columbiataxcollector.com/services/business-tax-receipts/",
+    "source": "https://www.columbiataxcollector.com/services/business-tax-receipts/",
+    "note": "The county BTR for general businesses is $30."
+   },
+   "event_vendor": {
+    "note": "The county's fee list has a separate Farmers Market/Flea Market category ($200).",
+    "source": "https://www.columbiataxcollector.com/services/business-tax-receipts/"
+   },
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "DeSoto",
+   "id": "desoto",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "DeSoto County Tax Collector",
+    "url": "https://desototaxcollector.com/",
+    "source": "https://desototaxcollector.com/",
+    "note": "The Tax Collector's site doesn't spell out a county BTR for event vendors. The City of Arcadia requires its own receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Dixie",
+   "id": "dixie",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Dixie County Tax Collector",
+    "url": "https://dixietax.com/new-business-tax-information/",
+    "source": "https://dixietax.com/new-business-tax-information/",
+    "note": "The Tax Collector has a local business tax guide and application."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Duval",
+   "id": "duval",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Duval County Tax Collector (City of Jacksonville)",
+    "url": "https://taxcollector.jacksonville.gov/taxes/local-business-tax",
+    "source": "https://taxcollector.jacksonville.gov/taxes/local-business-tax",
+    "note": "Duval and Jacksonville are consolidated, and the Tax Collector says you need an LBT receipt to sell goods or services to the public. The beach cities and Baldwin issue their own."
+   },
+   "event_vendor": {
+    "note": "Your business location can't be a PO box, a virtual office or a temporary (shared) location.",
+    "source": "https://taxcollector.jacksonville.gov/taxes/local-business-tax"
+   },
+   "city": {
+    "name": "Jacksonville Beach",
+    "url": "https://www.jacksonvillebeach.org/161/Local-Business-Tax"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Escambia",
+   "id": "escambia",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Escambia County Tax Collector",
+    "url": "https://escambiataxcollector.com/business-tax-receipts/",
+    "source": "https://escambiataxcollector.com/business-tax-receipts/",
+    "note": "The county BTR comes from the Tax Collector, and BTExpress handles it online."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Pensacola",
+    "url": "https://www.cityofpensacola.com/658/Business-Tax-Receipts"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Flagler",
+   "id": "flagler",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Flagler County Tax Collector",
+    "url": "https://www.flaglertax.gov/local-business-tax-receipts/",
+    "source": "https://www.flaglertax.gov/local-business-tax-receipts/",
+    "note": "The Tax Collector collects the county Local Business Tax Receipt under county ordinance."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Palm Coast",
+    "url": "https://www.palmcoast.gov/business-tax"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Franklin",
+   "id": "franklin",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Franklin County Tax Collector",
+    "url": "https://franklintaxcollector.com/",
+    "source": "https://franklintaxcollector.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Apalachicola",
+    "url": "https://www.cityofapalachicola.com/business/doing-business-in-apalachicola/"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Gadsden",
+   "id": "gadsden",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Gadsden County Tax Collector",
+    "url": "https://www.gadsdentaxcollector.com/",
+    "source": "https://www.gadsdentaxcollector.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Quincy",
+    "url": "https://www.myquincy.net/business"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Gilchrist",
+   "id": "gilchrist",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Gilchrist County Tax Collector",
+    "url": "https://gilchristtax.com/",
+    "source": "https://gilchristtax.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Glades",
+   "id": "glades",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Glades County Tax Collector",
+    "url": "https://gladestc.com/",
+    "source": "https://gladestc.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Gulf",
+   "id": "gulf",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Gulf County Tax Collector",
+    "url": "https://gulftaxcollector.com/",
+    "source": "https://gulftaxcollector.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Port St. Joe",
+    "url": "https://www.cityofportstjoe.com/business-license.cfm"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Hamilton",
+   "id": "hamilton",
+   "state_rate": 6,
+   "surtax": 2.0,
+   "total_rate": 8.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Hamilton County Tax Collector",
+    "url": "https://hamiltontaxcollector.com/",
+    "source": "https://hamiltontaxcollector.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Hardee",
+   "id": "hardee",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Hardee County Tax Collector",
+    "url": "https://hardeetaxcollector.com/",
+    "source": "https://hardeetaxcollector.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Hendry",
+   "id": "hendry",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Hendry County Tax Collector",
+    "url": "https://www.hendrycountytc.com/services/business-tax-receipts/",
+    "source": "https://www.hendrycountytc.com/services/business-tax-receipts/",
+    "note": "The county BTR comes from the Tax Collector. LaBelle and Clewiston have their own requirements."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Clewiston",
+    "url": "https://www.clewiston-fl.gov/218/Business-Tax-Receipts"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Hernando",
+   "id": "hernando",
+   "state_rate": 6,
+   "surtax": 0.5,
+   "total_rate": 6.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Hernando County Tax Collector",
+    "url": "https://county-taxes.net/fl-hernando",
+    "source": "https://county-taxes.net/fl-hernando",
+    "note": "We couldn't confirm the county BTR rules on an official page."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Brooksville",
+    "url": "https://www.cityofbrooksville.us/35/Business"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Highlands",
+   "id": "highlands",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Highlands County Tax Collector",
+    "url": "https://www.hctaxcollector.com/business-tax/",
+    "source": "https://www.hctaxcollector.com/business-tax/",
+    "note": "The county repealed its business tax ordinance on July 24, 2006. Cities in the county may still issue receipts."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Hillsborough",
+   "id": "hillsborough",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Hillsborough County Tax Collector",
+    "url": "https://www.hillstaxfl.gov/taxes/business-tax-services/",
+    "source": "https://www.hillstaxfl.gov/taxes/business-tax-services/",
+    "note": "The county Business Tax comes from the Tax Collector, and you can apply online through BTExpress."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Tampa",
+    "url": "https://www.tampa.gov/business-tax"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Holmes",
+   "id": "holmes",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Holmes County Tax Collector",
+    "url": "https://holmestax.com/",
+    "source": "https://holmestax.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Bonifay",
+    "url": "https://www.cityofbonifay.com/ordinance/occupational-license-6"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Indian River",
+   "id": "indian-river",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Indian River County Tax Collector",
+    "url": "https://services.irctax.com/hc/en-us/articles/41504484978963-Local-Business-Tax-Receipt-Overview",
+    "source": "https://services.irctax.com/hc/en-us/articles/41504484978963-Local-Business-Tax-Receipt-Overview",
+    "note": "The Tax Collector has a Local Business Tax overview, how to apply, and renewals."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Jackson",
+   "id": "jackson",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Jackson County Tax Collector",
+    "url": "https://jacksontc.com/",
+    "source": "https://jacksontc.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Marianna",
+    "url": "https://www.cityofmarianna.com/149/Business-Licenses"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Jefferson",
+   "id": "jefferson",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Jefferson County Tax Collector",
+    "url": "https://jeffersontc.com/",
+    "source": "https://jeffersontc.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Lafayette",
+   "id": "lafayette",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Lafayette County Tax Collector",
+    "url": "https://www.lafayettetc.com/",
+    "source": "https://www.lafayettetc.com/",
+    "note": "The Tax Collector says it collects local business tax, but the site doesn't give details."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Lake",
+   "id": "lake",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Lake County (Tax Collector / county government)",
+    "url": "https://www.lakecountyfl.gov/",
+    "source": "https://www.lakecountyfl.gov/",
+    "note": "We couldn't confirm the current county BTR rules on an official page."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Lee",
+   "id": "lee",
+   "state_rate": 6,
+   "surtax": 0.5,
+   "total_rate": 6.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Lee County Tax Collector",
+    "url": "https://leetc.com/businesses/business-tax-guide-and-applications/",
+    "source": "https://leetc.com/businesses/business-tax-guide-and-applications/",
+    "note": "The Tax Collector has a business tax guide and applications. Cities (Cape Coral, Fort Myers, Bonita Springs and others) have their own requirements."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Cape Coral",
+    "url": "https://www.capecoral.gov/departments/city_clerk/business_tax_receipts.php"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Leon",
+   "id": "leon",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Leon County Tax Collector",
+    "url": "https://www.leontaxcollector.net/",
+    "source": "https://www.leontaxcollector.net/",
+    "note": "We couldn't confirm a county BTR on an official page. Tallahassee may require its own."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Levy",
+   "id": "levy",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Levy County Tax Collector",
+    "url": "https://levytax.org/services/",
+    "source": "https://levytax.org/services/",
+    "note": "The Tax Collector says it collects local business tax, but the site doesn't give details."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Liberty",
+   "id": "liberty",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "A surtax in this county is scheduled to expire Dec 31, 2026 per DOR's 2026 table. Check the 2027 rate in January.",
+   "btr": {
+    "status": "check",
+    "office": "Liberty County Tax Collector",
+    "url": "https://libertytaxcollector.com/",
+    "source": "https://libertytaxcollector.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Madison",
+   "id": "madison",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Madison County Tax Collector",
+    "url": "https://madisontc.com/",
+    "source": "https://madisontc.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Madison",
+    "url": "https://cityofmadisonfl.com/occupational-license/"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Manatee",
+   "id": "manatee",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Manatee County Government",
+    "url": "https://www.mymanatee.org/connect/news-and-information/frequently-asked-questions/-in-Categories,services,licenses",
+    "source": "https://www.mymanatee.org/connect/news-and-information/frequently-asked-questions/-in-Categories,services,licenses",
+    "note": "Unincorporated Manatee County has no Local Business Tax Receipt. Cities such as Bradenton require their own."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Bradenton",
+    "url": "https://cityofbradenton.com/localbiztax"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Marion",
+   "id": "marion",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Marion County Tax Collector",
+    "url": "https://www.mariontax.com/occupational-licenses",
+    "source": "https://www.mariontax.com/occupational-licenses",
+    "note": "The county repealed its occupational license ordinance (vote of Aug 1, 2006). Check the city where you sell."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Martin",
+   "id": "martin",
+   "state_rate": 6,
+   "surtax": 0.5,
+   "total_rate": 6.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Martin County Tax Collector",
+    "url": "https://martintaxcollector.com/local-business-tax/",
+    "source": "https://martintaxcollector.com/local-business-tax/",
+    "note": "The county Local Business Tax comes from the Tax Collector."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Stuart",
+    "url": "https://www.stuartfl.gov/177/Business-Tax"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Miami-Dade",
+   "id": "miami-dade",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Miami-Dade County Tax Collector",
+    "url": "https://www.mdctaxcollector.gov/services/local-business-tax-receipt",
+    "source": "https://www.miamidade.gov/global/news-item.page?Mduid_news=news1602017472715893",
+    "note": "Miami-Dade charges a Local Business Tax for the privilege of doing business in the county, and most cities charge their own on top."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Miami",
+    "url": "https://www.miami.gov/Business-Licenses/Business-Licensing/Get-a-Business-Tax-Receipt-BTR"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Monroe",
+   "id": "monroe",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Monroe County Tax Collector",
+    "url": "https://monroetaxcollector.com/services/business-tax-receipts/",
+    "source": "https://monroetaxcollector.com/services/business-tax-receipts/",
+    "note": "The Tax Collector says anyone providing merchandise or services to the public needs a county receipt, including one-person and home-based businesses."
+   },
+   "event_vendor": {
+    "note": "The county fee schedule has Flea Market Operator and stall licenses.",
+    "source": "https://monroetaxcollector.com/services/business-tax-receipts/"
+   },
+   "city": {
+    "name": "Key West",
+    "url": "https://cityofkeywest-fl.gov/317/Permit-and-Licensing-Business-Center"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Nassau",
+   "id": "nassau",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Nassau County Government",
+    "url": "https://www.nassaucountyfl.com/833/BusinessOccupational-Licenses",
+    "source": "https://www.nassaucountyfl.com/833/BusinessOccupational-Licenses",
+    "note": "Unincorporated Nassau County hasn't required one since Ord. 2008-05. Cities such as Fernandina Beach may."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Okaloosa",
+   "id": "okaloosa",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Okaloosa County Tax Collector",
+    "url": "https://okaloosatax.com/services/business-tax-receipt/",
+    "source": "https://okaloosatax.com/services/business-tax-receipt/",
+    "note": "The county BTR comes from the Tax Collector."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Okeechobee",
+   "id": "okeechobee",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Okeechobee County Tax Collector",
+    "url": "https://okeechobeetc.com/business-tax",
+    "source": "https://okeechobeetc.com/business-tax",
+    "note": "The county BTR comes from the Tax Collector. If you use a name other than your own, register it as a fictitious name first."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Okeechobee",
+    "url": "https://www.cityofokeechobee.com/business-tax.html"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Orange",
+   "id": "orange",
+   "state_rate": 6,
+   "surtax": 0.5,
+   "total_rate": 6.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Orange County Zoning Division",
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Permitting-Licensing/docs/BTR-Instructions.pdf",
+    "source": "https://www.orangecountyfl.net/Portals/0/Library/Permitting-Licensing/docs/BTR-Instructions.pdf",
+    "note": "Orange County BTR applications are online only and go through the county Zoning Division."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Orlando",
+    "url": "https://www.orlando.gov/Building-Development/Permits-Inspections/Other/Get-a-Permit-for-Your-Business/Get-a-Business-Tax-Receipt"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Osceola",
+   "id": "osceola",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Osceola County Tax Collector",
+    "url": "https://osceolataxcollector.org/local-business-tax-receipt/",
+    "source": "https://osceolataxcollector.org/local-business-tax-receipt/",
+    "note": "Every business has to register for a county LBTR, whatever its size."
+   },
+   "event_vendor": {
+    "note": "The Tax Collector says yes, you need an LBTR to sell at a flea market. Roadside vending isn't allowed in Osceola County.",
+    "source": "https://osceolataxcollector.org/local-business-tax-receipt/"
+   },
+   "city": {
+    "name": "Kissimmee",
+    "url": "https://www.kissimmee.gov/Business-Development/Doing-Business-in-Kissimmee/Business-Tax-Receipts-BTR"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Palm Beach",
+   "id": "palm-beach",
+   "state_rate": 6,
+   "surtax": 0.5,
+   "total_rate": 6.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Palm Beach County Tax Collector",
+    "url": "https://www.pbctax.gov/taxes/business-tax/",
+    "source": "https://www.pbctax.gov/taxes/business-tax/",
+    "note": "Anyone selling merchandise or services in the county needs a county local business tax receipt, including one-person and home-based businesses."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Pasco",
+   "id": "pasco",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Pasco County Tax Collector",
+    "url": "https://www.pascotaxes.com/taxes/business-tax-receipt-information/",
+    "source": "https://www.pascotaxes.com/taxes/business-tax-receipt-information/",
+    "note": "Most businesses operating in the county need a BTR. Receipts are good through Sept 30."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "New Port Richey",
+    "url": "https://www.cityofnewportrichey.org/Business/Guides/Starting-a-Business-in-the-City/Business-Tax-Renewal-Online-Instructions"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Pinellas",
+   "id": "pinellas",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Pinellas County Government",
+    "url": "https://pinellas.gov/occupational-licenses/",
+    "source": "https://pinellas.gov/occupational-licenses/",
+    "note": "We couldn't confirm the county BTR rules on an official page. Most Pinellas cities, St. Petersburg included, issue their own."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "St. Petersburg",
+    "url": "https://www.stpete.org/business/business_assistance/business_tax_certificates.php"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Polk",
+   "id": "polk",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Polk County Tax Collector",
+    "url": "https://www.polktaxes.com/services/local-business-taxes/",
+    "source": "https://www.polktaxes.com/services/local-business-taxes/",
+    "note": "County local business taxes are generally paid once a year by every business."
+   },
+   "event_vendor": {
+    "note": "The county has a 'Special Event' category (fairs, festivals, outdoor events) and a 'Stall Market' category (a marketplace where transient businesses trade).",
+    "source": "https://www.polktaxes.com/services/local-business-taxes/"
+   },
+   "city": {
+    "name": "Lakeland",
+    "url": "https://www.lakelandgov.net/departments/community-economic-development/economic-development/business-tax/"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Putnam",
+   "id": "putnam",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Putnam County Tax Collector",
+    "url": "https://www.putnamtax.com/wp-content/uploads/2022/11/Pamphlet-Business-Tax-Receipt.pdf",
+    "source": "https://www.putnamtax.com/wp-content/uploads/2022/11/Pamphlet-Business-Tax-Receipt.pdf",
+    "note": "The county repealed its business tax on Apr 25, 2017, and no new county receipts are sold. Palatka and the other cities may require their own."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Palatka",
+    "url": "https://palatka-fl.gov/428/About-Business-Tax-Receipts"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "St. Johns",
+   "id": "st-johns",
+   "state_rate": 6,
+   "surtax": 0.5,
+   "total_rate": 6.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "St. Johns County Tax Collector",
+    "url": "https://sjctax.us/local-business-tax/",
+    "source": "https://sjctax.us/local-business-tax/",
+    "note": "The county Local Business Tax comes from the Tax Collector."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "St. Lucie",
+   "id": "st-lucie",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "St. Lucie County Tax Collector",
+    "url": "https://www.tcslc.com/227/Local-Business-Tax",
+    "source": "https://www.tcslc.com/227/Local-Business-Tax",
+    "note": "The Tax Collector lists the steps to get a county LBT receipt, starting with fictitious name registration if you need one."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": true
+  },
+  {
+   "county": "Santa Rosa",
+   "id": "santa-rosa",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "A surtax in this county is scheduled to expire Dec 31, 2026 per DOR's 2026 table. Check the 2027 rate in January.",
+   "btr": {
+    "status": "county",
+    "office": "Santa Rosa County Tax Collector",
+    "url": "https://srctc.com/business-tax/",
+    "source": "https://srctc.com/business-tax/",
+    "note": "The county business tax comes from the Tax Collector, and you can apply online."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Milton",
+    "url": "https://www.miltonfl.org/35/Business"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Sarasota",
+   "id": "sarasota",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Sarasota County Tax Collector",
+    "url": "https://www.sarasotataxcollector.gov/services/tax-services/business-tax",
+    "source": "https://www.sarasotataxcollector.gov/services/tax-services/business-tax",
+    "note": "The Tax Collector says the county business tax has been repealed. Cities (Sarasota, North Port, Venice) may still require one."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Sarasota",
+    "url": "https://www.sarasotafl.gov/Department-Pages/Development-Services/Local-Business-Tax"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Seminole",
+   "id": "seminole",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Seminole County Tax Collector",
+    "url": "https://seminolecounty.tax/services/business-services/business-tax-receipts/",
+    "source": "https://seminolecounty.tax/services/business-services/business-tax-receipts/",
+    "note": "A non-regulated (Type A) county BTR is $25."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Sanford",
+    "url": "https://sanfordfl.gov/business/business-tax/"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Sumter",
+   "id": "sumter",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Sumter County Tax Collector",
+    "url": "https://www.sumtertaxcollector.com/lice.html",
+    "source": "https://www.sumtertaxcollector.com/lice.html",
+    "note": "The Tax Collector posts county Ordinance 2007-01 on occupational licenses but doesn't say who needs one."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Wildwood",
+    "url": "https://www.wildwood-fl.gov/214/Business-Registration"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Suwannee",
+   "id": "suwannee",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Suwannee County Tax Collector",
+    "url": "https://suwtax.com/",
+    "source": "https://suwtax.com/",
+    "note": "We couldn't confirm a county BTR on an official page."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Live Oak",
+    "url": "https://www.cityofliveoak.org/city-clerk/business-tax-receipt/"
+   },
+   "confirmed": false
+  },
+  {
+   "county": "Taylor",
+   "id": "taylor",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "county",
+    "office": "Taylor County Tax Collector",
+    "url": "https://www.taylorcountytaxcollector.com/business-tax",
+    "source": "https://www.taylorcountytaxcollector.com/business-tax",
+    "note": "Taylor County requires a receipt to do business. The Tax Collector says that covers anyone providing merchandise or services to the public."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Perry",
+    "url": "https://www.cityofperry.net/utilities-and-business-licenses"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Union",
+   "id": "union",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Union County Tax Collector",
+    "url": "https://unioncountytc.com/",
+    "source": "https://unioncountytc.com/",
+    "note": "The Tax Collector's site doesn't list a county business tax receipt."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Volusia",
+   "id": "volusia",
+   "state_rate": 6,
+   "surtax": 0.5,
+   "total_rate": 6.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Volusia County Revenue Services",
+    "url": "https://www.volusia.org/services/financial-and-administrative-services/revenue-services/business-help/index.stml",
+    "source": "https://www.volusia.org/services/financial-and-administrative-services/revenue-services/business-help/index.stml",
+    "note": "The county BTR ordinance was repealed effective Oct 1, 2024, so no county receipt is needed. Check the city where you sell."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Daytona Beach",
+    "url": "https://www.daytonabeach.gov/345/Business-Licensing"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Wakulla",
+   "id": "wakulla",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Wakulla County Tax Collector",
+    "url": "https://wakullatax.com/",
+    "source": "https://wakullatax.com/",
+    "note": "Wakulla's economic development council says the county receipt is filed with the County Planning Department ($20). Confirm with the county."
+   },
+   "event_vendor": null,
+   "city": null,
+   "confirmed": false
+  },
+  {
+   "county": "Walton",
+   "id": "walton",
+   "state_rate": 6,
+   "surtax": 1.0,
+   "total_rate": 7.0,
+   "surtax_note": "",
+   "btr": {
+    "status": "none",
+    "office": "Walton County Tax Collector",
+    "url": "https://waltontaxcollector.com/services/business-license-statement",
+    "source": "https://waltontaxcollector.com/services/business-license-statement",
+    "note": "Walton County hasn't levied a county occupational license since June 25, 1974. State-regulated trades still need their state licenses."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "DeFuniak Springs",
+    "url": "https://www.defuniaksprings.net/935/Business-License"
+   },
+   "confirmed": true
+  },
+  {
+   "county": "Washington",
+   "id": "washington",
+   "state_rate": 6,
+   "surtax": 1.5,
+   "total_rate": 7.5,
+   "surtax_note": "",
+   "btr": {
+    "status": "check",
+    "office": "Washington County Tax Collector",
+    "url": "https://cloudservices.visualgov.com/FLWashingtonMobile/Home",
+    "source": "https://cloudservices.visualgov.com/FLWashingtonMobile/Home",
+    "note": "We couldn't confirm a county BTR on an official page."
+   },
+   "event_vendor": null,
+   "city": {
+    "name": "Chipley",
+    "url": "https://cityofchipley.com/156/Occupational-License"
+   },
+   "confirmed": false
+  }
+ ]
+}

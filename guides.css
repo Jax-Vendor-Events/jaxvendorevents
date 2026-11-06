@@ -1,0 +1,40 @@
+/* Florida vendor registration guide (guides.html) — self-contained, uses the site's theme tokens */
+.gdisc{display:flex;gap:10px;align-items:flex-start;margin:14px 0 4px;padding:12px 14px;border-radius:14px;background:var(--card);box-shadow:0 0 0 1px var(--line2) inset;color:var(--ink2);font-size:14px;line-height:1.45}
+.gdisc .ico{flex:none;margin-top:2px;color:var(--mut)}
+.gstate,.gcounties{margin:26px 0}
+.gstate h2,.gcounties h2{margin:0 0 10px}
+.gsteps{margin:0;padding:0;list-style:none;counter-reset:g;display:grid;gap:10px}
+.gsteps li{counter-increment:g;position:relative;padding:14px 14px 14px 50px;border-radius:16px;background:var(--card);box-shadow:0 0 0 1px var(--line2) inset;line-height:1.5;font-size:15px}
+.gsteps li:before{content:counter(g);position:absolute;left:14px;top:14px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:rgba(var(--sun-rgb),.16);color:var(--ink);font:700 13px/1 var(--sans,inherit)}
+.gsteps a,.gfood a,.gcard a{font-weight:600;overflow-wrap:anywhere}
+.gfood{margin-top:12px;padding:14px;border-radius:16px;background:var(--card);box-shadow:0 0 0 1px var(--line2) inset;font-size:15px;line-height:1.5}
+.gfood h3{margin:0 0 6px;font-size:17px}.gfood p{margin:6px 0}
+.gmeta{color:var(--ink2);font-size:14px;line-height:1.45;margin:0 0 12px}
+.gtools{padding:6px 0 8px;display:grid;gap:10px}
+.gtools .search{display:block}
+.gfil{display:flex;flex-wrap:wrap;gap:6px}
+.gfil button{min-height:36px;padding:0 13px;border-radius:999px;border:0;background:var(--card);box-shadow:0 0 0 1px var(--line2) inset;color:var(--ink2);font-size:13px;font-weight:600;cursor:pointer}
+.gfil button.on{background:var(--ink);color:var(--inv,#fff);box-shadow:none}
+.gfil button:focus-visible,.gaz a:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+.gaz{display:flex;flex-wrap:wrap;gap:4px}
+.gaz a{display:inline-grid;place-items:center;min-width:32px;height:32px;border-radius:9px;background:var(--card);box-shadow:0 0 0 1px var(--line2) inset;color:var(--ink2);font-size:13px;font-weight:700;text-decoration:none}
+.gcount{margin:0;color:var(--mut);font-size:13px}
+.ggrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media (min-width:760px){.ggrid{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.ggrid{grid-template-columns:1fr 1fr 1fr}}
+.gcard{scroll-margin-top:84px;padding:14px;border-radius:16px;background:var(--card);box-shadow:0 0 0 1px var(--line2) inset;font-size:14px;line-height:1.45;min-width:0}
+.gcard:target{box-shadow:0 0 0 2px var(--sun) inset}
+.gh{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.gh h3{margin:0;font-size:17px}
+.grate{flex:none;padding:3px 10px;border-radius:999px;background:rgba(var(--sun-rgb),.16);color:var(--ink);font-weight:700;font-size:14px}
+.gcard p{margin:7px 0 0}
+.gtax{color:var(--ink2)}
+.gsn{color:var(--ink2);font-size:13px;font-style:italic}
+.gchip{display:inline-block;margin-right:4px;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.gchip.ok{background:rgba(var(--sea-rgb),.16);color:var(--ink)}
+.gchip.no{background:rgba(var(--ink-rgb),.08);color:var(--ink)}
+.gchip.chk{background:rgba(var(--sun-rgb),.2);color:var(--ink)}
+.gsrc{color:var(--mut)}
+.gev.muted,.gcity{color:var(--ink2)}
+.gnone{color:var(--mut);padding:20px 0}
+.gcard[hidden]{display:none}
