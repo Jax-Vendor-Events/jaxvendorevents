@@ -2,7 +2,7 @@
    region and filters as the list, and the same event sheet (tap a town pin, then an event).
    PRIVACY + PAYWALL: every pin sits at a TOWN or COUNTY center from geo.js (public Census data), never at a venue.
    The listings come from the one paywalled door (get_site in auth.js): free and logged-out visitors get teasers without
-   venue, organizer or links, and this file adds nothing to them. Map tiles: OpenStreetMap (standard tiles, toned dark in jve.css). */
+   venue, organizer or links, and this file adds nothing to them. Map: OpenFreeMap dark vector basemap (see basemap()), no CSS filters. */
 (function(){
   'use strict';
   var d=document,G=window.JVE_GEO||{county:{},place:{},alias:{}};
@@ -19,7 +19,16 @@
     function css(h){var l=d.createElement('link');l.rel='stylesheet';l.href=h;d.head.appendChild(l);}
     function js(s){return new Promise(function(ok,no){var x=d.createElement('script');x.src=s;x.onload=ok;x.onerror=no;d.head.appendChild(x);});}
     css('vendor/leaflet/leaflet-1.9.4.css');css('vendor/leaflet/markercluster-1.5.3.css');
-    loading=js('vendor/leaflet/leaflet-1.9.4.js').then(function(){return js('vendor/leaflet/markercluster-1.5.3.js');});return loading;}
+    loading=js('vendor/leaflet/leaflet-1.9.4.js').then(function(){return js('vendor/leaflet/markercluster-1.5.3.js');})
+      .then(function(){if(!gl())return;css('vendor/maplibre/maplibre-gl-5.24.0.css');
+        return js('vendor/maplibre/maplibre-gl-5.24.0.js').then(function(){return js('vendor/maplibre/leaflet-maplibre-gl-0.1.4.js');}).catch(function(){});});return loading;}
+  /* Basemap: OpenFreeMap "dark" vector tiles (free, no key, OpenStreetMap data) drawn sharp at any zoom with readable labels.
+     Phones without WebGL get the standard OpenStreetMap tiles (no filters). */
+  function gl(){try{var c=d.createElement('canvas');return !!(window.WebGLRenderingContext&&(c.getContext('webgl2')||c.getContext('webgl')));}catch(e){return false;}}
+  var OSM_ATTR='&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors';
+  function basemap(){if(L.maplibreGL&&window.maplibregl){try{return L.maplibreGL({style:'https://tiles.openfreemap.org/styles/dark',interactive:false,
+      attribution:'<a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> &copy; <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a> '+OSM_ATTR});}catch(e){}}
+    return L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:OSM_ATTR});}
   var MO=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   function when(a){if(!a)return 'Ongoing';var p=a.split('-');return MO[+p[1]-1]+' '+(+p[2]);}
   function pro(){var A=window.JVE_AUTH;return !!(A&&(A.admin||(A.has&&(A.has('vendor-pro')||A.has('organizer-plus')||A.has('directory-sponsor')))));}
@@ -49,12 +58,11 @@
     var note=d.getElementById('mapNote');
     note.innerHTML='<b>'+r.n+'</b> event'+(r.n===1?'':'s')+' on the map · pins show the town, not the exact venue'+(pro()?'':'. <a href="pro.html">Vendor Pro</a> unlocks names, venues and apply links.')+(r.off?' '+r.off+' without a town are in the list.':'');}
   function init(){build();if(!box)return;load().then(function(){if(map){map.invalidateSize();draw();return;}
-    map=L.map('jmap',{zoomControl:true,scrollWheelZoom:false,tap:true,attributionControl:true}).setView([28.1,-82.4],6);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,className:'jv-tiles',
-      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'}).addTo(map);
+    map=L.map('jmap',{maxZoom:18,minZoom:5,zoomControl:true,scrollWheelZoom:false,tap:true,attributionControl:true}).setView([28.1,-82.4],6);
+    basemap().addTo(map);
     layer=L.markerClusterGroup({showCoverageOnHover:false,maxClusterRadius:46,spiderfyOnMaxZoom:false,zoomToBoundsOnClick:true,
       iconCreateFunction:function(c){var n=0;c.getAllChildMarkers().forEach(function(m){n+=m.options.jveCount||1;});return pinIcon(n,true);}});
-    map.addLayer(layer);draw();}).catch(function(){var n=d.getElementById('mapNote');if(n)n.textContent='The map could not load. Check your connection and try again.';});}
+    map.addLayer(layer);draw();}).catch(function(er){try{console.error('jvemap',er&&er.stack||er)}catch(_){}var n=d.getElementById('mapNote');if(n)n.textContent='The map could not load. Check your connection and try again.';});}
   function onView(v){if(v==='map'){init();setTimeout(function(){if(map){map.invalidateSize();}},60);}}
   d.addEventListener('jve:view',function(e){onView(e.detail);});
   d.addEventListener('jve:list',function(e){if(e.detail&&e.detail.view==='map'&&map)draw();});

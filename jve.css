@@ -508,9 +508,11 @@ html[data-theme=dark] .pseg .n{color:var(--ink2)}
   /* surfaces */
   --c-bg:#0E0F11; --c-surface:#17191C; --c-raised:#1F2226; --c-border:#2A2E33; --c-border-2:#353A40;
   /* text */
-  --c-text:#ECEEF1; --c-text-2:#C4C9D0; --c-muted:#9AA1AB; --c-faint:#6E757F;
+  --c-text:#ECEEF1; --c-text-2:#C4C9D0; --c-muted:#9AA1AB; --c-faint:#9AA1AB;
   /* accent: steel silver (primary buttons: silver fill, near-black text) */
   --c-accent:#C9CED6; --c-accent-hover:#E3E6EA; --c-accent-rgb:201,206,214; --c-on-accent:#0E0F11; --c-accent-soft:#24282D;
+  /* brand: the orange sunset of the logo mark (map pins only; owner Nov 6: orange logo back) */
+  --c-brand:#C94A16; --c-brand-rgb:201,74,22;
   /* functional (muted) */
   --c-ok:#7FBF95; --c-ok-soft:#18251D; --c-warn:#D6B36A; --c-warn-soft:#2A2418; --c-bad:#E58A7E; --c-bad-soft:#2C1B19;
   /* type, shape, motion */
@@ -712,7 +714,7 @@ body[data-view=map] #home,body[data-view=map] #mycal,body[data-view=map] #list,b
 .pmono{background:var(--c-raised)!important;color:var(--c-text)!important}
 .lnk .dact>button.btn[data-copylink]{background:var(--c-accent)!important;color:var(--c-on-accent)!important}
 
-.jv-tiles{filter:invert(1) hue-rotate(180deg) grayscale(.85) brightness(.82) contrast(.92)}
+
 body[data-view=map] .mycal,body[data-view=map] [class*=mycal],body[data-view=map] .cm-cal{display:none!important}
 .hk,.hpro .hk{color:var(--c-muted)!important}
 
@@ -734,3 +736,27 @@ body[data-view=map] .mycal,body[data-view=map] [class*=mycal],body[data-view=map
 /* ---------- pricing tiers ---------- */
 .tier{background:var(--c-surface)!important;color:var(--c-text)!important}
 .tier .price,.tier h3{color:var(--c-text)!important}
+
+
+/* =====================================================================================================
+   TRUST PASS (Nov 6 2026, owner: "it looks nasty and scammy"). Flat, quiet surfaces; no glows, halos or blur;
+   readable text (body #ECEEF1, muted >= #9AA1AB on #0E0F11); a crisp map (CARTO Dark Matter tiles, no filters)
+   with pins in the logo's orange and clear white numbers.
+   ===================================================================================================== */
+.xhead{background:transparent!important;background-image:none!important;box-shadow:none!important;border:0!important;padding-left:0!important;padding-right:0!important}
+.xhead::before,.xhead::after,.hpro::before,.dr-pro::before,.tier.pop::before,.dh::before,.empty::before{display:none!important}
+.dh{background:var(--c-surface)!important;background-image:none!important;box-shadow:none!important}
+header.top{background:var(--c-bg)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+header.top .brand .mark,.jv-dbrand .mark,footer.jv-foot .jv-fhead .mark{image-rendering:auto;shape-rendering:geometricPrecision}
+.scrim,.tsheet-scrim{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:rgba(0,0,0,.6)!important}
+.btn.ghost{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.sheet,.tsheet,.tsheet.more,.jv-map-panel{box-shadow:0 -4px 16px rgba(0,0,0,.45)!important}
+small,.mut,.muted,.xh-sub,.jv-map-note{color:var(--c-muted)}
+/* map */
+.leaflet-container,.jv-map-canvas{background:#0E0F11}
+.leaflet-tile{filter:none!important}
+.jv-pin{background:var(--c-brand)!important;color:#fff!important;font:700 14px/1 var(--f-sans)!important;border:2px solid #fff!important;
+  box-shadow:0 2px 6px rgba(0,0,0,.55)!important;text-shadow:none!important}
+.jv-pin.jv-cl{font-size:15px!important}
+.jv-pin:hover,.jv-pin:focus-visible{background:#B23F10!important}
+.leaflet-control-attribution{background:rgba(14,15,17,.85)!important;color:var(--c-muted)!important}
