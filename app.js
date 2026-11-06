@@ -352,6 +352,7 @@
   $('shShare').addEventListener('click',function(){
     var e=curE;if(!e)return;var url=location.origin+location.pathname+'#e='+encodeURIComponent(e.id);
     var text=shareText(e,curA);
+    if(window.JVEShare){JVEShare.open({url:url,title:(e.name||'Vendor event')+' | Jax Vendor Events'});return;}
     if(navigator.share){navigator.share({title:e.name,text:text,url:url}).catch(function(){});}
     else copyText(text+'\n'+url).then(function(){toast('Details + link copied');},function(){toast(url);});
   });
