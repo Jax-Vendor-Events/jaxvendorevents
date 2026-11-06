@@ -82,7 +82,7 @@
 ' <div class="row"><label>Brand color</label><div class="br-colors" id="brSw"></div><p class="hint">Used as the accent on your public profile.</p></div>'+
 ' <div class="row"><label for="brKind">Show me as</label><select id="brKind"><option value="vendor">Vendor</option><option value="organizer">Organizer (I run events)</option></select></div>'+
 ' <div class="row"><label for="brBio">Short bio <span class="br-count" id="cBio"></span></label><textarea id="brBio" rows="4" maxlength="600" placeholder="Who you are and what makes your booth worth a stop"></textarea></div>'+
-' <div class="row"><label id="brCatL">What you sell (up to 4)</label><div class="br-chips" id="brCats" role="group" aria-labelledby="brCatL"></div></div>'+
+' <div class="row"><label id="brCatL">What you sell (pick all that apply)</label><div class="br-chips" id="brCats" role="group" aria-labelledby="brCatL"></div></div>'+
 ' <div class="row"><label for="brWhat" id="brWhatL">Products, in your words</label><input id="brWhat" maxlength="200"></div>'+
 ' <div class="two row"><div><label for="brCity">City</label><input id="brCity" maxlength="60" autocomplete="address-level2"></div><div><label for="brRegion">Region</label><select id="brRegion"><option value="">Pick one</option></select></div></div>'+
 ' <p class="br-sub">Links</p>'+
@@ -119,10 +119,10 @@
     paintColor();
     /* categories */
     function drawCats(){var org=$('brKind').value==='organizer',list=org?OCATS:VCATS,c=$('brCats');c.textContent='';
-      $('brCatL').textContent=org?'Events you run (up to 4)':'What you sell (up to 4)';$('brWhatL').textContent=org?'Your events, in your words':'Products, in your words';
+      $('brCatL').textContent=org?'Events you run (pick all that apply)':'What you sell (pick all that apply)';$('brWhatL').textContent=org?'Your events, in your words':'Products, in your words';
       $('brWhat').placeholder=org?'e.g. Riverside Saturday market, monthly night market':'e.g. Sterling silver rings, layered necklaces';
       list.concat(st.cats.filter(function(x){return list.indexOf(x)<0;})).forEach(function(x){var l=document.createElement('label'),i=document.createElement('input');i.type='checkbox';i.value=x;i.checked=st.cats.indexOf(x)>=0;
-        i.addEventListener('change',function(){if(i.checked){if(st.cats.length>=4){i.checked=false;msg('Pick up to 4.','err');return;}st.cats.push(x);}else st.cats=st.cats.filter(function(y){return y!==x;});});
+        i.addEventListener('change',function(){if(i.checked){st.cats.push(x);}else st.cats=st.cats.filter(function(y){return y!==x;});});
         l.appendChild(i);l.appendChild(document.createTextNode(x));c.appendChild(l);});}
     $('brKind').addEventListener('change',function(){st.cats=[];drawCats();});drawCats();
     /* media previews */
@@ -173,7 +173,7 @@
       if(pem&&!/^[^\s@<>"']+@[^\s@<>"']+\.[a-z]{2,}$/i.test(pem))return msg('That public email doesn\u2019t look right.','err');
       if(pph&&!/^[0-9 +().-]{7,20}$/.test(pph))return msg('That public phone doesn\u2019t look right.','err');
       var row={user_id:uid,business_name:name,tagline:clean($('brTag').value,80)||null,bio:cleanBio($('brBio').value)||null,color:st.color,kind:$('brKind').value,
-        categories:st.cats.slice(0,4),what:clean($('brWhat').value,200)||null,city:clean($('brCity').value,60)||null,region:$('brRegion').value||null,
+        categories:st.cats.slice(0,60),what:clean($('brWhat').value,200)||null,city:clean($('brCity').value,60)||null,region:$('brRegion').value||null,
         website:links.website,instagram:links.instagram,facebook:links.facebook,tiktok:links.tiktok,public_email:pem||null,public_phone:pph||null,
         logo_path:st.logo,cover_path:st.cover,photos:st.photos.slice(0,6),listed:$('brListed').checked};
       var btn=$('brSave');btn.disabled=true;msg('Saving\u2026','info');
