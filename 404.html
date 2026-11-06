@@ -19,21 +19,17 @@
 <meta name="description" content="That page isn't here. Browse every vendor market in Florida on Jax Vendor Events.">
 <meta name="robots" content="noindex">
 <style>
-@font-face{font-family:F;src:url(/fonts/fraunces.woff2) format("woff2");font-weight:100 900;font-display:swap}
-@font-face{font-family:I;src:url(/fonts/inter.woff2) format("woff2");font-weight:100 900;font-display:swap}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%}
-body{min-height:100vh;display:grid;place-items:center;padding:32px 22px;font:16px/1.5 I,system-ui,sans-serif;color:#fff;background:radial-gradient(700px 420px at 100% 0,rgba(242,129,58,.32),transparent 60%),radial-gradient(600px 380px at 0 100%,rgba(13,110,110,.42),transparent 60%),#12141a}
+body{min-height:100vh;display:grid;place-items:center;padding:32px 22px!important;font-family:var(--f-sans)}
 .box{max-width:440px;text-align:center}
-.mark{width:76px;height:76px;border-radius:20px;box-shadow:0 14px 30px -8px rgba(242,129,58,.6)}
-.code{margin:22px 0 0;font:600 12px/1 I;letter-spacing:.2em;text-transform:uppercase;color:#f6ad3e}
-h1{margin:10px 0 10px;font:700 34px/1.12 F;letter-spacing:-.01em}
-p{margin:0 0 26px;color:rgba(255,255,255,.74)}
+.box .mark{width:72px;height:72px;border-radius:18px;box-shadow:inset 0 0 0 1px var(--c-border)}
+.code{margin:22px 0 0;font:600 12px/1 var(--f-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--c-muted)}
+.box h1{margin:10px 0 10px;font:700 32px/1.15 var(--f-sans);letter-spacing:-.02em}
+.box p{margin:0 0 26px;color:var(--c-muted)}
 .btns{display:flex;flex-direction:column;gap:10px}
-a.btn{display:block;padding:15px 18px;border-radius:14px;font-weight:700;text-decoration:none;color:#12141a;background:linear-gradient(90deg,#f0663a,#f6ad3e)}
-a.alt{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.16)}
-@media (prefers-color-scheme: light){body{color:#12141a;background:radial-gradient(700px 420px at 100% 0,rgba(242,129,58,.22),transparent 60%),radial-gradient(600px 380px at 0 100%,rgba(13,110,110,.18),transparent 60%),#f3f6f5}p{color:rgba(18,20,26,.72)}a.alt{background:#fff;color:#12141a;border-color:rgba(18,20,26,.14)}}
+.btns a.btn{display:flex;width:100%}
 </style>
-<link rel="stylesheet" href="jve.css?v=ds2"></head>
+<link rel="stylesheet" href="/jve.css?v=ds2"></head>
 <body>
 <main class="box">
 <img class="mark" src="/icons/logo.svg" alt="" width="76" height="76">
@@ -41,9 +37,9 @@ a.alt{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,
 <h1>That page wandered off to another market</h1>
 <p>The link may be old or mistyped. Everything else is right where you left it.</p>
 <div class="btns">
-<a class="btn" href="/">Browse vendor events</a>
-<a class="btn alt" href="/newsletter.html">Get the free weekly email</a>
-<a class="btn alt" href="/list.html">List your event</a>
+<a class="btn" href="/#events">Find Events</a>
+<a class="btn alt" href="/#map">Event Map</a>
+<a class="btn alt" href="/guides.html">Vendor Guide</a>
 </div>
 </main>
 </body>
