@@ -3,7 +3,7 @@
 .aphead{margin:18px 0 10px}
 .aphead h1{margin:6px 0 4px;font:650 30px/1.08 var(--disp);letter-spacing:-.022em;color:var(--ink)}
 .aphead p{margin:0;color:var(--mut);font:400 14.5px/1.45 var(--sans)}
-.apkick{display:inline-flex;align-items:center;gap:6px;font:700 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--lx-champ-ink,#7f6230)}
+.apkick{display:inline-flex;align-items:center;gap:6px;font:700 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--lx-champ-ink,var(--c-on-accent))}
 .apkick .ico{width:14px;height:14px}
 .aptabs{position:sticky;top:calc(env(safe-area-inset-top,0px) + 58px);z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;margin:14px 0 16px;border-radius:14px;background:rgba(var(--ink-rgb),.06);backdrop-filter:var(--lx-blur);-webkit-backdrop-filter:var(--lx-blur)}
 .aptabs button{appearance:none;border:0;border-radius:11px;padding:10px 8px;background:transparent;color:var(--ink2);font:650 14.5px/1 var(--sans);cursor:pointer;min-height:42px}
@@ -110,7 +110,7 @@
 .tzc ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font:500 14px/1.35 var(--sans);color:var(--ink2)}
 .tzc li{display:flex;gap:8px;align-items:flex-start}
 .tzc li .ico{width:16px;height:16px;flex:none;margin-top:2px;color:var(--free)}
-.tzcta{display:flex;justify-content:center;align-items:center;gap:8px;margin:16px 0 4px;min-height:52px;border-radius:16px;background:linear-gradient(180deg,#c9a76a,#a9844a);color:#fff;font:700 16px/1 var(--sans);text-decoration:none;box-shadow:0 10px 24px -12px rgba(var(--lx-champ-rgb),.9)}
+.tzcta{display:flex;justify-content:center;align-items:center;gap:8px;margin:16px 0 4px;min-height:52px;border-radius:16px;background:linear-gradient(180deg,var(--c-accent),var(--c-accent));color:#fff;font:700 16px/1 var(--sans);text-decoration:none;box-shadow:0 10px 24px -12px rgba(var(--lx-champ-rgb),.9)}
 .tzcta .ico{width:18px;height:18px}
 .tzfake{pointer-events:none;filter:saturate(.9);opacity:.9}
 /* bottom sheet editor */
@@ -140,7 +140,7 @@
 .trk .tpanel textarea{width:100%;box-sizing:border-box;min-height:120px;border:1px solid var(--line2);border-radius:10px;background:var(--surf);color:var(--ink);font:400 14px/1.4 var(--sans);padding:9px 10px}
 .trk .tpanel .trow{margin-top:8px}
 .trk .pay{display:flex;flex-direction:column;gap:6px;padding:12px;border-radius:14px;background:rgba(var(--lx-champ-rgb),.1);border:1px solid rgba(var(--lx-champ-rgb),.45)}
-.trk .pay .btn{background:linear-gradient(180deg,#c9a76a,#a9844a);color:#fff;border:0}
+.trk .pay .btn{background:linear-gradient(180deg,var(--c-accent),var(--c-accent));color:#fff;border:0}
 .trk .pay small{font:400 12.5px/1.4 var(--sans);color:var(--ink2)}
 .trk .pay .cov{font:600 13px/1.35 var(--sans);color:var(--ink)}
 .trk .ask{display:grid;gap:8px;padding:12px;border-radius:14px;background:var(--card);box-shadow:var(--lx-sh1)}
