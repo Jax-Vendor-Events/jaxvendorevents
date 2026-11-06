@@ -1,0 +1,245 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Jax Vendor Events public feeds",
+  "version": "1.0.0",
+  "description": "Read-only, keyless, teaser-only feeds of upcoming vendor events in Florida. Venue, organizer, contacts and apply links are for Vendor Pro members on the site and are never in these feeds. Link people to each event's url.",
+  "termsOfService": "https://jaxvendorevents.com/terms.html",
+  "contact": {
+   "email": "admin@jaxvendorevents.com",
+   "url": "https://jaxvendorevents.com/agents.md"
+  }
+ },
+ "servers": [
+  {
+   "url": "https://jaxvendorevents.com"
+  }
+ ],
+ "paths": {
+  "/api/events.json": {
+   "get": {
+    "operationId": "listEvents",
+    "summary": "All upcoming events (teaser fields), soonest first",
+    "responses": {
+     "200": {
+      "description": "The feed",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Feed"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/feeds/events.ics": {
+   "get": {
+    "operationId": "eventsCalendar",
+    "summary": "iCalendar feed of upcoming events",
+    "responses": {
+     "200": {
+      "description": "iCalendar",
+      "content": {
+       "text/calendar": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/feeds/events.rss": {
+   "get": {
+    "operationId": "eventsRss",
+    "summary": "RSS 2.0 feed of the next 100 events",
+    "responses": {
+     "200": {
+      "description": "RSS",
+      "content": {
+       "application/rss+xml": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "Event": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "title",
+     "next_date",
+     "dates",
+     "state",
+     "url",
+     "details_locked"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "description": "Stable listing id; also in the event url."
+     },
+     "title": {
+      "type": "string",
+      "description": "Public teaser title (event type and town), the same text a logged-out visitor sees."
+     },
+     "next_date": {
+      "type": "string",
+      "format": "date"
+     },
+     "dates": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "format": "date"
+      },
+      "maxItems": 12,
+      "description": "Upcoming dates, soonest first."
+     },
+     "end_date": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date"
+     },
+     "recurring": {
+      "type": "boolean"
+     },
+     "schedule": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "e.g. 'Weekly (Sundays)'."
+     },
+     "city": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "county": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "region": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "state": {
+      "type": "string",
+      "const": "FL"
+     },
+     "category": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "booth_fee": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ],
+      "description": "Booth fee as listed, when public."
+     },
+     "booth_fee_range": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Fee bucket, e.g. free, under-50, 50-100, 100-plus, unknown."
+     },
+     "application_deadline": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date"
+     },
+     "verified": {
+      "type": "boolean",
+      "description": "Checked against the organizer's own page."
+     },
+     "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link people here: the event on jaxvendorevents.com."
+     },
+     "details_locked": {
+      "type": "boolean",
+      "const": true,
+      "description": "Venue, organizer, contacts and apply link are for Vendor Pro members."
+     }
+    }
+   },
+   "Feed": {
+    "type": "object",
+    "required": [
+     "count",
+     "events"
+    ],
+    "properties": {
+     "$schema": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "description": {
+      "type": "string"
+     },
+     "license": {
+      "type": "string",
+      "format": "uri"
+     },
+     "terms": {
+      "type": "string"
+     },
+     "home": {
+      "type": "string",
+      "format": "uri"
+     },
+     "upgrade_url": {
+      "type": "string",
+      "format": "uri"
+     },
+     "data_updated": {
+      "type": "string"
+     },
+     "as_of": {
+      "type": "string",
+      "format": "date"
+     },
+     "count": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "events": {
+      "type": "array",
+      "items": {
+       "$ref": "#/components/schemas/Event"
+      }
+     }
+    }
+   }
+  }
+ }
+}

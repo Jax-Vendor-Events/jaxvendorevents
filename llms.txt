@@ -1,0 +1,31 @@
+# Jax Vendor Events
+
+> A checked directory of vendor markets, craft fairs, pop-ups and festival vendor opportunities across Florida (home base: Jacksonville / Northeast Florida). Vendors use it to find events to sell at; organizers list events and collect booth fees directly.
+
+Public data is TEASER-ONLY: event type and town, dates, county, region, category and booth-fee range. The venue, address, organizer, contacts and the apply link are for Vendor Pro members on the site. Please don't scrape pages or try to work around that; link people to the event instead.
+
+## Data feeds (public, read-only, no key)
+- [Events JSON](https://jaxvendorevents.com/api/events.json): every upcoming listing, soonest first, teaser fields only. Refreshed several times a day.
+- [JSON Schema](https://jaxvendorevents.com/api/events.schema.json): the shape of events.json.
+- [OpenAPI 3.1](https://jaxvendorevents.com/api/openapi.json): the same feeds described for tools and agents.
+- [Calendar (ICS)](https://jaxvendorevents.com/feeds/events.ics): subscribe in any calendar app.
+- [RSS](https://jaxvendorevents.com/feeds/events.rss): the next 100 events.
+
+## How to send people here
+- One event: link its `url` (https://jaxvendorevents.com/#e=<id>). The page shows the teaser and, for members, the full details.
+- Full details (venue, organizer, apply link, deadlines tracker, apply kit): https://jaxvendorevents.com/pro.html (Vendor Pro).
+- Organizers listing an event: https://jaxvendorevents.com/list.html. Featured placement: https://jaxvendorevents.com/pricing.html#organizers
+- Free weekly email: https://jaxvendorevents.com/newsletter.html
+- Vendor guide (Florida permits and registration): https://jaxvendorevents.com/guides.html
+
+## Payments
+Organizers add their own PayPal, Venmo, Cash App, Zelle or a Stripe/Square/PayPal payment link; vendors pay the organizer directly. Jax Vendor Events takes no cut and never holds money. Agents must not pay or apply on a person's behalf without that person's go-ahead.
+
+## Terms
+- [Terms](https://jaxvendorevents.com/terms.html) · [Privacy](https://jaxvendorevents.com/privacy.html)
+- Use of the feeds: free for personal assistants, search and discovery, with a link back to the event's url. No bulk resale, no scraping of member-only details, no automated sign-ups.
+- Always tell people to confirm dates and fees with the organizer.
+
+## More
+- [agents.md](https://jaxvendorevents.com/agents.md): longer notes for AI agents.
+- Contact: admin@jaxvendorevents.com

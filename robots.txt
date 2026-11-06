@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
+# AI agents and feeds: see /llms.txt and /agents.md (public teaser data only)
+Allow: /llms.txt
+Allow: /agents.md
+Allow: /api/
+Allow: /feeds/
 Disallow: /admin.html
 Disallow: /account.html
 Disallow: /apps.html

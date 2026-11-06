@@ -14,4 +14,9 @@
   <url><loc>https://jaxvendorevents.com/terms.html</loc><lastmod>2026-11-06</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://jaxvendorevents.com/privacy.html</loc><lastmod>2026-11-06</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://jaxvendorevents.com/guides.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jaxvendorevents.com/llms.txt</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://jaxvendorevents.com/agents.md</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://jaxvendorevents.com/api/events.json</loc><lastmod>2026-11-06</lastmod><changefreq>hourly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://jaxvendorevents.com/feeds/events.rss</loc><lastmod>2026-11-06</lastmod><changefreq>hourly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://jaxvendorevents.com/feeds/events.ics</loc><lastmod>2026-11-06</lastmod><changefreq>hourly</changefreq><priority>0.3</priority></url>
 </urlset>
