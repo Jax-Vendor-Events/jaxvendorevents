@@ -86,7 +86,7 @@
   /* ---- the Account sheet (was "More"): account, plan, organizer + vendor tools, settings, help ---- */
   var LINKS=[
     ['For organizers',[['list.html','send','List your event','Free · we check it against your page'],['pricing.html#organizers','star','Get featured','Top spots from $10'],['sponsor.html','kit','Sponsor media kit','Audience and placements']]],
-    ['For vendors',[['profiles.html','users','Vendor & organizer directory','Browse makers and markets'],['account.html#brand','user','Brand your profile','Logo, colors, photos and links'],['city.html','shield','City & county vendor signup','Official permits, fees and steps'],['newsletter.html','mail','Weekly email','New markets + deadlines every Monday · free']]],
+    ['For vendors',[['profiles.html','users','Vendor & organizer directory','Browse makers and markets'],['account.html#brand','user','Brand your profile','Logo, colors, photos and links'],['city.html','shield','City & county vendor signup','Official permits, fees and steps'],['guides.html','doc','Florida vendor registration guide','Sales tax + business tax, all 67 counties · free'],['newsletter.html','mail','Weekly email','New markets + deadlines every Monday · free']]],
     ['Help',[['about.html','info','About Jax Vendor Events',''],['terms.html','doc','Terms & Privacy','']]]];
   I.mail='<rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3.8 7.2l8.2 5.8 8.2-5.8"/>';
   I.login='<path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/>';
