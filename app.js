@@ -56,7 +56,7 @@
   /* ---- state ---- */
   var view='home',F={matches:false,weekend:false,'2wk':false,free:false,campus:false,dl:false,day:false};
   var fC=$('fCounty'),fK=$('fCat'),fS=$('fSort'),fQ=$('fQ');
-  var VIEWS={home:['Find your next market','Markets, craft fairs, pop-ups and campus events across Florida.'],events:['Vendor events','Search, filter and apply. Pick a region to see what’s near you.'],deadlines:['Deadlines','Apply before these close. Soonest first.'],saved:['Saved','Events you hearted. Saved on this phone.']};
+  var VIEWS={home:['Find your next market','Markets, craft fairs, pop-ups and campus events across Florida.'],events:['Find Events','Search, filter and apply. Pick a region to see what’s near you.'],deadlines:['Deadlines','Apply before these close. Soonest first.'],saved:['My Saved Events','Events you hearted. Saved on this phone.'],map:['Event Map','Every market in your region by town. Tap a pin to see what’s on.']};
   function chipsOn(){return Object.keys(F).some(function(k){return F[k];})||!!fC.value||!!fK.value||!!fQ.value.trim();}
   function badges(e,full,mode){
     var b=[];var cd=hasDl(e)?LG.countdown(floor,e.deadline):null;
@@ -159,6 +159,7 @@
     $('vTitle').textContent=VIEWS[v][0];$('vSub').textContent=VIEWS[v][1];
     document.querySelectorAll('[data-seg]').forEach(function(a){if(a.getAttribute('data-seg')===v)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
     if(v==='home')renderHome();else render(changed);
+    try{document.dispatchEvent(new CustomEvent('jve:view',{detail:v}));}catch(_){}
     if(changed&&fromNav){var top=$('main').getBoundingClientRect().top+scrollY-8;if(scrollY>top)window.scrollTo({top:Math.max(0,top),behavior:'auto'});}
   }
   /* ---- Home: this weekend near you, applications closing soon, Pro + organizer cards (newsletter section follows) ---- */
@@ -316,7 +317,7 @@
       try{history.pushState({v:target},'',location.pathname+location.search+(hh?'#'+hh:''));}catch(_){location.hash=hh;}
       setView(target,true);markNav();return;}
   });
-  function markNav(){var a=document.querySelectorAll('[data-nav]'),k=view==='deadlines'?'events':view;for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===k)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
+  function markNav(){var a=document.querySelectorAll('[data-nav]'),k=view==='home'?'':view==='saved'?'saved':view==='map'?'map':'events';for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===k)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
   scrim.addEventListener('click',closeSheet);$('shClose').addEventListener('click',closeSheet);
   document.addEventListener('keydown',function(k){if(k.key==='Escape') closeSheet();
     if(k.key==='Tab'&&sheet.classList.contains('open')){var f=sheet.querySelectorAll('a[href],button:not([disabled])');if(!f.length)return;var a=f[0],z=f[f.length-1];if(k.shiftKey&&document.activeElement===a){z.focus();k.preventDefault();}else if(!k.shiftKey&&document.activeElement===z){a.focus();k.preventDefault();}}});
@@ -369,14 +370,14 @@
     if(m){var st=history.state||{};if(st.v&&st.v!==view)setView(st.v);if(!showSheet(decodeURIComponent(m[1]),st.a))hideSheet();markNav();return;}
     if(sheet.classList.contains('open')){sheetPushed=false;hideSheet();}
     if(h==='#matches'){F.matches=true;setView('events');}
-    else setView(h==='#deadlines'?'deadlines':h==='#saved'?'saved':h==='#events'?'events':'home');
+    else setView(h==='#map'?'map':h==='#deadlines'?'deadlines':h==='#saved'?'saved':h==='#events'?'events':'home');
     markNav();}
   window.addEventListener('popstate',route);
   window.addEventListener('hashchange',function(){if(!history.state||!history.state.jveSheet)route();});
   window.addEventListener('pageshow',function(){var np=getPrefs();if(JSON.stringify(np)!==JSON.stringify(prefs)){prefs=np;render();}saved=getSaved();badge();var rg=RG.get();if(rg!==region)regionChanged(rg);});
   window.addEventListener('storage',function(ev2){if(ev2.key===PK){prefs=getPrefs();render();}});
   /* hooks for mycal.js (My calendar strip + Add to my calendar) */
-  window.JVE_APP={events:function(){return ev;},region:function(){return region;},regionLabel:function(){return RG.label(region);},view:function(){return view;},
+  window.JVE_APP={events:function(){return ev;},rows:function(){return filtered();},open:function(id,a){openSheet(id,a);},region:function(){return region;},regionLabel:function(){return RG.label(region);},view:function(){return view;},
     setDay:function(d){F.day=d||false;if(d){F.weekend=false;F['2wk']=false;}if(view!=='events'&&view!=='deadlines'){setView('events');markNav();}render(true);},
     ics:function(e,d){download(vevent(e,d),String(e.name||'event').replace(/[^\w]+/g,'-').replace(/^-|-$/g,'').slice(0,50)+'-'+d+'.ics');toast('Calendar file downloaded');}};
   document.dispatchEvent(new Event('jve:app'));

@@ -1,4 +1,4 @@
-/* Jax Vendor Events: appearance (follows the phone's light/dark setting by default; the header button overrides; color themes per account, Nov 3 2026) + the Account sheet (was "More"), Florida regions + the 5-tab navigation (Home · Events · Saved · Pro · Account). Runs in <head> before paint. */
+/* Jax Vendor Events: one look for everyone (Nov 6 2026 redesign: the Steel design system in jve.css; the old light/dark + color-theme switcher is retired) + the Account sheet, Florida regions + the 5-tab navigation (Events · Map · Guides · Pro · Account). Runs in <head> before paint. */
 (function(){
   'use strict';
   var root=document.documentElement,KA='jve_look2',THEME='ocean';
@@ -12,7 +12,7 @@
      Saved in localStorage (jve_palette) and on the signed-in account (profiles.theme), so it follows the user to other devices. */
   var KP='jve_palette',KPL='jve_palette_light',KPU='jve_palette_uid';
   var PALS=[{id:'current',name:'Current'},{id:'clean',name:'Clean light'},{id:'dark',name:'Dark'},{id:'warm',name:'Warm'},{id:'match',name:'Match my phone'}];
-  var PMETA={clean:'#ffffff',dark:'#0b0f17',warm:'#f5ede0'};
+  var PMETA={dark:'#0E0F11'};
   function okPal(p){for(var i=0;i<PALS.length;i++)if(PALS[i].id===p)return true;return false;}
   function pal(){var p=get(KP);return okPal(p)?p:'current';}
   function palEff(){var p=pal();return p==='match'?((mq&&mq.matches)?'dark':'clean'):p;}
@@ -20,9 +20,9 @@
   function setMeta(d,e){var ms=document.querySelectorAll('meta[name="theme-color"]');if(!ms.length){var n=document.createElement('meta');n.name='theme-color';document.head.appendChild(n);ms=[n];}
     for(var i=0;i<ms.length;i++){ms[i].removeAttribute('media');ms[i].setAttribute('content',PMETA[e]||(d?META.dark:META.light));}
     var s=document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');if(s)s.setAttribute('content',d?'black-translucent':'default');}
-  function apply(anim){var d=dark(),e=palEff();
+  function apply(anim){var d=true,e='dark';
     if(anim){root.classList.add('theming');clearTimeout(apply.t);apply.t=setTimeout(function(){root.classList.remove('theming');},450);}
-    root.setAttribute('data-theme',e==='current'?THEME:e);root.setAttribute('data-mode',d?'dark':'light');root.style.colorScheme=d?'dark':'light';setMeta(d,e);sync();}
+    root.setAttribute('data-theme','dark');root.setAttribute('data-mode','dark');root.style.colorScheme='dark';setMeta(d,e);sync();}
   /* what the Auto / Light / Dark buttons show: the current look's own mode, or the closest match for a color theme */
   function modeShown(){var p=pal();if(p==='current')return pref();if(p==='match')return 'auto';return p==='dark'?'dark':'light';}
   function sync(){var m=modeShown(),d=root.getAttribute('data-mode')==='dark';
@@ -30,16 +30,16 @@
     var t=document.getElementById('lookBtn');if(t){t.setAttribute('aria-label',d?'Switch to light':'Switch to dark');t.innerHTML=d?ICO.light:ICO.dark;}}
   function saveRemote(p){var A=window.JVE_AUTH;if(!A||!A.user||!A.sb)return Promise.resolve(false);
     return A.sb.from('profiles').update({theme:p}).eq('id',A.user.id).then(function(r){if(r.error)throw r.error;if(A.profile)A.profile.theme=p;put(KPU,A.user.id);return true;});}
-  function setPalette(p,local){if(!okPal(p))return Promise.resolve(false);var e0=palEff();if(e0==='clean'||e0==='warm')put(KPL,e0);
+  function setPalette(p,local){return Promise.resolve(false);var e0=palEff();if(e0==='clean'||e0==='warm')put(KPL,e0);
     put(KP,p);apply(true);try{document.dispatchEvent(new CustomEvent('jve:theme',{detail:{theme:p}}));}catch(_){}
     return local?Promise.resolve(false):saveRemote(p);}
   /* Light / Dark / Auto (header button, Account sheet, Account page): the current look keeps its own mode; a color theme moves to its light or dark side */
-  function setMode(m){if(m!=='light'&&m!=='dark'&&m!=='auto')return;var p=pal();
+  function setMode(m){return;var p=pal();
     if(p==='current'){put(KA,m);apply(true);try{document.dispatchEvent(new CustomEvent('jve:theme',{detail:{theme:p}}));}catch(_){}return;}
     if(m==='auto')return setPalette('match');if(m==='dark')return setPalette('dark');
     var e=palEff();return setPalette(e==='clean'||e==='warm'?e:(get(KPL)==='warm'?'warm':'clean'));}
   /* signing in loads the theme saved on the account; signing out returns this device to the default */
-  function fromAuth(){var A=window.JVE_AUTH;if(!A)return;
+  function fromAuth(){return;
     if(A.user){var t=A.profile&&A.profile.theme;put(KPU,A.user.id);if(t&&okPal(t)&&t!==pal()){put(KP,t);apply(true);try{document.dispatchEvent(new CustomEvent('jve:theme',{detail:{theme:t}}));}catch(_){}}}
     else if(get(KPU)){del(KPU);del(KP);del(KPL);apply(false);}}
   document.addEventListener('jve:auth',fromAuth);
@@ -61,7 +61,11 @@
     info:'<circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.6v.2"/>',
     doc:'<path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.5z"/><path d="M14 3.5v5h5M9 13h6M9 16.5h4"/>',
     pin:'<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
-    chev:'<path d="M9.5 6l6 6-6 6"/>'};
+    chev:'<path d="M9.5 6l6 6-6 6"/>',
+    heart:'<path d="M12 20.5s-7.5-4.6-9.3-9.2C1.5 8 3.6 4.5 7.2 4.5c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.6 0 5.7 3.5 4.5 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/>',
+    map:'<path d="M9 4.5L3.5 6.8v12.7L9 17.2l6 2.3 5.5-2.3V4.5L15 6.8z"/><path d="M9 4.5v12.7M15 6.8v12.7"/>',
+    clock:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+    book:'<path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5z"/>'};
   /* ---- Florida regions (Luis, Nov 1 2026: the site covers all of Florida). An event's own "region" wins; else its county decides. ---- */
   var REG=[['ne','Northeast FL','Duval|St. Johns|Clay|Nassau|Baker|Flagler|Putnam|Bradford|Union'],
     ['panhandle','Panhandle','Escambia|Santa Rosa|Okaloosa|Walton|Holmes|Washington|Bay|Jackson|Calhoun|Gulf|Liberty|Franklin|Gadsden|Leon|Wakulla|Jefferson'],
@@ -84,10 +88,11 @@
   window.JVE_REGIONS={list:REG.map(function(r){return {id:r[0],label:r[1],counties:r[2].split('|')};}),of:regionOf,get:regionGet,set:regionSet,label:regionLabel};
   function regionOptions(){return REG.map(function(r){return '<option value="'+r[0]+'">'+r[1]+'</option>';}).join('');}
   /* ---- the Account sheet (was "More"): account, plan, organizer + vendor tools, settings, help ---- */
+  var PRIMARY=[['index.html#events','events','Find Events'],['index.html#map','map','Event Map'],['guides.html','book','Vendor Guide'],['index.html#saved','heart','My Saved Events'],['pro.html','star','Go Pro']];
   var LINKS=[
     ['For organizers',[['list.html','send','List your event','Free · we check it against your page'],['pricing.html#organizers','star','Get featured','Top spots from $10'],['sponsor.html','kit','Sponsor media kit','Audience and placements']]],
-    ['For vendors',[['profiles.html','users','Vendor & organizer directory','Browse makers and markets'],['account.html#brand','user','Brand your profile','Logo, colors, photos and links'],['city.html','shield','City & county vendor signup','Official permits, fees and steps'],['guides.html','doc','Florida vendor registration guide','Sales tax + business tax, all 67 counties · free'],['newsletter.html','mail','Weekly email','New markets + deadlines every Monday · free']]],
-    ['Help',[['about.html','info','About Jax Vendor Events',''],['terms.html','doc','Terms & Privacy','']]]];
+    ['More',[['profiles.html','users','Vendor & organizer directory','Browse vendors and markets'],['account.html#brand','user','Brand your profile','Logo, colors, photos and links'],['city.html','shield','City & county vendor signup','Official permits, fees and steps'],['guides.html','doc','Florida vendor registration guide','Sales tax + business tax, all 67 counties · free'],['newsletter.html','mail','Weekly email','New markets + deadlines every Monday · free'],['about.html','info','About Jax Vendor Events',''],['terms.html','doc','Terms',''],['privacy.html','doc','Privacy','']]]];
+  I.events='<rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/>';
   I.mail='<rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M3.8 7.2l8.2 5.8 8.2-5.8"/>';
   I.login='<path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/>';
   I.out='<path d="M15 17l5-5-5-5M20 12H8"/><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"/>';
@@ -117,42 +122,42 @@
       if(A.admin)plan+=li(['admin.html','shield','Admin','Users, plans, sales, approvals']);
     }
     box.innerHTML=h+(plan?'<p class="mgrp">Your plan</p><ul class="mlist">'+plan+'</ul>':'');
+    var al=document.getElementById('mAcctLink');if(al){var lin=!!(A&&A.user);al.setAttribute('href',lin?'account.html':'login.html');al.querySelector('span').textContent=lin?'My Account':'Log In';}
+    var cn=current();Array.prototype.forEach.call(document.querySelectorAll('[data-dnav]'),function(x){if(x.getAttribute('data-dnav')===cn)x.setAttribute('aria-current','page');else x.removeAttribute('aria-current');});
   }
   function current(){var p=(location.pathname.split('/').pop()||'index.html');var h=location.hash;
-    if(p==='index.html'||p===''){if(/^#e=/.test(h)){var st=history.state||{};return st.v==='saved'?'saved':st.v==='home'||!st.v?'':'events';}
-      return /^#(events|deadlines|matches)$/.test(h)?'events':h==='#saved'?'saved':'home';}
+    if(p==='index.html'||p===''){var sv=(history.state||{}).v;if(h==='#map'||sv==='map')return 'map';if(h==='#saved'||sv==='saved')return 'saved';if(/^#(events|deadlines|matches)$/.test(h)||sv==='events'||sv==='deadlines')return 'events';return '';}
+    if(p==='map.html')return 'map';
+    if(p==='guides.html'||p==='city.html')return 'guides';
     if(p==='pricing.html'||p==='pro.html'||p==='apps.html')return 'pro';
     if(/^(account|login|admin|reset|welcome)\.html$/.test(p))return 'account';
     return '';}
-  function markNav(){var c=current();if(!c&&/^#e=/.test(location.hash))return;var a=document.querySelectorAll('[data-nav]');for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===c)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
+  function markNav(){var c=current();var a=document.querySelectorAll('[data-nav]');for(var i=0;i<a.length;i++){if(a[i].getAttribute('data-nav')===c)a[i].setAttribute('aria-current','page');else a[i].removeAttribute('aria-current');}}
   function build(){
     markNav();window.addEventListener('hashchange',markNav);
-    var hdr=document.querySelector('.top .wrap');
-    if(hdr&&!document.getElementById('lookBtn')){var b=document.createElement('button');b.type='button';b.id='lookBtn';b.className='lookbtn';hdr.appendChild(b);
-      b.addEventListener('click',function(){window.JVE_THEMES.setMode(dark()?'light':'dark');});}
     if(document.getElementById('moreSheet'))return;
     var sc=document.createElement('div');sc.className='tsheet-scrim';sc.id='moreScrim';
-    var sh=document.createElement('div');sh.className='tsheet more';sh.id='moreSheet';sh.setAttribute('role','dialog');sh.setAttribute('aria-modal','true');sh.setAttribute('aria-labelledby','moreTitle');sh.hidden=true;
-    var h='<div class="grab" aria-hidden="true"></div><button type="button" class="x" id="moreClose" aria-label="Close">'+X+'</button><h2 id="moreTitle">Account</h2><div class="macct" id="macct"></div>';
+    var sh=document.createElement('div');sh.className='tsheet more';sh.id='moreSheet';sh.setAttribute('role','dialog');sh.setAttribute('aria-modal','true');sh.setAttribute('aria-label','Menu');sh.hidden=true;
+    var h='<div class="jv-dhead"><a class="jv-dbrand" href="index.html"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo"/></svg><b id="moreTitle">Jax Vendor Events</b></a><button type="button" class="x" id="moreClose" aria-label="Close menu">'+X+'</button></div>'+
+      '<ul class="jv-dmain">'+PRIMARY.map(function(l){return '<li><a href="'+l[0]+'" data-dnav="'+l[1]+'">'+svg(I[l[1]])+'<span>'+esc(l[2])+'</span></a></li>';}).join('')+
+      '<li><a href="account.html" id="mAcctLink" data-dnav="account">'+svg(I.user)+'<span>My Account</span></a></li></ul><div class="macct" id="macct"></div>';
     LINKS.forEach(function(g,gi){
-      if(gi===2){h+='<p class="mgrp">Settings</p>'+
-        '<div class="mrow"><span class="mlab">Region<small>Home and Events open here</small></span><span class="hsel"><select id="mRegion" data-region aria-label="Region">'+regionOptions()+'</select></span></div>'+
-        '<div class="mrow"><span class="mlab">Appearance<small><a href="account.html#theme" class="mthemes">Color themes</a></small></span><div class="mseg" role="radiogroup" aria-label="Appearance">'+
-        ['auto','light','dark'].map(function(m){return '<button type="button" role="radio" data-mode="'+m+'" aria-checked="false">'+ICO[m]+'<span>'+(m==='auto'?'Auto':m==='light'?'Light':'Dark')+'</span></button>';}).join('')+'</div></div>';}
+      if(gi===LINKS.length-1){h+='<p class="mgrp">Settings</p>'+
+        '<div class="mrow"><span class="mlab">Region<small>Home and Events open here</small></span><span class="hsel"><select id="mRegion" data-region aria-label="Region">'+regionOptions()+'</select></span></div>';}
       h+='<p class="mgrp">'+g[0]+'</p><ul class="mlist">';g[1].forEach(function(l){h+=li(l);});h+='</ul>';});
     sh.innerHTML=h;document.body.appendChild(sc);document.body.appendChild(sh);
     drawAcct();sync();
     var rs=document.getElementById('mRegion');rs.value=regionGet();rs.addEventListener('change',function(){regionSet(rs.value);});
-    Array.prototype.forEach.call(sh.querySelectorAll('.mseg button'),function(bt){bt.addEventListener('click',function(){window.JVE_THEMES.setMode(bt.getAttribute('data-mode'));});});
+    
     var A=window.JVE_AUTH;if(A&&A.ready&&A.ready.then)A.ready.then(function(){authDone=true;drawAcct();});
     document.addEventListener('jve:auth',function(){authDone=true;drawAcct();});
     var last=null,pushed=false;
     function open(){if(!sh.hidden&&sh.classList.contains('open'))return;last=document.activeElement;drawAcct();rs.value=regionGet();sh.hidden=false;void sh.offsetWidth;sh.classList.add('open');sc.classList.add('open');document.body.classList.add('noscroll');
-      var ab=document.querySelectorAll('[data-nav=account]');for(var i=0;i<ab.length;i++)ab[i].setAttribute('aria-expanded','true');
+      var ab=document.querySelectorAll('[data-open-more]');for(var i=0;i<ab.length;i++)ab[i].setAttribute('aria-expanded','true');
       try{history.pushState({jveMore:1},'',location.href);pushed=true;}catch(_){pushed=false;}
       var c=sh.querySelector('#moreClose');if(c)c.focus({preventScroll:true});}
     function shut(){sh.classList.remove('open');sc.classList.remove('open');document.body.classList.remove('noscroll');setTimeout(function(){if(!sh.classList.contains('open'))sh.hidden=true;},380);
-      var ab=document.querySelectorAll('[data-nav=account]');for(var i=0;i<ab.length;i++)ab[i].setAttribute('aria-expanded','false');
+      var ab=document.querySelectorAll('[data-open-more]');for(var i=0;i<ab.length;i++)ab[i].setAttribute('aria-expanded','false');
       if(last&&last.focus)last.focus({preventScroll:true});}
     function close(){if(!sh.classList.contains('open'))return;if(pushed){pushed=false;history.back();}else shut();}
     window.addEventListener('popstate',function(){if(sh.classList.contains('open')){pushed=false;shut();}});
@@ -162,7 +167,8 @@
       if(pushed){e.preventDefault();pushed=false;shut();try{history.replaceState(null,'',location.href);}catch(_){}
         var here=location.pathname.split('/').pop()||'index.html',tp=u.split('#')[0];
         if(tp===here&&u.indexOf('#')>-1){location.hash=u.split('#')[1];}else location.href=u;}});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&sh.classList.contains('open')){e.stopPropagation();close();}},true);
+    document.addEventListener('keydown',function(e){if(!sh.classList.contains('open'))return;if(e.key==='Escape'){e.stopPropagation();close();return;}
+      if(e.key==='Tab'){var f=sh.querySelectorAll('a[href],button:not([disabled]),select');if(!f.length)return;var a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){z.focus();e.preventDefault();}else if(!e.shiftKey&&document.activeElement===z){a.focus();e.preventDefault();}}},true);
     var y0=null,dy=0;sh.addEventListener('touchstart',function(t){if(sh.scrollTop>0)return;y0=t.touches[0].clientY;dy=0;},{passive:true});
     sh.addEventListener('touchmove',function(t){if(y0===null)return;dy=Math.max(0,t.touches[0].clientY-y0);if(dy>0){sh.style.transition='none';sh.style.transform='translateY('+dy+'px)';}},{passive:true});
     sh.addEventListener('touchend',function(){if(y0===null)return;y0=null;sh.style.transition='';sh.style.transform='';if(dy>100)close();});
