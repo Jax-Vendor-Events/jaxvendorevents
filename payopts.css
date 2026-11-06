@@ -1,0 +1,24 @@
+/* Jax Vendor Events: pay buttons on listings + Account → Payments form (Nov 6 2026). Steel tokens from jve.css. */
+.payopts{margin:12px 0 4px;padding:14px;border-radius:14px;background:var(--c-surface,#17191C);border:1px solid var(--c-border,#2A2E33)}
+.payopts .po-h{margin:0 0 10px;display:flex;flex-direction:column;gap:2px}
+.payopts .po-h b{font-size:15px;color:var(--c-text,#ECEEF1)}
+.payopts .po-h small,.payopts .po-f{font-size:13px;color:var(--c-muted,#9AA1AB);line-height:1.4}
+.payopts .po-btns{display:flex;flex-direction:column;gap:8px}
+.payopts .po-b{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;min-height:44px;text-decoration:none;box-sizing:border-box}
+.payopts .po-b small{font-weight:400;opacity:.8;font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;max-width:48%}
+.payopts .po-z{display:flex;flex-direction:column;gap:6px}
+.payopts .po-zv{font-size:14px;color:var(--c-text,#ECEEF1);padding:10px 12px;border-radius:10px;background:var(--c-raised,#1F2226);overflow-wrap:anywhere}
+.payopts .po-f{display:block;margin-top:8px}
+.pyform{display:flex;flex-direction:column;gap:12px;margin:4px 0 6px}
+.pyform .pyf{display:flex;flex-direction:column;gap:6px}
+.pyform .pyf span{display:flex;flex-direction:column;gap:1px}
+.pyform .pyf b{font-size:14.5px;color:var(--c-text,#ECEEF1)}
+.pyform .pyf small{font-size:13px;color:var(--c-muted,#9AA1AB);line-height:1.4}
+.pyform input{width:100%;box-sizing:border-box;min-height:44px;padding:10px 12px;border-radius:10px;border:1px solid var(--c-border-2,#353A40);background:var(--c-bg,#0E0F11);color:var(--c-text,#ECEEF1);font:inherit;font-size:16px}
+.pyform input:focus{outline:2px solid var(--c-accent,#C9CED6);outline-offset:1px;border-color:transparent}
+.pyform input::placeholder{color:#6F7680}
+#pyBox .pyh{margin:18px 0 6px;font-size:15px;color:var(--c-text,#ECEEF1)}
+#pyBox .pyh small{color:var(--c-muted,#9AA1AB);font-weight:400}
+#pyBox .pyph{margin:10px 0 0}
+.agentlinks{display:flex;flex-direction:column;gap:6px;margin:6px 0 0;padding:0;list-style:none}
+.agentlinks a{color:var(--c-accent,#C9CED6)}
