@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://jaxvendorevents.com/</loc><lastmod>2026-11-02</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://jaxvendorevents.com/newsletter.html</loc><lastmod>2026-11-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://jaxvendorevents.com/list.html</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jaxvendorevents.com/city.html</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jaxvendorevents.com/profiles.html</loc><lastmod>2026-11-02</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jaxvendorevents.com/join.html</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://jaxvendorevents.com/pricing.html</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jaxvendorevents.com/sponsor.html</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://jaxvendorevents.com/about.html</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://jaxvendorevents.com/terms.html</loc><lastmod>2026-11-02</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://jaxvendorevents.com/</loc><lastmod>2026-11-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://jaxvendorevents.com/pro.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jaxvendorevents.com/newsletter.html</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jaxvendorevents.com/pricing.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jaxvendorevents.com/list.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jaxvendorevents.com/profiles.html</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jaxvendorevents.com/city.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jaxvendorevents.com/join.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://jaxvendorevents.com/login.html</loc><lastmod>2026-11-06</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://jaxvendorevents.com/sponsor.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://jaxvendorevents.com/about.html</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://jaxvendorevents.com/terms.html</loc><lastmod>2026-11-06</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://jaxvendorevents.com/privacy.html</loc><lastmod>2026-11-06</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

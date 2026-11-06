@@ -44,7 +44,7 @@
     else if(get(KPU)){del(KPU);del(KP);del(KPL);apply(false);}}
   document.addEventListener('jve:auth',fromAuth);
   apply(false);
-  try{if(/[?&]admin=1/.test(location.search))put('jve_admin','1');if(get('jve_admin')==='1')root.classList.add('admin');}catch(_){}
+  try{localStorage.removeItem('jve_admin');}catch(_){} /* the old ?admin=1 switch is gone; admin tools live behind a real admin login */
   var ICO={light:'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
     dark:'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>',
     auto:'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M12 6.5a5.5 5.5 0 0 1 0 11z" fill="currentColor"/></svg>'};

@@ -51,7 +51,7 @@
     var BRd=window.JVE_BRAND;
     (BRd?BRd.directory():Promise.resolve([])).then(function(list){
       var rows=list.map(function(b){var x=BRd.asProfile(b,today);x.logoPath=b.logo;return x;});
-      if(rows.length){var types={};rows.forEach(function(x){types[x.type]=1;});all=all.filter(function(p){return !(p.sample&&types[p.type]);});}
+      all=all.filter(function(p){return !p.sample;}); /* no sample profiles on the public site */
       all=rows.concat(all);directory();});
   }
 

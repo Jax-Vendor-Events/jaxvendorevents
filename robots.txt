@@ -1,2 +1,10 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /admin.html
+Disallow: /account.html
+Disallow: /apps.html
+Disallow: /kit.html
+Disallow: /reset.html
+Disallow: /thanks.html
+
+Sitemap: https://jaxvendorevents.com/sitemap.xml

@@ -148,7 +148,7 @@
           '<p class="ofnew">No account yet? <a href="login.html?mode=signup&amp;next='+nx+'">Create a free one</a> with that same email, confirm it from your inbox, then open this link again.</p>';
       }
     }else{
-      h+='<p class="ofnone">Contact <a href="mailto:hello@jaxvendorevents.com">hello@jaxvendorevents.com</a> to add a payment link.</p>';
+      h+='<p class="ofnone">Email hello@jaxvendorevents.com to add a payment link.</p>';
     }
     w.innerHTML=h;
     var sw=w.querySelector('#ofSwitch');
