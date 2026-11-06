@@ -760,3 +760,29 @@ small,.mut,.muted,.xh-sub,.jv-map-note{color:var(--c-muted)}
 .jv-pin.jv-cl{font-size:15px!important}
 .jv-pin:hover,.jv-pin:focus-visible{background:#B23F10!important}
 .leaflet-control-attribution{background:rgba(14,15,17,.85)!important;color:var(--c-muted)!important}
+
+/* Organizer booth-fee setup moved to Account -> Payments (owner Nov 6 2026 8:14 AM): styles copied from apps.css, scoped */
+#feeSetup{display:grid;gap:12px}
+#feeSetup label.fl,#feeSetup .fl{display:grid;gap:6px;font:600 13px/1.2 var(--sans);color:var(--ink2)}
+#feeSetup .fl small{font-weight:400;color:var(--mut)}
+#feeSetup input[type=text],#feeSetup input[type=url],#feeSetup input[type=email],#feeSetup input[type=tel],#feeSetup input[type=date],#feeSetup input[type=number],#feeSetup textarea,#feeSetup select{width:100%;box-sizing:border-box;border:1px solid var(--line2);border-radius:12px;background:var(--surf);color:var(--ink);font:400 16px/1.35 var(--sans);padding:11px 12px;min-height:46px}
+#feeSetup textarea{min-height:96px;resize:vertical}
+#feeSetup input:focus,#feeSetup textarea:focus,#feeSetup select:focus{outline:none;border-color:var(--sea);box-shadow:var(--lx-focus)}
+#feeSetup .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#feeSetup .orgfee{margin:16px 0 4px;padding:14px;border-radius:16px;border:1px solid var(--line2);background:var(--surf)}
+#feeSetup .orgfee h3{margin:0 0 2px;font:650 16px/1.3 var(--sans);color:var(--ink)}
+#feeSetup .orgfee p{margin:0 0 10px;font:400 12.5px/1.4 var(--sans);color:var(--mut)}
+#feeSetup .orgfee .apsave .btn{white-space:normal;text-align:center;line-height:1.3}
+#feeSetup .orgfee p.ofwho b{color:var(--ink);word-break:break-all}
+#feeSetup .orgfee p.ofnew a,#feeSetup .orgfee p.ofnone a{color:var(--ink);text-decoration:underline}
+#feeSetup .orgfee .sqtog{display:flex;align-items:center;gap:10px;margin:2px 0 12px;padding:11px 12px;border-radius:12px;background:rgba(var(--sea-rgb),.07);border:1px solid rgba(var(--sea-rgb),.25);font:600 14px/1.3 var(--sans);color:var(--ink);cursor:pointer}
+#feeSetup .orgfee .sqtog input{appearance:none;-webkit-appearance:none;flex:0 0 auto;width:44px;height:26px;margin:0;border-radius:999px;background:var(--line2);position:relative;cursor:pointer;transition:background .2s}
+#feeSetup .orgfee .sqtog input::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s}
+#feeSetup .orgfee .sqtog input:checked{background:var(--sea)}
+#feeSetup .orgfee .sqtog input:checked::after{transform:translateX(18px)}
+#feeSetup .orgfee .sqtog input:disabled{opacity:.5;cursor:not-allowed}
+#feeSetup .orgfee .sqtog b{color:var(--sea)}
+#feeSetup .orgfee p b{color:var(--ink)}
+#feeSetup .orgfee{margin:12px 0 0;padding:0;border:0;background:none}
+#feeSetup h3 small{font-weight:500;color:var(--c-muted)}
+.orgfee.orglink{margin:14px 0 0;padding:10px 12px;font:400 13px/1.45 var(--f-sans);color:var(--c-muted)}.orgfee.orglink a{color:var(--c-text);text-decoration:underline}

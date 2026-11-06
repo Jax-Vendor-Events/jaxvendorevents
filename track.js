@@ -5,7 +5,7 @@
    - "Track this" / quick status for events already tracked (table app_tracker, owner-only RLS).
    - "Pay booth fee": the organizer's own Square / PayPal / Zettle / Stripe / Venmo / Cash App link (table event_fees,
      readable only with full access). Money goes vendor -> organizer; we never touch it. Then "Did you pay?" marks it paid.
-   - Organizer form: shown on ?t= organizer links and to admins. Writing a fee link needs an admin, or a signed-in account
+   - Organizer form: MOVED Nov 6 2026 to Account -> Payments (orgfee.js); ?t= organizer links get a one-line pointer there. Writing a fee link needs an admin, or a signed-in account
      whose VERIFIED email matches the listing's organizer email (server-checked in event_fee_set; the ?t= token alone
      grants nothing since Nov 2 2026). Others see "Sign in with j***@… to set a payment link".
    Free members and visitors see a locked teaser instead (server refuses them the data). Hook: app.js fillSheet -> JVE_TRK.sheet(e,d).
@@ -117,108 +117,10 @@
       if(!ready)h+='<p class="tnote">Loading your applications…</p>';
       box.innerHTML=h;body.insertBefore(box,body.firstChild);
     }
-    if(isOrg&&!keep)orgForm(e,body);
+    if(TOK&&e.id===TOK_E&&!keep){var of=document.createElement('p');of.className='orgfee orglink';of.innerHTML='Organizer? You can add an optional “Pay booth fee” link for this listing in <a href="account.html?fee='+encodeURIComponent(e.id)+'&amp;t='+encodeURIComponent(TOK)+'#payments">your account</a>.';body.appendChild(of);}
   }
 
-  /* organizer: vendor fee payment link.
-     Nov 2 2026 lock-down: the ?t= organizer link alone can NOT set a fee link any more. The server (event_fee_get / event_fee_set)
-     only lets an admin, or a signed-in account whose VERIFIED email equals the listing's organizer email, write it. Everyone
-     else holding the link sees a sign-in prompt with the masked email (or the contact line when the listing has no email). */
-  function orgForm(e,body){
-    var tok=(TOK&&e.id===TOK_E)?TOK:null;
-    var w=document.createElement('section');w.className='orgfee apf';w.setAttribute('aria-labelledby','ofH');
-    w.innerHTML='<h3 id="ofH">Vendor fee payment</h3><p>Checking…</p>';
-    if(tok)body.insertBefore(w,body.firstChild);else body.appendChild(w);
-    A.sb.rpc('event_fee_get',{eid:e.id,t:tok}).then(function(r){
-      var d=r&&r.data;if(r.error||!d){w.remove();return;}
-      if(d.can_edit)editForm(w,e,tok,d);else signGate(w,e,d);
-    },function(){w.remove();});
-  }
-  function backUrl(){var p=location.pathname.split('/').pop()||'index.html';return p+location.search+location.hash;}
-  function signGate(w,e,d){
-    var nx=encodeURIComponent(backUrl()),h='<h3 id="ofH">Vendor fee payment</h3>';
-    if(d.has_email&&d.email_hint){
-      h+='<p>To keep vendors safe, only the organizer signed in with the email on this listing can add a “Pay booth fee” link.</p>';
-      if(d.signed_in){
-        var me=(A.user&&A.user.email)||'another email';
-        h+='<p class="ofwho">You’re signed in as <b>'+esc(me)+'</b>, which isn’t the email on this listing.</p>'+
-          '<div class="apsave"><button type="button" class="btn" id="ofSwitch">Sign in with '+esc(d.email_hint)+' to set a payment link</button></div>';
-      }else{
-        h+='<div class="apsave"><a class="btn" id="ofSignin" href="login.html?next='+nx+'">Sign in with '+esc(d.email_hint)+' to set a payment link</a></div>'+
-          '<p class="ofnew">No account yet? <a href="login.html?mode=signup&amp;next='+nx+'">Create a free one</a> with that same email, confirm it from your inbox, then open this link again.</p>';
-      }
-    }else{
-      h+='<p class="ofnone">Email hello@jaxvendorevents.com to add a payment link.</p>';
-    }
-    w.innerHTML=h;
-    var sw=w.querySelector('#ofSwitch');
-    if(sw)sw.addEventListener('click',function(){sw.disabled=true;A.signOut('local').then(function(){location.href='login.html?next='+nx;});});
-  }
-  function editForm(w,e,tok,d){
-    if(d.sq_connected||d.square_on){sqForm(w,e,tok,d);return;}
-    linkForm(w,e,tok,d);
-  }
-  /* Square mode: the fee is charged on the connected organizer's own Square account (Account → Payments). */
-  function sqForm(w,e,tok,d){
-    var other=d.square_on&&!d.square_mine;
-    w.innerHTML='<h3 id="ofH">Vendor fee payment'+(d.via==='admin'?' <small>(admin)</small>':'')+'</h3>'+
-      '<p>Vendors with Pro pay your booth fee on Square’s own checkout and the money lands in '+(d.sq_connected?'your Square account <b>'+esc(d.sq_merchant)+'</b>'+(d.sq_sandbox?' <small>(test mode)</small>':''):'the connected Square account')+'. Jax Vendor Events takes no cut and never holds it.</p>'+
-      (other?'<p class="ofwho">Right now this listing charges through <b>'+esc(d.square_merchant||'another Square account')+'</b>, set up from another account.'+(d.sq_connected?' Saving with Square ON switches it to yours.':'')+'</p>':'')+
-      '<label class="sqtog" for="sqOn"><input type="checkbox" id="sqOn" role="switch"'+(d.sq_connected||d.square_on?'':' disabled')+'><span>Charge booth fees through Square: <b id="sqSt">OFF</b></span></label>'+
-      '<div class="row2"><label class="fl" for="ofAmt">Booth fee ($)<input type="text" id="ofAmt" inputmode="decimal" placeholder="45"></label><label class="fl" for="ofCov">Covers<input type="text" id="ofCov" maxlength="200" placeholder="10x10 booth, both days"></label></div>'+
-      '<div class="apsave"><button type="button" class="btn" id="ofSave">Save</button></div><p class="apmsg" id="ofMsg" role="status" aria-live="polite"></p>'+
-      (d.sq_connected?'':'<p class="ofnew"><a href="account.html#payments">Connect your Square</a> to charge vendors here.</p>');
-    var $=function(id){return w.querySelector('#'+id);};
-    function st(){$('sqSt').textContent=$('sqOn').checked?'ON':'OFF';}
-    /* ON = this listing charges through Square on the caller's own account (or, for someone without a connection, through whichever one) */
-    function fill(r,first){var on=!!(r.square_on&&(r.square_mine||!d.sq_connected));if(first&&!r.square_on&&d.sq_connected)on=true;
-      $('sqOn').checked=on;$('ofAmt').value=r.amount_cents?String(r.amount_cents/100):'';$('ofCov').value=r.covers||'';st();}
-    fill(d,true);
-    $('sqOn').addEventListener('change',st);
-    function msg(t,c){$('ofMsg').textContent=t;$('ofMsg').className='apmsg'+(c?' '+c:'');}
-    $('ofSave').addEventListener('click',function(){
-      var on=$('sqOn').checked,amt=$('ofAmt').value.replace(/[^0-9.]/g,''),c=amt?Math.round(parseFloat(amt)*100):null;
-      if(on&&!d.sq_connected){msg('Connect your Square account first (Account → Payments).','err');return;}
-      if(on&&!(c>=100)){msg('Enter the booth fee, at least $1 (like 45).','err');return;}
-      if(!on&&!d.square_on){msg('Square is off for this listing. Turn it ON to charge vendors here.','');return;}
-      if(!on&&!confirm('Turn off Square booth fees for this listing? Vendors will no longer see the Pay button.'))return;
-      $('ofSave').disabled=true;msg('Saving…');
-      A.sb.rpc('event_fee_square',{eid:e.id,turn_on:on,amount_cents:on?c:null,covers:$('ofCov').value}).then(function(r){$('ofSave').disabled=false;
-        if(r.error){msg(r.error.message||'Couldn’t save.','err');return;}
-        var x=r.data||{};d=x;
-        if(x.square_on&&x.status==='live'){fees[e.id]={event_id:e.id,amount_cents:x.amount_cents,covers:x.covers,pay_url:'',square_on:true,square_merchant:x.square_merchant};
-          msg('Saved ✓ Square is ON. Vendors now see “Pay booth fee · '+money(x.amount_cents)+' with Square”.','ok');}
-        else if(x.square_on){msg('Saved. It’s pending review and vendors won’t see it yet.','ok');}
-        else{delete fees[e.id];msg('Square is OFF for this listing. Vendors no longer see a Pay button.','ok');}
-        other=false;fill(x,false);render();});
-    });
-  }
-  function linkForm(w,e,tok,d){
-    w.innerHTML='<h3 id="ofH">Vendor fee payment'+(d.via==='admin'?' <small>(admin)</small>':'')+'</h3><p>Vendors see a “Pay booth fee” button on this listing, with your link’s address shown under it. Use your own Square, PayPal, Zettle, Stripe, Venmo or Cash App link: the money goes straight to you, never through us.</p>'+
-      '<div class="row2"><label class="fl" for="ofAmt">Fee ($)<input type="text" id="ofAmt" inputmode="decimal" placeholder="45"></label><label class="fl" for="ofCov">Covers<input type="text" id="ofCov" maxlength="200" placeholder="10x10 booth, both days"></label></div>'+
-      '<label class="fl" for="ofUrl">Payment link<input type="url" id="ofUrl" maxlength="500" inputmode="url" placeholder="https://square.link/u/…" autocapitalize="off"></label>'+
-      '<div class="apsave"><button type="button" class="btn" id="ofSave">Save</button><button type="button" class="btn ghost" id="ofClear" hidden>Remove</button></div><p class="apmsg" id="ofMsg" role="status" aria-live="polite"></p>'+
-      '<p class="ofnew">Use Square? <a href="account.html#payments">Connect your Square account</a> and vendors pay you right here.</p>';
-    var $=function(id){return w.querySelector('#'+id);};
-    function fill(r){if(!r)return;$('ofAmt').value=r.amount_cents?String(r.amount_cents/100):'';$('ofCov').value=r.covers||'';$('ofUrl').value=r.pay_url||'';$('ofClear').hidden=!r.pay_url;}
-    fill(d);
-    function msg(t,c){$('ofMsg').textContent=t;$('ofMsg').className='apmsg'+(c?' '+c:'');}
-    function save(clear){
-      var amt=$('ofAmt').value.replace(/[^0-9.]/g,''),url=clear?'':$('ofUrl').value.trim();
-      if(!clear&&!url){msg('Paste your payment link first.','err');return;}
-      if(!clear&&!/^https:\/\//i.test(url)){msg('The link must start with https://','err');return;}
-      var c=amt?Math.round(parseFloat(amt)*100):null;if(amt&&!(c>0)){msg('Fee should be a number, like 45.','err');return;}
-      $('ofSave').disabled=true;msg('Saving…');
-      A.sb.rpc('event_fee_set',{eid:e.id,t:tok,amount_cents:c,covers:$('ofCov').value,pay_url:url}).then(function(r){$('ofSave').disabled=false;
-        if(r.error){msg(r.error.message||'Couldn’t save.','err');return;}
-        if(clear||!r.data||r.data.cleared){delete fees[e.id];fill({amount_cents:null,covers:'',pay_url:''});msg('Removed.','ok');}
-        else if(r.data.status==='live'){fees[e.id]=r.data;fill(r.data);msg('Saved ✓ Vendors now see “Pay booth fee” (pays '+payee(r.data.pay_url)+').','ok');}
-        else{fill(r.data);msg('Saved. It’s pending review and vendors won’t see it yet.','ok');}
-        render();});
-    }
-    $('ofSave').addEventListener('click',function(){save(false);});$('ofClear').addEventListener('click',function(){if(confirm('Remove the payment link from this listing?'))save(true);});
-  }
-
+  /* organizer fee setup moved to the Account page (orgfee.js), owner Nov 6 2026 8:14 AM */
   document.addEventListener('click',function(ev){
     var b=ev.target.closest&&ev.target.closest('.trk [data-kitapply],.trk [data-track],.trk [data-pay],.trk [data-recopy],.trk [data-paidyes],.trk [data-paidno],.trk [data-sqpay]');if(!b||!lastE)return;
     var e=lastE,d=lastD;
