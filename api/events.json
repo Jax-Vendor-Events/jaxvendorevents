@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-06T06:32:02Z",
+ "data_updated": "2026-11-06T20:53:31Z",
  "as_of": "2026-11-06",
- "count": 224,
+ "count": 225,
  "events": [
   {
    "id": "af-first-friday-2026-11-06",
@@ -2356,6 +2356,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-small-business-saturday-oceanway-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-fired-arts-fair-2026-2026-11-29",
+   "title": "Festival · Hollywood",
+   "next_date": "2026-11-29",
+   "dates": [
+    "2026-11-29"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Hollywood",
+   "county": "Broward",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fired-arts-fair-2026-2026-11-29",
    "details_locked": true
   },
   {
