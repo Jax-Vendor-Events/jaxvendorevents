@@ -8,7 +8,7 @@
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
  "data_updated": "2026-11-06T06:32:02Z",
  "as_of": "2026-11-06",
- "count": 223,
+ "count": 224,
  "events": [
   {
    "id": "af-first-friday-2026-11-06",
@@ -19,8 +19,8 @@
     "2026-12-04"
    ],
    "end_date": null,
-   "recurring": false,
-   "schedule": null,
+   "recurring": true,
+   "schedule": "Monthly (1st Friday)",
    "city": "Eustis",
    "county": "Lake",
    "region": "Central",
@@ -29,7 +29,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-first-friday-2026-11-06",
    "details_locked": true
   },
@@ -42,8 +42,8 @@
     "2026-12-04"
    ],
    "end_date": null,
-   "recurring": false,
-   "schedule": null,
+   "recurring": true,
+   "schedule": "Monthly (1st Friday)",
    "city": "Viera",
    "county": "Brevard",
    "region": "Central",
@@ -52,7 +52,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-viera-park-market-food-trucks-2026-11-06",
    "details_locked": true
   },
@@ -989,7 +989,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-5th-annual-americana-classic-car-truck-bike-show-2026-11-14",
    "details_locked": true
   },
@@ -1035,7 +1035,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-fall-fine-arts-festival-2026-11-14",
    "details_locked": true
   },
@@ -1057,7 +1057,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-light-up-the-night-2026-11-14",
    "details_locked": true
   },
@@ -1650,8 +1650,8 @@
    "category": null,
    "booth_fee": null,
    "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
+   "application_deadline": "2026-11-13",
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-st-lucie-international-fest-2026-11-21",
    "details_locked": true
   },
@@ -1660,10 +1660,9 @@
    "title": "Holiday craft & art festival · Vero Beach",
    "next_date": "2026-11-21",
    "dates": [
-    "2026-11-21",
-    "2026-11-22"
+    "2026-11-21"
    ],
-   "end_date": "2026-11-22",
+   "end_date": null,
    "recurring": false,
    "schedule": null,
    "city": "Vero Beach",
@@ -1674,7 +1673,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-elks-1774-holiday-craft-fair-2026-11-21",
    "details_locked": true
   },
@@ -1975,28 +1974,6 @@
    "details_locked": true
   },
   {
-   "id": "sc-riverside-arts-market-local-love-night-market-2026",
-   "title": "Holiday market · Jacksonville",
-   "next_date": "2026-11-26",
-   "dates": [
-    "2026-11-26"
-   ],
-   "end_date": "2026-11-27",
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026",
-   "details_locked": true
-  },
-  {
    "id": "af-light-up-eustis-2026-2026-11-27",
    "title": "Pop-up market · Eustis",
    "next_date": "2026-11-27",
@@ -2011,10 +1988,10 @@
    "region": "Central",
    "state": "FL",
    "category": null,
-   "booth_fee": null,
+   "booth_fee": "$25 - $125",
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-light-up-eustis-2026-2026-11-27",
    "details_locked": true
   },
@@ -2041,50 +2018,6 @@
    "details_locked": true
   },
   {
-   "id": "sc-jax-melanin-black-friday-market-2026-11-27",
-   "title": "Pop-up market · Jacksonville",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=sc-jax-melanin-black-friday-market-2026-11-27",
-   "details_locked": true
-  },
-  {
-   "id": "sc-last-rodeo-black-friday-melanin-2026-11-27",
-   "title": "Pop-up market · Jacksonville",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=sc-last-rodeo-black-friday-melanin-2026-11-27",
-   "details_locked": true
-  },
-  {
    "id": "sc-melanin-small-business-saturday-eventeny-2026-11-2",
    "title": "Pop-up market · Jacksonville",
    "next_date": "2026-11-27",
@@ -2101,7 +2034,7 @@
    "category": null,
    "booth_fee": null,
    "booth_fee_range": "unknown",
-   "application_deadline": null,
+   "application_deadline": "2026-11-22",
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-melanin-small-business-saturday-eventeny-2026-11-2",
    "details_locked": true
@@ -2126,6 +2059,39 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-omni-shops-holiday-lights-2026-11-27",
+   "details_locked": true
+  },
+  {
+   "id": "sc-riverside-arts-market-local-love-night-market-2026",
+   "title": "Holiday market · Jacksonville",
+   "next_date": "2026-11-27",
+   "dates": [
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-04",
+    "2026-12-05",
+    "2026-12-06",
+    "2026-12-11",
+    "2026-12-12",
+    "2026-12-13",
+    "2026-12-18",
+    "2026-12-19",
+    "2026-12-20"
+   ],
+   "end_date": "2026-12-27",
+   "recurring": true,
+   "schedule": "Fri-Sun, Nov 27-Dec 27",
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026",
    "details_locked": true
   },
   {
@@ -2566,7 +2532,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-creative-market-2026-12-05",
    "details_locked": true
   },
@@ -2678,6 +2644,30 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-cummer-museum-holiday-market-2026",
+   "details_locked": true
+  },
+  {
+   "id": "sc-jax-night-market-holiday-beach-marine-2026-12",
+   "title": "Holiday market · Jacksonville Beach",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05",
+    "2026-12-12",
+    "2026-12-19"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": "Saturdays Dec 5, 12, 19",
+   "city": "Jacksonville Beach",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-jax-night-market-holiday-beach-marine-2026-12",
    "details_locked": true
   },
   {
@@ -3494,8 +3484,8 @@
    "category": null,
    "booth_fee": null,
    "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
+   "application_deadline": "2026-11-21",
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-st-lucie-noche-buena-2026-12-18",
    "details_locked": true
   },
@@ -4012,6 +4002,29 @@
    "details_locked": true
   },
   {
+   "id": "sc-battle-bros-florida-creatives-market-daytona-2027-01-16",
+   "title": "Pop-up market · Daytona Beach",
+   "next_date": "2027-01-16",
+   "dates": [
+    "2027-01-16",
+    "2027-01-17"
+   ],
+   "end_date": "2027-01-17",
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-battle-bros-florida-creatives-market-daytona-2027-01-16",
+   "details_locked": true
+  },
+  {
    "id": "sc-mlk-parade-jax-2027-01-18",
    "title": "Holiday festival · Jacksonville",
    "next_date": "2027-01-18",
@@ -4504,7 +4517,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-29th-annual-thunder-by-the-bay-music-motors-festiv-2027-02-19",
    "details_locked": true
   },
@@ -4881,6 +4894,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-saint-augustine-art-show-2027-03-20",
+   "details_locked": true
+  },
+  {
+   "id": "sc-battle-bros-jax-food-fest-craft-fair-2027-03-20",
+   "title": "Craft & art festival · Jacksonville",
+   "next_date": "2027-03-20",
+   "dates": [
+    "2027-03-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-battle-bros-jax-food-fest-craft-fair-2027-03-20",
    "details_locked": true
   },
   {

@@ -2381,19 +2381,6 @@ DESCRIPTION:Vendor event in Vero Beach\, Indian River County\, FL. Venue\
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:af-vero-beach-elks-1774-holiday-craft-fair-2026-11-21-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261106T063202Z
-DTSTART;VALUE=DATE:20261122
-DTEND;VALUE=DATE:20261123
-SUMMARY:Holiday craft & art festival · Vero Beach
-LOCATION:Vero Beach\, Indian River County\, FL
-URL:https://jaxvendorevents.com/#e=af-vero-beach-elks-1774-holiday-craft-fair-2026-11-21
-DESCRIPTION:Vendor event in Vero Beach\, Indian River County\, FL. Venue\
- , organizer and how to apply: https://jaxvendorevents.com/#e=af-vero-beac
- h-elks-1774-holiday-craft-fair-2026-11-21
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:ej-mayport-village-waterfront-market-2026-11-21@jaxvendorevents.com
 DTSTAMP:20261106T063202Z
 DTSTART;VALUE=DATE:20261121
@@ -2687,19 +2674,6 @@ DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:sc-riverside-arts-market-local-love-night-market-2026-2026-11-26@jaxvendorevents.com
-DTSTAMP:20261106T063202Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261128
-SUMMARY:Holiday market · Jacksonville
-LOCATION:Jacksonville\, Duval County\, FL
-URL:https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026
-DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
- anizer and how to apply: https://jaxvendorevents.com/#e=sc-riverside-arts
- -market-local-love-night-market-2026
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:af-light-up-eustis-2026-2026-11-27-2026-11-27@jaxvendorevents.com
 DTSTAMP:20261106T063202Z
 DTSTART;VALUE=DATE:20261127
@@ -2726,32 +2700,6 @@ DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:sc-jax-melanin-black-friday-market-2026-11-27-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261106T063202Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:Pop-up market · Jacksonville
-LOCATION:Jacksonville\, Duval County\, FL
-URL:https://jaxvendorevents.com/#e=sc-jax-melanin-black-friday-market-2026-11-27
-DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
- anizer and how to apply: https://jaxvendorevents.com/#e=sc-jax-melanin-bl
- ack-friday-market-2026-11-27
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sc-last-rodeo-black-friday-melanin-2026-11-27-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261106T063202Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:Pop-up market · Jacksonville
-LOCATION:Jacksonville\, Duval County\, FL
-URL:https://jaxvendorevents.com/#e=sc-last-rodeo-black-friday-melanin-2026-11-27
-DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
- anizer and how to apply: https://jaxvendorevents.com/#e=sc-last-rodeo-bla
- ck-friday-melanin-2026-11-27
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:sc-melanin-small-business-saturday-eventeny-2026-11-2-2026-11-27@jaxvendorevents.com
 DTSTAMP:20261106T063202Z
 DTSTART;VALUE=DATE:20261127
@@ -2775,6 +2723,84 @@ URL:https://jaxvendorevents.com/#e=sc-omni-shops-holiday-lights-2026-11-27
 DESCRIPTION:Vendor event in Amelia\, Nassau County\, FL. Venue\, organize
  r and how to apply: https://jaxvendorevents.com/#e=sc-omni-shops-holiday-
  lights-2026-11-27
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-riverside-arts-market-local-love-night-market-2026-2026-11-27@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Holiday market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=sc-riverside-arts
+ -market-local-love-night-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-riverside-arts-market-local-love-night-market-2026-2026-11-28@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Holiday market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=sc-riverside-arts
+ -market-local-love-night-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-riverside-arts-market-local-love-night-market-2026-2026-11-29@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Holiday market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=sc-riverside-arts
+ -market-local-love-night-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-riverside-arts-market-local-love-night-market-2026-2026-12-04@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Holiday market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=sc-riverside-arts
+ -market-local-love-night-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-riverside-arts-market-local-love-night-market-2026-2026-12-05@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Holiday market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=sc-riverside-arts
+ -market-local-love-night-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-riverside-arts-market-local-love-night-market-2026-2026-12-06@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Holiday market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=sc-riverside-arts
+ -market-local-love-night-market-2026
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -3123,6 +3149,45 @@ URL:https://jaxvendorevents.com/#e=sc-cummer-museum-holiday-market-2026
 DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
  anizer and how to apply: https://jaxvendorevents.com/#e=sc-cummer-museum-
  holiday-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-jax-night-market-holiday-beach-marine-2026-12-2026-12-05@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Holiday market · Jacksonville Beach
+LOCATION:Jacksonville Beach\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-jax-night-market-holiday-beach-marine-2026-12
+DESCRIPTION:Vendor event in Jacksonville Beach\, Duval County\, FL. Venue
+ \, organizer and how to apply: https://jaxvendorevents.com/#e=sc-jax-nigh
+ t-market-holiday-beach-marine-2026-12
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-jax-night-market-holiday-beach-marine-2026-12-2026-12-12@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Holiday market · Jacksonville Beach
+LOCATION:Jacksonville Beach\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-jax-night-market-holiday-beach-marine-2026-12
+DESCRIPTION:Vendor event in Jacksonville Beach\, Duval County\, FL. Venue
+ \, organizer and how to apply: https://jaxvendorevents.com/#e=sc-jax-nigh
+ t-market-holiday-beach-marine-2026-12
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-jax-night-market-holiday-beach-marine-2026-12-2026-12-19@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Holiday market · Jacksonville Beach
+LOCATION:Jacksonville Beach\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-jax-night-market-holiday-beach-marine-2026-12
+DESCRIPTION:Vendor event in Jacksonville Beach\, Duval County\, FL. Venue
+ \, organizer and how to apply: https://jaxvendorevents.com/#e=sc-jax-nigh
+ t-market-holiday-beach-marine-2026-12
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -4048,6 +4113,32 @@ DESCRIPTION:Vendor event in Fort Pierce\, St. Lucie County\, FL. Venue\,
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:sc-battle-bros-florida-creatives-market-daytona-2027-01-16-2027-01-16@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Pop-up market · Daytona Beach
+LOCATION:Daytona Beach\, Volusia County\, FL
+URL:https://jaxvendorevents.com/#e=sc-battle-bros-florida-creatives-market-daytona-2027-01-16
+DESCRIPTION:Vendor event in Daytona Beach\, Volusia County\, FL. Venue\, 
+ organizer and how to apply: https://jaxvendorevents.com/#e=sc-battle-bros
+ -florida-creatives-market-daytona-2027-01-16
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-battle-bros-florida-creatives-market-daytona-2027-01-16-2027-01-17@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:Pop-up market · Daytona Beach
+LOCATION:Daytona Beach\, Volusia County\, FL
+URL:https://jaxvendorevents.com/#e=sc-battle-bros-florida-creatives-market-daytona-2027-01-16
+DESCRIPTION:Vendor event in Daytona Beach\, Volusia County\, FL. Venue\, 
+ organizer and how to apply: https://jaxvendorevents.com/#e=sc-battle-bros
+ -florida-creatives-market-daytona-2027-01-16
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:sc-mlk-parade-jax-2027-01-18-2027-01-18@jaxvendorevents.com
 DTSTAMP:20261106T063202Z
 DTSTART;VALUE=DATE:20270118
@@ -4650,6 +4741,19 @@ URL:https://jaxvendorevents.com/#e=af-saint-augustine-art-show-2027-03-20
 DESCRIPTION:Vendor event in St. Augustine\, St. Johns County\, FL. Venue\
  , organizer and how to apply: https://jaxvendorevents.com/#e=af-saint-aug
  ustine-art-show-2027-03-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-battle-bros-jax-food-fest-craft-fair-2027-03-20-2027-03-20@jaxvendorevents.com
+DTSTAMP:20261106T063202Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Craft & art festival · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-battle-bros-jax-food-fest-craft-fair-2027-03-20
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=sc-battle-bros-ja
+ x-food-fest-craft-fair-2027-03-20
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
