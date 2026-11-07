@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-07T05:52:45Z",
+ "data_updated": "2026-11-07T16:44:44Z",
  "as_of": "2026-11-07",
- "count": 224,
+ "count": 235,
  "events": [
   {
    "id": "af-fleming-island-autumn-saturday-market-2026-11-07",
@@ -522,6 +522,28 @@
    "details_locked": true
   },
   {
+   "id": "fcvv-learning-experience-2026-11-08",
+   "title": "Pop-up market · St. Augustine",
+   "next_date": "2026-11-08",
+   "dates": [
+    "2026-11-08"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "St. Augustine",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-learning-experience-2026-11-08",
+   "details_locked": true
+  },
+  {
    "id": "fl-0021",
    "title": "Farmers market · Atlantic Beach",
    "next_date": "2026-11-08",
@@ -740,6 +762,29 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-art-in-the-park-2026-11-13",
+   "details_locked": true
+  },
+  {
+   "id": "fcvv-bartram-springs-2026",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-13",
+   "dates": [
+    "2026-11-13",
+    "2026-12-11"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": "Fri Nov 13, Fri Dec 11",
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$60",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-bartram-springs-2026",
    "details_locked": true
   },
   {
@@ -1013,6 +1058,50 @@
    "details_locked": true
   },
   {
+   "id": "curative-casa-solara-fall-2026-11-14",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-14",
+   "dates": [
+    "2026-11-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$50",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=curative-casa-solara-fall-2026-11-14",
+   "details_locked": true
+  },
+  {
+   "id": "fcvv-the-landings-2026-11-14",
+   "title": "Pop-up market · St. Johns",
+   "next_date": "2026-11-14",
+   "dates": [
+    "2026-11-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "St. Johns",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-the-landings-2026-11-14",
+   "details_locked": true
+  },
+  {
    "id": "fl-0062",
    "title": "Craft & art festival · Palm Coast",
    "next_date": "2026-11-14",
@@ -1283,6 +1372,30 @@
    "details_locked": true
   },
   {
+   "id": "ej-curative-market-sunday-market-mandarin",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-15",
+   "dates": [
+    "2026-11-15",
+    "2026-12-06",
+    "2026-12-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": "Sundays Nov 15, Dec 6, Dec 13",
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$35–$50",
+   "booth_fee_range": "under50",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=ej-curative-market-sunday-market-mandarin",
+   "details_locked": true
+  },
+  {
    "id": "ej-small-business-sunday-market-bj-s",
    "title": "Pop-up market · Jacksonville",
    "next_date": "2026-11-15",
@@ -1304,6 +1417,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=ej-small-business-sunday-market-bj-s",
+   "details_locked": true
+  },
+  {
+   "id": "fcvv-murabella-2026-11-15",
+   "title": "Pop-up market · St. Augustine",
+   "next_date": "2026-11-15",
+   "dates": [
+    "2026-11-15"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "St. Augustine",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-murabella-2026-11-15",
    "details_locked": true
   },
   {
@@ -1606,6 +1741,28 @@
    "details_locked": true
   },
   {
+   "id": "fcvv-seaton-creek-2026-11-21",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-seaton-creek-2026-11-21",
+   "details_locked": true
+  },
+  {
    "id": "fl-0015",
    "title": "Pop-up market · Green Cove Springs",
    "next_date": "2026-11-21",
@@ -1856,6 +2013,29 @@
    "details_locked": true
   },
   {
+   "id": "fcvv-shearwater-2026",
+   "title": "Pop-up market · St. Johns",
+   "next_date": "2026-11-22",
+   "dates": [
+    "2026-11-22",
+    "2026-12-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": "Sun Nov 22, Sun Dec 13",
+   "city": "St. Johns",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-shearwater-2026",
+   "details_locked": true
+  },
+  {
    "id": "sc-jax-faith-market-2026-11-22",
    "title": "Pop-up market · Jacksonville",
    "next_date": "2026-11-22",
@@ -1966,6 +2146,39 @@
    "details_locked": true
   },
   {
+   "id": "sc-palatka-christmas-market-2026",
+   "title": "Holiday market · Palatka",
+   "next_date": "2026-11-27",
+   "dates": [
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-03",
+    "2026-12-04",
+    "2026-12-05",
+    "2026-12-06",
+    "2026-12-10",
+    "2026-12-11",
+    "2026-12-12",
+    "2026-12-13",
+    "2026-12-17"
+   ],
+   "end_date": "2026-12-20",
+   "recurring": false,
+   "schedule": "Thu–Sun, Nov 27–Dec 20 (15 days)",
+   "city": "Palatka",
+   "county": "Putnam",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-palatka-christmas-market-2026",
+   "details_locked": true
+  },
+  {
    "id": "sc-riverside-arts-market-local-love-night-market-2026",
    "title": "Holiday market · Jacksonville",
    "next_date": "2026-11-27",
@@ -2013,16 +2226,39 @@
    "region": "Northeast",
    "state": "FL",
    "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
+   "booth_fee": "$50",
+   "booth_fee_range": "50plus",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=ej-curative-market-holiday-marketplace",
    "details_locked": true
   },
   {
+   "id": "fcvv-fleming-island-2026-nov-dec",
+   "title": "Pop-up market · Fleming Island",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28",
+    "2026-12-19"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": "Sat Nov 28, Sat Dec 19",
+   "city": "Fleming Island",
+   "county": "Clay",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-fleming-island-2026-nov-dec",
+   "details_locked": true
+  },
+  {
    "id": "sc-brees-riverside-family-days",
-   "title": "Pop-up market · Riverside",
+   "title": "Pop-up market · Nobleton",
    "next_date": "2026-11-28",
    "dates": [
     "2026-11-28"
@@ -2030,13 +2266,13 @@
    "end_date": null,
    "recurring": false,
    "schedule": null,
-   "city": "Riverside",
-   "county": "Duval",
-   "region": "Northeast",
+   "city": "Nobleton",
+   "county": "Hernando",
+   "region": "Tampa Bay",
    "state": "FL",
    "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
+   "booth_fee": "$25 per 10x10",
+   "booth_fee_range": "under50",
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-brees-riverside-family-days",
@@ -2066,7 +2302,7 @@
   },
   {
    "id": "sc-fleming-island-christmas-market-2026-11-28",
-   "title": "Holiday market · Fleming Island",
+   "title": "Holiday market · Green Cove Springs",
    "next_date": "2026-11-28",
    "dates": [
     "2026-11-28"
@@ -2074,7 +2310,7 @@
    "end_date": null,
    "recurring": false,
    "schedule": null,
-   "city": "Fleming Island",
+   "city": "Green Cove Springs",
    "county": "Clay",
    "region": "Northeast",
    "state": "FL",
@@ -2101,9 +2337,9 @@
    "region": "Northeast",
    "state": "FL",
    "category": null,
-   "booth_fee": "$50 (from scan, unverified)",
+   "booth_fee": "$50 (from scan, not on the town post)",
    "booth_fee_range": "50plus",
-   "application_deadline": null,
+   "application_deadline": "2026-11-20",
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-hilliard-christmas-market-2026-11-28",
    "details_locked": true
@@ -2131,28 +2367,6 @@
    "details_locked": true
   },
   {
-   "id": "sc-jax-melanin-small-business-saturday-eventbrite-202",
-   "title": "Pop-up market · Jacksonville",
-   "next_date": "2026-11-28",
-   "dates": [
-    "2026-11-28"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=sc-jax-melanin-small-business-saturday-eventbrite-202",
-   "details_locked": true
-  },
-  {
    "id": "sc-moca-mini-market-2026-11-28",
    "title": "Pop-up market · Jacksonville",
    "next_date": "2026-11-28",
@@ -2172,28 +2386,6 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-moca-mini-market-2026-11-28",
-   "details_locked": true
-  },
-  {
-   "id": "sc-palatka-christmas-market-2026",
-   "title": "Holiday market · Palatka",
-   "next_date": "2026-11-28",
-   "dates": [
-    "2026-11-28"
-   ],
-   "end_date": "2026-12-24",
-   "recurring": false,
-   "schedule": null,
-   "city": "Palatka",
-   "county": "Putnam",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=sc-palatka-christmas-market-2026",
    "details_locked": true
   },
   {
@@ -2241,28 +2433,6 @@
    "details_locked": true
   },
   {
-   "id": "sc-small-business-saturday-oceanway-2026-11-28",
-   "title": "Pop-up market · Jacksonville",
-   "next_date": "2026-11-28",
-   "dates": [
-    "2026-11-28"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=sc-small-business-saturday-oceanway-2026-11-28",
-   "details_locked": true
-  },
-  {
    "id": "af-fired-arts-fair-2026-2026-11-29",
    "title": "Festival · Hollywood",
    "next_date": "2026-11-29",
@@ -2304,6 +2474,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=ej-curative-market-town-center-signature-ma",
+   "details_locked": true
+  },
+  {
+   "id": "fcvv-granary-park-2026-11-29",
+   "title": "Pop-up market · Green Cove Springs",
+   "next_date": "2026-11-29",
+   "dates": [
+    "2026-11-29"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Green Cove Springs",
+   "county": "Clay",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-granary-park-2026-11-29",
    "details_locked": true
   },
   {
@@ -2462,6 +2654,28 @@
    "details_locked": true
   },
   {
+   "id": "fcvv-rolling-hills-holiday-2026-12-04",
+   "title": "Holiday festival · Green Cove Springs",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Green Cove Springs",
+   "county": "Clay",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-rolling-hills-holiday-2026-12-04",
+   "details_locked": true
+  },
+  {
    "id": "sc-nas-jax-mwr-holiday-market-2026-12-04",
    "title": "Holiday market · Jacksonville",
    "next_date": "2026-12-04",
@@ -2529,6 +2743,28 @@
    "details_locked": true
   },
   {
+   "id": "curative-jtb-apartments-holiday-2026-12-05",
+   "title": "Holiday market · Jacksonville",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$50",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=curative-jtb-apartments-holiday-2026-12-05",
+   "details_locked": true
+  },
+  {
    "id": "ej-oakleaf-christmas-parade-vendor-market",
    "title": "Holiday festival · Orange Park (Oakleaf)",
    "next_date": "2026-12-05",
@@ -2548,6 +2784,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=ej-oakleaf-christmas-parade-vendor-market",
+   "details_locked": true
+  },
+  {
+   "id": "fcvv-beacon-lake-2026-12-05",
+   "title": "Pop-up market · St. Augustine",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "St. Augustine",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-beacon-lake-2026-12-05",
    "details_locked": true
   },
   {
@@ -2751,28 +3009,6 @@
    "details_locked": true
   },
   {
-   "id": "ej-curative-market-sunday-market-mandarin",
-   "title": "Pop-up market · Jacksonville",
-   "next_date": "2026-12-06",
-   "dates": [
-    "2026-12-06"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=ej-curative-market-sunday-market-mandarin",
-   "details_locked": true
-  },
-  {
    "id": "sc-386-pop-up-palm-coast",
    "title": "Pop-up market · Palm Coast",
    "next_date": "2026-12-06",
@@ -2910,28 +3146,6 @@
    "details_locked": true
   },
   {
-   "id": "sc-jingle-bell-croc-alligator-farm-2026",
-   "title": "Holiday market · St. Augustine",
-   "next_date": "2026-12-11",
-   "dates": [
-    "2026-12-11"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "St. Augustine",
-   "county": "St. Johns",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=sc-jingle-bell-croc-alligator-farm-2026",
-   "details_locked": true
-  },
-  {
    "id": "sc-jwj-park-after-hours-holiday-market-2026-12-11",
    "title": "Holiday market · Jacksonville",
    "next_date": "2026-12-11",
@@ -2951,28 +3165,6 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-jwj-park-after-hours-holiday-market-2026-12-11",
-   "details_locked": true
-  },
-  {
-   "id": "sc-jwj-pop-up-park-holiday-2026",
-   "title": "Holiday market · Jacksonville",
-   "next_date": "2026-12-11",
-   "dates": [
-    "2026-12-11"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=sc-jwj-pop-up-park-holiday-2026",
    "details_locked": true
   },
   {
@@ -3086,6 +3278,28 @@
    "details_locked": true
   },
   {
+   "id": "curative-river-city-holiday-experience-2026-12-12",
+   "title": "Holiday market · Jacksonville",
+   "next_date": "2026-12-12",
+   "dates": [
+    "2026-12-12"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$50",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=curative-river-city-holiday-experience-2026-12-12",
+   "details_locked": true
+  },
+  {
    "id": "ej-904-pop-up-riversedge-2026-12-12",
    "title": "Pop-up market · Jacksonville",
    "next_date": "2026-12-12",
@@ -3127,6 +3341,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=ej-eagle-landing-holiday-vendor-market",
+   "details_locked": true
+  },
+  {
+   "id": "fcvv-bestbet-jacksonville-2026-12-12",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-12-12",
+   "dates": [
+    "2026-12-12"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-bestbet-jacksonville-2026-12-12",
    "details_locked": true
   },
   {
@@ -3562,8 +3798,8 @@
    "region": "Northeast",
    "state": "FL",
    "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
+   "booth_fee": "$35",
+   "booth_fee_range": "under50",
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-forena-luxury-holiday-market-2026-12-19",
@@ -3678,6 +3914,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=ej-curative-market-merry-at-moe-s",
+   "details_locked": true
+  },
+  {
+   "id": "fcvv-bestbet-orange-park-2026-12-20",
+   "title": "Pop-up market · Orange Park",
+   "next_date": "2026-12-20",
+   "dates": [
+    "2026-12-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Orange Park",
+   "county": "Clay",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$55",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fcvv-bestbet-orange-park-2026-12-20",
    "details_locked": true
   },
   {
@@ -3810,28 +4068,6 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-foodees-fest-jacksonville-2027-01-08",
-   "details_locked": true
-  },
-  {
-   "id": "af-2027-tampa-oyster-fest-2027-01-09",
-   "title": "Festival · Tampa",
-   "next_date": "2027-01-09",
-   "dates": [
-    "2027-01-09"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Tampa",
-   "county": "Hillsborough",
-   "region": "Tampa Bay",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=af-2027-tampa-oyster-fest-2027-01-09",
    "details_locked": true
   },
   {
@@ -4753,6 +4989,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=fl-0110",
+   "details_locked": true
+  },
+  {
+   "id": "oakleaf-vendor-market-trinity-2027-03-06",
+   "title": "Pop-up market · Orange Park",
+   "next_date": "2027-03-06",
+   "dates": [
+    "2027-03-06"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Orange Park",
+   "county": "Clay",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=oakleaf-vendor-market-trinity-2027-03-06",
    "details_locked": true
   },
   {
