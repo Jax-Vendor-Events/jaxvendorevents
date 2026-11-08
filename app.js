@@ -184,6 +184,7 @@
     var A=window.JVE_AUTH,n=A&&A.user&&A.profile&&String(A.profile.full_name||'').trim().split(/\s+/)[0];return g+(n?', '+n:'');}
   function renderHome(){
     var H=$('home');if(!H)return;
+    if(window.JVE_FB&&JVE_FB.home&&JVE_FB.home(H))return; /* Nov 8 2026: Facebook-style feed (fb.js) */
     var mine=ev.filter(function(e){return e.rg===region;}),lab=esc(RG.label(region)),html='';
     var locked=mine.filter(function(e){return e.locked;}).length;
     $('vTitle').textContent=hello();$('vSub').textContent=mine.length?'Your vendor week in '+RG.label(region)+'.':'Pick a region to see what’s near you.';
@@ -289,7 +290,7 @@
         '<div class="locked-card"><b>🔒 Event name, exact place, organizer and apply link</b> are part of Vendor Pro ($6/month). Every market in Florida, with the links to apply.</div>';
       ap.href='#';ap.setAttribute('data-unlock','vendor-pro');ap.classList.remove('off');ap.removeAttribute('aria-disabled');ap.removeAttribute('tabindex');ext.style.display='none';ap.firstChild.textContent='Unlock · $6/mo ';
     } else ap.removeAttribute('data-unlock');
-    $('shIcs').disabled=!curA;syncSheetSave();if(window.JVE_CAL&&JVE_CAL.sheet)JVE_CAL.sheet(e,curA);if(window.JVE_TRK&&JVE_TRK.sheet)JVE_TRK.sheet(e,curA);
+    $('shIcs').disabled=!curA;syncSheetSave();if(window.JVE_CAL&&JVE_CAL.sheet)JVE_CAL.sheet(e,curA);if(window.JVE_TRK&&JVE_TRK.sheet)JVE_TRK.sheet(e,curA);if(window.JVE_FB&&JVE_FB.sheet)JVE_FB.sheet(e,curA);
   }
   function showSheet(id,anchor){var e=byId[id];if(!e)return false;curE=e;curA=anchor||e.up[0]||null;fillSheet(e);
     if(!sheet.classList.contains('open')){lastFocus=document.activeElement;sheet.setAttribute('aria-hidden','false');sheet.classList.add('open');scrim.classList.add('open');document.body.classList.add('noscroll');}
@@ -301,7 +302,8 @@
     var on=isSaved(id);try{if(navigator.vibrate)navigator.vibrate(on?12:6);}catch(_){}
     document.querySelectorAll('.heart[data-save="'+(window.CSS&&CSS.escape?CSS.escape(id):id)+'"]').forEach(function(h){h.classList.toggle('on',on);h.setAttribute('aria-pressed',String(on));h.classList.remove('pop');void h.offsetWidth;h.classList.add('pop');});
     syncSheetSave();toast(on?'Saved ♥':'Removed from saved');badge();
-    if(view==='saved')render();}
+    if(view==='saved')render();
+    try{document.dispatchEvent(new CustomEvent('jve:saved',{detail:{id:id,on:on}}));}catch(_){} /* fb.js syncs it to the account */}
   function badge(){document.querySelectorAll('[data-nav="saved"]').forEach(function(a){var n=a.querySelector('.nb');if(!n){n=document.createElement('i');n.className='nb';a.appendChild(n);}n.textContent=saved.length||'';n.hidden=!saved.length;});}
   function syncSheetSave(){var b=$('shSave');if(!b||!curE)return;var on=isSaved(curE.id);b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on));b.lastChild.textContent=on?' Saved':' Save';}
   document.addEventListener('click',function(ev2){
@@ -377,7 +379,7 @@
   window.addEventListener('pageshow',function(){var np=getPrefs();if(JSON.stringify(np)!==JSON.stringify(prefs)){prefs=np;render();}saved=getSaved();badge();var rg=RG.get();if(rg!==region)regionChanged(rg);});
   window.addEventListener('storage',function(ev2){if(ev2.key===PK){prefs=getPrefs();render();}});
   /* hooks for mycal.js (My calendar strip + Add to my calendar) */
-  window.JVE_APP={events:function(){return ev;},rows:function(){return filtered();},open:function(id,a){openSheet(id,a);},region:function(){return region;},regionLabel:function(){return RG.label(region);},view:function(){return view;},
+  window.JVE_APP={toggleSave:function(id){saveToggle(id);},isSaved:function(id){return isSaved(id);},resync:function(){saved=getSaved();badge();if(view==='saved')render();},events:function(){return ev;},rows:function(){return filtered();},open:function(id,a){openSheet(id,a);},region:function(){return region;},regionLabel:function(){return RG.label(region);},view:function(){return view;},
     setDay:function(d){F.day=d||false;if(d){F.weekend=false;F['2wk']=false;}if(view!=='events'&&view!=='deadlines'){setView('events');markNav();}render(true);},
     ics:function(e,d){download(vevent(e,d),String(e.name||'event').replace(/[^\w]+/g,'-').replace(/^-|-$/g,'').slice(0,50)+'-'+d+'.ics');toast('Calendar file downloaded');}};
   document.dispatchEvent(new Event('jve:app'));

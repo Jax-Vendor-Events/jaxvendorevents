@@ -51,6 +51,7 @@
     var home=$('home');
     if(home){var busy=false;
       function isKeep(k){var c=' '+(k.className||'')+' ';
+        if(/ fb-/.test(c))return true; /* Nov 8 2026: the Facebook-style feed (fb.js) is never folded */
         if(/ dh | dsec | drole | hpro /.test(c))return true;
         if(/ hsec /.test(c)&&(k.querySelector('.hrail')||k.querySelector('.hdl')))return true;
         return false;}
