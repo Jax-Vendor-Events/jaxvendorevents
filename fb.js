@@ -176,7 +176,9 @@
   function slug(s){var LG=W.JVE_LOGIC;return LG&&LG.slug?LG.slug(s):String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
   function PX(){return W.JVE_PAIDX||{featured:function(){return false;},spotlight:function(){return false;},verifiedOrg:function(){return null;},sponsor:function(){return null;}};}
   function regionOf(e){var RG=W.JVE_REGIONS;return e.rg||(RG?RG.of(e):'ne');}
-  function regionLabel(r){var RG=W.JVE_REGIONS;return RG?RG.label(r):r;}
+  function regionLabel(r){var RG=W.JVE_REGIONS;return RG?RG.label(r):(r==='all'?'All Florida':r);}
+  /* Nov 8 2026: 'all' = All Florida, the default for anyone who has not picked areas */
+  function inRegs(regs,e){if(!regs.length||regs.indexOf('all')>-1)return true;return regs.indexOf(regionOf(e))>-1;}
   function updated(e){var v=e.verified_on||e.last_checked;if(!v)return 'Listed';var n=days(v,today);return (e.verified?'Checked ':'Updated ')+(n<=0?'today':n===1?'yesterday':n<7?n+' days ago':MO[pd(v).getMonth()]+' '+pd(v).getDate());}
   function cover(e,a,attr,noText){var k=kind(e),x=a?pd(a):null;
     return '<span class="fb-cov k-'+k+'"'+(attr?' '+attr:'')+'><span class="fb-cic">'+ic(kindIcon(k))+'</span>'+(noText?'':
@@ -283,7 +285,7 @@
     h+='<div class="fb-foot"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="about.html">About</a> · <a href="newsletter.html">Weekly email</a> · <a href="list.html">List your event</a> · <a href="pricing.html">Advertise</a><br>Jax Vendor Events © 2026</div>';
     el.innerHTML=h;markTabs();}
   function buildRight(){if(!isIndex||$('fbRight'))return;var el=d.createElement('aside');el.className='fb-right';el.id='fbRight';el.setAttribute('aria-label','Deadlines, sponsored and organizers');d.body.appendChild(el);paintRight();}
-  function dlWeek(){var regs=follow().regions;return evs().filter(function(e){return e.deadline&&e.deadline>=today&&days(today,e.deadline)<=7&&(!regs.length||regs.indexOf(regionOf(e))>-1);}).sort(function(a,b){return a.deadline<b.deadline?-1:1;});}
+  function dlWeek(){var regs=follow().regions;return evs().filter(function(e){return e.deadline&&e.deadline>=today&&days(today,e.deadline)<=7&&inRegs(regs,e);}).sort(function(a,b){return a.deadline<b.deadline?-1:1;});}
   function riDl(e){var x=pd(e.deadline);return '<button type="button" class="fb-ri" data-open="'+esc(e.id)+'"><span class="fb-dd"><i>'+MO[x.getMonth()]+'</i><b>'+x.getDate()+'</b></span><span style="min-width:0"><b>'+esc(e.name)+'</b><small>Apply by '+fmt(e.deadline)+' · '+esc(e.city||e.county||'')+'</small></span></button>';}
   function orgList(){var m={};evs().forEach(function(e){var o=org(e);if(!o||!next(e))return;var k=slug(o);(m[k]=m[k]||{name:o,slug:k,n:0}).n++;});return Object.keys(m).map(function(k){return m[k];}).sort(function(a,b){return b.n-a.n||(a.name<b.name?-1:1);});}
   function followOrg(sl){var f=follow(),i=f.orgs.indexOf(sl);if(i>-1)f.orgs.splice(i,1);else f.orgs.push(sl);if(user())setFollow(f);else put(FK,JSON.stringify(f));
@@ -306,8 +308,8 @@
   function weekendRange(){var x=pd(today),wd=x.getDay();if(wd===6)return [addD(today,-1),addD(today,1)];if(wd===0)return [today,today];var fri=addD(today,5-wd);return [fri,addD(fri,2)];}
   function inWeekend(e){var w=weekendRange();return (e.up||[]).filter(function(x){return x>=w[0]&&x<=w[1];})[0]||null;}
   function feedRows(){var all=evs().filter(function(e){return next(e)||(!(e.dates||[]).length&&e.schedule);}),f=follow(),RG=W.JVE_REGIONS;
-    var regs=f.regions.length?f.regions:[RG?RG.get():'ne'],types=f.types,orgs=f.orgs,rows=all.slice();
-    if(feedTab==='foryou'){rows=rows.filter(function(e){return regs.indexOf(regionOf(e))>-1;});
+    var regs=f.regions.length?f.regions:[RG?RG.get():'all'],types=f.types,orgs=f.orgs,rows=all.slice();
+    if(feedTab==='foryou'){rows=rows.filter(function(e){return inRegs(regs,e);});
       if(types.length){var t=rows.filter(function(e){var k=e.types||[];return types.some(function(x){return k.indexOf(x)>-1||(x==='campus'&&kind(e)==='campus');});});if(t.length>=4)rows=t;}}
     else if(feedTab==='weekend')rows=rows.filter(inWeekend);
     else if(feedTab==='free')rows=rows.filter(function(e){return e.fee_bucket==='free';});
@@ -325,7 +327,7 @@
   function postHtml(e){var a=feedTab==='weekend'?(inWeekend(e)||next(e)):next(e),o=org(e),k=kind(e);
     var who=o?'<a href="#o='+esc(slug(o))+'">'+esc(o)+'</a>':e.locked?'Organizer hidden <span class="fb-lk">· '+ic('lock','style="width:12px;height:12px"')+'Pro</span>':'Jax Vendor Events';
     var av=o?'<span class="fb-av" aria-hidden="true">'+esc(initials(o))+'</span>':'<span class="fb-av" aria-hidden="true" style="background:var(--c-raised);color:var(--c-muted)">'+ic(e.locked?'lock':kindIcon(k),'style="width:18px;height:18px"')+'</span>';
-    var sub=(e._spon?'Sponsored · ':'')+esc(updated(e))+' · '+esc(regionLabel(regionOf(e)));
+    var co=String(e.county||'').replace(/\s*county\s*$/i,'').trim(),sub=(e._spon?'Sponsored · ':'')+esc(updated(e))+' · '+esc(co?co+' County':'Florida'); /* Nov 8 2026: county, not the region name */
     var meta='<span>'+ic('events')+(a?(a<today&&e.end_date&&e.end_date>=today?'Happening now · through '+esc(fmt(e.end_date)):esc(fmtLong(a))+(e.end_date&&e.end_date>a&&(e.up||[]).length<=1?' – '+esc(fmt(e.end_date)):''))+(e.time&&!e.locked?' · '+esc(e.time):''):esc(e.schedule||'Dates on the organizer page'))+'</span><span>'+ic('pin')+esc([e.city,e.county?e.county+' County':''].filter(Boolean).join(', '))+'</span>';
     var tags='<span class="fb-tag'+(e.fee_bucket==='free'?' free':'')+'">'+ic('tag')+esc(feeLabel(e))+'</span>';
     if(e.deadline&&e.deadline>=today){var dn=days(today,e.deadline);tags+='<span class="fb-tag'+(dn<=7?' hot':'')+'">'+ic('clock')+(dn===0?'Apply today':dn===1?'Apply by tomorrow':'Apply by '+MO[pd(e.deadline).getMonth()]+' '+pd(e.deadline).getDate())+'</span>';}
@@ -340,7 +342,7 @@
     h+='<div class="fb-card fb-comp"><div class="fb-comp-row">'+(u?avatar():'<span class="fb-av" aria-hidden="true">'+ic('user','style="width:20px;height:20px"')+'</span>')+'<button type="button" class="fb-comp-in" data-fbfind>Search markets, towns, venues…</button></div>'+
       '<div class="fb-comp-acts"><a class="fb-qa" href="#events" data-chip="weekend"><span class="q1">'+ic('events')+'</span>This weekend</a><a class="fb-qa" href="#deadlines"><span class="q3">'+ic('clock')+'</span>Deadlines</a><a class="fb-qa" href="#map"><span class="q4">'+ic('map')+'</span>Map</a><a class="fb-qa" href="#events" data-chip="free"><span class="q2">'+ic('tag')+'</span>Free</a></div></div>';
     h+='<div class="fb-ftabs" role="group" aria-label="Feed">'+FT.map(function(t){return '<button type="button" class="fb-ft" data-ft="'+t[0]+'" aria-pressed="'+(feedTab===t[0])+'">'+t[1]+'</button>';}).join('')+'</div>';
-    if(feedTab==='foryou'){var regs=f.regions.length?f.regions:[W.JVE_REGIONS?JVE_REGIONS.get():'ne'];
+    if(feedTab==='foryou'){var regs=f.regions.length?f.regions:[W.JVE_REGIONS?JVE_REGIONS.get():'all'];
       h+='<p class="fb-fhint">'+ic('pin','style="width:14px;height:14px"')+' '+esc(regs.map(regionLabel).join(', '))+(f.types.length?' · '+esc(f.types.map(function(t){return t==='campus'?'Campus':(KIND[t]?KIND[t][0]:t);}).join(', ')):'')+' <button type="button" data-fbob>'+(f.regions.length||f.types.length?'Edit':'Personalize your feed')+'</button></p>';}
     if(!rows.length)h+='<div class="fb-card fb-empty" style="padding:28px 16px">Nothing here right now. <button type="button" class="fb-ft" data-ft="all">See all of Florida</button></div>';
     rows.slice(0,shown).forEach(function(e,i){h+=postHtml(e);

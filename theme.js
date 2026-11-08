@@ -79,14 +79,18 @@
   var C2R={},R2={},RK='jve_region';
   REG.forEach(function(r){r[2].split('|').forEach(function(c){C2R[ck(c)]=r[0];});
     [r[0],r[1],r[1].replace(/ FL$/,'')].concat(r[1].split('/')).forEach(function(a){R2[ck(a)]=r[0];});});
-  R2.northeast=R2.northeastflorida=R2.jax=R2.jacksonville='ne';R2.orlando=R2.central='central';R2.tampa='tampa';R2.miami=R2.southeast='se';R2.floridakeys='keys';
+  R2.northeast=R2.northeastflorida=R2.jax=R2.jacksonville='ne';
+  /* Nov 8 2026: the default is ALL of Florida (Luis's area since Nov 1). 'all' is a view, never an event's own region. */
+  var ALL='all';R2.all=R2.allflorida=R2.florida=R2.statewide=ALL;R2.orlando=R2.central='central';R2.tampa='tampa';R2.miami=R2.southeast='se';R2.floridakeys='keys';
   function regionOf(e){if(!e)return 'ne';var r=e.region&&R2[ck(e.region)];if(r)return r;return C2R[ck(e.county)]||'ne';}
-  function regionGet(){var v=get(RK);if(v&&R2[v]===v)return v;var A=window.JVE_AUTH,p=A&&A.profile&&A.profile.region;return (p&&R2[ck(p)])||'ne';}
+  function regionGet(){var v=get(RK);if(v&&R2[v]===v)return v;var A=window.JVE_AUTH,p=A&&A.profile&&A.profile.region;return (p&&R2[ck(p)])||ALL;}
   function regionSet(v){if(R2[v]!==v)return;put(RK,v);try{document.dispatchEvent(new CustomEvent('jve:region',{detail:v}));}catch(_){}
     var s=document.querySelectorAll('select[data-region]');for(var i=0;i<s.length;i++)s[i].value=v;}
-  function regionLabel(v){for(var i=0;i<REG.length;i++)if(REG[i][0]===v)return REG[i][1];return 'Northeast FL';}
-  window.JVE_REGIONS={list:REG.map(function(r){return {id:r[0],label:r[1],counties:r[2].split('|')};}),of:regionOf,get:regionGet,set:regionSet,label:regionLabel};
-  function regionOptions(){return REG.map(function(r){return '<option value="'+r[0]+'">'+r[1]+'</option>';}).join('');}
+  function regionLabel(v){for(var i=0;i<REG.length;i++)if(REG[i][0]===v)return REG[i][1];return 'All Florida';}
+  function regionIn(e,r){return r===ALL||(e&&(e.rg||regionOf(e)))===r;}
+  function regionInAny(e,rs){if(!rs||!rs.length||rs.indexOf(ALL)>-1)return true;return rs.indexOf(e&&(e.rg||regionOf(e)))>-1;}
+  window.JVE_REGIONS={ALL:ALL,list:[{id:ALL,label:'All Florida',counties:[]}].concat(REG.map(function(r){return {id:r[0],label:r[1],counties:r[2].split('|')};})),of:regionOf,get:regionGet,set:regionSet,label:regionLabel,inRegion:regionIn,inAny:regionInAny};
+  function regionOptions(){return '<option value="all">All Florida</option>'+REG.map(function(r){return '<option value="'+r[0]+'">'+r[1]+'</option>';}).join('');}
   /* ---- the Account sheet (was "More"): account, plan, organizer + vendor tools, settings, help ---- */
   var PRIMARY=[['index.html#events','events','Find Events'],['index.html#map','map','Event Map'],['guides.html','book','Vendor Guide'],['index.html#saved','heart','My Saved Events'],['pro.html','star','Go Pro']];
   var LINKS=[

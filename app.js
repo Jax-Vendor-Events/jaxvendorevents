@@ -39,7 +39,9 @@
   function feeLabel(e){if(e.fee_bucket==='free')return 'Free';if(!e.fee)return 'Fee not listed';if(e.fee.length<=14)return e.fee;var m=e.fee.match(/\$[\d.,]*\d/);return m?m[0]+'+':'Fee: see details';}
   function applyUrl(e){return safeUrl(e.signup_url)||safeUrl(e.apply);}
   /* Florida regions (theme.js JVE_REGIONS) + campus events */
-  var RG=window.JVE_REGIONS||{of:function(){return 'ne';},get:function(){return 'ne';},set:function(){},label:function(){return 'Northeast FL';},list:[{id:'ne',label:'Northeast FL',counties:[]}]};
+  var RG=window.JVE_REGIONS||{of:function(){return 'ne';},get:function(){return 'all';},set:function(){},label:function(){return 'All Florida';},list:[{id:'all',label:'All Florida',counties:[]}]};
+  /* Nov 8 2026: 'all' (All Florida) is the default view and matches every event */
+  function inReg(e){return region==='all'||e.rg===region;}
   var region=RG.get();
   var CAMPUS_RE=/\b(college|university|campus|student union|UNF|FSCJ|UF|FSU|UCF|USF|FIU|FAU|FGCU|FAMU|UWF)\b/i;
   function isCampus(e){return e.campus===true||/campus/i.test(String(e.category||e.type||''))||(e.types||[]).indexOf('campus')>-1||CAMPUS_RE.test([e.name,e.venue,e.organizer,e.host_agency].join(' '));}
@@ -89,7 +91,7 @@
     ev.forEach(function(e){
       if(view==='saved'&&!isSaved(e.id)) return;
       if(view==='deadlines'&&!hasDl(e)) return;
-      if(view!=='saved'&&e.rg!==region) return;
+      if(view!=='saved'&&!inReg(e)) return;
       if(F.campus&&!isCampus(e)) return;
       if(c&&e.county!==c) return;
       if(k&&e.types.indexOf(k)<0) return;
@@ -163,7 +165,7 @@
     if(changed&&fromNav){var top=$('main').getBoundingClientRect().top+scrollY-8;if(scrollY>top)window.scrollTo({top:Math.max(0,top),behavior:'auto'});}
   }
   /* ---- Home: this weekend near you, applications closing soon, Pro + organizer cards (newsletter section follows) ---- */
-  function regionCount(){var n=0;ev.forEach(function(e){if(e.rg===region)n++;});return n;}
+  function regionCount(){var n=0;ev.forEach(function(e){if(inReg(e))n++;});return n;}
   function emptyRegion(){return empty('pin','We’re just getting started in '+esc(RG.label(region)),'Know a market or campus event here? Organizers can list it free, and it shows up for every vendor in the region.','<a class="btn" href="list.html">List an event · free</a> <button class="btn ghost" type="button" data-region-pick>Change region</button>');}
   function proUser(){var A=window.JVE_AUTH;return !!(A&&(A.admin||(A.has&&(A.has('vendor-pro')||A.has('organizer-plus')||A.has('directory-sponsor')))));}
   function hsec(title,sub,go,goLabel,body){return '<section class="hsec"><div class="hsh"><h2>'+title+(sub?' <small>'+sub+'</small>':'')+'</h2>'+(go?'<button type="button" class="hall" data-go="'+go+'">'+goLabel+ico('right','sm')+'</button>':'')+'</div>'+body+'</section>';}
@@ -185,9 +187,9 @@
   function renderHome(){
     var H=$('home');if(!H)return;
     if(window.JVE_FB&&JVE_FB.home&&JVE_FB.home(H))return; /* Nov 8 2026: Facebook-style feed (fb.js) */
-    var mine=ev.filter(function(e){return e.rg===region;}),lab=esc(RG.label(region)),html='';
+    var mine=ev.filter(inReg),lab=esc(RG.label(region)),html='';
     var locked=mine.filter(function(e){return e.locked;}).length;
-    $('vTitle').textContent=hello();$('vSub').textContent=mine.length?'Your vendor week in '+RG.label(region)+'.':'Pick a region to see what’s near you.';
+    $('vTitle').textContent=hello();$('vSub').textContent=mine.length?'Your vendor week '+(region==='all'?'across Florida':'in '+RG.label(region))+'.':'Pick a region to see what’s near you.';
     if(!mine.length){html+=emptyRegion();}
     else{
       var wk=[];mine.forEach(function(e){if(inRange(e,wkStart,sun)){var w=e.up.filter(function(x){return x>=wkStart&&x<=sun;});wk.push({e:e,a:w[0]||e.up[0]||null});}});
@@ -223,7 +225,7 @@
       '<div class="hbtns"><a class="btn sm" href="list.html">List it free</a><a class="btn ghost sm" href="pricing.html#organizers">Get featured</a></div></div></section>';
     H.innerHTML=html;
     /* logged in: their own dashboard on top (dash.js) */
-    if(window.JVE_DASH&&window.JVE_DASH.on())window.JVE_DASH.mount(H,{ev:ev,mine:mine,floor:floor,byId:byId,PX:PX,inRange:inRange,hasDl:hasDl,days:days,go:go,getSaved:getSaved,regionLabel:RG.label(region)});
+    if(window.JVE_DASH&&window.JVE_DASH.on())window.JVE_DASH.mount(H,{ev:ev,mine:mine,floor:floor,byId:byId,PX:PX,inRange:inRange,hasDl:hasDl,days:days,go:go,getSaved:getSaved,regionLabel:region==='all'?'Florida':RG.label(region)});
   }
   function go(k){
     Object.keys(F).forEach(function(x){F[x]=false;});fC.value=fK.value='';fQ.value='';
@@ -233,7 +235,7 @@
     if(k==='search')setTimeout(function(){fQ.focus();},60);
   }
   /* region picker (Events + Home share it; the Account sheet's copy stays in sync through theme.js) */
-  function fillCounties(){var keep=fC.value,have={};ev.forEach(function(e){if(e.rg===region&&e.county)have[e.county]=(have[e.county]||0)+1;});
+  function fillCounties(){var keep=fC.value,have={};ev.forEach(function(e){if(inReg(e)&&e.county)have[e.county]=(have[e.county]||0)+1;});
     var names=Object.keys(have).sort();fC.innerHTML='<option value="">All counties</option>'+names.map(function(c){return '<option>'+esc(c)+'</option>';}).join('');
     fC.value=names.indexOf(keep)>-1?keep:'';}
   function regionChanged(v){if(!v||v===region)return;region=v;var rs=$('fRegion');if(rs)rs.value=v;var rl=$('regLbl');if(rl)rl.textContent=RG.label(v);fillCounties();if(view==='home')renderHome();else render(true);}
