@@ -409,3 +409,16 @@ html.fbx-index main.wrap{padding-top:4px!important}
 html.fbx .sheet{z-index:110!important}
 html.fbx .scrim{z-index:105!important}
 html.fbx .toast{z-index:130!important}
+
+/* page/profile header: avatar overlaps the cover, the name sits below it (no text over the cover) */
+.fb-phd{margin-top:0!important;padding-top:12px;align-items:flex-start}
+.fb-phd>.fb-av{margin-top:-64px}
+.fb-prof .fb-phd>.fb-av{margin-top:-58px}
+.fb-phd h1{font-size:23px;overflow-wrap:anywhere}
+.fb-phd .fb-pbtns{width:100%;margin-left:0;flex-wrap:wrap}
+@media (min-width:900px){.fb-prof .fb-phd .fb-pbtns{width:auto;margin-left:auto}}
+.fb-ptabs .fb-etab{display:inline-flex;align-items:center;text-decoration:none;white-space:nowrap}
+
+@media (min-width:860px) and (max-width:1499px){.fb-logo b{display:none}}
+@media (min-width:860px){.fb-search{width:240px}}
+@media (min-width:860px) and (max-width:1100px){.fb-search{width:180px}}

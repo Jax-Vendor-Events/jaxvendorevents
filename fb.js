@@ -131,22 +131,22 @@
   d.addEventListener('jve:saved',onSaved);
   function cntText(id){var c=R.counts[id];if(!c)return '';var a=[];if(c.interested)a.push(c.interested+' interested');if(c.going)a.push(c.going+' going');return a.join(' · ');}
   function paintOne(id){if(!id)return;var sel=W.CSS&&CSS.escape?CSS.escape(id):id;
-    d.querySelectorAll('[data-r][data-id="'+sel+'"]').forEach(function(b){var k=b.getAttribute('data-r'),on=isOn(k,id);b.setAttribute('aria-pressed',String(on));
+    d.querySelectorAll('[data-r][data-eid="'+sel+'"]').forEach(function(b){var k=b.getAttribute('data-r'),on=isOn(k,id);b.setAttribute('aria-pressed',String(on));
       var lab=b.querySelector('.lb');if(lab)lab.textContent=k==='saved'?(on?'Saved':'Save'):k==='going'?'Going':'Interested';
       var n=b.querySelector('.n');if(n){var c=R.counts[id]||{};n.textContent=c[k]?' · '+c[k]:'';}});
     d.querySelectorAll('[data-cnt="'+sel+'"]').forEach(function(el){el.textContent=cntText(id);});}
-  function paintAll(){var ids={};d.querySelectorAll('[data-r][data-id]').forEach(function(b){ids[b.getAttribute('data-id')]=1;});Object.keys(ids).forEach(paintOne);}
+  function paintAll(){var ids={};d.querySelectorAll('[data-r][data-eid]').forEach(function(b){ids[b.getAttribute('data-eid')]=1;});Object.keys(ids).forEach(paintOne);}
   function actRow(e){var id=esc(e.id),nm=esc(e.name||'');
     return '<div class="fb-acts" role="group" aria-label="Actions">'+
-      '<button type="button" class="fb-act" data-r="interested" data-id="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('star')+'<span class="lb">Interested</span></button>'+
-      '<button type="button" class="fb-act" data-r="going" data-id="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('check')+'<span class="lb">Going</span></button>'+
-      '<button type="button" class="fb-act" data-r="saved" data-id="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('saved')+'<span class="lb">Save</span></button>'+
+      '<button type="button" class="fb-act" data-r="interested" data-eid="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('star')+'<span class="lb">Interested</span></button>'+
+      '<button type="button" class="fb-act" data-r="going" data-eid="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('check')+'<span class="lb">Going</span></button>'+
+      '<button type="button" class="fb-act" data-r="saved" data-eid="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('saved')+'<span class="lb">Save</span></button>'+
       '<button type="button" class="fb-act" data-share="'+id+'">'+ic('share')+'<span class="lb">Share</span></button></div>';}
   function share(id,title){var url=location.origin+'/index.html#e='+encodeURIComponent(id);var t=title||'Vendor event on Jax Vendor Events';
     if(navigator.share){navigator.share({title:t,url:url}).catch(function(){});return;}
     if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(url).then(function(){toast('Link copied');},function(){prompt('Copy this link',url);});else prompt('Copy this link',url);}
   d.addEventListener('click',function(ev){var t=ev.target;if(!t||!t.closest)return;
-    var b=t.closest('[data-r][data-id]');if(b){ev.preventDefault();toggle(b.getAttribute('data-r'),b.getAttribute('data-id'),b.getAttribute('data-name'));return;}
+    var b=t.closest('[data-r][data-eid]');if(b){ev.preventDefault();toggle(b.getAttribute('data-r'),b.getAttribute('data-eid'),b.getAttribute('data-name'));return;}
     var s=t.closest('[data-share]');if(s){ev.preventDefault();var e0=evById(s.getAttribute('data-share'));share(s.getAttribute('data-share'),e0&&e0.name);return;}
     var o=t.closest('[data-open]');if(o){ev.preventDefault();closePop();openEv(o.getAttribute('data-open'),o.getAttribute('data-a'));return;}
     var f=t.closest('[data-follow]');if(f){ev.preventDefault();followOrg(f.getAttribute('data-follow'));return;}
@@ -391,9 +391,9 @@
     etab('about');var sc2=$('fbScroll');if(sc2)sc2.scrollTop=0;
     $('fbECov').innerHTML=cover(e,a,'',false);
     $('fbEWhen').innerHTML='<div class="fb-ewhen">'+(a?esc(fmtLong(a))+(e.time&&!e.locked?' · '+esc(e.time):''):esc(e.schedule||'Dates on the organizer page'))+'</div>';
-    $('fbEActs').innerHTML='<button type="button" class="fb-eb" data-r="interested" data-id="'+esc(e.id)+'" data-name="'+esc(e.name)+'" aria-pressed="false">'+ic('star')+'<span class="lb">Interested</span><span class="n"></span></button>'+
-      '<button type="button" class="fb-eb" data-r="going" data-id="'+esc(e.id)+'" data-name="'+esc(e.name)+'" aria-pressed="false">'+ic('check')+'<span class="lb">Going</span><span class="n"></span></button>'+
-      '<button type="button" class="fb-eb" data-r="saved" data-id="'+esc(e.id)+'" aria-pressed="false">'+ic('saved')+'<span class="lb">Save</span></button>'+
+    $('fbEActs').innerHTML='<button type="button" class="fb-eb" data-r="interested" data-eid="'+esc(e.id)+'" data-name="'+esc(e.name)+'" aria-pressed="false">'+ic('star')+'<span class="lb">Interested</span><span class="n"></span></button>'+
+      '<button type="button" class="fb-eb" data-r="going" data-eid="'+esc(e.id)+'" data-name="'+esc(e.name)+'" aria-pressed="false">'+ic('check')+'<span class="lb">Going</span><span class="n"></span></button>'+
+      '<button type="button" class="fb-eb" data-r="saved" data-eid="'+esc(e.id)+'" aria-pressed="false">'+ic('saved')+'<span class="lb">Save</span></button>'+
       '<button type="button" class="fb-eb" data-share="'+esc(e.id)+'">'+ic('share')+'Share</button>';
     var o=org(e),x='';
     x+='<div class="fb-ecard"><h4>Location</h4><div class="fb-mapbox"><span>'+ic('pin','style="width:14px;height:14px;vertical-align:-2px"')+' '+esc(e.city||e.county||'Florida')+'</span></div>'+
@@ -465,7 +465,7 @@
       '<div class="fb-phd">'+avatar('lg')+'<div style="min-width:0;flex:1"><h1>'+esc(n||'Your account')+(full?'<span class="fb-badge">PRO</span>':'<span class="fb-badge free">Free</span>')+'</h1><p>'+esc(A.user.email||'')+'</p></div>'+
       '<div class="fb-pbtns"><a class="fb-btn ghost" href="#sec-brand">Edit profile</a>'+(full?'':'<a class="fb-btn" href="pro.html" data-unlock="vendor-pro">Get Pro</a>')+'</div></div>'+
       '<nav class="fb-ptabs" aria-label="Profile sections"><a class="fb-etab" href="#fb-mine">Interested & going</a><a class="fb-etab" href="#sec-stuff">Saved & listings</a><a class="fb-etab" href="#sec-plan">Plan</a><a class="fb-etab" href="#sec-payments">Payments</a><a class="fb-etab" href="#sec-brand">Profile</a></nav>';
-    var first=main.querySelector('section');main.insertBefore(el,first||main.firstChild);
+    var first=main.querySelector('section');if(first)first.parentNode.insertBefore(el,first);else main.insertBefore(el,main.firstChild);
     var mine=d.createElement('section');mine.className='fb-card fb-mine';mine.id='fb-mine';el.parentNode.insertBefore(mine,el.nextSibling);mineList();
     if(location.hash==='#fb-mine')setTimeout(function(){mine.scrollIntoView();},300);}
   function mineList(){var el=$('fb-mine');if(!el)return;var a=evs(),h='<h3>Interested & going</h3>';

@@ -42,7 +42,7 @@
       '<p class="jv-map-note" id="mapNote"></p>';
     anchor.parentNode.insertBefore(box,anchor.nextSibling);panel=d.getElementById('mapPanel');
     panel.addEventListener('click',function(e){if(e.target.closest('[data-map-close]')){panel.hidden=true;lastKey=null;}});
-    var sd=d.getElementById('mapSide');sd.addEventListener('click',function(e){var b=e.target.closest('[data-id]');if(b&&window.JVE_APP)JVE_APP.open(b.getAttribute('data-id'),b.getAttribute('data-a')||undefined);});}
+    var sd=d.getElementById('mapSide');sd.addEventListener('click',function(e){var b=e.target.closest('[data-mid]');if(b&&window.JVE_APP)JVE_APP.open(b.getAttribute('data-mid'),b.getAttribute('data-a')||undefined);});}
   function groups(){var A=window.JVE_APP,rows=A&&A.rows?A.rows():[],g={},n=0,off=0;
     rows.forEach(function(r){var s=spot(r.e);if(!s){off++;return;}var k=s.label+'|'+s.county;(g[k]=g[k]||{s:s,rows:[]}).rows.push(r);n++;});
     return {g:g,n:n,off:off};}
@@ -70,7 +70,7 @@
     rows.sort(function(a,c){var x=a.r.a||'9999',y=c.r.a||'9999';return x<y?-1:x>y?1:0;});
     var h='<h5>'+rows.length+' event'+(rows.length===1?'':'s')+' in this area<small>Move or zoom the map to update the list</small></h5>';
     h+=rows.slice(0,80).map(function(x){var e=x.r.e,a=x.r.a,p=a?a.split('-'):null;
-      return '<button type="button" class="fb-ri" data-id="'+esc(e.id)+'" data-a="'+esc(a||'')+'" data-town="'+esc(x.s.label)+'"><span class="fb-dd"><i>'+(p?MO[+p[1]-1]:'Open')+'</i><b>'+(p?+p[2]:'∞')+'</b></span><span style="min-width:0"><b>'+esc(e.name)+'</b><small>'+esc(x.s.label)+(e.fee_bucket==='free'?' · Free to vend':e.fee?' · '+esc(String(e.fee).slice(0,24)):'')+(e.locked?' · 🔒 details with Pro':'')+'</small></span></button>';}).join('');
+      return '<button type="button" class="fb-ri" data-mid="'+esc(e.id)+'" data-a="'+esc(a||'')+'" data-town="'+esc(x.s.label)+'"><span class="fb-dd"><i>'+(p?MO[+p[1]-1]:'Open')+'</i><b>'+(p?+p[2]:'∞')+'</b></span><span style="min-width:0"><b>'+esc(e.name)+'</b><small>'+esc(x.s.label)+(e.fee_bucket==='free'?' · Free to vend':e.fee?' · '+esc(String(e.fee).slice(0,24)):'')+(e.locked?' · 🔒 details with Pro':'')+'</small></span></button>';}).join('');
     if(rows.length>80)h+='<p class="fb-spl" style="padding:10px 14px">+'+(rows.length-80)+' more: zoom in, or use the list view.</p>';
     el.innerHTML=h;}
   function relayer(){if(!map||!base)return;try{map.removeLayer(base);}catch(_){}base=basemap();base.addTo(map);}
