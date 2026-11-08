@@ -1581,6 +1581,32 @@ DESCRIPTION:Vendor event in Yulee\, Nassau County\, FL. Venue\, organizer
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:wk-holiday-kickoff-christmas-expo-pine-royale-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday festival · Callahan
+LOCATION:Callahan\, Nassau County\, FL
+URL:https://jaxvendorevents.com/#e=wk-holiday-kickoff-christmas-expo-pine-royale-2026-11-14
+DESCRIPTION:Vendor event in Callahan\, Nassau County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=wk-holiday-kickoff-c
+ hristmas-expo-pine-royale-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-holiday-kickoff-christmas-expo-pine-royale-2026-11-14-2026-11-15@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Holiday festival · Callahan
+LOCATION:Callahan\, Nassau County\, FL
+URL:https://jaxvendorevents.com/#e=wk-holiday-kickoff-christmas-expo-pine-royale-2026-11-14
+DESCRIPTION:Vendor event in Callahan\, Nassau County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=wk-holiday-kickoff-c
+ hristmas-expo-pine-royale-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:campus-usf-st-pete-sunday-market-2026-11-15@jaxvendorevents.com
 DTSTAMP:20261108T135501Z
 DTSTART;VALUE=DATE:20261115
@@ -1992,6 +2018,58 @@ DESCRIPTION:Vendor event in Neptune Beach\, Duval County\, FL. Venue\, or
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:wk-third-thursday-terminal-2026-11-19-2026-11-19@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Pop-up market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=wk-third-thursday-terminal-2026-11-19
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=wk-third-thursday
+ -terminal-2026-11-19
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-third-thursday-terminal-2026-11-19-2026-12-17@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Pop-up market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=wk-third-thursday-terminal-2026-11-19
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=wk-third-thursday
+ -terminal-2026-11-19
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-third-thursday-terminal-2026-11-19-2027-01-21@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:Pop-up market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=wk-third-thursday-terminal-2026-11-19
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=wk-third-thursday
+ -terminal-2026-11-19
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-third-thursday-terminal-2026-11-19-2027-02-18@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:Pop-up market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=wk-third-thursday-terminal-2026-11-19
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=wk-third-thursday
+ -terminal-2026-11-19
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:campus-florida-classic-2026-vendors-2026-11-20@jaxvendorevents.com
 DTSTAMP:20261108T135501Z
 DTSTART;VALUE=DATE:20261120
@@ -2080,6 +2158,84 @@ URL:https://jaxvendorevents.com/#e=campus-miami-book-fair-street-fair
 DESCRIPTION:Vendor event in Miami\, Miami-Dade County\, FL. Venue\, organ
  izer and how to apply: https://jaxvendorevents.com/#e=campus-miami-book-f
  air-street-fair
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-11-20@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Holiday market · St. Augustine
+LOCATION:St. Augustine\, St. Johns County\, FL
+URL:https://jaxvendorevents.com/#e=wk-greater-st-marys-christmas-market-2026-11-20
+DESCRIPTION:Vendor event in St. Augustine\, St. Johns County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=wk-greater-s
+ t-marys-christmas-market-2026-11-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-11-21@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Holiday market · St. Augustine
+LOCATION:St. Augustine\, St. Johns County\, FL
+URL:https://jaxvendorevents.com/#e=wk-greater-st-marys-christmas-market-2026-11-20
+DESCRIPTION:Vendor event in St. Augustine\, St. Johns County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=wk-greater-s
+ t-marys-christmas-market-2026-11-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-11-27@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Holiday market · St. Augustine
+LOCATION:St. Augustine\, St. Johns County\, FL
+URL:https://jaxvendorevents.com/#e=wk-greater-st-marys-christmas-market-2026-11-20
+DESCRIPTION:Vendor event in St. Augustine\, St. Johns County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=wk-greater-s
+ t-marys-christmas-market-2026-11-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-11-28@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Holiday market · St. Augustine
+LOCATION:St. Augustine\, St. Johns County\, FL
+URL:https://jaxvendorevents.com/#e=wk-greater-st-marys-christmas-market-2026-11-20
+DESCRIPTION:Vendor event in St. Augustine\, St. Johns County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=wk-greater-s
+ t-marys-christmas-market-2026-11-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-12-04@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Holiday market · St. Augustine
+LOCATION:St. Augustine\, St. Johns County\, FL
+URL:https://jaxvendorevents.com/#e=wk-greater-st-marys-christmas-market-2026-11-20
+DESCRIPTION:Vendor event in St. Augustine\, St. Johns County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=wk-greater-s
+ t-marys-christmas-market-2026-11-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-12-05@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Holiday market · St. Augustine
+LOCATION:St. Augustine\, St. Johns County\, FL
+URL:https://jaxvendorevents.com/#e=wk-greater-st-marys-christmas-market-2026-11-20
+DESCRIPTION:Vendor event in St. Augustine\, St. Johns County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=wk-greater-s
+ t-marys-christmas-market-2026-11-20
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2912,6 +3068,58 @@ BEGIN:VEVENT
 UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-11-29@jaxvendorevents.com
 DTSTAMP:20261108T135501Z
 DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Holiday market · Jax Beach
+LOCATION:Jax Beach\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-deck-the-chairs-sunday-christmas-market-2026
+DESCRIPTION:Vendor event in Jax Beach\, Duval County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=sc-deck-the-chairs-s
+ unday-christmas-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-12-06@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Holiday market · Jax Beach
+LOCATION:Jax Beach\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-deck-the-chairs-sunday-christmas-market-2026
+DESCRIPTION:Vendor event in Jax Beach\, Duval County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=sc-deck-the-chairs-s
+ unday-christmas-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-12-13@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Holiday market · Jax Beach
+LOCATION:Jax Beach\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-deck-the-chairs-sunday-christmas-market-2026
+DESCRIPTION:Vendor event in Jax Beach\, Duval County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=sc-deck-the-chairs-s
+ unday-christmas-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-12-20@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Holiday market · Jax Beach
+LOCATION:Jax Beach\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=sc-deck-the-chairs-sunday-christmas-market-2026
+DESCRIPTION:Vendor event in Jax Beach\, Duval County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=sc-deck-the-chairs-s
+ unday-christmas-market-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-12-27@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Holiday market · Jax Beach
 LOCATION:Jax Beach\, Duval County\, FL
@@ -3464,32 +3672,6 @@ DESCRIPTION:Vendor event in St Cloud\, Osceola County\, FL. Venue\, organ
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:af-holiday-marketplace-at-river-city-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261108T135501Z
-DTSTART;VALUE=DATE:20261212
-DTEND;VALUE=DATE:20261213
-SUMMARY:Holiday market · Jacksonville
-LOCATION:Jacksonville\, Duval County\, FL
-URL:https://jaxvendorevents.com/#e=af-holiday-marketplace-at-river-city-2026-12-12
-DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
- anizer and how to apply: https://jaxvendorevents.com/#e=af-holiday-market
- place-at-river-city-2026-12-12
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:af-holiday-marketplace-at-river-city-2026-12-12-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261108T135501Z
-DTSTART;VALUE=DATE:20261213
-DTEND;VALUE=DATE:20261214
-SUMMARY:Holiday market · Jacksonville
-LOCATION:Jacksonville\, Duval County\, FL
-URL:https://jaxvendorevents.com/#e=af-holiday-marketplace-at-river-city-2026-12-12
-DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
- anizer and how to apply: https://jaxvendorevents.com/#e=af-holiday-market
- place-at-river-city-2026-12-12
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:af-jacksonville-holiday-market-2026-12-12-2026-12-12@jaxvendorevents.com
 DTSTAMP:20261108T135501Z
 DTSTART;VALUE=DATE:20261212
@@ -3734,6 +3916,19 @@ URL:https://jaxvendorevents.com/#e=sc-winter-wonderland-fernandina-2026
 DESCRIPTION:Vendor event in Fernandina\, Nassau County\, FL. Venue\, orga
  nizer and how to apply: https://jaxvendorevents.com/#e=sc-winter-wonderla
  nd-fernandina-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-winter-market-fest-the-landing-2026-12-12-2026-12-12@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Holiday festival · St. Augustine
+LOCATION:St. Augustine\, St. Johns County\, FL
+URL:https://jaxvendorevents.com/#e=wk-winter-market-fest-the-landing-2026-12-12
+DESCRIPTION:Vendor event in St. Augustine\, St. Johns County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=wk-winter-ma
+ rket-fest-the-landing-2026-12-12
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -4293,6 +4488,19 @@ URL:https://jaxvendorevents.com/#e=sc-vajv-tet-lunar-new-year-2027-01-23
 DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
  anizer and how to apply: https://jaxvendorevents.com/#e=sc-vajv-tet-lunar
  -new-year-2027-01-23
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-jbc-boutique-wedding-bridal-collective-2027-01-23-2027-01-23@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Craft & art market · Orange Park
+LOCATION:Orange Park\, Clay County\, FL
+URL:https://jaxvendorevents.com/#e=wk-jbc-boutique-wedding-bridal-collective-2027-01-23
+DESCRIPTION:Vendor event in Orange Park\, Clay County\, FL. Venue\, organ
+ izer and how to apply: https://jaxvendorevents.com/#e=wk-jbc-boutique-wed
+ ding-bridal-collective-2027-01-23
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -4908,6 +5116,32 @@ URL:https://jaxvendorevents.com/#e=sc-seawalk-music-festival-2027-02-20
 DESCRIPTION:Vendor event in Jax Beach\, Duval County\, FL. Venue\, organi
  zer and how to apply: https://jaxvendorevents.com/#e=sc-seawalk-music-fes
  tival-2027-02-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-wizarding-market-2027-04-10-2027-04-10@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:Pop-up market · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=wk-wizarding-market-2027-04-10
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=wk-wizarding-mark
+ et-2027-04-10
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-oyster-fest-jax-2027-04-17-2027-04-17@jaxvendorevents.com
+DTSTAMP:20261108T135501Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:Festival · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=wk-oyster-fest-jax-2027-04-17
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=wk-oyster-fest-ja
+ x-2027-04-17
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
