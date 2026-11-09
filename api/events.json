@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-09T05:52:43Z",
+ "data_updated": "2026-11-09T09:41:56Z",
  "as_of": "2026-11-09",
- "count": 230,
+ "count": 245,
  "events": [
   {
    "id": "rd1-greater-jax-agricultural-fair-2026",
@@ -36,6 +36,39 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=rd1-greater-jax-agricultural-fair-2026",
+   "details_locked": true
+  },
+  {
+   "id": "af-murray-hill-farmer-s-market-2026-11-11",
+   "title": "Farmers market · Jacksonville",
+   "next_date": "2026-11-11",
+   "dates": [
+    "2026-11-11",
+    "2026-11-18",
+    "2026-11-25",
+    "2026-12-02",
+    "2026-12-09",
+    "2026-12-16",
+    "2026-12-23",
+    "2026-12-30",
+    "2027-01-06",
+    "2027-01-13",
+    "2027-01-20",
+    "2027-01-27"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-murray-hill-farmer-s-market-2026-11-11",
    "details_locked": true
   },
   {
@@ -290,6 +323,39 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-downtown-festival-and-art-show-2026-11-14",
+   "details_locked": true
+  },
+  {
+   "id": "af-eartha-s-farm-market-2026-11-14",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-14",
+   "dates": [
+    "2026-11-14",
+    "2026-11-21",
+    "2026-11-28",
+    "2026-12-05",
+    "2026-12-12",
+    "2026-12-19",
+    "2026-12-26",
+    "2027-01-02",
+    "2027-01-09",
+    "2027-01-16",
+    "2027-01-23",
+    "2027-01-30"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-eartha-s-farm-market-2026-11-14",
    "details_locked": true
   },
   {
@@ -876,6 +942,73 @@
    "details_locked": true
   },
   {
+   "id": "af-2026-annual-fall-festival-2026-11-15",
+   "title": "Festival · Jacksonville",
+   "next_date": "2026-11-15",
+   "dates": [
+    "2026-11-15"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-2026-annual-fall-festival-2026-11-15",
+   "details_locked": true
+  },
+  {
+   "id": "af-jax-fall-record-fair-2026-2026-11-15",
+   "title": "Festival · Jacksonville",
+   "next_date": "2026-11-15",
+   "dates": [
+    "2026-11-15"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-jax-fall-record-fair-2026-2026-11-15",
+   "details_locked": true
+  },
+  {
+   "id": "af-the-maker-s-market-at-bold-bean-riverside-2026-11-15",
+   "title": "Craft & art market · Jacksonville",
+   "next_date": "2026-11-15",
+   "dates": [
+    "2026-11-15",
+    "2026-12-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-the-maker-s-market-at-bold-bean-riverside-2026-11-15",
+   "details_locked": true
+  },
+  {
    "id": "campus-usf-st-pete-sunday-market",
    "title": "Campus market · St. Petersburg",
    "next_date": "2026-11-15",
@@ -1279,6 +1412,53 @@
    "details_locked": true
   },
   {
+   "id": "af-diamonds-in-the-rust-fall-market-2026-11-20",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-20",
+   "dates": [
+    "2026-11-20",
+    "2026-11-21",
+    "2026-11-22"
+   ],
+   "end_date": "2026-11-22",
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-diamonds-in-the-rust-fall-market-2026-11-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-green-room-market-2026-11-20",
+   "title": "Pop-up market · Jacksonville Beach",
+   "next_date": "2026-11-20",
+   "dates": [
+    "2026-11-20",
+    "2026-12-18"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville Beach",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-green-room-market-2026-11-20",
+   "details_locked": true
+  },
+  {
    "id": "campus-florida-classic-2026-vendors",
    "title": "Campus market · Orlando",
    "next_date": "2026-11-20",
@@ -1359,6 +1539,28 @@
    "details_locked": true
   },
   {
+   "id": "af-friendsgiving-fountain-thanksgiving-themed-food-tr-2026-11-21",
+   "title": "Holiday market · Jacksonville",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-friendsgiving-fountain-thanksgiving-themed-food-tr-2026-11-21",
+   "details_locked": true
+  },
+  {
    "id": "af-jacksonville-beach-holiday-arts-market-2026-11-21",
    "title": "Craft & art market · Jacksonville Beach",
    "next_date": "2026-11-21",
@@ -1381,6 +1583,50 @@
    "details_locked": true
   },
   {
+   "id": "af-jacksonville-holiday-arts-craft-fair-2026-11-21",
+   "title": "Holiday craft & art festival · Jacksonville",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-jacksonville-holiday-arts-craft-fair-2026-11-21",
+   "details_locked": true
+  },
+  {
+   "id": "af-jax-beer-fest-2026-2026-11-21",
+   "title": "Festival · Jacksonville",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-jax-beer-fest-2026-2026-11-21",
+   "details_locked": true
+  },
+  {
    "id": "af-port-st-lucie-international-fest-2026-11-21",
    "title": "Festival · Port Saint Lucie",
    "next_date": "2026-11-21",
@@ -1400,6 +1646,56 @@
    "application_deadline": "2026-11-13",
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-st-lucie-international-fest-2026-11-21",
+   "details_locked": true
+  },
+  {
+   "id": "af-rainbow-market-2026-11-21",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21",
+    "2026-12-19",
+    "2027-01-16",
+    "2027-02-20",
+    "2027-03-20",
+    "2027-04-17",
+    "2027-05-15"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-rainbow-market-2026-11-21",
+   "details_locked": true
+  },
+  {
+   "id": "af-riverside-winefest-2026-2026-11-21",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-riverside-winefest-2026-2026-11-21",
    "details_locked": true
   },
   {
@@ -1789,6 +2085,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-jax-faith-market-2026-11-22",
+   "details_locked": true
+  },
+  {
+   "id": "af-deck-the-chairs-2026-11-25",
+   "title": "Pop-up market · Jacksonville Beach",
+   "next_date": "2026-11-25",
+   "dates": [
+    "2026-11-25"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville Beach",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-deck-the-chairs-2026-11-25",
    "details_locked": true
   },
   {
@@ -2189,6 +2507,32 @@
    "details_locked": true
   },
   {
+   "id": "af-jacksonville-beach-christmas-market-2026-11-29",
+   "title": "Holiday market · Jacksonville Beach",
+   "next_date": "2026-11-29",
+   "dates": [
+    "2026-11-29",
+    "2026-12-06",
+    "2026-12-13",
+    "2026-12-20",
+    "2026-12-27"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville Beach",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-jacksonville-beach-christmas-market-2026-11-29",
+   "details_locked": true
+  },
+  {
    "id": "ej-curative-market-town-center-signature-ma",
    "title": "Pop-up market · Jacksonville",
    "next_date": "2026-11-29",
@@ -2501,6 +2845,34 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-fleming-island-autumn-saturday-market-2026-11-07",
+   "details_locked": true
+  },
+  {
+   "id": "af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05",
+   "title": "Craft & art market · Jacksonville Beach",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05",
+    "2027-01-02",
+    "2027-02-06",
+    "2027-03-06",
+    "2027-04-03",
+    "2027-05-01",
+    "2027-06-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville Beach",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05",
    "details_locked": true
   },
   {
