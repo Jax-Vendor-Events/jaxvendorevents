@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jaxvendorevents.app",
+      "sha256_cert_fingerprints": [
+        "D2:AA:D8:38:FB:01:17:F7:97:2B:87:E9:08:2F:D3:C3:6D:A3:C5:A9:79:AE:7D:68:F3:64:4C:58:E5:9B:07:E9"
+      ]
+    }
+  }
+]
