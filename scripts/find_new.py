@@ -16,8 +16,8 @@ What it does:
   * Visit Jacksonville (visitjacksonville.com/events, the city's tourism calendar): the same public search
     index its events page reads; markets, festivals, fairs, art walks and pop-ups only (no concerts, shows,
     exhibits or sports); recurring markets carry their next 12 dates;
-  * keeps only future events: the 7 Northeast Florida counties for the Jacksonville
-    sources, all of Florida for statewide sources (FFEA); every listing is tagged
+  * keeps only future events anywhere in Florida (all sources; statewide since
+    Nov 9, 2026 per the owner's all-of-Florida rule); every listing is tagged
     with its county and region (scripts/fl_places.json) and new ones with the
     town-center lat/lng (never the venue's exact point);
   * skips anything already in data/events.json (same source URL, or a similar
@@ -513,8 +513,8 @@ SOURCES = [("fairsandfestivals.net", src_fairsandfestivals), ("festivalnet.com",
            ("allevents.in", src_allevents), ("ffea", src_ffea),
            ("visitjacksonville.com", src_visitjax)]
 # Note (Nov 1, 2026): FestivalNet, AllEvents and FairsAndFestivals.net all forbid scraping in their terms of
-# use; they stay limited to the Northeast Florida pages they were already read for (not expanded statewide)
-# pending the owner's call. Set JVE_FINDER_SKIP="festivalnet.com,allevents.in,fairsandfestivals.net" to turn
+# use. No new pages are read from them for the statewide change (Nov 9, 2026): FairsAndFestivals.net was
+# already reading its Florida-wide list; FestivalNet and AllEvents stay on the Jacksonville pages. Set JVE_FINDER_SKIP="festivalnet.com,allevents.in,fairsandfestivals.net" to turn
 # any of them off without a code change.
 _SKIP = {x.strip() for x in os.environ.get("JVE_FINDER_SKIP", "").split(",") if x.strip()}
 SOURCES = [(n, f) for n, f in SOURCES if n not in _SKIP]
@@ -633,8 +633,6 @@ def main(argv):
         county, plat, plng = place_of(c.get("city"), c.get("lat"), c.get("lng"))
         if not county:
             skip("place not found in Florida"); continue
-        if c.get("scope") != "florida" and county not in NE_COUNTIES:
-            skip("outside the 7 counties"); continue
         c["plat"], c["plng"] = plat, plng
         ds = sorted(x for x in c["dates"] if t_iso <= x <= horizon)
         if not ds:

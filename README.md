@@ -8,7 +8,7 @@
 > Only the public publishable key is in this repo (`auth-config.js`). Notes below about committing data files are historical.
 
 
-Static directory of vendor markets in Northeast Florida. Data in `data/events.json` (mirrored to `data/events.js` for the page). Draft only: noindex, robots Disallow, password gate. Not public yet.
+Static directory of vendor markets across Florida (home base Jacksonville). Data in `data/events.json` (mirrored to `data/events.js` for the page). Draft only: noindex, robots Disallow, password gate. Not public yet.
 
 
 Fonts: Fraunces and Inter (SIL Open Font License), self-hosted in fonts/.
