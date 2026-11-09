@@ -13,6 +13,9 @@ What it does:
   * FFEA (Florida Festivals & Events Association, ffea.com/events): its own public
     JSON calendar feed (services/eventsservice.asmx, the same calls its events page
     makes), statewide; vendor-relevant festivals/fairs/markets only;
+  * Visit Jacksonville (visitjacksonville.com/events, the city's tourism calendar): the same public search
+    index its events page reads; markets, festivals, fairs, art walks and pop-ups only (no concerts, shows,
+    exhibits or sports); recurring markets carry their next 12 dates;
   * keeps only future events: the 7 Northeast Florida counties for the Jacksonville
     sources, all of Florida for statewide sources (FFEA); every listing is tagged
     with its county and region (scripts/fl_places.json) and new ones with the
@@ -390,8 +393,125 @@ def src_ffea():
     return out
 
 
+# Visit Jacksonville (visitjacksonville.com/events, the city's official tourism calendar; added Nov 9, 2026 at the
+# owner's request). Its events page searches a public, search-only index (the app id + key are printed in the
+# page's own HTML, data-info on the events list); we read that same index, as the page does, instead of the HTML.
+# robots.txt allows /events/. One page read + ~13 small queries per run.
+VJ_PAGE = "https://www.visitjacksonville.com/events/"
+VJ_APP, VJ_KEY, VJ_INDEX = "EYQHJ2IY2M", "c6d5977cb5cd80c09abfd2a7e5d9e88b", "prod-visit-jacksonville-listings"
+VJ_HORIZON_DAYS = 200
+VJ_MAX_DATES = 12        # a weekly market lists its next 12 dates, not 30
+VJ_KEEP = re.compile(
+    r"(?<!super)\bmarkets?\b|\bmarketplace|\bmercado|\bfarmers?'?\b|\bflea\b|\bbazaar|\bcrafts?\b|\bfairs?\b|\bfaire\b|"
+    r"\bfestival|\bfest\b|\w{3,}fest\b|\bpop[\s-]?ups?\b|\bmakers?'?s?\b|\bartisans?\b|\bexpo\b|\bart ?walk|"
+    r"\bblock party|\bsmall business saturday|\bshop (?:small|local)|\bswap meet|\btrunk show|\bvendors?\b", re.I)
+VJ_VENDOR_WORDS = re.compile(r"\bvendors?\b|\bartisans?\b|\bcrafters?\b|\bmakers\b|\bbooths?\b|\blocal (?:artists|businesses|shops)\b", re.I)
+VJ_DROP = re.compile(
+    r"\btour\b|\btribute\b|\bconcert|\bsymphony|\borchestra|\bcomedy|\bcomedian|\bmusical\b|\bin concert|\bopera\b|"
+    r"\bballet|\bnutcracker|\bexhibit|\bexhibition|\byoga\b|\btrivia|\bwine dinner|\bbeer dinner|\bcompetition\b|"
+    r"\bgrom\b|\bsurf\b|\bfit ?fest", re.I)
+
+
+def _vj_keys():
+    """App id / key / index as the events page prints them today (falls back to the ones read on Nov 9, 2026)."""
+    try:
+        t = html.unescape(fetch(VJ_PAGE))
+        m = re.search(r'"appId":"(\w+)","apiKey":"(\w+)","index":"([\w-]+)"', t)
+        if m:
+            return m.group(1), m.group(2), m.group(3)
+    except Exception as e:
+        log("visitjacksonville: events page read failed, using the stored key:", str(e)[:120])
+    return VJ_APP, VJ_KEY, VJ_INDEX
+
+
+def _vj_query(app, key, index, body):
+    time.sleep(0.5)
+    req = urllib.request.Request(
+        f"https://{app}-dsn.algolia.net/1/indexes/{index}/query", data=json.dumps(body).encode("utf-8"),
+        method="POST", headers={"X-Algolia-Application-Id": app, "X-Algolia-API-Key": key, "User-Agent": BROWSER_UA,
+                                "Content-Type": "application/json", "Referer": VJ_PAGE,
+                                "Origin": "https://www.visitjacksonville.com"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        return json.loads(r.read().decode("utf-8", "replace"))
+
+
+def _vj_hm(ts):
+    t = dt.datetime.fromtimestamp(int(ts), dt.timezone.utc)      # the index stores local wall time as UTC
+    return t.strftime("%I:%M %p").lstrip("0").replace(":00 ", " ")
+
+
+def src_visitjax():
+    if not allowed(VJ_PAGE):
+        raise RuntimeError("robots.txt disallows " + VJ_PAGE)
+    app, key, index = _vj_keys()
+    t0 = int(time.time()) // 86400 * 86400
+    hits, step = {}, 15 * 86400
+    for s in range(t0, t0 + VJ_HORIZON_DAYS * 86400, step):
+        page = 0
+        while True:
+            j = _vj_query(app, key, index, {
+                "query": "", "hitsPerPage": 1000, "page": page, "facetFilters": [["sectionName:Events"]],
+                "numericFilters": [f"startDate>={s}", f"startDate<{s + step}"],
+                "attributesToRetrieve": ["title", "uri", "content", "eventCategories", "address", "website",
+                                         "startDate", "endDate", "isAllDay", "readableRepeatRule", "_geoloc"],
+                "attributesToHighlight": [], "attributesToSnippet": []})
+            for h in j.get("hits") or []:
+                hits[h["objectID"]] = h
+            page += 1
+            if page >= (j.get("nbPages") or 0):
+                break
+    by_base = {}
+    for oid, h in hits.items():                      # "8401970-1799424000" = an occurrence of listing 8401970
+        by_base.setdefault(oid.split("-")[0], []).append(h)
+    out = []
+    for occ in by_base.values():
+        occ.sort(key=lambda h: h.get("startDate") or 0)
+        h = occ[0]
+        name = clean(h.get("title"))
+        if not name:
+            continue
+        desc = clean(h.get("content")) or ""
+        cats = set(h.get("eventCategories") or [])
+        keep = bool(VJ_KEEP.search(name)) or (bool(VJ_VENDOR_WORDS.search(desc)) and bool(
+            cats & {"Fairs & Festivals", "Holiday Events", "Foodie", "Cultural", "Classes & Community Events"}))
+        if VJ_DROP.search(name) or not keep:
+            out.append({"name": name, "dates": [], "skip": "not a vendor event"})
+            continue
+        dates = []
+        for o in occ:
+            if o.get("startDate"):
+                d = dt.datetime.fromtimestamp(int(o["startDate"]), dt.timezone.utc).date().isoformat()
+                e = dt.datetime.fromtimestamp(int(o.get("endDate") or o["startDate"]), dt.timezone.utc).date().isoformat()
+                dates += daterange(d, e)
+        dates = sorted(set(dates))[:VJ_MAX_DATES]
+        addr = [clean(a) for a in (h.get("address") or []) if clean(a)]
+        city = ""
+        if addr:
+            m = re.match(r"\s*([A-Za-z .'-]+?)\s*,\s*(FL|Florida)\b", addr[-1], re.I)
+            if m:
+                city = m.group(1).strip().title()
+                addr = addr[:-1]
+        venue = addr[0] if len(addr) > 1 else None
+        street = addr[-1] if addr else None
+        tm = None
+        if not h.get("isAllDay") and h.get("startDate"):
+            tm = _vj_hm(h["startDate"]) + (" - " + _vj_hm(h["endDate"]) if h.get("endDate") and h["endDate"] != h["startDate"] else "")
+        geo = h.get("_geoloc") or {}
+        rule = clean(h.get("readableRepeatRule"))
+        out.append({
+            "name": name, "dates": dates, "city": nice_city(city) or "Jacksonville", "venue": venue,
+            "address": street, "time": tm, "url": "https://www.visitjacksonville.com/events" + (h.get("uri") or "/"),
+            "source": "visitjacksonville.com", "organizer_site": clean(h.get("website")),
+            "desc": ((rule + ". ") if rule else "") + desc[:300],
+            "vendor_site": True,     # already filtered to markets / fairs / festivals / pop-ups above
+            "scope": "florida", "lat": geo.get("lat"), "lng": geo.get("lng"),
+        })
+    return out
+
+
 SOURCES = [("fairsandfestivals.net", src_fairsandfestivals), ("festivalnet.com", src_festivalnet),
-           ("allevents.in", src_allevents), ("ffea", src_ffea)]
+           ("allevents.in", src_allevents), ("ffea", src_ffea),
+           ("visitjacksonville.com", src_visitjax)]
 # Note (Nov 1, 2026): FestivalNet, AllEvents and FairsAndFestivals.net all forbid scraping in their terms of
 # use; they stay limited to the Northeast Florida pages they were already read for (not expanded statewide)
 # pending the owner's call. Set JVE_FINDER_SKIP="festivalnet.com,allevents.in,fairsandfestivals.net" to turn
