@@ -59,7 +59,7 @@ jobs:
         run: |
           python3 scripts/build_feeds.py || exit 0
           python3 scripts/build_area_pages.py || true   # county pages for search (fl/), Nov 9 2026
-          git add api/events.json feeds/events.ics feeds/events.rss fl sitemap-areas.xml
+          git add api/events.json feeds/events.ics feeds/events.rss fl sitemap-areas.xml about.html
           if git diff --cached --quiet; then echo "feeds unchanged"; exit 0; fi
           git -c user.name="jve-feeds" -c user.email="admin@jaxvendorevents.com" commit -m "Public teaser feeds refreshed"
           for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep $((i * 5)); done

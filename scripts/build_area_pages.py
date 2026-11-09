@@ -8,7 +8,7 @@ can never carry more than the logged-out site shows: teaser title, town, county,
 No event name, venue, address, organizer, contact or apply link, ever (the same FORBIDDEN guard as build_feeds.py).
 
 Writes fl/index.html (all counties) and fl/<county>-county.html (one per county with upcoming events), plus
-sitemap-areas.xml. A file is rewritten only when its content changed; county pages that no longer have events are
+sitemap-areas.xml, and refreshes the numbers between <!--kpis--> and <!--/kpis--> in about.html. A file is rewritten only when its content changed; county pages that no longer have events are
 removed. Uses about.html as the page shell (head, header, footer) so the pages look like the rest of the site.
 Exit 0 = ok, 1 = failed (nothing written).
 Rollback: delete fl/, sitemap-areas.xml, this script, its step in .github/workflows/hourly-refresh.yml and the
@@ -235,6 +235,13 @@ def build(feed, today):
         sm.append("  <url><loc>%sfl/%s.html</loc><lastmod>%s</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>" % (SITE, slug(c), today))
     sm.append("</urlset>")
     out["sitemap-areas.xml"] = "\n".join(sm) + "\n"
+    # about.html: keep its numbers true (they said 192 listings / 7 counties until Nov 9 2026). Only the marked block changes.
+    ab = open(os.path.join(ROOT, "about.html"), encoding="utf-8").read()
+    if "<!--kpis-->" in ab and "<!--/kpis-->" in ab:
+        k = ('<!--kpis--><div class="kpis"><div class="kpi"><b>%d</b><span>upcoming markets listed</span></div>'
+             '<div class="kpi"><b>%d</b><span>checked on the organizer\'s page</span></div><div class="kpi"><b>67</b><span>Florida counties covered</span></div>'
+             '<div class="kpi"><b>Weekly</b><span>checked and updated</span></div></div><!--/kpis-->') % (len(evs), sum(1 for v in evs if v.get("verified")))
+        out["about.html"] = ab[:ab.index("<!--kpis-->")] + k + ab[ab.index("<!--/kpis-->") + len("<!--/kpis-->"):]
     return out
 
 
@@ -260,7 +267,7 @@ def main(argv):
     for f in os.listdir(fl):
         if f.endswith(".html") and "fl/" + f not in files:
             os.remove(os.path.join(fl, f)); changed.append("-fl/" + f)
-    print("area pages:", len(files) - 1, "pages;", "changed:", ", ".join(changed) if changed else "none")
+    print("area pages:", sum(1 for p in files if p.startswith("fl/")), "pages;", "changed:", ", ".join(changed) if changed else "none")
     return 0
 
 
