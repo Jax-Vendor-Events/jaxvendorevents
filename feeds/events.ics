@@ -8,7 +8,7 @@ X-WR-TIMEZONE:America/New_York
 X-WR-CALDESC:Upcoming vendor markets\, craft fairs and festivals in Florida. Venue\, organizer and how to apply: jaxvendorevents.com (Vendor Pro).
 BEGIN:VEVENT
 UID:rd1-greater-jax-agricultural-fair-2026-2026-11-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Festival · Jacksonville
@@ -21,7 +21,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-greater-jax-agricultural-fair-2026-2026-11-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Festival · Jacksonville
@@ -34,7 +34,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-greater-jax-agricultural-fair-2026-2026-11-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Festival · Jacksonville
@@ -47,7 +47,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-greater-jax-agricultural-fair-2026-2026-11-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Festival · Jacksonville
@@ -60,7 +60,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-greater-jax-agricultural-fair-2026-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Festival · Jacksonville
@@ -73,7 +73,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-greater-jax-agricultural-fair-2026-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Festival · Jacksonville
@@ -86,7 +86,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-murray-hill-farmer-s-market-2026-11-11-2026-11-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Farmers market · Jacksonville
@@ -99,7 +99,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-murray-hill-farmer-s-market-2026-11-11-2026-11-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Farmers market · Jacksonville
@@ -112,7 +112,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-murray-hill-farmer-s-market-2026-11-11-2026-11-25@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Farmers market · Jacksonville
@@ -125,7 +125,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-murray-hill-farmer-s-market-2026-11-11-2026-12-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Farmers market · Jacksonville
@@ -138,7 +138,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-murray-hill-farmer-s-market-2026-11-11-2026-12-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Farmers market · Jacksonville
@@ -151,7 +151,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-murray-hill-farmer-s-market-2026-11-11-2026-12-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Farmers market · Jacksonville
@@ -164,7 +164,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0113-2026-11-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Farmers market · St. Augustine Beach
@@ -177,7 +177,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0113-2026-11-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Farmers market · St. Augustine Beach
@@ -190,7 +190,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0113-2026-11-25@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Farmers market · St. Augustine Beach
@@ -203,7 +203,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0113-2026-12-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Farmers market · St. Augustine Beach
@@ -216,7 +216,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0113-2026-12-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Farmers market · St. Augustine Beach
@@ -229,7 +229,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0113-2026-12-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Farmers market · St. Augustine Beach
@@ -241,8 +241,86 @@ DESCRIPTION:Vendor event in St. Augustine Beach\, St. Johns County\, FL.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:af-emerald-coast-cruizin-swap-meet-2026-11-12-2026-11-12@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Pop-up market · Panama City Beach
+LOCATION:Panama City Beach\, Bay County\, FL
+URL:https://jaxvendorevents.com/#e=af-emerald-coast-cruizin-swap-meet-2026-11-12
+DESCRIPTION:Vendor event in Panama City Beach\, Bay County\, FL. Venue\, 
+ organizer and how to apply: https://jaxvendorevents.com/#e=af-emerald-coa
+ st-cruizin-swap-meet-2026-11-12
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-panama-city-holly-fair-2026-11-12-2026-11-12@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Holiday festival · Panama City
+LOCATION:Panama City\, Bay County\, FL
+URL:https://jaxvendorevents.com/#e=af-panama-city-holly-fair-2026-11-12
+DESCRIPTION:Vendor event in Panama City\, Bay County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=af-panama-city-holly
+ -fair-2026-11-12
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-port-orange-girls-night-out-2026-11-12-2026-11-12@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Pop-up market · Port Orange
+LOCATION:Port Orange\, Volusia County\, FL
+URL:https://jaxvendorevents.com/#e=af-port-orange-girls-night-out-2026-11-12
+DESCRIPTION:Vendor event in Port Orange\, Volusia County\, FL. Venue\, or
+ ganizer and how to apply: https://jaxvendorevents.com/#e=af-port-orange-g
+ irls-night-out-2026-11-12
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-port-orange-girls-night-out-2026-11-12-2027-02-11@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Pop-up market · Port Orange
+LOCATION:Port Orange\, Volusia County\, FL
+URL:https://jaxvendorevents.com/#e=af-port-orange-girls-night-out-2026-11-12
+DESCRIPTION:Vendor event in Port Orange\, Volusia County\, FL. Venue\, or
+ ganizer and how to apply: https://jaxvendorevents.com/#e=af-port-orange-g
+ irls-night-out-2026-11-12
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-tampa-holiday-gift-market-2026-11-12-2026-11-12@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Holiday market · Tampa
+LOCATION:Tampa\, Hillsborough County\, FL
+URL:https://jaxvendorevents.com/#e=af-tampa-holiday-gift-market-2026-11-12
+DESCRIPTION:Vendor event in Tampa\, Hillsborough County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=af-tampa-holiday-
+ gift-market-2026-11-12
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-wellen-park-holiday-night-market-2026-11-12-2026-11-12@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Holiday market · Venice
+LOCATION:Venice\, Sarasota County\, FL
+URL:https://jaxvendorevents.com/#e=af-wellen-park-holiday-night-market-2026-11-12
+DESCRIPTION:Vendor event in Venice\, Sarasota County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=af-wellen-park-holid
+ ay-night-market-2026-11-12
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:af-art-in-the-park-2026-11-13-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Pop-up market · Coral Gables
@@ -254,8 +332,99 @@ DESCRIPTION:Vendor event in Coral Gables\, Miami-Dade County\, FL. Venue\
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:af-destin-holiday-craft-show-2026-11-13-2026-11-13@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Holiday craft & art market · Destin
+LOCATION:Destin\, Okaloosa County\, FL
+URL:https://jaxvendorevents.com/#e=af-destin-holiday-craft-show-2026-11-13
+DESCRIPTION:Vendor event in Destin\, Okaloosa County\, FL. Venue\, organi
+ zer and how to apply: https://jaxvendorevents.com/#e=af-destin-holiday-cr
+ aft-show-2026-11-13
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-downtown-apopka-holiday-night-farmers-market-2026-11-13-2026-11-13@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Holiday farmers market · Apopka
+LOCATION:Apopka\, Orange County\, FL
+URL:https://jaxvendorevents.com/#e=af-downtown-apopka-holiday-night-farmers-market-2026-11-13
+DESCRIPTION:Vendor event in Apopka\, Orange County\, FL. Venue\, organize
+ r and how to apply: https://jaxvendorevents.com/#e=af-downtown-apopka-hol
+ iday-night-farmers-market-2026-11-13
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-gardens-harvest-and-holiday-bazaar-2026-11-13-2026-11-13@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Holiday craft & art market · Palm Beach Gardens
+LOCATION:Palm Beach Gardens\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-gardens-harvest-and-holiday-bazaar-2026-11-13
+DESCRIPTION:Vendor event in Palm Beach Gardens\, Palm Beach County\, FL. 
+ Venue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-gar
+ dens-harvest-and-holiday-bazaar-2026-11-13
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-groveland-fall-farmers-market-2026-11-13-2026-11-13@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Farmers market · Groveland
+LOCATION:Groveland\, Lake County\, FL
+URL:https://jaxvendorevents.com/#e=af-groveland-fall-farmers-market-2026-11-13
+DESCRIPTION:Vendor event in Groveland\, Lake County\, FL. Venue\, organiz
+ er and how to apply: https://jaxvendorevents.com/#e=af-groveland-fall-far
+ mers-market-2026-11-13
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-land-o-lakes-fall-friday-moonlight-market-2026-11-13-2026-11-13@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Pop-up market · Land O' Lakes
+LOCATION:Land O' Lakes\, Pasco County\, FL
+URL:https://jaxvendorevents.com/#e=af-land-o-lakes-fall-friday-moonlight-market-2026-11-13
+DESCRIPTION:Vendor event in Land O' Lakes\, Pasco County\, FL. Venue\, or
+ ganizer and how to apply: https://jaxvendorevents.com/#e=af-land-o-lakes-
+ fall-friday-moonlight-market-2026-11-13
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-native-rhythms-festival-2026-11-13-2026-11-13@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Festival · Melbourne
+LOCATION:Melbourne\, Brevard County\, FL
+URL:https://jaxvendorevents.com/#e=af-native-rhythms-festival-2026-11-13
+DESCRIPTION:Vendor event in Melbourne\, Brevard County\, FL. Venue\, orga
+ nizer and how to apply: https://jaxvendorevents.com/#e=af-native-rhythms-
+ festival-2026-11-13
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-ocala-holiday-craft-show-2026-11-13-2026-11-13@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Holiday craft & art market · Ocala
+LOCATION:Ocala\, Marion County\, FL
+URL:https://jaxvendorevents.com/#e=af-ocala-holiday-craft-show-2026-11-13
+DESCRIPTION:Vendor event in Ocala\, Marion County\, FL. Venue\, organizer
+  and how to apply: https://jaxvendorevents.com/#e=af-ocala-holiday-craft-
+ show-2026-11-13
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:fcvv-bartram-springs-2026-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Pop-up market · Jacksonville
@@ -268,7 +437,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-bartram-springs-2026-2026-12-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Pop-up market · Jacksonville
@@ -281,7 +450,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0022-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Craft & art farmers market · Jacksonville
@@ -293,7 +462,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0022-2026-11-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Craft & art farmers market · Jacksonville
@@ -305,7 +474,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0022-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Craft & art farmers market · Jacksonville
@@ -317,7 +486,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0022-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Craft & art farmers market · Jacksonville
@@ -329,7 +498,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0022-2026-12-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Craft & art farmers market · Jacksonville
@@ -341,7 +510,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0022-2026-12-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Craft & art farmers market · Jacksonville
@@ -353,7 +522,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0098-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Holiday market · Ponte Vedra Beach
@@ -365,7 +534,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0098-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Holiday market · Ponte Vedra Beach
@@ -377,7 +546,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0098-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Holiday market · Ponte Vedra Beach
@@ -389,7 +558,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0099-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Farmers market · Ponte Vedra Beach
@@ -401,7 +570,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0099-2026-11-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Farmers market · Ponte Vedra Beach
@@ -413,7 +582,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0099-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Farmers market · Ponte Vedra Beach
@@ -425,7 +594,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0099-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Farmers market · Ponte Vedra Beach
@@ -437,7 +606,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0099-2026-12-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Farmers market · Ponte Vedra Beach
@@ -449,7 +618,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0099-2026-12-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Farmers market · Ponte Vedra Beach
@@ -461,7 +630,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-asian-night-market-jax-2026-11-13-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Pop-up market · Jacksonville
@@ -474,7 +643,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-asian-night-market-jax-2026-11-13-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · Jacksonville
@@ -487,7 +656,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-greek-festival-2026-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Festival · Jacksonville
@@ -500,7 +669,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-greek-festival-2026-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Festival · Jacksonville
@@ -513,7 +682,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-greek-festival-2026-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Festival · Jacksonville
@@ -526,7 +695,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-5th-annual-americana-classic-car-truck-bike-show-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · Williston
@@ -538,8 +707,125 @@ DESCRIPTION:Vendor event in Williston\, Levy County\, FL. Venue\, organiz
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:af-bartow-holiday-antique-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday craft & art market · Bartow
+LOCATION:Bartow\, Polk County\, FL
+URL:https://jaxvendorevents.com/#e=af-bartow-holiday-antique-market-2026-11-14
+DESCRIPTION:Vendor event in Bartow\, Polk County\, FL. Venue\, organizer 
+ and how to apply: https://jaxvendorevents.com/#e=af-bartow-holiday-antiqu
+ e-market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-bartow-honey-bee-craft-fair-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art festival · Bartow
+LOCATION:Bartow\, Polk County\, FL
+URL:https://jaxvendorevents.com/#e=af-bartow-honey-bee-craft-fair-2026-11-14
+DESCRIPTION:Vendor event in Bartow\, Polk County\, FL. Venue\, organizer 
+ and how to apply: https://jaxvendorevents.com/#e=af-bartow-honey-bee-craf
+ t-fair-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-broward-fall-craft-and-vendor-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art market · Plantation
+LOCATION:Plantation\, Broward County\, FL
+URL:https://jaxvendorevents.com/#e=af-broward-fall-craft-and-vendor-market-2026-11-14
+DESCRIPTION:Vendor event in Plantation\, Broward County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=af-broward-fall-c
+ raft-and-vendor-market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-cape-coral-holiday-market-and-tiki-fest-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday festival · Cape Coral
+LOCATION:Cape Coral\, Lee County\, FL
+URL:https://jaxvendorevents.com/#e=af-cape-coral-holiday-market-and-tiki-fest-2026-11-14
+DESCRIPTION:Vendor event in Cape Coral\, Lee County\, FL. Venue\, organiz
+ er and how to apply: https://jaxvendorevents.com/#e=af-cape-coral-holiday
+ -market-and-tiki-fest-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-christmas-angel-tree-car-show-and-craft-fair-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday craft & art festival · Land O' Lakes
+LOCATION:Land O' Lakes\, Pasco County\, FL
+URL:https://jaxvendorevents.com/#e=af-christmas-angel-tree-car-show-and-craft-fair-2026-11-14
+DESCRIPTION:Vendor event in Land O' Lakes\, Pasco County\, FL. Venue\, or
+ ganizer and how to apply: https://jaxvendorevents.com/#e=af-christmas-ang
+ el-tree-car-show-and-craft-fair-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-clearwater-craft-show-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art market · Clearwater
+LOCATION:Clearwater\, Pinellas County\, FL
+URL:https://jaxvendorevents.com/#e=af-clearwater-craft-show-2026-11-14
+DESCRIPTION:Vendor event in Clearwater\, Pinellas County\, FL. Venue\, or
+ ganizer and how to apply: https://jaxvendorevents.com/#e=af-clearwater-cr
+ aft-show-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-clearwater-marie-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Pop-up market · Clearwater
+LOCATION:Clearwater\, Pinellas County\, FL
+URL:https://jaxvendorevents.com/#e=af-clearwater-marie-market-2026-11-14
+DESCRIPTION:Vendor event in Clearwater\, Pinellas County\, FL. Venue\, or
+ ganizer and how to apply: https://jaxvendorevents.com/#e=af-clearwater-ma
+ rie-market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-delray-beach-warehouse-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Pop-up market · Delray Beach
+LOCATION:Delray Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-delray-beach-warehouse-market-2026-11-14
+DESCRIPTION:Vendor event in Delray Beach\, Palm Beach County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=af-delray-be
+ ach-warehouse-market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-downtown-doral-art-festival-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art festival · Doral
+LOCATION:Doral\, Miami-Dade County\, FL
+URL:https://jaxvendorevents.com/#e=af-downtown-doral-art-festival-2026-11-14
+DESCRIPTION:Vendor event in Doral\, Miami-Dade County\, FL. Venue\, organ
+ izer and how to apply: https://jaxvendorevents.com/#e=af-downtown-doral-a
+ rt-festival-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:af-downtown-festival-and-art-show-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Craft & art festival · Gainesville
@@ -552,7 +838,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-downtown-festival-and-art-show-2026-11-14-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Craft & art festival · Gainesville
@@ -564,8 +850,21 @@ DESCRIPTION:Vendor event in Gainesville\, Alachua County\, FL. Venue\, or
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:af-downtown-ocala-fall-vintage-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art market · Ocala
+LOCATION:Ocala\, Marion County\, FL
+URL:https://jaxvendorevents.com/#e=af-downtown-ocala-fall-vintage-market-2026-11-14
+DESCRIPTION:Vendor event in Ocala\, Marion County\, FL. Venue\, organizer
+  and how to apply: https://jaxvendorevents.com/#e=af-downtown-ocala-fall-
+ vintage-market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:af-eartha-s-farm-market-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · Jacksonville
@@ -578,7 +877,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-eartha-s-farm-market-2026-11-14-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Jacksonville
@@ -591,7 +890,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-eartha-s-farm-market-2026-11-14-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Pop-up market · Jacksonville
@@ -604,7 +903,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-eartha-s-farm-market-2026-11-14-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Pop-up market · Jacksonville
@@ -617,7 +916,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-eartha-s-farm-market-2026-11-14-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Pop-up market · Jacksonville
@@ -630,7 +929,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-eartha-s-farm-market-2026-11-14-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Pop-up market · Jacksonville
@@ -643,7 +942,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-fall-fine-arts-festival-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Festival · Vero Beach
@@ -656,7 +955,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-fall-fine-arts-festival-2026-11-14-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Festival · Vero Beach
@@ -668,8 +967,34 @@ DESCRIPTION:Vendor event in Vero Beach\, Indian River County\, FL. Venue\
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:af-juno-beach-craft-festival-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art festival · Juno Beach
+LOCATION:Juno Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-juno-beach-craft-festival-2026-11-14
+DESCRIPTION:Vendor event in Juno Beach\, Palm Beach County\, FL. Venue\, 
+ organizer and how to apply: https://jaxvendorevents.com/#e=af-juno-beach-
+ craft-festival-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-lake-city-holiday-growers-and-makers-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday craft & art farmers market · Lake City
+LOCATION:Lake City\, Columbia County\, FL
+URL:https://jaxvendorevents.com/#e=af-lake-city-holiday-growers-and-makers-market-2026-11-14
+DESCRIPTION:Vendor event in Lake City\, Columbia County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=af-lake-city-holi
+ day-growers-and-makers-market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:af-light-up-the-night-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · Dania Beach
@@ -681,8 +1006,268 @@ DESCRIPTION:Vendor event in Dania Beach\, Broward County\, FL. Venue\, or
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:af-lutz-holiday-boutique-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday craft & art market · Lutz
+LOCATION:Lutz\, Hillsborough County\, FL
+URL:https://jaxvendorevents.com/#e=af-lutz-holiday-boutique-2026-11-14
+DESCRIPTION:Vendor event in Lutz\, Hillsborough County\, FL. Venue\, orga
+ nizer and how to apply: https://jaxvendorevents.com/#e=af-lutz-holiday-bo
+ utique-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art farmers market · Mexico Beach
+LOCATION:Mexico Beach\, Bay County\, FL
+URL:https://jaxvendorevents.com/#e=af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14
+DESCRIPTION:Vendor event in Mexico Beach\, Bay County\, FL. Venue\, organ
+ izer and how to apply: https://jaxvendorevents.com/#e=af-mexico-beach-fal
+ l-saturday-farmers-and-craft-marke-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-north-port-christmas-bazaar-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday craft & art market · North Port
+LOCATION:North Port\, Sarasota County\, FL
+URL:https://jaxvendorevents.com/#e=af-north-port-christmas-bazaar-2026-11-14
+DESCRIPTION:Vendor event in North Port\, Sarasota County\, FL. Venue\, or
+ ganizer and how to apply: https://jaxvendorevents.com/#e=af-north-port-ch
+ ristmas-bazaar-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-odessa-fall-artisan-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art market · Odessa
+LOCATION:Odessa\, Pasco County\, FL
+URL:https://jaxvendorevents.com/#e=af-odessa-fall-artisan-market-2026-11-14
+DESCRIPTION:Vendor event in Odessa\, Pasco County\, FL. Venue\, organizer
+  and how to apply: https://jaxvendorevents.com/#e=af-odessa-fall-artisan-
+ market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-old-homosassa-arts-crafts-and-seafood-festival-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art festival · Homosassa
+LOCATION:Homosassa\, Citrus County\, FL
+URL:https://jaxvendorevents.com/#e=af-old-homosassa-arts-crafts-and-seafood-festival-2026-11-14
+DESCRIPTION:Vendor event in Homosassa\, Citrus County\, FL. Venue\, organ
+ izer and how to apply: https://jaxvendorevents.com/#e=af-old-homosassa-ar
+ ts-crafts-and-seafood-festival-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-pensacola-fall-food-truck-fest-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Festival · Pensacola
+LOCATION:Pensacola\, Escambia County\, FL
+URL:https://jaxvendorevents.com/#e=af-pensacola-fall-food-truck-fest-2026-11-14
+DESCRIPTION:Vendor event in Pensacola\, Escambia County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=af-pensacola-fall
+ -food-truck-fest-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-plant-city-art-in-the-park-and-sip-and-shop-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Pop-up market · Plant City
+LOCATION:Plant City\, Hillsborough County\, FL
+URL:https://jaxvendorevents.com/#e=af-plant-city-art-in-the-park-and-sip-and-shop-2026-11-14
+DESCRIPTION:Vendor event in Plant City\, Hillsborough County\, FL. Venue\
+ , organizer and how to apply: https://jaxvendorevents.com/#e=af-plant-cit
+ y-art-in-the-park-and-sip-and-shop-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art farmers market · Royal Palm Beach
+LOCATION:Royal Palm Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+DESCRIPTION:Vendor event in Royal Palm Beach\, Palm Beach County\, FL. Ve
+ nue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-royal
+ -palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14-2026-11-21@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Craft & art farmers market · Royal Palm Beach
+LOCATION:Royal Palm Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+DESCRIPTION:Vendor event in Royal Palm Beach\, Palm Beach County\, FL. Ve
+ nue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-royal
+ -palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14-2027-02-06@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Craft & art farmers market · Royal Palm Beach
+LOCATION:Royal Palm Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+DESCRIPTION:Vendor event in Royal Palm Beach\, Palm Beach County\, FL. Ve
+ nue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-royal
+ -palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14-2027-02-13@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Craft & art farmers market · Royal Palm Beach
+LOCATION:Royal Palm Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+DESCRIPTION:Vendor event in Royal Palm Beach\, Palm Beach County\, FL. Ve
+ nue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-royal
+ -palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14-2027-02-20@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Craft & art farmers market · Royal Palm Beach
+LOCATION:Royal Palm Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+DESCRIPTION:Vendor event in Royal Palm Beach\, Palm Beach County\, FL. Ve
+ nue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-royal
+ -palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14-2027-02-27@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:Craft & art farmers market · Royal Palm Beach
+LOCATION:Royal Palm Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+DESCRIPTION:Vendor event in Royal Palm Beach\, Palm Beach County\, FL. Ve
+ nue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-royal
+ -palm-beach-2nd-saturday-green-market-and-baz-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-safety-harbor-holiday-folly-faire-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday market · Safety Harbor
+LOCATION:Safety Harbor\, Pinellas County\, FL
+URL:https://jaxvendorevents.com/#e=af-safety-harbor-holiday-folly-faire-2026-11-14
+DESCRIPTION:Vendor event in Safety Harbor\, Pinellas County\, FL. Venue\,
+  organizer and how to apply: https://jaxvendorevents.com/#e=af-safety-har
+ bor-holiday-folly-faire-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-saint-armands-fall-art-festival-2026-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art festival · Sarasota
+LOCATION:Sarasota\, Sarasota County\, FL
+URL:https://jaxvendorevents.com/#e=af-saint-armands-fall-art-festival-2026-2026-11-14
+DESCRIPTION:Vendor event in Sarasota\, Sarasota County\, FL. Venue\, orga
+ nizer and how to apply: https://jaxvendorevents.com/#e=af-saint-armands-f
+ all-art-festival-2026-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-southern-fall-day-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Pop-up market · Tampa
+LOCATION:Tampa\, Hillsborough County\, FL
+URL:https://jaxvendorevents.com/#e=af-southern-fall-day-market-2026-11-14
+DESCRIPTION:Vendor event in Tampa\, Hillsborough County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=af-southern-fall-
+ day-market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-tampa-body-mind-spirit-expo-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Festival · Tampa
+LOCATION:Tampa\, Hillsborough County\, FL
+URL:https://jaxvendorevents.com/#e=af-tampa-body-mind-spirit-expo-2026-11-14
+DESCRIPTION:Vendor event in Tampa\, Hillsborough County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=af-tampa-body-min
+ d-spirit-expo-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-temple-terrace-arts-and-crafts-festival-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art festival · Temple Terrace
+LOCATION:Temple Terrace\, Hillsborough County\, FL
+URL:https://jaxvendorevents.com/#e=af-temple-terrace-arts-and-crafts-festival-2026-11-14
+DESCRIPTION:Vendor event in Temple Terrace\, Hillsborough County\, FL. Ve
+ nue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-templ
+ e-terrace-arts-and-crafts-festival-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-west-palm-beach-holiday-shopping-fair-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday festival · West Palm Beach
+LOCATION:West Palm Beach\, Palm Beach County\, FL
+URL:https://jaxvendorevents.com/#e=af-west-palm-beach-holiday-shopping-fair-2026-11-14
+DESCRIPTION:Vendor event in West Palm Beach\, Palm Beach County\, FL. Ven
+ ue\, organizer and how to apply: https://jaxvendorevents.com/#e=af-west-p
+ alm-beach-holiday-shopping-fair-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-winter-haven-fall-saturday-market-2026-11-14-2026-11-14@jaxvendorevents.com
+DTSTAMP:20261109T115243Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Holiday market · Winter Haven
+LOCATION:Winter Haven\, Polk County\, FL
+URL:https://jaxvendorevents.com/#e=af-winter-haven-fall-saturday-market-2026-11-14
+DESCRIPTION:Vendor event in Winter Haven\, Polk County\, FL. Venue\, orga
+ nizer and how to apply: https://jaxvendorevents.com/#e=af-winter-haven-fa
+ ll-saturday-market-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:campus-fmu-football-tailgate-vendors-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Campus market · Miami Gardens
@@ -695,7 +1280,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-poincianafest-2026-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Campus market · Poinciana
@@ -708,7 +1293,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-saint-leo-university-market-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Campus market · St. Leo
@@ -721,7 +1306,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-saint-leo-university-market-2027-02-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
 SUMMARY:Campus market · St. Leo
@@ -734,7 +1319,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-saint-leo-university-market-2027-03-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 SUMMARY:Campus market · St. Leo
@@ -747,7 +1332,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-saint-leo-university-market-2027-04-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:Campus market · St. Leo
@@ -760,7 +1345,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:curative-casa-solara-fall-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · Jacksonville
@@ -773,7 +1358,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-the-landings-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · St. Johns
@@ -786,7 +1371,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0041-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Craft & art market · Jacksonville
@@ -798,7 +1383,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0041-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Craft & art market · Jacksonville
@@ -810,7 +1395,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0041-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Craft & art market · Jacksonville
@@ -822,7 +1407,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0041-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Craft & art market · Jacksonville
@@ -834,7 +1419,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0041-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Craft & art market · Jacksonville
@@ -846,7 +1431,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0041-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Craft & art market · Jacksonville
@@ -858,7 +1443,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0044-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Farmers market · Jacksonville Beach
@@ -870,7 +1455,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0044-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Farmers market · Jacksonville Beach
@@ -882,7 +1467,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0044-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Farmers market · Jacksonville Beach
@@ -894,7 +1479,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0044-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Farmers market · Jacksonville Beach
@@ -906,7 +1491,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0044-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Farmers market · Jacksonville Beach
@@ -918,7 +1503,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0044-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Farmers market · Jacksonville Beach
@@ -930,7 +1515,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0059-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Farmers market · Flagler Beach
@@ -942,7 +1527,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0059-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Farmers market · Flagler Beach
@@ -954,7 +1539,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0059-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Farmers market · Flagler Beach
@@ -966,7 +1551,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0059-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Farmers market · Flagler Beach
@@ -978,7 +1563,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0059-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Farmers market · Flagler Beach
@@ -990,7 +1575,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0059-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Farmers market · Flagler Beach
@@ -1002,7 +1587,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0062-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Craft & art festival · Palm Coast
@@ -1014,7 +1599,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0081-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Craft & art market · Fernandina Beach
@@ -1026,7 +1611,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0081-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Craft & art market · Fernandina Beach
@@ -1038,7 +1623,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0081-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Craft & art market · Fernandina Beach
@@ -1050,7 +1635,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0081-2026-12-26@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261227
 SUMMARY:Craft & art market · Fernandina Beach
@@ -1062,7 +1647,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0081-2027-01-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:Craft & art market · Fernandina Beach
@@ -1074,7 +1659,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0081-2027-01-23@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Craft & art market · Fernandina Beach
@@ -1086,7 +1671,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0082-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · Fernandina Beach
@@ -1098,7 +1683,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0082-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Fernandina Beach
@@ -1110,7 +1695,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0082-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Pop-up market · Fernandina Beach
@@ -1122,7 +1707,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0082-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Pop-up market · Fernandina Beach
@@ -1134,7 +1719,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0082-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Pop-up market · Fernandina Beach
@@ -1146,7 +1731,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0082-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Pop-up market · Fernandina Beach
@@ -1158,7 +1743,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0092-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Festival · Palatka
@@ -1170,7 +1755,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0108-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Farmers market · St. Augustine
@@ -1182,7 +1767,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0108-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Farmers market · St. Augustine
@@ -1194,7 +1779,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0108-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Farmers market · St. Augustine
@@ -1206,7 +1791,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0108-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Farmers market · St. Augustine
@@ -1218,7 +1803,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0108-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Farmers market · St. Augustine
@@ -1230,7 +1815,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0108-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Farmers market · St. Augustine
@@ -1242,7 +1827,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-coconut-barrel-one-market-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · St. Augustine
@@ -1255,7 +1840,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-eagle-harbor-holiday-market-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Holiday market · Fleming Island
@@ -1268,7 +1853,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-florida-key-lime-pie-festival-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Festival · St. Augustine
@@ -1281,7 +1866,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-food-competition-marketplace-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · Jacksonville
@@ -1294,7 +1879,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-holistic-wellness-crusade-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Pop-up market · Jacksonville
@@ -1307,7 +1892,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-moosehaven-chili-cookoff-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Festival · Orange Park
@@ -1320,7 +1905,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-st-johns-fall-makers-market-jbc-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Craft & art market
@@ -1333,7 +1918,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-yulee-shop-local-toy-holiday-market-2026-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Holiday market · Yulee
@@ -1346,7 +1931,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-holiday-kickoff-christmas-expo-pine-royale-2026-11-14-2026-11-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Holiday festival · Callahan
@@ -1359,7 +1944,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-holiday-kickoff-christmas-expo-pine-royale-2026-11-14-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Holiday festival · Callahan
@@ -1372,7 +1957,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-2026-annual-fall-festival-2026-11-15-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Festival · Jacksonville
@@ -1385,7 +1970,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jax-fall-record-fair-2026-2026-11-15-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Festival · Jacksonville
@@ -1398,7 +1983,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-the-maker-s-market-at-bold-bean-riverside-2026-11-15-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Craft & art market · Jacksonville
@@ -1411,7 +1996,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-the-maker-s-market-at-bold-bean-riverside-2026-11-15-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Craft & art market · Jacksonville
@@ -1424,7 +2009,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-st-pete-sunday-market-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Campus market · St. Petersburg
@@ -1437,7 +2022,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-st-pete-sunday-market-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Campus market · St. Petersburg
@@ -1450,7 +2035,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-st-pete-sunday-market-2027-01-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Campus market · St. Petersburg
@@ -1463,7 +2048,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-curative-market-sunday-market-mandarin-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Pop-up market · Jacksonville
@@ -1476,7 +2061,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-curative-market-sunday-market-mandarin-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Pop-up market · Jacksonville
@@ -1489,7 +2074,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-curative-market-sunday-market-mandarin-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Pop-up market · Jacksonville
@@ -1502,7 +2087,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-small-business-sunday-market-bj-s-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Pop-up market · Jacksonville
@@ -1515,7 +2100,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-small-business-sunday-market-bj-s-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Pop-up market · Jacksonville
@@ -1528,7 +2113,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-small-business-sunday-market-bj-s-2027-01-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Pop-up market · Jacksonville
@@ -1541,7 +2126,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-murabella-2026-11-15-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Pop-up market · St. Augustine
@@ -1554,7 +2139,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0018-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Craft & art farmers market · Orange Park
@@ -1566,7 +2151,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0018-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Craft & art farmers market · Orange Park
@@ -1578,7 +2163,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0018-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Craft & art farmers market · Orange Park
@@ -1590,7 +2175,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0018-2027-01-03@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 SUMMARY:Craft & art farmers market · Orange Park
@@ -1602,7 +2187,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0018-2027-01-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Craft & art farmers market · Orange Park
@@ -1614,7 +2199,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0021-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Farmers market · Atlantic Beach
@@ -1626,7 +2211,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0021-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Farmers market · Atlantic Beach
@@ -1638,7 +2223,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0021-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Farmers market · Atlantic Beach
@@ -1650,7 +2235,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0021-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Farmers market · Atlantic Beach
@@ -1662,7 +2247,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0021-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Farmers market · Atlantic Beach
@@ -1674,7 +2259,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0021-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Farmers market · Atlantic Beach
@@ -1686,7 +2271,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0045-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Farmers market · Neptune Beach
@@ -1698,7 +2283,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0045-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Farmers market · Neptune Beach
@@ -1710,7 +2295,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0045-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Farmers market · Neptune Beach
@@ -1722,7 +2307,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0045-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Farmers market · Neptune Beach
@@ -1734,7 +2319,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0045-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Farmers market · Neptune Beach
@@ -1746,7 +2331,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0045-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Farmers market · Neptune Beach
@@ -1758,7 +2343,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0063-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Farmers market · Palm Coast
@@ -1770,7 +2355,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0063-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Farmers market · Palm Coast
@@ -1782,7 +2367,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0063-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Farmers market · Palm Coast
@@ -1794,7 +2379,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0063-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Farmers market · Palm Coast
@@ -1806,7 +2391,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0063-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Farmers market · Palm Coast
@@ -1818,7 +2403,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0063-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Farmers market · Palm Coast
@@ -1830,7 +2415,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0107-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Farmers market · St. Augustine
@@ -1842,7 +2427,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0107-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Farmers market · St. Augustine
@@ -1854,7 +2439,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0107-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Farmers market · St. Augustine
@@ -1866,7 +2451,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0107-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Farmers market · St. Augustine
@@ -1878,7 +2463,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0107-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Farmers market · St. Augustine
@@ -1890,7 +2475,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0107-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Farmers market · St. Augustine
@@ -1902,7 +2487,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-importexpo-jacksonville-2026-11-15-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Pop-up market · Jacksonville
@@ -1915,7 +2500,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-vegan-link-up-jax-2026-11-15-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Pop-up market · Jacksonville
@@ -1928,7 +2513,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-bull-market-2026-11-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Campus market · Tampa
@@ -1941,7 +2526,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-bull-market-2027-01-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270120
 DTEND;VALUE=DATE:20270121
 SUMMARY:Campus market · Tampa
@@ -1954,7 +2539,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-bull-market-2027-01-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270128
 SUMMARY:Campus market · Tampa
@@ -1967,7 +2552,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-bull-market-2027-02-03@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Campus market · Tampa
@@ -1980,7 +2565,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-bull-market-2027-02-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270210
 DTEND;VALUE=DATE:20270211
 SUMMARY:Campus market · Tampa
@@ -1993,7 +2578,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-usf-bull-market-2027-02-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270217
 DTEND;VALUE=DATE:20270218
 SUMMARY:Campus market · Tampa
@@ -2006,7 +2591,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-unf-market-days-2026-11-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Campus market · Jacksonville
@@ -2019,7 +2604,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-unf-market-days-2027-01-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Campus market · Jacksonville
@@ -2032,7 +2617,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-unf-market-days-2027-01-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270114
 SUMMARY:Campus market · Jacksonville
@@ -2045,7 +2630,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-unf-market-days-2027-01-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270120
 DTEND;VALUE=DATE:20270121
 SUMMARY:Campus market · Jacksonville
@@ -2058,7 +2643,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-unf-market-days-2027-01-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270128
 SUMMARY:Campus market · Jacksonville
@@ -2071,7 +2656,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:rd1-unf-market-days-2027-02-03@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Campus market · Jacksonville
@@ -2084,7 +2669,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-north-beaches-holiday-art-walk-2026-11-19-2026-11-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Craft & art market · Neptune Beach
@@ -2097,7 +2682,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-north-beaches-holiday-art-walk-2026-11-19-2026-12-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:Craft & art market · Neptune Beach
@@ -2110,7 +2695,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-north-beaches-holiday-art-walk-2026-11-19-2027-01-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270121
 DTEND;VALUE=DATE:20270122
 SUMMARY:Craft & art market · Neptune Beach
@@ -2123,7 +2708,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-third-thursday-terminal-2026-11-19-2026-11-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Pop-up market · Jacksonville
@@ -2136,7 +2721,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-third-thursday-terminal-2026-11-19-2026-12-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:Pop-up market · Jacksonville
@@ -2149,7 +2734,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-third-thursday-terminal-2026-11-19-2027-01-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270121
 DTEND;VALUE=DATE:20270122
 SUMMARY:Pop-up market · Jacksonville
@@ -2162,7 +2747,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-third-thursday-terminal-2026-11-19-2027-02-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:Pop-up market · Jacksonville
@@ -2175,7 +2760,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-diamonds-in-the-rust-fall-market-2026-11-20-2026-11-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Pop-up market · Jacksonville
@@ -2188,7 +2773,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-diamonds-in-the-rust-fall-market-2026-11-20-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Jacksonville
@@ -2201,7 +2786,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-diamonds-in-the-rust-fall-market-2026-11-20-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Pop-up market · Jacksonville
@@ -2214,7 +2799,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-green-room-market-2026-11-20-2026-11-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Pop-up market · Jacksonville Beach
@@ -2227,7 +2812,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-green-room-market-2026-11-20-2026-12-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Pop-up market · Jacksonville Beach
@@ -2240,7 +2825,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-florida-classic-2026-vendors-2026-11-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Campus market · Orlando
@@ -2253,7 +2838,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-florida-classic-2026-vendors-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Campus market · Orlando
@@ -2266,7 +2851,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-florida-classic-2026-vendors-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Campus market · Orlando
@@ -2279,7 +2864,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-florida-classic-2026-vendors-2026-11-23@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Campus market · Orlando
@@ -2292,7 +2877,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-miami-book-fair-street-fair-2026-11-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Campus market · Miami
@@ -2305,7 +2890,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-miami-book-fair-street-fair-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Campus market · Miami
@@ -2318,7 +2903,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-miami-book-fair-street-fair-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Campus market · Miami
@@ -2331,7 +2916,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-11-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Holiday market · St. Augustine
@@ -2344,7 +2929,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Holiday market · St. Augustine
@@ -2357,7 +2942,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Holiday market · St. Augustine
@@ -2370,7 +2955,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Holiday market · St. Augustine
@@ -2383,7 +2968,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Holiday market · St. Augustine
@@ -2396,7 +2981,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-greater-st-marys-christmas-market-2026-11-20-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · St. Augustine
@@ -2409,7 +2994,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-friendsgiving-fountain-thanksgiving-themed-food-tr-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Holiday market · Jacksonville
@@ -2422,7 +3007,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-beach-holiday-arts-market-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Craft & art market · Jacksonville Beach
@@ -2435,7 +3020,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-holiday-arts-craft-fair-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Holiday craft & art festival · Jacksonville
@@ -2448,7 +3033,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jax-beer-fest-2026-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Festival · Jacksonville
@@ -2461,7 +3046,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-port-st-lucie-international-fest-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Festival · Port Saint Lucie
@@ -2474,7 +3059,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-rainbow-market-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Jacksonville
@@ -2487,7 +3072,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-rainbow-market-2026-11-21-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Pop-up market · Jacksonville
@@ -2500,7 +3085,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-rainbow-market-2026-11-21-2027-01-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Pop-up market · Jacksonville
@@ -2513,7 +3098,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-rainbow-market-2026-11-21-2027-02-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Pop-up market · Jacksonville
@@ -2526,7 +3111,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-rainbow-market-2026-11-21-2027-03-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:Pop-up market · Jacksonville
@@ -2539,7 +3124,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-rainbow-market-2026-11-21-2027-04-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270418
 SUMMARY:Pop-up market · Jacksonville
@@ -2552,7 +3137,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-riverside-winefest-2026-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Jacksonville
@@ -2565,7 +3150,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-vero-beach-elks-1774-holiday-craft-fair-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Holiday craft & art festival · Vero Beach
@@ -2578,7 +3163,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-mayport-village-waterfront-market-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Jacksonville
@@ -2591,7 +3176,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-mayport-village-waterfront-market-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Pop-up market · Jacksonville
@@ -2604,7 +3189,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-mayport-village-waterfront-market-2027-01-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Pop-up market · Jacksonville
@@ -2617,7 +3202,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-park-street-market-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Jacksonville
@@ -2630,7 +3215,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-park-street-market-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Pop-up market · Jacksonville
@@ -2643,7 +3228,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-park-street-market-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Pop-up market · Jacksonville
@@ -2656,7 +3241,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-park-street-market-2027-01-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
 SUMMARY:Pop-up market · Jacksonville
@@ -2669,7 +3254,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-park-street-market-2027-01-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Pop-up market · Jacksonville
@@ -2682,7 +3267,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-seaton-creek-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Jacksonville
@@ -2695,7 +3280,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0015-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Green Cove Springs
@@ -2707,7 +3292,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0015-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Pop-up market · Green Cove Springs
@@ -2719,7 +3304,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0015-2027-01-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Pop-up market · Green Cove Springs
@@ -2731,7 +3316,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0097-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Farmers market · Ponte Vedra
@@ -2743,7 +3328,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0097-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Farmers market · Ponte Vedra
@@ -2755,7 +3340,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0097-2027-01-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Farmers market · Ponte Vedra
@@ -2767,7 +3352,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0112-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Farmers market · St. Augustine (World Golf Village)
@@ -2780,7 +3365,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0112-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Farmers market · St. Augustine (World Golf Village)
@@ -2793,7 +3378,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0112-2027-01-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Farmers market · St. Augustine (World Golf Village)
@@ -2806,7 +3391,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-1000-startups-celebrate-small-business-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Pop-up market · Fernandina Beach
@@ -2819,7 +3404,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-christmas-market-colonial-quarter-2026-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261225
 SUMMARY:Holiday market · St. Augustine
@@ -2832,7 +3417,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-curative-forena-thankful-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Holiday market · Jacksonville
@@ -2845,7 +3430,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-chocolate-coffee-festival-2026-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Festival · Jacksonville
@@ -2858,7 +3443,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-chocolate-coffee-festival-2026-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Festival · Jacksonville
@@ -2871,7 +3456,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jbc-jacksonville-mistletoe-market-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Holiday market · Jacksonville
@@ -2884,7 +3469,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-maple-market-co-baker-county-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Craft & art festival · Macclenny
@@ -2897,7 +3482,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-maple-market-co-baker-county-2026-11-21-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Craft & art festival · Macclenny
@@ -2910,7 +3495,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-the-link-festival-of-trees-nocatee-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Craft & art festival · Nocatee
@@ -2923,7 +3508,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-treaty-oaks-enclave-holiday-bazaar-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Holiday craft & art market · St. Augustine
@@ -2936,7 +3521,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-shearwater-2026-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Pop-up market · St. Johns
@@ -2949,7 +3534,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-shearwater-2026-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Pop-up market · St. Johns
@@ -2962,7 +3547,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-faith-market-2026-11-22-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Pop-up market · Jacksonville
@@ -2975,7 +3560,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-deck-the-chairs-2026-11-25-2026-11-25@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Pop-up market · Jacksonville Beach
@@ -2988,7 +3573,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-light-up-eustis-2026-2026-11-27-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Pop-up market · Eustis
@@ -3001,7 +3586,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-christmas-made-in-the-south-jax-2026-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:Holiday market · Jacksonville
@@ -3014,7 +3599,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-melanin-small-business-saturday-eventeny-2026-11-2-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Pop-up market · Jacksonville
@@ -3027,7 +3612,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-omni-shops-holiday-lights-2026-11-27-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Holiday festival · Amelia
@@ -3040,7 +3625,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-palatka-christmas-market-2026-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Holiday market · Palatka
@@ -3053,7 +3638,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-palatka-christmas-market-2026-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Holiday market · Palatka
@@ -3066,7 +3651,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-palatka-christmas-market-2026-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Holiday market · Palatka
@@ -3079,7 +3664,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-palatka-christmas-market-2026-2026-12-03@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Holiday market · Palatka
@@ -3092,7 +3677,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-palatka-christmas-market-2026-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Holiday market · Palatka
@@ -3105,7 +3690,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-palatka-christmas-market-2026-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Palatka
@@ -3118,7 +3703,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-riverside-arts-market-local-love-night-market-2026-2026-11-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Holiday market · Jacksonville
@@ -3131,7 +3716,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-riverside-arts-market-local-love-night-market-2026-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Holiday market · Jacksonville
@@ -3144,7 +3729,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-riverside-arts-market-local-love-night-market-2026-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Holiday market · Jacksonville
@@ -3157,7 +3742,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-riverside-arts-market-local-love-night-market-2026-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Holiday market · Jacksonville
@@ -3170,7 +3755,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-riverside-arts-market-local-love-night-market-2026-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Jacksonville
@@ -3183,7 +3768,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-riverside-arts-market-local-love-night-market-2026-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Holiday market · Jacksonville
@@ -3196,7 +3781,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-curative-market-holiday-marketplace-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Holiday market · Jacksonville
@@ -3209,7 +3794,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-fleming-island-2026-nov-dec-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Pop-up market · Fleming Island
@@ -3222,7 +3807,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-fleming-island-2026-nov-dec-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Pop-up market · Fleming Island
@@ -3235,7 +3820,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-brees-riverside-family-days-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Pop-up market · Nobleton
@@ -3248,7 +3833,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-bunnell-holiday-market-2026-11-28-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Holiday market · Bunnell
@@ -3261,7 +3846,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-fleming-island-christmas-market-2026-11-28-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Holiday market · Green Cove Springs
@@ -3274,7 +3859,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-hilliard-christmas-market-2026-11-28-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Holiday market · Hilliard
@@ -3287,7 +3872,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-holiday-river-fest-2026-11-28-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Holiday festival · Jacksonville
@@ -3300,7 +3885,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-moca-mini-market-2026-11-28-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Pop-up market · Jacksonville
@@ -3313,7 +3898,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-sab-7th-annual-beach-art-walk-2026-11-28-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Craft & art market · St. Augustine
@@ -3326,7 +3911,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-san-marco-art-festival-2026-11-28-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
 SUMMARY:Craft & art festival · San Marco
@@ -3339,7 +3924,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-fired-arts-fair-2026-2026-11-29-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Festival · Hollywood
@@ -3352,7 +3937,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-beach-christmas-market-2026-11-29-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Holiday market · Jacksonville Beach
@@ -3365,7 +3950,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-beach-christmas-market-2026-11-29-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Holiday market · Jacksonville Beach
@@ -3378,7 +3963,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-beach-christmas-market-2026-11-29-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Holiday market · Jacksonville Beach
@@ -3391,7 +3976,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-beach-christmas-market-2026-11-29-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Holiday market · Jacksonville Beach
@@ -3404,7 +3989,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-beach-christmas-market-2026-11-29-2026-12-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Holiday market · Jacksonville Beach
@@ -3417,7 +4002,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-curative-market-town-center-signature-ma-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Pop-up market · Jacksonville
@@ -3430,7 +4015,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-granary-park-2026-11-29-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Pop-up market · Green Cove Springs
@@ -3443,7 +4028,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-11-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Holiday market · Jax Beach
@@ -3456,7 +4041,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Holiday market · Jax Beach
@@ -3469,7 +4054,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Holiday market · Jax Beach
@@ -3482,7 +4067,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Holiday market · Jax Beach
@@ -3495,7 +4080,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-deck-the-chairs-sunday-christmas-market-2026-2026-12-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Holiday market · Jax Beach
@@ -3508,7 +4093,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0026-2026-12-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Craft & art market · Jacksonville
@@ -3520,7 +4105,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0026-2027-01-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Craft & art market · Jacksonville
@@ -3532,7 +4117,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-circuit-arcade-side-quest-2026-12-02-2026-12-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Pop-up market · Jacksonville
@@ -3545,7 +4130,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-ns-mayport-tree-lighting-night-market-2026-12-03-2026-12-03@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Holiday market · Mayport
@@ -3558,7 +4143,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-first-friday-2026-11-06-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Pop-up market · Eustis
@@ -3571,7 +4156,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-viera-park-market-food-trucks-2026-11-06-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Pop-up market · Viera
@@ -3584,7 +4169,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-first-friday-flagler-beach-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Pop-up market · Flagler Beach
@@ -3597,7 +4182,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-rolling-hills-holiday-2026-12-04-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Holiday festival · Green Cove Springs
@@ -3610,7 +4195,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-nas-jax-mwr-holiday-market-2026-12-04-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Holiday market · Jacksonville
@@ -3623,7 +4208,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-vintage-market-days-jax-2026-2026-12-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261207
 SUMMARY:Craft & art market · Clay County
@@ -3636,7 +4221,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-creative-market-2026-12-05-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Pop-up market · West Palm Beach
@@ -3649,7 +4234,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-creative-market-2026-12-05-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Pop-up market · West Palm Beach
@@ -3662,7 +4247,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-fleming-island-autumn-saturday-market-2026-11-07-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Pop-up market · Fleming Island
@@ -3675,7 +4260,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-fleming-island-autumn-saturday-market-2026-11-07-2027-01-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
 SUMMARY:Pop-up market · Fleming Island
@@ -3688,7 +4273,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Craft & art market · Jacksonville Beach
@@ -3701,7 +4286,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05-2027-01-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
 SUMMARY:Craft & art market · Jacksonville Beach
@@ -3714,7 +4299,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05-2027-02-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 SUMMARY:Craft & art market · Jacksonville Beach
@@ -3727,7 +4312,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05-2027-03-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270307
 SUMMARY:Craft & art market · Jacksonville Beach
@@ -3740,7 +4325,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05-2027-04-03@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270403
 DTEND;VALUE=DATE:20270404
 SUMMARY:Craft & art market · Jacksonville Beach
@@ -3753,7 +4338,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05-2027-05-01@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:Craft & art market · Jacksonville Beach
@@ -3766,7 +4351,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:curative-jtb-apartments-holiday-2026-12-05-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Jacksonville
@@ -3779,7 +4364,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-oakleaf-christmas-parade-vendor-market-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday festival · Orange Park (Oakleaf)
@@ -3792,7 +4377,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-beacon-lake-2026-12-05-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Pop-up market · St. Augustine
@@ -3805,7 +4390,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0013-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday festival · Green Cove Springs
@@ -3817,7 +4402,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-callahan-christmas-craft-fair-2026-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday craft & art festival · Callahan
@@ -3830,7 +4415,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-christmas-village-gcs-2026-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Green Cove
@@ -3843,7 +4428,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-cummer-museum-holiday-market-2026-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Jacksonville
@@ -3856,7 +4441,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-night-market-holiday-beach-marine-2026-12-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Jacksonville Beach
@@ -3869,7 +4454,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-night-market-holiday-beach-marine-2026-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Jacksonville Beach
@@ -3882,7 +4467,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-night-market-holiday-beach-marine-2026-12-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Holiday market · Jacksonville Beach
@@ -3895,7 +4480,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-lake-butler-christmas-at-lakeside-park-2026-12-05-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Clay County
@@ -3908,7 +4493,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-orange-park-holiday-market-thrasher-horne-2026-12--2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Orange Park
@@ -3921,7 +4506,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-spring-river-school-winter-market-2026-12-05-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Jacksonville
@@ -3934,7 +4519,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-spruce-jax-winter-nights-market-2026-12-05-2026-12-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Holiday market · Jacksonville
@@ -3947,7 +4532,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-386-pop-up-palm-coast-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Pop-up market · Palm Coast
@@ -3960,7 +4545,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-386-pop-up-palm-coast-2027-01-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
 SUMMARY:Pop-up market · Palm Coast
@@ -3973,7 +4558,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-rusted-christmas-market-2026-2026-12-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Holiday market · San Marco
@@ -3986,7 +4571,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-mdc-downtown-miami-market-2026-12-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Campus market · Miami
@@ -3999,7 +4584,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-mdc-downtown-miami-market-2027-01-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:Campus market · Miami
@@ -4012,7 +4597,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-mdc-downtown-miami-market-2027-02-25@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270225
 DTEND;VALUE=DATE:20270226
 SUMMARY:Campus market · Miami
@@ -4025,7 +4610,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-mdc-downtown-miami-market-2027-03-03@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270304
 SUMMARY:Campus market · Miami
@@ -4038,7 +4623,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-mdc-downtown-miami-market-2027-04-08@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270409
 SUMMARY:Campus market · Miami
@@ -4051,7 +4636,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0088-2026-12-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261214
 SUMMARY:Festival · East Palatka
@@ -4063,7 +4648,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-alligator-farm-holiday-night-market-2026-12-11-2026-12-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Holiday market · St. Augustine
@@ -4076,7 +4661,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-artisan-weekend-fairgrounds-2026-12-11-2026-12-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Craft & art market · Jacksonville
@@ -4089,7 +4674,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jwj-park-after-hours-holiday-market-2026-12-11-2026-12-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Holiday market · Jacksonville
@@ -4102,7 +4687,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-momco-yulee-christmas-market-2026-12-11-2026-12-11@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Holiday market · Yulee
@@ -4115,7 +4700,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-christmas-in-the-cloud-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · St Cloud
@@ -4128,7 +4713,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-holiday-market-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Campus market · Jacksonville
@@ -4141,7 +4726,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-jacksonville-second-saturday-arts-and-farmers-mark-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Craft & art farmers market · Jacksonville
@@ -4154,7 +4739,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:city-palm-coast-starlight-parade-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday festival · Palm Coast
@@ -4167,7 +4752,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:curative-river-city-holiday-experience-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Jacksonville
@@ -4180,7 +4765,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-904-pop-up-riversedge-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Pop-up market · Jacksonville
@@ -4193,7 +4778,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-eagle-landing-holiday-vendor-market-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Orange Park
@@ -4206,7 +4791,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-the-northside-market-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Pop-up market · Jacksonville
@@ -4219,7 +4804,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-bestbet-jacksonville-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Pop-up market · Jacksonville
@@ -4232,7 +4817,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-buckler-christmas-craft-fair-clay-2026-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261214
 SUMMARY:Holiday craft & art festival · Clay County
@@ -4245,7 +4830,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-family-church-light-the-way-christmas-market-2026--2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · St. Augustine
@@ -4258,7 +4843,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-hastings-holiday-market-on-main-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Hastings
@@ -4271,7 +4856,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-keystone-heights-christmas-market-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Keystone Heights
@@ -4284,7 +4869,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-mandarin-markets-holiday-extravaganza-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Mandarin
@@ -4297,7 +4882,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-middleburg-christmas-festival-parade-2026-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday festival · Middleburg
@@ -4310,7 +4895,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-mistletoe-magnolia-market-ironwood-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Clay County
@@ -4323,7 +4908,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-northside-holiday-market-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Northside
@@ -4336,7 +4921,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-orange-park-mall-small-entrepreneurs-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Orange Park
@@ -4349,7 +4934,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-st-aug-beach-holiday-market-2026-12-13-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · St. Augustine
@@ -4362,7 +4947,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-winter-wonderland-fernandina-2026-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday market · Fernandina
@@ -4375,7 +4960,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-winter-market-fest-the-landing-2026-12-12-2026-12-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 SUMMARY:Holiday festival · St. Augustine
@@ -4388,7 +4973,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-small-business-sunday-market-gators-oakleaf-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Pop-up market · Orange Park (Oakleaf)
@@ -4401,7 +4986,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-small-business-sunday-market-gators-oakleaf-2027-01-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 SUMMARY:Pop-up market · Orange Park (Oakleaf)
@@ -4414,7 +4999,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-small-business-sunday-market-gators-oakleaf-2027-02-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:Pop-up market · Orange Park (Oakleaf)
@@ -4427,7 +5012,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-holly-jolly-community-event-riverside-2026-12-13-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Holiday market · Riverside
@@ -4440,7 +5025,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-indoor-holiday-market-dance-off-2026-12-13-2026-12-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Holiday market · Putnam County
@@ -4453,7 +5038,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-zoo-zoolights-holiday-market-2026-2026-12-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261221
 SUMMARY:Holiday market · Jacksonville
@@ -4466,7 +5051,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-european-winter-market-palm-coast-2026-12-17-2026-12-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:Holiday market · Palm Coast
@@ -4479,7 +5064,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-port-st-lucie-noche-buena-2026-12-18-2026-12-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Pop-up market · Port St. Lucie
@@ -4492,7 +5077,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-enclave-apartments-free-holiday-market-2026-12-18-2026-12-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Holiday market · Jacksonville
@@ -4505,7 +5090,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-maple-leaf-jax-christmas-market-2026-12-18-2026-12-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261221
 SUMMARY:Holiday craft & art market · Jacksonville
@@ -4518,7 +5103,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-christmas-toy-drive-union-st-2026-12-19-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Holiday market · Jacksonville
@@ -4531,7 +5116,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-forena-luxury-holiday-market-2026-12-19-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Holiday market · Jacksonville
@@ -4544,7 +5129,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-little-ladies-valentines-market-2027-02-06-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Holiday market · Baker County
@@ -4557,7 +5142,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-little-ladies-valentines-market-2027-02-06-2027-02-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 SUMMARY:Holiday market · Baker County
@@ -4570,7 +5155,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-markets-by-mariah-christmas-2026-12-19-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Holiday market · Fernandina
@@ -4583,7 +5168,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-nassau-county-christmas-in-the-park-2026-12-19-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Holiday market · Nassau County
@@ -4596,7 +5181,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-windows-of-time-whoville-2026-12-19-2026-12-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 SUMMARY:Holiday market · Orange Park
@@ -4609,7 +5194,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ej-curative-market-merry-at-moe-s-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Holiday market · Jacksonville
@@ -4622,7 +5207,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fcvv-bestbet-orange-park-2026-12-20-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Pop-up market · Orange Park
@@ -4635,7 +5220,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-atlantic-beach-arts-market-christmas-fair-2026-12--2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Holiday craft & art festival · Atlantic Beach
@@ -4648,7 +5233,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-poppys-true-market-christmas-market-2026-12-20-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Holiday market · Bunnell
@@ -4661,7 +5246,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-riverside-avondale-luminaria-2026-2026-12-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Holiday market · Riverside
@@ -4674,7 +5259,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-ritz-kwanzaa-umoja-2026-12-26-2026-12-26@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261227
 SUMMARY:Holiday market · Jacksonville
@@ -4687,7 +5272,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-ponte-vedra-beach-art-craft-show-2027-01-02-2027-01-02@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270104
 SUMMARY:Craft & art market · Ponte Vedra
@@ -4700,7 +5285,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-foodees-fest-jacksonville-2027-01-08-2027-01-08@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270111
 SUMMARY:Pop-up market · Jacksonville
@@ -4713,7 +5298,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-raising-cane-and-moonshine-festival-2027-01-09-2027-01-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:Festival · Dade City
@@ -4726,7 +5311,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-saint-augustine-beach-artisan-market-2027-01-09-2027-01-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:Craft & art market · St. Augustine
@@ -4739,7 +5324,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-saint-augustine-beach-artisan-market-2027-01-09-2027-01-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 SUMMARY:Craft & art market · St. Augustine
@@ -4752,7 +5337,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-saint-augustine-beach-artisan-market-2027-01-09-2027-02-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
 SUMMARY:Craft & art market · St. Augustine
@@ -4765,7 +5350,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-saint-augustine-beach-artisan-market-2027-01-09-2027-02-14@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:Craft & art market · St. Augustine
@@ -4778,7 +5363,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jimmy-jam-bbq-slam-2027-01-09-2027-01-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:Pop-up market
@@ -4791,7 +5376,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-north-jax-vendors-market-2nd-saturdays-2027-01-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 SUMMARY:Pop-up market · Jacksonville
@@ -4804,7 +5389,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-north-jax-vendors-market-2nd-saturdays-2027-02-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
 SUMMARY:Pop-up market · Jacksonville
@@ -4817,7 +5402,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-premier-bride-expo-jax-2027-01-10-2027-01-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 SUMMARY:Festival · Jacksonville
@@ -4830,7 +5415,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:campus-uf-gator-market-2027-01-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270114
 SUMMARY:Campus market · Gainesville
@@ -4843,7 +5428,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-treasure-coast-bbq-pig-jam-battle-showdown-2027-01-16-2027-01-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Pop-up market · Fort Pierce
@@ -4856,7 +5441,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-treasure-coast-bbq-pig-jam-battle-showdown-2027-01-16-2027-01-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Pop-up market · Fort Pierce
@@ -4869,7 +5454,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-battle-bros-florida-creatives-market-daytona-2027-01-16-2027-01-16@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 SUMMARY:Pop-up market · Daytona Beach
@@ -4882,7 +5467,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-battle-bros-florida-creatives-market-daytona-2027-01-16-2027-01-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Pop-up market · Daytona Beach
@@ -4895,7 +5480,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-mlk-parade-jax-2027-01-18-2027-01-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:Holiday festival · Jacksonville
@@ -4908,7 +5493,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jacksonville-boat-show-2027-2027-01-22@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270122
 DTEND;VALUE=DATE:20270125
 SUMMARY:Pop-up market · Jacksonville
@@ -4921,7 +5506,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-fashion-week-runway-2027-01-23-2027-01-23@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Pop-up market · Jacksonville
@@ -4934,7 +5519,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-urban-book-festival-2027-2027-01-23@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Festival · Jacksonville
@@ -4947,7 +5532,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-ortega-camellia-festival-2027-01-23-2027-01-23@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Festival · Ortega
@@ -4960,7 +5545,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-st-augustine-catholic-heritage-festival-2027-01-23-2027-01-23@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Festival · St. Augustine
@@ -4973,7 +5558,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-vajv-tet-lunar-new-year-2027-01-23-2027-01-23@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270125
 SUMMARY:Festival · Jacksonville
@@ -4986,7 +5571,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-jbc-boutique-wedding-bridal-collective-2027-01-23-2027-01-23@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Craft & art market · Orange Park
@@ -4999,7 +5584,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-whiskey-wine-wildlife-festival-2027-2027-01-29@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270201
 SUMMARY:Festival · St. Augustine
@@ -5012,7 +5597,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0010-2027-01-30@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270201
 SUMMARY:Festival · Green Cove Springs
@@ -5024,7 +5609,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-5andwhy-wedding-showcase-2027-01-30-2027-01-30@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:Pop-up market · St. Augustine
@@ -5037,7 +5622,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-enchantamas-princess-expo-2027-01-30-2027-01-30@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:Festival · Jacksonville
@@ -5050,7 +5635,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-florida-state-fair-2027-02-04-2027-02-04@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270204
 DTEND;VALUE=DATE:20270205
 SUMMARY:Festival · Tampa
@@ -5063,7 +5648,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-florida-state-fair-2027-02-04-2027-02-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
 SUMMARY:Festival · Tampa
@@ -5076,7 +5661,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-florida-state-fair-2027-02-04-2027-02-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 SUMMARY:Festival · Tampa
@@ -5089,7 +5674,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-florida-state-fair-2027-02-04-2027-02-07@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
 SUMMARY:Festival · Tampa
@@ -5102,7 +5687,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-florida-state-fair-2027-02-04-2027-02-08@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:Festival · Tampa
@@ -5115,7 +5700,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-florida-state-fair-2027-02-04-2027-02-09@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270209
 DTEND;VALUE=DATE:20270210
 SUMMARY:Festival · Tampa
@@ -5128,7 +5713,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-donna-health-wellness-expo-2027-02-05-2027-02-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270207
 SUMMARY:Festival · Jacksonville
@@ -5141,7 +5726,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jacksonville-tattoo-arts-festival-2027-02-05-2027-02-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270208
 SUMMARY:Festival · Jacksonville
@@ -5154,7 +5739,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-creekside-festival-2027-2027-02-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270208
 SUMMARY:Festival · Flagler County
@@ -5167,7 +5752,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-home-remodeling-show-2027-02-06-2027-02-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270208
 SUMMARY:Pop-up market · Jacksonville
@@ -5180,7 +5765,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-orange-park-valentines-market-2027-02-06-2027-02-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 SUMMARY:Holiday market · Orange Park
@@ -5193,7 +5778,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-palm-coast-night-market-mandalay-2027-02-06-2027-02-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 SUMMARY:Pop-up market · Palm Coast
@@ -5206,7 +5791,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-timber-twine-market-baker-county-2027-02-06-2027-02-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 SUMMARY:Pop-up market · Baker County
@@ -5219,7 +5804,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jwj-park-after-hours-galentines-2027-02-12-2027-02-12@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:Holiday market · Jacksonville
@@ -5232,7 +5817,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-rodeheaver-boys-ranch-2027-02-2027-02-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270216
 SUMMARY:Pop-up market · Palatka
@@ -5245,7 +5830,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-29th-annual-thunder-by-the-bay-music-motors-festiv-2027-02-19-2027-02-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270219
 DTEND;VALUE=DATE:20270220
 SUMMARY:Festival · Sarasota
@@ -5258,7 +5843,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-29th-annual-thunder-by-the-bay-music-motors-festiv-2027-02-19-2027-02-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Festival · Sarasota
@@ -5271,7 +5856,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-29th-annual-thunder-by-the-bay-music-motors-festiv-2027-02-19-2027-02-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 SUMMARY:Festival · Sarasota
@@ -5284,7 +5869,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-auto-show-2027-2027-02-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270219
 DTEND;VALUE=DATE:20270222
 SUMMARY:Pop-up market · Jacksonville
@@ -5297,7 +5882,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jbcc-st-johns-pawpalooza-2027-02-20-2027-02-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Festival
@@ -5310,7 +5895,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-lunar-new-year-dtjax-2027-2027-02-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Holiday festival · Jacksonville
@@ -5323,7 +5908,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-socca-lunar-new-year-2027-02-20-2027-02-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Holiday market · Jacksonville
@@ -5336,7 +5921,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-spread-the-love-market-op-2027-02-2027-02-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Pop-up market · Orange Park
@@ -5349,7 +5934,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-holistic-wellness-expo-2027-02-27-2027-02-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 SUMMARY:Campus market · Jacksonville
@@ -5362,7 +5947,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-wings-n-wheels-2027-02-27-2027-02-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 SUMMARY:Pop-up market · St. Augustine
@@ -5375,7 +5960,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0036-2027-03-05@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270308
 SUMMARY:Pop-up market · Jacksonville
@@ -5387,7 +5972,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-dania-beach-wine-seafood-festival-2027-03-06-2027-03-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270307
 SUMMARY:Festival · Dania Beach
@@ -5400,7 +5985,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0011-2027-03-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270308
 SUMMARY:Festival · Green Cove Springs
@@ -5412,7 +5997,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0110-2027-03-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270308
 SUMMARY:Festival · St. Augustine
@@ -5424,7 +6009,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:oakleaf-vendor-market-trinity-2027-03-06-2027-03-06@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270307
 SUMMARY:Pop-up market · Orange Park
@@ -5437,7 +6022,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0060-2027-03-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270315
 SUMMARY:Festival · Palm Coast
@@ -5449,7 +6034,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0101-2027-03-13@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 SUMMARY:Festival · St. Augustine
@@ -5461,7 +6046,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-collective-con-2027-2027-03-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270322
 SUMMARY:Pop-up market · Jacksonville
@@ -5474,7 +6059,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-southern-womens-market-2027-2027-03-19@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270322
 SUMMARY:Pop-up market · Jacksonville
@@ -5487,7 +6072,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-festival-of-women-authors-on-milestone-divas-day-2027-03-20-2027-03-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:Festival · Tallahassee
@@ -5500,7 +6085,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-saint-augustine-art-show-2027-03-20-2027-03-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:Craft & art market · St. Augustine
@@ -5513,7 +6098,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:af-saint-augustine-art-show-2027-03-20-2027-03-21@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 SUMMARY:Craft & art market · St. Augustine
@@ -5526,7 +6111,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-battle-bros-jax-food-fest-craft-fair-2027-03-20-2027-03-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:Craft & art festival · Jacksonville
@@ -5539,7 +6124,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-florida-bohemian-festival-2027-2027-03-20@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270322
 SUMMARY:Festival · Palm Coast
@@ -5552,7 +6137,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0089-2027-03-24@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270324
 DTEND;VALUE=DATE:20270325
 SUMMARY:Festival · East Palatka
@@ -5564,7 +6149,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0040-2027-03-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270327
 DTEND;VALUE=DATE:20270328
 SUMMARY:Craft & art farmers festival · Jacksonville
@@ -5576,7 +6161,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jacksonville-womens-expo-2027-recheck-2027-03-27@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270327
 DTEND;VALUE=DATE:20270329
 SUMMARY:Festival · Jacksonville
@@ -5589,7 +6174,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0014-2027-04-01@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270401
 DTEND;VALUE=DATE:20270412
 SUMMARY:Festival · Green Cove Springs
@@ -5601,7 +6186,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-seawalk-music-festival-2027-02-20-2027-04-03@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270403
 DTEND;VALUE=DATE:20270405
 SUMMARY:Festival · Jax Beach
@@ -5614,7 +6199,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-wizarding-market-2027-04-10-2027-04-10@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:Pop-up market · Jacksonville
@@ -5627,7 +6212,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:wk-oyster-fest-jax-2027-04-17-2027-04-17@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270418
 SUMMARY:Festival · Jacksonville
@@ -5640,7 +6225,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sc-jax-veg-fest-2027-04-18-2027-04-18@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
 SUMMARY:Festival · Jacksonville
@@ -5653,7 +6238,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0083-2027-04-30@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:Craft & art festival · Fernandina Beach
@@ -5665,7 +6250,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0084-2027-04-30@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:Festival · Fernandina Beach
@@ -5677,7 +6262,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0039-2027-05-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270528
 DTEND;VALUE=DATE:20270601
 SUMMARY:Pop-up market · Jacksonville
@@ -5689,7 +6274,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0090-2027-05-28@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270528
 DTEND;VALUE=DATE:20270531
 SUMMARY:Festival · Palatka
@@ -5701,7 +6286,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:fl-0012-2027-05-31@jaxvendorevents.com
-DTSTAMP:20261109T094156Z
+DTSTAMP:20261109T115243Z
 DTSTART;VALUE=DATE:20270531
 DTEND;VALUE=DATE:20270601
 SUMMARY:Pop-up market · Green Cove Springs
