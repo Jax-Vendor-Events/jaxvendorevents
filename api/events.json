@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-09T14:54:01Z",
+ "data_updated": "2026-11-09T17:54:00Z",
  "as_of": "2026-11-09",
- "count": 358,
+ "count": 398,
  "events": [
   {
    "id": "rd1-greater-jax-agricultural-fair-2026",
@@ -4733,6 +4733,314 @@
    "details_locked": true
   },
   {
+   "id": "af-big-pine-key-island-art-festival-2026-11-28",
+   "title": "Craft & art festival · Big Pine Key",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Big Pine Key",
+   "county": "Monroe",
+   "region": "Keys",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-big-pine-key-island-art-festival-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-calvary-arts-and-crafts-fair-2026-11-28",
+   "title": "Craft & art festival · Ruskin",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Ruskin",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-calvary-arts-and-crafts-fair-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-cocoa-beach-art-show-2026-11-28",
+   "title": "Craft & art market · Cocoa Beach",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Cocoa Beach",
+   "county": "Brevard",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-cocoa-beach-art-show-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-daytona-holiday-market-2026-11-28",
+   "title": "Holiday market · Daytona Beach",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-daytona-holiday-market-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-englewood-holiday-vendor-and-craft-fair-2026-11-28",
+   "title": "Holiday craft & art festival · Englewood",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Englewood",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-englewood-holiday-vendor-and-craft-fair-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-midtown-tampa-holiday-sunshine-market-2026-11-28",
+   "title": "Holiday market · Tampa",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Tampa",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-midtown-tampa-holiday-sunshine-market-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-naples-art-in-the-park-2026-11-28",
+   "title": "Pop-up market · Naples",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Naples",
+   "county": "Collier",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-naples-art-in-the-park-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-orlando-fusionfest-2026-11-28",
+   "title": "Pop-up market · Orlando",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Orlando",
+   "county": "Orange",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-orlando-fusionfest-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-pasco-flea-fest-2026-11-28",
+   "title": "Craft & art festival · Dade City",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Dade City",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-pasco-flea-fest-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-pompano-beach-holiday-green-market-2026-11-28",
+   "title": "Holiday farmers market · Pompano Beach",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Pompano Beach",
+   "county": "Broward",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-pompano-beach-holiday-green-market-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-punta-gorda-thanksgiving-craft-festival-2026-11-28",
+   "title": "Holiday craft & art festival · Punta Gorda",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Punta Gorda",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-punta-gorda-thanksgiving-craft-festival-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-royal-palm-beach-thanksgiving-green-market-and-baz-2026-11-28",
+   "title": "Holiday craft & art farmers market · Royal Palm Beach",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Royal Palm Beach",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-thanksgiving-green-market-and-baz-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-saint-james-city-holiday-island-market-2026-11-28",
+   "title": "Holiday market · Saint James City",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Saint James City",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-saint-james-city-holiday-island-market-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "af-sarasota-holiday-medieval-fair-2026-11-28",
+   "title": "Holiday festival · Sarasota",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-sarasota-holiday-medieval-fair-2026-11-28",
+   "details_locked": true
+  },
+  {
    "id": "af-whimsy-holiday-market-2026-11-28",
    "title": "Holiday market · Umatilla",
    "next_date": "2026-11-28",
@@ -5024,6 +5332,28 @@
    "details_locked": true
   },
   {
+   "id": "af-lincoln-road-thanksgiving-antique-and-collectible--2026-11-29",
+   "title": "Holiday craft & art market · Miami",
+   "next_date": "2026-11-29",
+   "dates": [
+    "2026-11-29"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Miami",
+   "county": "Miami-Dade",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-lincoln-road-thanksgiving-antique-and-collectible--2026-11-29",
+   "details_locked": true
+  },
+  {
    "id": "ej-curative-market-town-center-signature-ma",
    "title": "Pop-up market · Jacksonville",
    "next_date": "2026-11-29",
@@ -5094,6 +5424,116 @@
    "details_locked": true
   },
   {
+   "id": "af-lynn-haven-christmas-tree-lighting-2026-12-01",
+   "title": "Holiday market · Lynn Haven",
+   "next_date": "2026-12-01",
+   "dates": [
+    "2026-12-01"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Lynn Haven",
+   "county": "Bay",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-lynn-haven-christmas-tree-lighting-2026-12-01",
+   "details_locked": true
+  },
+  {
+   "id": "af-fort-lauderdale-holiday-shopping-bazaar-2026-12-02",
+   "title": "Holiday craft & art market · Fort Lauderdale",
+   "next_date": "2026-12-02",
+   "dates": [
+    "2026-12-02"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Fort Lauderdale",
+   "county": "Broward",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fort-lauderdale-holiday-shopping-bazaar-2026-12-02",
+   "details_locked": true
+  },
+  {
+   "id": "af-palmetto-european-holiday-market-2026-12-02",
+   "title": "Holiday market · Palmetto",
+   "next_date": "2026-12-02",
+   "dates": [
+    "2026-12-02"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Palmetto",
+   "county": "Manatee",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-palmetto-european-holiday-market-2026-12-02",
+   "details_locked": true
+  },
+  {
+   "id": "af-saint-pete-holiday-night-market-2026-2026-12-02",
+   "title": "Holiday market · Saint Petersburg",
+   "next_date": "2026-12-02",
+   "dates": [
+    "2026-12-02"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Saint Petersburg",
+   "county": "Pinellas",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-saint-pete-holiday-night-market-2026-2026-12-02",
+   "details_locked": true
+  },
+  {
+   "id": "af-sanford-christmas-hump-day-market-and-hangout-2026-12-02",
+   "title": "Holiday market · Sanford",
+   "next_date": "2026-12-02",
+   "dates": [
+    "2026-12-02"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sanford",
+   "county": "Seminole",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-sanford-christmas-hump-day-market-and-hangout-2026-12-02",
+   "details_locked": true
+  },
+  {
    "id": "fl-0026",
    "title": "Craft & art market · Jacksonville",
    "next_date": "2026-12-02",
@@ -5139,6 +5579,28 @@
    "details_locked": true
   },
   {
+   "id": "af-midtown-tampa-holiday-sunset-market-2026-12-03",
+   "title": "Holiday market · Tampa",
+   "next_date": "2026-12-03",
+   "dates": [
+    "2026-12-03"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Tampa",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-midtown-tampa-holiday-sunset-market-2026-12-03",
+   "details_locked": true
+  },
+  {
    "id": "sc-ns-mayport-tree-lighting-night-market-2026-12-03",
    "title": "Holiday market · Mayport",
    "next_date": "2026-12-03",
@@ -5158,6 +5620,94 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-ns-mayport-tree-lighting-night-market-2026-12-03",
+   "details_locked": true
+  },
+  {
+   "id": "af-boynton-beach-winter-1st-friday-event-2026-12-04",
+   "title": "Holiday market · Boynton Beach",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Boynton Beach",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-boynton-beach-winter-1st-friday-event-2026-12-04",
+   "details_locked": true
+  },
+  {
+   "id": "af-christmas-caravan-arts-and-crafts-show-2026-12-04",
+   "title": "Holiday craft & art market · Pensacola",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Pensacola",
+   "county": "Escambia",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-christmas-caravan-arts-and-crafts-show-2026-12-04",
+   "details_locked": true
+  },
+  {
+   "id": "af-crystal-river-holiday-first-fridays-2026-12-04",
+   "title": "Holiday market · Crystal River",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Crystal River",
+   "county": "Citrus",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-crystal-river-holiday-first-fridays-2026-12-04",
+   "details_locked": true
+  },
+  {
+   "id": "af-delray-beach-holiday-art-walk-2026-12-04",
+   "title": "Holiday craft & art market · Delray Beach",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Delray Beach",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-delray-beach-holiday-art-walk-2026-12-04",
    "details_locked": true
   },
   {
@@ -5183,6 +5733,28 @@
    "details_locked": true
   },
   {
+   "id": "af-gulfport-holiday-night-market-2026-12-04",
+   "title": "Holiday market · Gulfport",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Gulfport",
+   "county": "Pinellas",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-gulfport-holiday-night-market-2026-12-04",
+   "details_locked": true
+  },
+  {
    "id": "af-viera-park-market-food-trucks-2026-11-06",
    "title": "Pop-up market · Viera",
    "next_date": "2026-12-04",
@@ -5202,6 +5774,72 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-viera-park-market-food-trucks-2026-11-06",
+   "details_locked": true
+  },
+  {
+   "id": "af-wesley-chapel-christmas-market-2026-12-04",
+   "title": "Holiday market · Wesley Chapel",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Wesley Chapel",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-wesley-chapel-christmas-market-2026-12-04",
+   "details_locked": true
+  },
+  {
+   "id": "af-west-palm-beach-holiday-antiques-festival-2026-12-04",
+   "title": "Holiday craft & art festival · West Palm Beach",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "West Palm Beach",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-west-palm-beach-holiday-antiques-festival-2026-12-04",
+   "details_locked": true
+  },
+  {
+   "id": "af-white-springs-festival-of-lights-2026-12-04",
+   "title": "Festival · White Springs",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "White Springs",
+   "county": "Hamilton",
+   "region": "North Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-white-springs-festival-of-lights-2026-12-04",
    "details_locked": true
   },
   {
@@ -5293,6 +5931,50 @@
    "details_locked": true
   },
   {
+   "id": "af-cocoa-art-and-craft-holiday-bazaar-2026-12-05",
+   "title": "Holiday craft & art market · Cocoa",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Cocoa",
+   "county": "Brevard",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-cocoa-art-and-craft-holiday-bazaar-2026-12-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-coconut-point-holiday-craft-festival-2026-12-05",
+   "title": "Holiday craft & art festival · Estero",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Estero",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-coconut-point-holiday-craft-festival-2026-12-05",
+   "details_locked": true
+  },
+  {
    "id": "af-creative-market-2026-12-05",
    "title": "Pop-up market · West Palm Beach",
    "next_date": "2026-12-05",
@@ -5316,6 +5998,50 @@
    "details_locked": true
   },
   {
+   "id": "af-destin-commons-market-2026-12-05",
+   "title": "Pop-up market · Destin",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Destin",
+   "county": "Okaloosa",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-destin-commons-market-2026-12-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-downtown-delray-beach-art-festival-2026-12-05",
+   "title": "Craft & art festival · Delray Beach",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Delray Beach",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-downtown-delray-beach-art-festival-2026-12-05",
+   "details_locked": true
+  },
+  {
    "id": "af-fleming-island-autumn-saturday-market-2026-11-07",
    "title": "Pop-up market · Fleming Island",
    "next_date": "2026-12-05",
@@ -5336,6 +6062,161 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-fleming-island-autumn-saturday-market-2026-11-07",
+   "details_locked": true
+  },
+  {
+   "id": "af-hernando-beach-holiday-art-walk-2026-12-05",
+   "title": "Holiday craft & art market · Hernando Beach",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05",
+    "2026-12-06"
+   ],
+   "end_date": "2026-12-06",
+   "recurring": false,
+   "schedule": null,
+   "city": "Hernando Beach",
+   "county": "Hernando",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-hernando-beach-holiday-art-walk-2026-12-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-lutz-arts-and-crafts-festival-2026-12-05",
+   "title": "Craft & art festival · Odessa",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Odessa",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-lutz-arts-and-crafts-festival-2026-12-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-new-smyrna-beach-christmas-art-and-artisan-stroll-2026-12-05",
+   "title": "Holiday craft & art market · New Smyrna Beach",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "New Smyrna Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-new-smyrna-beach-christmas-art-and-artisan-stroll-2026-12-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-oviedo-holiday-farmers-market-2026-12-05",
+   "title": "Holiday farmers market · Oviedo",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Oviedo",
+   "county": "Seminole",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-oviedo-holiday-farmers-market-2026-12-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-pensacola-holiday-market-2026-12-05",
+   "title": "Holiday market · Pensacola",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Pensacola",
+   "county": "Escambia",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-pensacola-holiday-market-2026-12-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-royal-palm-beach-winter-fest-2026-12-05",
+   "title": "Holiday festival · Royal Palm Beach",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Royal Palm Beach",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-winter-fest-2026-12-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-tallahassee-market-days-2026-12-05",
+   "title": "Pop-up market · Tallahassee",
+   "next_date": "2026-12-05",
+   "dates": [
+    "2026-12-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Tallahassee",
+   "county": "Leon",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-tallahassee-market-days-2026-12-05",
    "details_locked": true
   },
   {
