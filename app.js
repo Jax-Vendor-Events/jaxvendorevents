@@ -292,6 +292,8 @@
         '<div class="locked-card"><b>🔒 Event name, exact place, organizer and apply link</b> are part of Vendor Pro ($6/month). Every market in Florida, with the links to apply.</div>';
       ap.href='#';ap.setAttribute('data-unlock','vendor-pro');ap.classList.remove('off');ap.removeAttribute('aria-disabled');ap.removeAttribute('tabindex');ext.style.display='none';ap.firstChild.textContent='Unlock · $6/mo ';
     } else ap.removeAttribute('data-unlock');
+    /* Nov 9 2026: let anyone flag a wrong, cancelled or fishy listing (idea from studying VendorsMap's trust features) */
+    $('shBody').insertAdjacentHTML('beforeend','<p class="sh-own sh-rep">'+ico('alert','sm')+'<span>Something wrong with this listing? <a href="mailto:admin@jaxvendorevents.com?subject='+encodeURIComponent('Listing report: '+e.id)+'&amp;body='+encodeURIComponent('What looks wrong (date, fee, cancelled, not a real event)?\n\n\nListing: https://jaxvendorevents.com/#e='+e.id)+'">Report it</a> and we check it.</span></p>');
     $('shIcs').disabled=!curA;syncSheetSave();if(window.JVE_CAL&&JVE_CAL.sheet)JVE_CAL.sheet(e,curA);if(window.JVE_TRK&&JVE_TRK.sheet)JVE_TRK.sheet(e,curA);if(window.JVE_FB&&JVE_FB.sheet)JVE_FB.sheet(e,curA);
   }
   function showSheet(id,anchor){var e=byId[id];if(!e)return false;curE=e;curA=anchor||e.up[0]||null;fillSheet(e);
