@@ -245,6 +245,9 @@ html[data-look=light] .fb-act[data-r=saved][aria-pressed=true]{color:#C62A2F}
   .fb-ftabs,.fb-fhint{padding-left:12px;padding-right:12px}
   .fb-cov .fb-ck b{font-size:19px}
   html.fbx-index body:not([data-view=home]) main.wrap{padding-left:16px!important;padding-right:16px!important}
+  /* Nov 9 2026: the sticky filter bar bled 4px past the 16px page edge (sideways wiggle at 390px) */
+  html.fbx-index body:not([data-view=home]) .xfind{margin-left:-16px!important;margin-right:-16px!important;padding-left:16px!important;padding-right:16px!important}
+  html.fbx-index body:not([data-view=home]) .xchips{margin-left:-16px!important;margin-right:-16px!important;padding-left:16px!important;padding-right:16px!important}
 }
 
 /* ---------- event page (the event sheet, FB Event style) ---------- */
