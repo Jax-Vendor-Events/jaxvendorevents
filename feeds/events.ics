@@ -319,6 +319,45 @@ DESCRIPTION:Vendor event in Venice\, Sarasota County\, FL. Venue\, organi
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:af-apopka-holiday-night-farmers-market-2026-11-20-2026-11-13@jaxvendorevents.com
+DTSTAMP:20261109T145401Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Pop-up market · Apopka
+LOCATION:Apopka\, Orange County\, FL
+URL:https://jaxvendorevents.com/#e=af-apopka-holiday-night-farmers-market-2026-11-20
+DESCRIPTION:Vendor event in Apopka\, Orange County\, FL. Venue\, organize
+ r and how to apply: https://jaxvendorevents.com/#e=af-apopka-holiday-nigh
+ t-farmers-market-2026-11-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-apopka-holiday-night-farmers-market-2026-11-20-2026-11-20@jaxvendorevents.com
+DTSTAMP:20261109T145401Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Pop-up market · Apopka
+LOCATION:Apopka\, Orange County\, FL
+URL:https://jaxvendorevents.com/#e=af-apopka-holiday-night-farmers-market-2026-11-20
+DESCRIPTION:Vendor event in Apopka\, Orange County\, FL. Venue\, organize
+ r and how to apply: https://jaxvendorevents.com/#e=af-apopka-holiday-nigh
+ t-farmers-market-2026-11-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-apopka-holiday-night-farmers-market-2026-11-20-2026-12-04@jaxvendorevents.com
+DTSTAMP:20261109T145401Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Pop-up market · Apopka
+LOCATION:Apopka\, Orange County\, FL
+URL:https://jaxvendorevents.com/#e=af-apopka-holiday-night-farmers-market-2026-11-20
+DESCRIPTION:Vendor event in Apopka\, Orange County\, FL. Venue\, organize
+ r and how to apply: https://jaxvendorevents.com/#e=af-apopka-holiday-nigh
+ t-farmers-market-2026-11-20
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:af-art-in-the-park-2026-11-13-2026-11-13@jaxvendorevents.com
 DTSTAMP:20261109T145401Z
 DTSTART;VALUE=DATE:20261113
@@ -342,19 +381,6 @@ URL:https://jaxvendorevents.com/#e=af-destin-holiday-craft-show-2026-11-13
 DESCRIPTION:Vendor event in Destin\, Okaloosa County\, FL. Venue\, organi
  zer and how to apply: https://jaxvendorevents.com/#e=af-destin-holiday-cr
  aft-show-2026-11-13
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:af-downtown-apopka-holiday-night-farmers-market-2026-11-13-2026-11-13@jaxvendorevents.com
-DTSTAMP:20261109T145401Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:Holiday farmers market · Apopka
-LOCATION:Apopka\, Orange County\, FL
-URL:https://jaxvendorevents.com/#e=af-downtown-apopka-holiday-night-farmers-market-2026-11-13
-DESCRIPTION:Vendor event in Apopka\, Orange County\, FL. Venue\, organize
- r and how to apply: https://jaxvendorevents.com/#e=af-downtown-apopka-hol
- iday-night-farmers-market-2026-11-13
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1075,6 +1101,32 @@ UID:af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14-2026-11-14@
 DTSTAMP:20261109T145401Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
+SUMMARY:Craft & art farmers market · Mexico Beach
+LOCATION:Mexico Beach\, Bay County\, FL
+URL:https://jaxvendorevents.com/#e=af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14
+DESCRIPTION:Vendor event in Mexico Beach\, Bay County\, FL. Venue\, organ
+ izer and how to apply: https://jaxvendorevents.com/#e=af-mexico-beach-fal
+ l-saturday-farmers-and-craft-marke-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14-2026-11-28@jaxvendorevents.com
+DTSTAMP:20261109T145401Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Craft & art farmers market · Mexico Beach
+LOCATION:Mexico Beach\, Bay County\, FL
+URL:https://jaxvendorevents.com/#e=af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14
+DESCRIPTION:Vendor event in Mexico Beach\, Bay County\, FL. Venue\, organ
+ izer and how to apply: https://jaxvendorevents.com/#e=af-mexico-beach-fal
+ l-saturday-farmers-and-craft-marke-2026-11-14
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14-2026-12-12@jaxvendorevents.com
+DTSTAMP:20261109T145401Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
 SUMMARY:Craft & art farmers market · Mexico Beach
 LOCATION:Mexico Beach\, Bay County\, FL
 URL:https://jaxvendorevents.com/#e=af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14
@@ -2203,19 +2255,6 @@ DESCRIPTION:Vendor event in Callahan\, Nassau County\, FL. Venue\, organi
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:af-2026-annual-fall-festival-2026-11-15-2026-11-15@jaxvendorevents.com
-DTSTAMP:20261109T145401Z
-DTSTART;VALUE=DATE:20261115
-DTEND;VALUE=DATE:20261116
-SUMMARY:Festival · Jacksonville
-LOCATION:Jacksonville\, Duval County\, FL
-URL:https://jaxvendorevents.com/#e=af-2026-annual-fall-festival-2026-11-15
-DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
- anizer and how to apply: https://jaxvendorevents.com/#e=af-2026-annual-fa
- ll-festival-2026-11-15
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:af-bonita-springs-holiday-arts-and-crafts-fair-2026-11-15-2026-11-15@jaxvendorevents.com
 DTSTAMP:20261109T145401Z
 DTSTART;VALUE=DATE:20261115
@@ -2928,16 +2967,29 @@ DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:af-marco-island-holiday-community-farmers-market-2026-11-18-2026-11-18@jaxvendorevents.com
+UID:af-marco-island-thanksgiving-farmers-market-2026-11-25-2026-11-18@jaxvendorevents.com
 DTSTAMP:20261109T145401Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
-SUMMARY:Holiday farmers market · Marco Island
+SUMMARY:Farmers market · Marco Island
 LOCATION:Marco Island\, Collier County\, FL
-URL:https://jaxvendorevents.com/#e=af-marco-island-holiday-community-farmers-market-2026-11-18
+URL:https://jaxvendorevents.com/#e=af-marco-island-thanksgiving-farmers-market-2026-11-25
 DESCRIPTION:Vendor event in Marco Island\, Collier County\, FL. Venue\, o
  rganizer and how to apply: https://jaxvendorevents.com/#e=af-marco-island
- -holiday-community-farmers-market-2026-11-18
+ -thanksgiving-farmers-market-2026-11-25
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af-marco-island-thanksgiving-farmers-market-2026-11-25-2026-11-25@jaxvendorevents.com
+DTSTAMP:20261109T145401Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Farmers market · Marco Island
+LOCATION:Marco Island\, Collier County\, FL
+URL:https://jaxvendorevents.com/#e=af-marco-island-thanksgiving-farmers-market-2026-11-25
+DESCRIPTION:Vendor event in Marco Island\, Collier County\, FL. Venue\, o
+ rganizer and how to apply: https://jaxvendorevents.com/#e=af-marco-island
+ -thanksgiving-farmers-market-2026-11-25
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -3237,19 +3289,6 @@ URL:https://jaxvendorevents.com/#e=wk-third-thursday-terminal-2026-11-19
 DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
  anizer and how to apply: https://jaxvendorevents.com/#e=wk-third-thursday
  -terminal-2026-11-19
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:af-apopka-holiday-night-farmers-market-2026-11-20-2026-11-20@jaxvendorevents.com
-DTSTAMP:20261109T145401Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
-SUMMARY:Holiday farmers market · Apopka
-LOCATION:Apopka\, Orange County\, FL
-URL:https://jaxvendorevents.com/#e=af-apopka-holiday-night-farmers-market-2026-11-20
-DESCRIPTION:Vendor event in Apopka\, Orange County\, FL. Venue\, organize
- r and how to apply: https://jaxvendorevents.com/#e=af-apopka-holiday-nigh
- t-farmers-market-2026-11-20
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -4020,23 +4059,10 @@ DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:af-riverside-winefest-2026-2026-11-21-2026-11-21@jaxvendorevents.com
-DTSTAMP:20261109T145401Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Pop-up market · Jacksonville
-LOCATION:Jacksonville\, Duval County\, FL
-URL:https://jaxvendorevents.com/#e=af-riverside-winefest-2026-2026-11-21
-DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
- anizer and how to apply: https://jaxvendorevents.com/#e=af-riverside-wine
- fest-2026-2026-11-21
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:af-saint-petersburg-holiday-market-2026-11-21-2026-11-21@jaxvendorevents.com
 DTSTAMP:20261109T145401Z
 DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
 SUMMARY:Holiday market · Saint Petersburg
 LOCATION:Saint Petersburg\, Pinellas County\, FL
 URL:https://jaxvendorevents.com/#e=af-saint-petersburg-holiday-market-2026-11-21
@@ -4062,8 +4088,8 @@ BEGIN:VEVENT
 UID:af-venice-holiday-festival-of-the-arts-2026-11-21-2026-11-21@jaxvendorevents.com
 DTSTAMP:20261109T145401Z
 DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Holiday festival · Venice
+DTEND;VALUE=DATE:20261123
+SUMMARY:Craft & art festival · Venice
 LOCATION:Venice\, Sarasota County\, FL
 URL:https://jaxvendorevents.com/#e=af-venice-holiday-festival-of-the-arts-2026-11-21
 DESCRIPTION:Vendor event in Venice\, Sarasota County\, FL. Venue\, organi
@@ -4547,19 +4573,6 @@ DESCRIPTION:Vendor event in Odessa\, Pasco County\, FL. Venue\, organizer
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:af-punta-gorda-holiday-artisans-market-2026-11-22-2026-11-22@jaxvendorevents.com
-DTSTAMP:20261109T145401Z
-DTSTART;VALUE=DATE:20261122
-DTEND;VALUE=DATE:20261123
-SUMMARY:Holiday craft & art market · Punta Gorda
-LOCATION:Punta Gorda\, Charlotte County\, FL
-URL:https://jaxvendorevents.com/#e=af-punta-gorda-holiday-artisans-market-2026-11-22
-DESCRIPTION:Vendor event in Punta Gorda\, Charlotte County\, FL. Venue\, 
- organizer and how to apply: https://jaxvendorevents.com/#e=af-punta-gorda
- -holiday-artisans-market-2026-11-22
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:af-vero-beach-autumn-art-in-the-park-2026-11-22-2026-11-22@jaxvendorevents.com
 DTSTAMP:20261109T145401Z
 DTSTART;VALUE=DATE:20261122
@@ -4648,32 +4661,6 @@ URL:https://jaxvendorevents.com/#e=sc-jax-faith-market-2026-11-22
 DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
  anizer and how to apply: https://jaxvendorevents.com/#e=sc-jax-faith-mark
  et-2026-11-22
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:af-deck-the-chairs-2026-11-25-2026-11-25@jaxvendorevents.com
-DTSTAMP:20261109T145401Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
-SUMMARY:Pop-up market · Jacksonville Beach
-LOCATION:Jacksonville Beach\, Duval County\, FL
-URL:https://jaxvendorevents.com/#e=af-deck-the-chairs-2026-11-25
-DESCRIPTION:Vendor event in Jacksonville Beach\, Duval County\, FL. Venue
- \, organizer and how to apply: https://jaxvendorevents.com/#e=af-deck-the
- -chairs-2026-11-25
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:af-marco-island-thanksgiving-farmers-market-2026-11-25-2026-11-25@jaxvendorevents.com
-DTSTAMP:20261109T145401Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
-SUMMARY:Holiday farmers market · Marco Island
-LOCATION:Marco Island\, Collier County\, FL
-URL:https://jaxvendorevents.com/#e=af-marco-island-thanksgiving-farmers-market-2026-11-25
-DESCRIPTION:Vendor event in Marco Island\, Collier County\, FL. Venue\, o
- rganizer and how to apply: https://jaxvendorevents.com/#e=af-marco-island
- -thanksgiving-farmers-market-2026-11-25
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -4908,19 +4895,6 @@ URL:https://jaxvendorevents.com/#e=af-arcadia-holiday-antique-fair-2026-11-28
 DESCRIPTION:Vendor event in Arcadia\, DeSoto County\, FL. Venue\, organiz
  er and how to apply: https://jaxvendorevents.com/#e=af-arcadia-holiday-an
  tique-fair-2026-11-28
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:af-mexico-beach-holiday-farmers-and-craft-market-2026-11-28-2026-11-28@jaxvendorevents.com
-DTSTAMP:20261109T145401Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
-SUMMARY:Holiday craft & art farmers market · Mexico Beach
-LOCATION:Mexico Beach\, Bay County\, FL
-URL:https://jaxvendorevents.com/#e=af-mexico-beach-holiday-farmers-and-craft-market-2026-11-28
-DESCRIPTION:Vendor event in Mexico Beach\, Bay County\, FL. Venue\, organ
- izer and how to apply: https://jaxvendorevents.com/#e=af-mexico-beach-hol
- iday-farmers-and-craft-market-2026-11-28
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -5685,6 +5659,19 @@ URL:https://jaxvendorevents.com/#e=sc-spruce-jax-winter-nights-market-2026-12-05
 DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
  anizer and how to apply: https://jaxvendorevents.com/#e=sc-spruce-jax-win
  ter-nights-market-2026-12-05
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wk-madison-palm-december-market-fest-2026-12-05-2026-12-05@jaxvendorevents.com
+DTSTAMP:20261109T145401Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Festival · Jacksonville
+LOCATION:Jacksonville\, Duval County\, FL
+URL:https://jaxvendorevents.com/#e=wk-madison-palm-december-market-fest-2026-12-05
+DESCRIPTION:Vendor event in Jacksonville\, Duval County\, FL. Venue\, org
+ anizer and how to apply: https://jaxvendorevents.com/#e=wk-madison-palm-d
+ ecember-market-fest-2026-12-05
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
