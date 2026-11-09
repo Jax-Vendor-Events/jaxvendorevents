@@ -1,0 +1,710 @@
+{
+ "note": "Event card images (self-hosted). Built by Tab enrich_images.py.",
+ "images": {
+  "fl-0044": {
+   "src": "assets/event-img/fl-0044.webp?v=da6b6044",
+   "w": 240,
+   "h": 242
+  },
+  "fl-0113": {
+   "src": "assets/event-img/fl-0113.webp?v=554a995d",
+   "w": 680,
+   "h": 510
+  },
+  "fl-0107": {
+   "src": "assets/event-img/fl-0107.webp?v=86b13bd9",
+   "w": 800,
+   "h": 533
+  },
+  "fl-0022": {
+   "src": "assets/event-img/fl-0022.webp?v=448459b9",
+   "w": 800,
+   "h": 230
+  },
+  "fl-0063": {
+   "src": "assets/event-img/fl-0063.webp?v=a8c6d4f1",
+   "w": 800,
+   "h": 343
+  },
+  "fl-0021": {
+   "src": "assets/event-img/fl-0021.webp?v=da6b6044",
+   "w": 240,
+   "h": 242
+  },
+  "fl-0082": {
+   "src": "assets/event-img/fl-0082.webp?v=6cbd1a43",
+   "w": 512,
+   "h": 512
+  },
+  "fl-0041": {
+   "src": "assets/event-img/fl-0041.webp?v=a2838877",
+   "w": 800,
+   "h": 642
+  },
+  "fl-0026": {
+   "src": "assets/event-img/fl-0026.webp?v=f63fbabf",
+   "w": 800,
+   "h": 400
+  },
+  "fl-0099": {
+   "src": "assets/event-img/fl-0099.webp?v=74bd7d2c",
+   "w": 800,
+   "h": 600
+  },
+  "sc-jax-greek-festival-2026": {
+   "src": "assets/event-img/sc-jax-greek-festival-2026.webp?v=d5d12065",
+   "w": 250,
+   "h": 250
+  },
+  "sc-coconut-barrel-one-market-2026-11-14": {
+   "src": "assets/event-img/sc-coconut-barrel-one-market-2026-11-14.webp?v=e399c9fc",
+   "w": 800,
+   "h": 340
+  },
+  "fl-0018": {
+   "src": "assets/event-img/fl-0018.webp?v=38b3bcfc",
+   "w": 387,
+   "h": 255
+  },
+  "fl-0108": {
+   "src": "assets/event-img/fl-0108.webp?v=d1e3d461",
+   "w": 800,
+   "h": 450
+  },
+  "fl-0062": {
+   "src": "assets/event-img/fl-0062.webp?v=eed46c99",
+   "w": 800,
+   "h": 379
+  },
+  "sc-jax-holistic-wellness-crusade-2026-11-14": {
+   "src": "assets/event-img/sc-jax-holistic-wellness-crusade-2026-11-14.webp?v=beeb6d0f",
+   "w": 800,
+   "h": 800
+  },
+  "ej-small-business-sunday-market-bj-s": {
+   "src": "assets/event-img/ej-small-business-sunday-market-bj-s.webp?v=d414216b",
+   "w": 454,
+   "h": 449
+  },
+  "sc-st-johns-fall-makers-market-jbc-2026-11-14": {
+   "src": "assets/event-img/sc-st-johns-fall-makers-market-jbc-2026-11-14.webp?v=6c2d9011",
+   "w": 800,
+   "h": 449
+  },
+  "sc-importexpo-jacksonville-2026-11-15": {
+   "src": "assets/event-img/sc-importexpo-jacksonville-2026-11-15.webp?v=7589a0a9",
+   "w": 800,
+   "h": 234
+  },
+  "sc-jax-food-competition-marketplace-2026-11-14": {
+   "src": "assets/event-img/sc-jax-food-competition-marketplace-2026-11-14.webp?v=fe472f3c",
+   "w": 800,
+   "h": 800
+  },
+  "sc-1000-startups-celebrate-small-business-2026-11-21": {
+   "src": "assets/event-img/sc-1000-startups-celebrate-small-business-2026-11-21.webp?v=fd3f610d",
+   "w": 800,
+   "h": 413
+  },
+  "sc-vegan-link-up-jax-2026-11-15": {
+   "src": "assets/event-img/sc-vegan-link-up-jax-2026-11-15.webp?v=76a066ab",
+   "w": 800,
+   "h": 517
+  },
+  "sc-the-link-festival-of-trees-nocatee-2026-11-21": {
+   "src": "assets/event-img/sc-the-link-festival-of-trees-nocatee-2026-11-21.webp?v=76cc5d20",
+   "w": 800,
+   "h": 394
+  },
+  "sc-moosehaven-chili-cookoff-2026-11-14": {
+   "src": "assets/event-img/sc-moosehaven-chili-cookoff-2026-11-14.webp?v=307fee3c",
+   "w": 320,
+   "h": 180
+  },
+  "sc-jbc-jacksonville-mistletoe-market-2026-11-21": {
+   "src": "assets/event-img/sc-jbc-jacksonville-mistletoe-market-2026-11-21.webp?v=1928d382",
+   "w": 800,
+   "h": 353
+  },
+  "sc-christmas-made-in-the-south-jax-2026": {
+   "src": "assets/event-img/sc-christmas-made-in-the-south-jax-2026.webp?v=ee217cb9",
+   "w": 800,
+   "h": 1063
+  },
+  "sc-jax-faith-market-2026-11-22": {
+   "src": "assets/event-img/sc-jax-faith-market-2026-11-22.webp?v=04ea6293",
+   "w": 800,
+   "h": 1200
+  },
+  "sc-christmas-market-colonial-quarter-2026": {
+   "src": "assets/event-img/sc-christmas-market-colonial-quarter-2026.webp?v=af0ecf6e",
+   "w": 675,
+   "h": 1200
+  },
+  "ej-mayport-village-waterfront-market": {
+   "src": "assets/event-img/ej-mayport-village-waterfront-market.webp?v=595cf9f3",
+   "w": 800,
+   "h": 420
+  },
+  "sc-omni-shops-holiday-lights-2026-11-27": {
+   "src": "assets/event-img/sc-omni-shops-holiday-lights-2026-11-27.webp?v=33351b2e",
+   "w": 800,
+   "h": 534
+  },
+  "fl-0097": {
+   "src": "assets/event-img/fl-0097.webp?v=285a0936",
+   "w": 692,
+   "h": 692
+  },
+  "sc-florida-key-lime-pie-festival-2026-11-14": {
+   "src": "assets/event-img/sc-florida-key-lime-pie-festival-2026-11-14.webp?v=bc923353",
+   "w": 800,
+   "h": 306
+  },
+  "sc-riverside-arts-market-local-love-night-market-2026": {
+   "src": "assets/event-img/sc-riverside-arts-market-local-love-night-market-2026.webp?v=061555ae",
+   "w": 800,
+   "h": 400
+  },
+  "fl-0112": {
+   "src": "assets/event-img/fl-0112.webp?v=44a0ae31",
+   "w": 800,
+   "h": 450
+  },
+  "sc-moca-mini-market-2026-11-28": {
+   "src": "assets/event-img/sc-moca-mini-market-2026-11-28.webp?v=97b4836b",
+   "w": 800,
+   "h": 400
+  },
+  "sc-bunnell-holiday-market-2026-11-28": {
+   "src": "assets/event-img/sc-bunnell-holiday-market-2026-11-28.webp?v=0a465deb",
+   "w": 610,
+   "h": 302
+  },
+  "sc-jax-holiday-river-fest-2026-11-28": {
+   "src": "assets/event-img/sc-jax-holiday-river-fest-2026-11-28.webp?v=d0d8a814",
+   "w": 512,
+   "h": 405
+  },
+  "sc-orange-park-holiday-market-thrasher-horne-2026-12-": {
+   "src": "assets/event-img/sc-orange-park-holiday-market-thrasher-horne-2026-12-.webp?v=fa7dc0d1",
+   "w": 800,
+   "h": 533
+  },
+  "sc-vintage-market-days-jax-2026": {
+   "src": "assets/event-img/sc-vintage-market-days-jax-2026.webp?v=bd73cf93",
+   "w": 617,
+   "h": 361
+  },
+  "sc-cummer-museum-holiday-market-2026": {
+   "src": "assets/event-img/sc-cummer-museum-holiday-market-2026.webp?v=140dba30",
+   "w": 800,
+   "h": 534
+  },
+  "sc-spring-river-school-winter-market-2026-12-05": {
+   "src": "assets/event-img/sc-spring-river-school-winter-market-2026-12-05.webp?v=757ba300",
+   "w": 800,
+   "h": 533
+  },
+  "fl-0088": {
+   "src": "assets/event-img/fl-0088.webp?v=e166cc1b",
+   "w": 336,
+   "h": 196
+  },
+  "sc-jwj-park-after-hours-holiday-market-2026-12-11": {
+   "src": "assets/event-img/sc-jwj-park-after-hours-holiday-market-2026-12-11.webp?v=f63fbabf",
+   "w": 800,
+   "h": 400
+  },
+  "sc-mandarin-markets-holiday-extravaganza-2026-12-12": {
+   "src": "assets/event-img/sc-mandarin-markets-holiday-extravaganza-2026-12-12.webp?v=c35b1655",
+   "w": 800,
+   "h": 450
+  },
+  "sc-spruce-jax-winter-nights-market-2026-12-05": {
+   "src": "assets/event-img/sc-spruce-jax-winter-nights-market-2026-12-05.webp?v=fd176c4d",
+   "w": 800,
+   "h": 800
+  },
+  "sc-alligator-farm-holiday-night-market-2026-12-11": {
+   "src": "assets/event-img/sc-alligator-farm-holiday-night-market-2026-12-11.webp?v=5ae0cf6b",
+   "w": 474,
+   "h": 225
+  },
+  "sc-jax-zoo-zoolights-holiday-market-2026": {
+   "src": "assets/event-img/sc-jax-zoo-zoolights-holiday-market-2026.webp?v=8abb870f",
+   "w": 600,
+   "h": 152
+  },
+  "sc-maple-leaf-jax-christmas-market-2026-12-18": {
+   "src": "assets/event-img/sc-maple-leaf-jax-christmas-market-2026-12-18.webp?v=de2b8b9b",
+   "w": 800,
+   "h": 534
+  },
+  "sc-european-winter-market-palm-coast-2026-12-17": {
+   "src": "assets/event-img/sc-european-winter-market-palm-coast-2026-12-17.webp?v=d06c9dc4",
+   "w": 800,
+   "h": 450
+  },
+  "sc-nassau-county-christmas-in-the-park-2026-12-19": {
+   "src": "assets/event-img/sc-nassau-county-christmas-in-the-park-2026-12-19.webp?v=2d8b042d",
+   "w": 800,
+   "h": 1036
+  },
+  "sc-poppys-true-market-christmas-market-2026-12-20": {
+   "src": "assets/event-img/sc-poppys-true-market-christmas-market-2026-12-20.webp?v=1b23bcd9",
+   "w": 800,
+   "h": 425
+  },
+  "sc-ponte-vedra-beach-art-craft-show-2027-01-02": {
+   "src": "assets/event-img/sc-ponte-vedra-beach-art-craft-show-2027-01-02.webp?v=5d8c2466",
+   "w": 442,
+   "h": 235
+  },
+  "sc-foodees-fest-jacksonville-2027-01-08": {
+   "src": "assets/event-img/sc-foodees-fest-jacksonville-2027-01-08.webp?v=f04d2734",
+   "w": 800,
+   "h": 267
+  },
+  "sc-jimmy-jam-bbq-slam-2027-01-09": {
+   "src": "assets/event-img/sc-jimmy-jam-bbq-slam-2027-01-09.webp?v=1e7734aa",
+   "w": 800,
+   "h": 415
+  },
+  "sc-windows-of-time-whoville-2026-12-19": {
+   "src": "assets/event-img/sc-windows-of-time-whoville-2026-12-19.webp?v=b41cd59d",
+   "w": 375,
+   "h": 300
+  },
+  "sc-melanin-small-business-saturday-eventeny-2026-11-2": {
+   "src": "assets/event-img/sc-melanin-small-business-saturday-eventeny-2026-11-2.webp?v=d82ddfe9",
+   "w": 500,
+   "h": 500
+  },
+  "sc-premier-bride-expo-jax-2027-01-10": {
+   "src": "assets/event-img/sc-premier-bride-expo-jax-2027-01-10.webp?v=5ba87f43",
+   "w": 640,
+   "h": 640
+  },
+  "sc-riverside-avondale-luminaria-2026": {
+   "src": "assets/event-img/sc-riverside-avondale-luminaria-2026.webp?v=4c612dac",
+   "w": 800,
+   "h": 581
+  },
+  "sc-jax-urban-book-festival-2027": {
+   "src": "assets/event-img/sc-jax-urban-book-festival-2027.webp?v=13657e60",
+   "w": 800,
+   "h": 600
+  },
+  "sc-jax-fashion-week-runway-2027-01-23": {
+   "src": "assets/event-img/sc-jax-fashion-week-runway-2027-01-23.webp?v=4274bc5c",
+   "w": 800,
+   "h": 1115
+  },
+  "sc-whiskey-wine-wildlife-festival-2027": {
+   "src": "assets/event-img/sc-whiskey-wine-wildlife-festival-2027.webp?v=7eb73f3b",
+   "w": 800,
+   "h": 795
+  },
+  "sc-enchantamas-princess-expo-2027-01-30": {
+   "src": "assets/event-img/sc-enchantamas-princess-expo-2027-01-30.webp?v=09177a20",
+   "w": 800,
+   "h": 400
+  },
+  "sc-ortega-camellia-festival-2027-01-23": {
+   "src": "assets/event-img/sc-ortega-camellia-festival-2027-01-23.webp?v=20c189b9",
+   "w": 511,
+   "h": 435
+  },
+  "sc-seawalk-music-festival-2027-02-20": {
+   "src": "assets/event-img/sc-seawalk-music-festival-2027-02-20.webp?v=a9ddd920",
+   "w": 615,
+   "h": 404
+  },
+  "sc-jacksonville-tattoo-arts-festival-2027-02-05": {
+   "src": "assets/event-img/sc-jacksonville-tattoo-arts-festival-2027-02-05.webp?v=7438bbea",
+   "w": 400,
+   "h": 400
+  },
+  "sc-jax-auto-show-2027": {
+   "src": "assets/event-img/sc-jax-auto-show-2027.webp?v=43d57cf7",
+   "w": 768,
+   "h": 511
+  },
+  "sc-lunar-new-year-dtjax-2027": {
+   "src": "assets/event-img/sc-lunar-new-year-dtjax-2027.webp?v=9641bdcc",
+   "w": 800,
+   "h": 500
+  },
+  "sc-jwj-park-after-hours-galentines-2027-02-12": {
+   "src": "assets/event-img/sc-jwj-park-after-hours-galentines-2027-02-12.webp?v=41690aaa",
+   "w": 800,
+   "h": 1200
+  },
+  "sc-socca-lunar-new-year-2027-02-20": {
+   "src": "assets/event-img/sc-socca-lunar-new-year-2027-02-20.webp?v=9641bdcc",
+   "w": 800,
+   "h": 500
+  },
+  "sc-rodeheaver-boys-ranch-2027-02": {
+   "src": "assets/event-img/sc-rodeheaver-boys-ranch-2027-02.webp?v=a68b2cc8",
+   "w": 675,
+   "h": 1200
+  },
+  "fl-0089": {
+   "src": "assets/event-img/fl-0089.webp?v=e166cc1b",
+   "w": 336,
+   "h": 196
+  },
+  "fl-0040": {
+   "src": "assets/event-img/fl-0040.webp?v=41ee60a6",
+   "w": 700,
+   "h": 465
+  },
+  "sc-jax-veg-fest-2027-04-18": {
+   "src": "assets/event-img/sc-jax-veg-fest-2027-04-18.webp?v=f04d2734",
+   "w": 800,
+   "h": 267
+  },
+  "sc-florida-bohemian-festival-2027": {
+   "src": "assets/event-img/sc-florida-bohemian-festival-2027.webp?v=d1291e0c",
+   "w": 800,
+   "h": 764
+  },
+  "fl-0101": {
+   "src": "assets/event-img/fl-0101.webp?v=b9d0d752",
+   "w": 800,
+   "h": 450
+  },
+  "sc-wings-n-wheels-2027-02-27": {
+   "src": "assets/event-img/sc-wings-n-wheels-2027-02-27.webp?v=030e6e8e",
+   "w": 800,
+   "h": 450
+  },
+  "fl-0036": {
+   "src": "assets/event-img/fl-0036.webp?v=4045a2e3",
+   "w": 300,
+   "h": 300
+  },
+  "fl-0084": {
+   "src": "assets/event-img/fl-0084.webp?v=dc4af21e",
+   "w": 500,
+   "h": 266
+  },
+  "fl-0110": {
+   "src": "assets/event-img/fl-0110.webp?v=2b6c9db2",
+   "w": 800,
+   "h": 450
+  },
+  "fl-0083": {
+   "src": "assets/event-img/fl-0083.webp?v=dc4af21e",
+   "w": 500,
+   "h": 266
+  },
+  "fl-0039": {
+   "src": "assets/event-img/fl-0039.webp?v=a568343d",
+   "w": 800,
+   "h": 206
+  },
+  "fl-0090": {
+   "src": "assets/event-img/fl-0090.webp?v=218c8172",
+   "w": 800,
+   "h": 420
+  },
+  "fl-0086": {
+   "src": "assets/event-img/fl-0086.webp?v=d8942f23",
+   "w": 661,
+   "h": 244
+  },
+  "city-palm-coast-starlight-parade-2026-12-12": {
+   "src": "assets/event-img/city-palm-coast-starlight-parade-2026-12-12.webp?v=5e9cd5f7",
+   "w": 800,
+   "h": 450
+  },
+  "ej-small-business-sunday-market-gators-oakleaf": {
+   "src": "assets/event-img/ej-small-business-sunday-market-gators-oakleaf.webp?v=d414216b",
+   "w": 454,
+   "h": 449
+  },
+  "city-jax-world-of-nations-2027": {
+   "src": "assets/event-img/city-jax-world-of-nations-2027.webp?v=8462a08f",
+   "w": 335,
+   "h": 512
+  },
+  "af-north-beaches-holiday-art-walk-2026-11-19": {
+   "src": "assets/event-img/af-north-beaches-holiday-art-walk-2026-11-19.webp?v=cd34f933",
+   "w": 800,
+   "h": 602
+  },
+  "rd1-greater-jax-agricultural-fair-2026": {
+   "src": "assets/event-img/rd1-greater-jax-agricultural-fair-2026.webp?v=93436264",
+   "w": 800,
+   "h": 647
+  },
+  "rd1-unf-market-days": {
+   "src": "assets/event-img/rd1-unf-market-days.webp?v=f249323f",
+   "w": 800,
+   "h": 420
+  },
+  "af-art-in-the-park-2026-11-13": {
+   "src": "assets/event-img/af-art-in-the-park-2026-11-13.webp?v=68c1247a",
+   "w": 800,
+   "h": 400
+  },
+  "af-saint-augustine-beach-artisan-market-2027-01-09": {
+   "src": "assets/event-img/af-saint-augustine-beach-artisan-market-2027-01-09.webp?v=459ad48b",
+   "w": 800,
+   "h": 396
+  },
+  "af-5th-annual-americana-classic-car-truck-bike-show-2026-11-14": {
+   "src": "assets/event-img/af-5th-annual-americana-classic-car-truck-bike-show-2026-11-14.webp?v=b6cfb4b0",
+   "w": 800,
+   "h": 800
+  },
+  "af-jacksonville-beach-holiday-arts-market-2026-11-21": {
+   "src": "assets/event-img/af-jacksonville-beach-holiday-arts-market-2026-11-21.webp?v=40107b15",
+   "w": 800,
+   "h": 450
+  },
+  "af-jacksonville-holiday-market-2026-12-12": {
+   "src": "assets/event-img/af-jacksonville-holiday-market-2026-12-12.webp?v=5d22e182",
+   "w": 800,
+   "h": 492
+  },
+  "af-light-up-the-night-2026-11-14": {
+   "src": "assets/event-img/af-light-up-the-night-2026-11-14.webp?v=de3ade98",
+   "w": 692,
+   "h": 404
+  },
+  "af-first-friday-2026-11-06": {
+   "src": "assets/event-img/af-first-friday-2026-11-06.webp?v=6d6f3855",
+   "w": 800,
+   "h": 267
+  },
+  "af-creative-market-2026-12-05": {
+   "src": "assets/event-img/af-creative-market-2026-12-05.webp?v=6872136f",
+   "w": 800,
+   "h": 493
+  },
+  "af-florida-state-fair-2027-02-04": {
+   "src": "assets/event-img/af-florida-state-fair-2027-02-04.webp?v=9ae4e43d",
+   "w": 300,
+   "h": 200
+  },
+  "af-29th-annual-thunder-by-the-bay-music-motors-festiv-2027-02-19": {
+   "src": "assets/event-img/af-29th-annual-thunder-by-the-bay-music-motors-festiv-2027-02-19.webp?v=fffa79e2",
+   "w": 800,
+   "h": 857
+  },
+  "af-light-up-eustis-2026-2026-11-27": {
+   "src": "assets/event-img/af-light-up-eustis-2026-2026-11-27.webp?v=341b056a",
+   "w": 800,
+   "h": 419
+  },
+  "af-christmas-in-the-cloud-2026-12-12": {
+   "src": "assets/event-img/af-christmas-in-the-cloud-2026-12-12.webp?v=967e2107",
+   "w": 743,
+   "h": 712
+  },
+  "af-dania-beach-wine-seafood-festival-2027-03-06": {
+   "src": "assets/event-img/af-dania-beach-wine-seafood-festival-2027-03-06.webp?v=3f8fb069",
+   "w": 800,
+   "h": 533
+  },
+  "af-raising-cane-and-moonshine-festival-2027-01-09": {
+   "src": "assets/event-img/af-raising-cane-and-moonshine-festival-2027-01-09.webp?v=09531ff7",
+   "w": 500,
+   "h": 749
+  },
+  "campus-fsu-market-wednesday": {
+   "src": "assets/event-img/campus-fsu-market-wednesday.webp?v=70256ce9",
+   "w": 800,
+   "h": 420
+  },
+  "campus-unf-outdoor-tabling": {
+   "src": "assets/event-img/campus-unf-outdoor-tabling.webp?v=f249323f",
+   "w": 800,
+   "h": 420
+  },
+  "campus-usf-st-pete-sunday-market": {
+   "src": "assets/event-img/campus-usf-st-pete-sunday-market.webp?v=8adfc265",
+   "w": 500,
+   "h": 500
+  },
+  "campus-usf-bull-market": {
+   "src": "assets/event-img/campus-usf-bull-market.webp?v=832fc898",
+   "w": 299,
+   "h": 300
+  },
+  "af-treasure-coast-bbq-pig-jam-battle-showdown-2027-01-16": {
+   "src": "assets/event-img/af-treasure-coast-bbq-pig-jam-battle-showdown-2027-01-16.webp?v=20f5755f",
+   "w": 800,
+   "h": 450
+  },
+  "campus-fau-breezeway-tables": {
+   "src": "assets/event-img/campus-fau-breezeway-tables.webp?v=b92e477b",
+   "w": 300,
+   "h": 300
+  },
+  "af-festival-of-women-authors-on-milestone-divas-day-2027-03-20": {
+   "src": "assets/event-img/af-festival-of-women-authors-on-milestone-divas-day-2027-03-20.webp?v=b516da58",
+   "w": 800,
+   "h": 800
+  },
+  "campus-fgcu-sales-table": {
+   "src": "assets/event-img/campus-fgcu-sales-table.webp?v=c89c9adf",
+   "w": 800,
+   "h": 420
+  },
+  "sc-southern-womens-market-2027": {
+   "src": "assets/event-img/sc-southern-womens-market-2027.webp?v=5230de75",
+   "w": 800,
+   "h": 333
+  },
+  "campus-rollins-vendor-tables": {
+   "src": "assets/event-img/campus-rollins-vendor-tables.webp?v=3e5d2594",
+   "w": 800,
+   "h": 420
+  },
+  "campus-saint-leo-university-market": {
+   "src": "assets/event-img/campus-saint-leo-university-market.webp?v=e3f35cf5",
+   "w": 800,
+   "h": 375
+  },
+  "campus-mdc-downtown-miami-market": {
+   "src": "assets/event-img/campus-mdc-downtown-miami-market.webp?v=7f32e3c6",
+   "w": 800,
+   "h": 489
+  },
+  "campus-uf-gator-market": {
+   "src": "assets/event-img/campus-uf-gator-market.webp?v=da417da0",
+   "w": 800,
+   "h": 640
+  },
+  "campus-florida-classic-2026-vendors": {
+   "src": "assets/event-img/campus-florida-classic-2026-vendors.webp?v=01466f57",
+   "w": 800,
+   "h": 450
+  },
+  "campus-fmu-football-tailgate-vendors": {
+   "src": "assets/event-img/campus-fmu-football-tailgate-vendors.webp?v=7e451794",
+   "w": 330,
+   "h": 121
+  },
+  "campus-miami-book-fair-street-fair": {
+   "src": "assets/event-img/campus-miami-book-fair-street-fair.webp?v=cf8c2815",
+   "w": 800,
+   "h": 556
+  },
+  "campus-poincianafest-2026": {
+   "src": "assets/event-img/campus-poincianafest-2026.webp?v=697975a8",
+   "w": 800,
+   "h": 1000
+  },
+  "fcvv-the-landings-2026-11-14": {
+   "src": "assets/event-img/fcvv-the-landings-2026-11-14.webp?v=aaa6eddc",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-murabella-2026-11-15": {
+   "src": "assets/event-img/fcvv-murabella-2026-11-15.webp?v=aaa6eddc",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-bartram-springs-2026": {
+   "src": "assets/event-img/fcvv-bartram-springs-2026.webp?v=aaa6eddc",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-seaton-creek-2026-11-21": {
+   "src": "assets/event-img/fcvv-seaton-creek-2026-11-21.webp?v=aaa6eddc",
+   "w": 800,
+   "h": 800
+  },
+  "af-fired-arts-fair-2026-2026-11-29": {
+   "src": "assets/event-img/af-fired-arts-fair-2026-2026-11-29.webp?v=addb3b3a",
+   "w": 800,
+   "h": 800
+  },
+  "sc-jax-night-market-holiday-beach-marine-2026-12": {
+   "src": "assets/event-img/sc-jax-night-market-holiday-beach-marine-2026-12.webp?v=30db0bc7",
+   "w": 800,
+   "h": 1200
+  },
+  "fcvv-shearwater-2026": {
+   "src": "assets/event-img/fcvv-shearwater-2026.webp?v=aaa6eddc",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-fleming-island-2026-nov-dec": {
+   "src": "assets/event-img/fcvv-fleming-island-2026-nov-dec.webp?v=aaa6eddc",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-granary-park-2026-11-29": {
+   "src": "assets/event-img/fcvv-granary-park-2026-11-29.webp?v=aaa6eddc",
+   "w": 800,
+   "h": 800
+  },
+  "sc-battle-bros-jax-food-fest-craft-fair-2027-03-20": {
+   "src": "assets/event-img/sc-battle-bros-jax-food-fest-craft-fair-2027-03-20.webp?v=41dab785",
+   "w": 800,
+   "h": 800
+  },
+  "sc-battle-bros-florida-creatives-market-daytona-2027-01-16": {
+   "src": "assets/event-img/sc-battle-bros-florida-creatives-market-daytona-2027-01-16.webp?v=16e463f2",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-bestbet-jacksonville-2026-12-12": {
+   "src": "assets/event-img/fcvv-bestbet-jacksonville-2026-12-12.webp?v=df18fd37",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-rolling-hills-holiday-2026-12-04": {
+   "src": "assets/event-img/fcvv-rolling-hills-holiday-2026-12-04.webp?v=df18fd37",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-beacon-lake-2026-12-05": {
+   "src": "assets/event-img/fcvv-beacon-lake-2026-12-05.webp?v=df18fd37",
+   "w": 800,
+   "h": 800
+  },
+  "fcvv-bestbet-orange-park-2026-12-20": {
+   "src": "assets/event-img/fcvv-bestbet-orange-park-2026-12-20.webp?v=df18fd37",
+   "w": 800,
+   "h": 800
+  },
+  "oakleaf-vendor-market-trinity-2027-03-06": {
+   "src": "assets/event-img/oakleaf-vendor-market-trinity-2027-03-06.webp?v=b7e0cdfe",
+   "w": 800,
+   "h": 333
+  },
+  "wk-oyster-fest-jax-2027-04-17": {
+   "src": "assets/event-img/wk-oyster-fest-jax-2027-04-17.webp?v=a631c0eb",
+   "w": 800,
+   "h": 400
+  },
+  "af-port-st-lucie-international-fest-2026-11-21": {
+   "src": "assets/event-img/af-port-st-lucie-international-fest-2026-11-21.webp?v=e4b17446",
+   "w": 800,
+   "h": 533
+  },
+  "wk-winter-market-fest-the-landing-2026-12-12": {
+   "src": "assets/event-img/wk-winter-market-fest-the-landing-2026-12-12.webp?v=1e4407c9",
+   "w": 800,
+   "h": 1213
+  },
+  "af-port-st-lucie-noche-buena-2026-12-18": {
+   "src": "assets/event-img/af-port-st-lucie-noche-buena-2026-12-18.webp?v=1718e7ad",
+   "w": 800,
+   "h": 533
+  },
+  "wk-third-thursday-terminal-2026-11-19": {
+   "src": "assets/event-img/wk-third-thursday-terminal-2026-11-19.webp?v=ba52e2c3",
+   "w": 800,
+   "h": 480
+  }
+ }
+}

@@ -209,8 +209,24 @@
   /* Nov 8 2026: 'all' = All Florida, the default for anyone who has not picked areas */
   function inRegs(regs,e){if(!regs.length||regs.indexOf('all')>-1)return true;return regs.indexOf(regionOf(e))>-1;}
   function updated(e){var v=e.verified_on||e.last_checked;if(!v)return 'Listed';var n=days(v,today);return (e.verified?'Checked ':'Updated ')+(n<=0?'today':n===1?'yesterday':n<7?n+' days ago':MO[pd(v).getMonth()]+' '+pd(v).getDate());}
-  function cover(e,a,attr,noText){var k=kind(e),x=a?pd(a):null;
-    return '<span class="fb-cov k-'+k+'"'+(attr?' '+attr:'')+'><span class="fb-cic">'+ic(kindIcon(k))+'</span>'+(noText?'':
+  /* Nov 9 2026 (owner 4:33 AM: "show logo/image from event"): each event's own image, self-hosted under assets/event-img/,
+     mapped id -> {src,w,h} in data/event-img.json (built by Tab's enrich_images.py). No entry = the placeholder art, unchanged. */
+  var IMG=null;
+  function imgOf(e){return (IMG&&e&&IMG[e.id])||null;}
+  function covImg(m){var sq=m.w&&m.h&&(m.w/m.h)<1.45,s=esc(m.src);
+    return (sq?'<img class="fb-cimg fb-cbg" src="'+s+'" alt="" aria-hidden="true" loading="lazy" decoding="async">':'')+
+      '<img class="fb-cimg'+(sq?' fb-cfit':'')+'" src="'+s+'" alt="" loading="lazy" decoding="async"'+(m.w&&m.h?' width="'+m.w+'" height="'+m.h+'"':'')+'>';}
+  function fillCovers(){if(!IMG)return;var cs=d.querySelectorAll('.fb-cov[data-eid]:not(.has-img)');
+    for(var i=0;i<cs.length;i++){var m=IMG[cs[i].getAttribute('data-eid')];if(!m)continue;cs[i].classList.add('has-img');cs[i].insertAdjacentHTML('afterbegin',covImg(m));}}
+  function loadImgs(){if(!W.fetch){IMG={};return;}
+    fetch('data/event-img.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null;}).then(function(j){IMG=(j&&j.images)||{};
+      if(d.body)fillCovers();else d.addEventListener('DOMContentLoaded',fillCovers);}).catch(function(){IMG={};});}
+  /* an image that fails to load leaves the placeholder art exactly as before */
+  d.addEventListener('error',function(ev){var t=ev.target;if(!t||!t.classList||!t.classList.contains('fb-cimg'))return;var c=t.parentNode;
+    if(c){var ims=c.querySelectorAll('.fb-cimg');for(var i=0;i<ims.length;i++)ims[i].remove();c.classList.remove('has-img');}},true);
+  loadImgs();
+  function cover(e,a,attr,noText){var k=kind(e),x=a?pd(a):null,m=imgOf(e);
+    return '<span class="fb-cov k-'+k+(m?' has-img':'')+'" data-eid="'+esc(e.id)+'"'+(attr?' '+attr:'')+'>'+(m?covImg(m):'')+'<span class="fb-cic">'+ic(kindIcon(k))+'</span>'+(noText?'':
       (x?'<span class="fb-cd"><i>'+MO[x.getMonth()]+'</i><b>'+x.getDate()+'</b><small>'+WD[x.getDay()]+'</small></span>':'<span class="fb-cd"><i>Open</i><b>∞</b><small>dates</small></span>')+
       '<span class="fb-ck">'+esc(kindLabel(k))+'<b>'+esc(e.city||e.county||'Florida')+'</b></span>')+'</span>';}
   function openEv(id,a){if(W.JVE_APP&&JVE_APP.open){JVE_APP.open(id,a||undefined);return;}location.href='index.html#e='+encodeURIComponent(id);}
