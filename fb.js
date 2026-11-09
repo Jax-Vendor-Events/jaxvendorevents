@@ -135,18 +135,47 @@
       var lab=b.querySelector('.lb');if(lab)lab.textContent=k==='saved'?(on?'Saved':'Save'):k==='going'?'Going':'Interested';
       var n=b.querySelector('.n');if(n){var c=R.counts[id]||{};n.textContent=c[k]?' · '+c[k]:'';}});
     d.querySelectorAll('[data-cnt="'+sel+'"]').forEach(function(el){el.textContent=cntText(id);});}
-  function paintAll(){var ids={};d.querySelectorAll('[data-r][data-eid]').forEach(function(b){ids[b.getAttribute('data-eid')]=1;});Object.keys(ids).forEach(paintOne);}
+  function paintAll(){var ids={};d.querySelectorAll('[data-r][data-eid]').forEach(function(b){ids[b.getAttribute('data-eid')]=1;});Object.keys(ids).forEach(paintOne);apPaint();}
+  /* Nov 9 2026 (owner 1:13 AM: "add an apply button to automatically apply by tab right there from feed"): Apply with Tab.
+     OWNER ONLY: drawn only when this login is a site admin (auth.js A.admin = this user's own row in the admins table, which
+     RLS lets a login read only for itself and only the service key can write) — never for visitors or members, and nothing
+     of it is in the page markup for them. Tapping opens WhatsApp to Tab with one line: "Apply: title | date | place | id | link".
+     The "Sent to Tab" mark lives only in this browser (localStorage). */
+  var TAB_WA='12512765320',APK='jve_tab_apply1';
+  function owner(){var A=auth();return !!(A&&A.user&&A.admin===true);}
+  function apSent(){try{return JSON.parse(localStorage.getItem(APK)||'{}')||{};}catch(_){return {};}}
+  function apHttp(u){u=String(u||'').trim();return /^https?:\/\/[^\s|]+$/i.test(u)?u:'';}
+  function apClean(s){return String(s||'').replace(/[\r\n|]+/g,' / ').replace(/\s+/g,' ').trim();}
+  function apText(e){var a=next(e),dt=a?fmtLong(a)+', '+a.slice(0,4)+(e.end_date&&e.end_date>a&&(e.up||[]).length<=1?' – '+fmt(e.end_date):''):(e.schedule||'dates not listed');
+    var co=String(e.county||'').replace(/\s*county\s*$/i,'').trim(),pl=[e.city,co?co+' County':''].filter(Boolean).join(', ')||'Florida';
+    var ln=apHttp(e.signup_url)||apHttp(e.apply)||apHttp(e.source_url)||apHttp(e.source);
+    return ['Apply: '+apClean(e.name),apClean(dt),apClean(pl),'id '+apClean(e.id)].concat(ln?[ln]:[]).join(' | ');}
+  function apHref(e){return 'https://wa.me/'+TAB_WA+'?text='+encodeURIComponent(apText(e));}
+  function apBtn(e,cls){var s=apSent()[e.id];
+    return '<a class="'+cls+' fb-ap'+(s?' sent':'')+'" data-tabapply="'+esc(e.id)+'" href="'+esc(apHref(e))+'" target="_blank" rel="noopener" title="'+(s?'Sent to Tab '+esc(s)+' · tap to send again':'Send to Tab to apply in your name')+'">'+ic(s?'check':'send')+'<span class="lb">'+(s?'Sent':cls==='fb-eb'?'Send to Tab':'Apply')+'</span></a>';}
+  function apMark(card,id){if(!card)return;var t=card.querySelector('.fb-tags'),m=card.querySelector('.fb-apsent'),s=owner()&&apSent()[id];
+    if(s&&t&&!m)t.insertAdjacentHTML('beforeend','<span class="fb-tag ok fb-apsent">'+ic('send')+'Sent to Tab '+esc(s)+'</span>');else if(!s&&m)m.remove();}
+  function apPaint(){var on=owner();
+    d.querySelectorAll('.fb-post[data-pid]').forEach(function(card){var id=card.getAttribute('data-pid'),row=card.querySelector('.fb-acts'),b=row&&row.querySelector('.fb-ap');if(!row)return;
+      if(on){var e=evById(id);if(e){if(b)b.outerHTML=apBtn(e,'fb-act');else row.insertAdjacentHTML('beforeend',apBtn(e,'fb-act'));row.classList.add('has-ap');}}
+      else if(b){b.remove();row.classList.remove('has-ap');}
+      apMark(card,id);});
+    var ea=$('fbEActs');if(ea){var eb=ea.querySelector('.fb-ap'),ee=curId&&evById(curId);
+      if(on&&ee){if(eb)eb.outerHTML=apBtn(ee,'fb-eb');else ea.insertAdjacentHTML('beforeend',apBtn(ee,'fb-eb'));ea.classList.add('has-ap');}
+      else if(eb){eb.remove();ea.classList.remove('has-ap');}}}
   function actRow(e){var id=esc(e.id),nm=esc(e.name||'');
-    return '<div class="fb-acts" role="group" aria-label="Actions">'+
+    var ow=owner();
+    return '<div class="fb-acts'+(ow?' has-ap':'')+'" role="group" aria-label="Actions">'+
       '<button type="button" class="fb-act" data-r="interested" data-eid="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('star')+'<span class="lb">Interested</span></button>'+
       '<button type="button" class="fb-act" data-r="going" data-eid="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('check')+'<span class="lb">Going</span></button>'+
       '<button type="button" class="fb-act" data-r="saved" data-eid="'+id+'" data-name="'+nm+'" aria-pressed="false">'+ic('saved')+'<span class="lb">Save</span></button>'+
-      '<button type="button" class="fb-act" data-share="'+id+'">'+ic('share')+'<span class="lb">Share</span></button></div>';}
+      '<button type="button" class="fb-act" data-share="'+id+'">'+ic('share')+'<span class="lb">Share</span></button>'+(ow?apBtn(e,'fb-act'):'')+'</div>';}
   function share(id,title){var url=location.origin+'/index.html#e='+encodeURIComponent(id);var t=title||'Vendor event on Jax Vendor Events';
     if(navigator.share){navigator.share({title:t,url:url}).catch(function(){});return;}
     if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(url).then(function(){toast('Link copied');},function(){prompt('Copy this link',url);});else prompt('Copy this link',url);}
   d.addEventListener('click',function(ev){var t=ev.target;if(!t||!t.closest)return;
     var b=t.closest('[data-r][data-eid]');if(b){ev.preventDefault();toggle(b.getAttribute('data-r'),b.getAttribute('data-eid'),b.getAttribute('data-name'));return;}
+    var ap=t.closest('[data-tabapply]');if(ap){if(!owner()){ev.preventDefault();return;}var aid=ap.getAttribute('data-tabapply'),sm=apSent(),nw=new Date();sm[aid]=MO[nw.getMonth()]+' '+nw.getDate();try{localStorage.setItem(APK,JSON.stringify(sm));}catch(_){}setTimeout(apPaint,400);return;}
     var s=t.closest('[data-share]');if(s){ev.preventDefault();var e0=evById(s.getAttribute('data-share'));share(s.getAttribute('data-share'),e0&&e0.name);return;}
     var o=t.closest('[data-open]');if(o){ev.preventDefault();closePop();openEv(o.getAttribute('data-open'),o.getAttribute('data-a'));return;}
     var f=t.closest('[data-follow]');if(f){ev.preventDefault();followOrg(f.getAttribute('data-follow'));return;}
@@ -396,7 +425,8 @@
     $('fbEActs').innerHTML='<button type="button" class="fb-eb" data-r="interested" data-eid="'+esc(e.id)+'" data-name="'+esc(e.name)+'" aria-pressed="false">'+ic('star')+'<span class="lb">Interested</span><span class="n"></span></button>'+
       '<button type="button" class="fb-eb" data-r="going" data-eid="'+esc(e.id)+'" data-name="'+esc(e.name)+'" aria-pressed="false">'+ic('check')+'<span class="lb">Going</span><span class="n"></span></button>'+
       '<button type="button" class="fb-eb" data-r="saved" data-eid="'+esc(e.id)+'" aria-pressed="false">'+ic('saved')+'<span class="lb">Save</span></button>'+
-      '<button type="button" class="fb-eb" data-share="'+esc(e.id)+'">'+ic('share')+'Share</button>';
+      '<button type="button" class="fb-eb" data-share="'+esc(e.id)+'">'+ic('share')+'Share</button>'+(owner()?apBtn(e,'fb-eb'):'');
+    $('fbEActs').classList.toggle('has-ap',owner());
     var o=org(e),x='';
     x+='<div class="fb-ecard"><h4>Location</h4><div class="fb-mapbox"><span>'+ic('pin','style="width:14px;height:14px;vertical-align:-2px"')+' '+esc(e.city||e.county||'Florida')+'</span></div>'+
       (!e.locked&&e.address?'<p>'+esc(e.address)+'</p><p style="display:flex;gap:8px;flex-wrap:wrap"><a class="fb-btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(e.address)+'">'+ic('dir','style="width:16px;height:16px"')+'Directions</a><a class="fb-btn ghost" href="#map" data-fbgo>See on map</a></p>'
@@ -482,11 +512,11 @@
 
   /* ---------------- boot ---------------- */
   W.JVE_FB=FB;
-  FB.paintAll=paintAll;FB.counts=wantCounts;
+  FB.paintAll=paintAll;FB.applyPaint=apPaint;FB.counts=wantCounts;
   function boot(){buildTop();buildLeft();buildRight();notes();
     if(isIndex){try{var q=sessionStorage.getItem('fb_q');if(q){sessionStorage.removeItem('fb_q');var f=$('fQ');if(f){f.value=q;f.dispatchEvent(new Event('input',{bubbles:true}));}var t=$('fbQ');if(t)t.value=q;}}catch(_){}}}
   if(d.body)boot();else d.addEventListener('DOMContentLoaded',boot);
-  function afterAuth(){meSlot();paintLeft();paintRight();rLoad();profile();maybeOnboard();var pl=prefs().look;if(pl&&!get(LK)&&(pl==='light'||pl==='dark'||pl==='auto'))setLook(pl,true);}
+  function afterAuth(){apPaint();meSlot();paintLeft();paintRight();rLoad();profile();maybeOnboard();var pl=prefs().look;if(pl&&!get(LK)&&(pl==='light'||pl==='dark'||pl==='auto'))setLook(pl,true);}
   var A0=auth();if(A0&&A0.ready&&A0.ready.then)A0.ready.then(function(){if(d.body)afterAuth();else d.addEventListener('DOMContentLoaded',afterAuth);});
   else d.addEventListener('DOMContentLoaded',function(){rLoad();});
   d.addEventListener('jve:app',function(){paintLeft();paintRight();notes();mineList();var H=homeEl||$('home');if(H&&W.JVE_APP.view()==='home')FB.home(H);});

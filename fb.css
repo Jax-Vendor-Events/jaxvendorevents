@@ -438,3 +438,18 @@ html.fbx .toast{z-index:130!important}
   html.fbx .sheet .sh-head{padding:4px 16px 2px!important}
   .fb-epane{padding:14px 16px}
 }
+
+/* Nov 9 2026: Apply with Tab (owner-only; fb.js draws it only for an admin login) */
+a.fb-act.fb-ap,a.fb-eb.fb-ap{text-decoration:none}
+.fb-act.fb-ap.sent{color:#46A758}
+.fb-eb.fb-ap.sent{border-color:#46A758;color:#46A758}
+html[data-look=light] .fb-act.fb-ap.sent,html[data-look=light] .fb-eb.fb-ap.sent{color:#1E7A45;border-color:#1E7A45}
+.fb-tag.fb-apsent svg{width:13px;height:13px}
+@media (max-width:480px){
+  .fb-acts.has-ap .fb-act{flex-direction:column;justify-content:center;gap:3px;height:48px;font-size:11.5px;padding:0 1px}
+  .fb-acts.has-ap .fb-act svg{width:18px;height:18px}
+}
+@media (max-width:600px){
+  .fb-eacts.has-ap{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .fb-eacts.has-ap .fb-eb{font-size:11.5px}
+}
