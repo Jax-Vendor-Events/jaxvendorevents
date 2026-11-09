@@ -13,3 +13,4 @@ Disallow: /reset.html
 Disallow: /thanks.html
 
 Sitemap: https://jaxvendorevents.com/sitemap.xml
+Sitemap: https://jaxvendorevents.com/sitemap-areas.xml
