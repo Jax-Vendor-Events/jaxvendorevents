@@ -41,6 +41,11 @@
    "w": 800,
    "h": 600
   },
+  "af-big-pine-and-lower-keys-nautical-expo-2027-01-23": {
+   "src": "assets/event-img/af-big-pine-and-lower-keys-nautical-expo-2027-01-23.webp?v=478cc9bd",
+   "w": 453,
+   "h": 587
+  },
   "af-christmas-in-the-cloud-2026-12-12": {
    "src": "assets/event-img/af-christmas-in-the-cloud-2026-12-12.webp?v=967e2107",
    "w": 743,
@@ -250,6 +255,11 @@
    "src": "assets/event-img/af-pensacola-fall-food-truck-fest-2026-11-14.webp?v=941c5e38",
    "w": 742,
    "h": 389
+  },
+  "af-pinellas-taco-fest-2027-01-23": {
+   "src": "assets/event-img/af-pinellas-taco-fest-2027-01-23.webp?v=8081c6d9",
+   "w": 800,
+   "h": 440
   },
   "af-plant-city-art-in-the-park-and-sip-and-shop-2026-11-14": {
    "src": "assets/event-img/af-plant-city-art-in-the-park-and-sip-and-shop-2026-11-14.webp?v=4e4fda18",
@@ -987,5 +997,5 @@
    "h": 1213
   }
  },
- "updated": "2026-11-10T00:06:57Z"
+ "updated": "2026-11-10T02:53:02Z"
 }
