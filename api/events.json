@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-10T17:40:31Z",
+ "data_updated": "2026-11-10T17:54:46Z",
  "as_of": "2026-11-10",
- "count": 810,
+ "count": 812,
  "events": [
   {
    "id": "rd1-greater-jax-agricultural-fair-2026",
@@ -3879,6 +3879,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-tampa-fall-makers-market-2026-11-21",
+   "details_locked": true
+  },
+  {
+   "id": "af-the-atlantic-beach-music-festival-2026-11-21",
+   "title": "Festival · Atlantic Beach",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Atlantic Beach",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-the-atlantic-beach-music-festival-2026-11-21",
    "details_locked": true
   },
   {
@@ -12266,6 +12288,29 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-boca-raton-winter-fine-art-show-2027-01-30",
+   "details_locked": true
+  },
+  {
+   "id": "af-miami-seafood-w-the-us-paella-championship-2027-01-30",
+   "title": "Pop-up market · Miami",
+   "next_date": "2027-01-30",
+   "dates": [
+    "2027-01-30",
+    "2027-01-31"
+   ],
+   "end_date": "2027-01-31",
+   "recurring": false,
+   "schedule": null,
+   "city": "Miami",
+   "county": "Miami-Dade",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-miami-seafood-w-the-us-paella-championship-2027-01-30",
    "details_locked": true
   },
   {
