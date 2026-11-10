@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-10T08:54:06Z",
+ "data_updated": "2026-11-10T11:53:57Z",
  "as_of": "2026-11-10",
- "count": 798,
+ "count": 811,
  "events": [
   {
    "id": "rd1-greater-jax-agricultural-fair-2026",
@@ -17768,6 +17768,28 @@
    "details_locked": true
   },
   {
+   "id": "af-highway-87-saturday-market-2027-04-17",
+   "title": "Pop-up market · Navarre",
+   "next_date": "2027-04-17",
+   "dates": [
+    "2027-04-17"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Navarre",
+   "county": "Santa Rosa",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-highway-87-saturday-market-2027-04-17",
+   "details_locked": true
+  },
+  {
    "id": "af-melbourne-blueberry-festival-2027-04-17",
    "title": "Festival · Melbourne",
    "next_date": "2027-04-17",
@@ -17812,6 +17834,28 @@
    "details_locked": true
   },
   {
+   "id": "af-winthrop-pop-up-market-2027-04-17",
+   "title": "Pop-up market · Riverview",
+   "next_date": "2027-04-17",
+   "dates": [
+    "2027-04-17"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Riverview",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-winthrop-pop-up-market-2027-04-17",
+   "details_locked": true
+  },
+  {
    "id": "wk-oyster-fest-jax-2027-04-17",
    "title": "Festival · Jacksonville",
    "next_date": "2027-04-17",
@@ -17834,6 +17878,28 @@
    "details_locked": true
   },
   {
+   "id": "af-parkland-farmers-market-and-environmental-expo-2027-04-18",
+   "title": "Farmers festival · Parkland",
+   "next_date": "2027-04-18",
+   "dates": [
+    "2027-04-18"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Parkland",
+   "county": "Broward",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-parkland-farmers-market-and-environmental-expo-2027-04-18",
+   "details_locked": true
+  },
+  {
    "id": "sc-jax-veg-fest-2027-04-18",
    "title": "Festival · Jacksonville",
    "next_date": "2027-04-18",
@@ -17853,6 +17919,141 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=sc-jax-veg-fest-2027-04-18",
+   "details_locked": true
+  },
+  {
+   "id": "af-port-orange-wednesday-night-market-2027-04-21",
+   "title": "Pop-up market · Port Orange",
+   "next_date": "2027-04-21",
+   "dates": [
+    "2027-04-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Port Orange",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-port-orange-wednesday-night-market-2027-04-21",
+   "details_locked": true
+  },
+  {
+   "id": "af-west-palm-beach-weekend-antiques-festival-2027-04-23",
+   "title": "Craft & art festival · West Palm Beach",
+   "next_date": "2027-04-23",
+   "dates": [
+    "2027-04-23"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "West Palm Beach",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-west-palm-beach-weekend-antiques-festival-2027-04-23",
+   "details_locked": true
+  },
+  {
+   "id": "af-ocala-blueberry-fest-2027-04-24",
+   "title": "Festival · Ocala",
+   "next_date": "2027-04-24",
+   "dates": [
+    "2027-04-24"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Ocala",
+   "county": "Marion",
+   "region": "North Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-ocala-blueberry-fest-2027-04-24",
+   "details_locked": true
+  },
+  {
+   "id": "af-saint-james-city-outdoor-island-market-2027-04-24",
+   "title": "Pop-up market · Saint James City",
+   "next_date": "2027-04-24",
+   "dates": [
+    "2027-04-24"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Saint James City",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-saint-james-city-outdoor-island-market-2027-04-24",
+   "details_locked": true
+  },
+  {
+   "id": "af-sanford-festival-of-the-arts-2027-04-24",
+   "title": "Festival · Sanford",
+   "next_date": "2027-04-24",
+   "dates": [
+    "2027-04-24"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sanford",
+   "county": "Seminole",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-sanford-festival-of-the-arts-2027-04-24",
+   "details_locked": true
+  },
+  {
+   "id": "af-sponge-docks-craft-art-festival-2027-04-24",
+   "title": "Craft & art festival · Tarpon Springs",
+   "next_date": "2027-04-24",
+   "dates": [
+    "2027-04-24",
+    "2027-04-25",
+    "2027-06-19",
+    "2027-06-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Tarpon Springs",
+   "county": "Pinellas",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-sponge-docks-craft-art-festival-2027-04-24",
    "details_locked": true
   },
   {
@@ -17897,6 +18098,74 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=fl-0084",
+   "details_locked": true
+  },
+  {
+   "id": "af-fort-myers-blueberry-fest-2027-05-01",
+   "title": "Festival · Fort Myers",
+   "next_date": "2027-05-01",
+   "dates": [
+    "2027-05-01",
+    "2027-05-02"
+   ],
+   "end_date": "2027-05-02",
+   "recurring": false,
+   "schedule": null,
+   "city": "Fort Myers",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fort-myers-blueberry-fest-2027-05-01",
+   "details_locked": true
+  },
+  {
+   "id": "af-hwy-87-1st-saturday-market-2027-05-01",
+   "title": "Pop-up market · Navarre",
+   "next_date": "2027-05-01",
+   "dates": [
+    "2027-05-01"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Navarre",
+   "county": "Santa Rosa",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-hwy-87-1st-saturday-market-2027-05-01",
+   "details_locked": true
+  },
+  {
+   "id": "af-pinellas-pepper-fest-2027-05-01",
+   "title": "Festival · Pinellas Park",
+   "next_date": "2027-05-01",
+   "dates": [
+    "2027-05-01",
+    "2027-05-02"
+   ],
+   "end_date": "2027-05-02",
+   "recurring": false,
+   "schedule": null,
+   "city": "Pinellas Park",
+   "county": "Pinellas",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-pinellas-pepper-fest-2027-05-01",
    "details_locked": true
   },
   {
@@ -17963,6 +18232,29 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=fl-0012",
+   "details_locked": true
+  },
+  {
+   "id": "af-corey-avenue-june-art-craft-festival-2027-06-05",
+   "title": "Craft & art festival · Saint Pete Beach",
+   "next_date": "2027-06-05",
+   "dates": [
+    "2027-06-05",
+    "2027-06-06"
+   ],
+   "end_date": "2027-06-06",
+   "recurring": false,
+   "schedule": null,
+   "city": "Saint Pete Beach",
+   "county": "Pinellas",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-corey-avenue-june-art-craft-festival-2027-06-05",
    "details_locked": true
   }
  ]
