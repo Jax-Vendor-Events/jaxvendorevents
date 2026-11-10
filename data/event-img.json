@@ -256,6 +256,11 @@
    "w": 742,
    "h": 389
   },
+  "af-pinellas-park-strawberry-festival-2027-02-12": {
+   "src": "assets/event-img/af-pinellas-park-strawberry-festival-2027-02-12.webp?v=17239c17",
+   "w": 668,
+   "h": 587
+  },
   "af-pinellas-taco-fest-2027-01-23": {
    "src": "assets/event-img/af-pinellas-taco-fest-2027-01-23.webp?v=8081c6d9",
    "w": 800,
@@ -997,5 +1002,5 @@
    "h": 1213
   }
  },
- "updated": "2026-11-10T02:53:02Z"
+ "updated": "2026-11-10T05:52:55Z"
 }
