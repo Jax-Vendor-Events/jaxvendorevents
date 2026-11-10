@@ -86,6 +86,11 @@
    "w": 800,
    "h": 420
   },
+  "af-deland-outdoor-art-festival-2027-03-27": {
+   "src": "assets/event-img/af-deland-outdoor-art-festival-2027-03-27.webp?v=aac3c77c",
+   "w": 507,
+   "h": 377
+  },
   "af-destin-holiday-saturday-commons-market-2026-11-21": {
    "src": "assets/event-img/af-destin-holiday-saturday-commons-market-2026-11-21.webp?v=53005690",
    "w": 800,
@@ -185,6 +190,11 @@
    "src": "assets/event-img/af-jax-fall-record-fair-2026-2026-11-15.webp?v=21e5d121",
    "w": 800,
    "h": 420
+  },
+  "af-kensinglony-craft-fair-2026-11-14-2": {
+   "src": "assets/event-img/af-kensinglony-craft-fair-2026-11-14-2.webp?v=8f8f667e",
+   "w": 800,
+   "h": 927
   },
   "af-lakeland-seafood-foodie-fest-2026-11-21": {
    "src": "assets/event-img/af-lakeland-seafood-foodie-fest-2026-11-21.webp?v=1eeb2611",
@@ -1007,5 +1017,5 @@
    "h": 1213
   }
  },
- "updated": "2026-11-10T08:52:59Z"
+ "updated": "2026-11-10T11:52:55Z"
 }
