@@ -111,6 +111,11 @@
    "w": 800,
    "h": 800
   },
+  "af-fiesta-de-pueblo-business-expo-2027-01-09": {
+   "src": "assets/event-img/af-fiesta-de-pueblo-business-expo-2027-01-09.webp?v=412fc81c",
+   "w": 798,
+   "h": 379
+  },
   "af-fired-arts-fair-2026-2026-11-29": {
    "src": "assets/event-img/af-fired-arts-fair-2026-2026-11-29.webp?v=addb3b3a",
    "w": 800,
@@ -305,6 +310,11 @@
    "src": "assets/event-img/af-saint-petersburg-holiday-market-2026-11-21.webp?v=2da6ca05",
    "w": 500,
    "h": 500
+  },
+  "af-southwest-florida-wood-art-expo-competition-2027-01-08": {
+   "src": "assets/event-img/af-southwest-florida-wood-art-expo-competition-2027-01-08.webp?v=c6a6d5ae",
+   "w": 453,
+   "h": 587
   },
   "af-temple-terrace-arts-and-crafts-festival-2026-11-14": {
    "src": "assets/event-img/af-temple-terrace-arts-and-crafts-festival-2026-11-14.webp?v=e8496371",
@@ -977,5 +987,5 @@
    "h": 1213
   }
  },
- "updated": "2026-11-09T17:53:11Z"
+ "updated": "2026-11-10T00:06:57Z"
 }
