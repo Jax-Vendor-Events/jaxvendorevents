@@ -16,6 +16,11 @@
    "w": 800,
    "h": 800
   },
+  "af-altamonte-uptown-art-expo-2027-03-13": {
+   "src": "assets/event-img/af-altamonte-uptown-art-expo-2027-03-13.webp?v=405a96b9",
+   "w": 800,
+   "h": 534
+  },
   "af-annual-1000-turkey-giveaway-2026-11-21": {
    "src": "assets/event-img/af-annual-1000-turkey-giveaway-2026-11-21.webp?v=93ddac34",
    "w": 800,
@@ -31,6 +36,21 @@
    "w": 800,
    "h": 400
   },
+  "af-atomic-holiday-bazaar-2026-12-12": {
+   "src": "assets/event-img/af-atomic-holiday-bazaar-2026-12-12.webp?v=2675f7de",
+   "w": 800,
+   "h": 800
+  },
+  "af-avalon-aglow-2026-12-05": {
+   "src": "assets/event-img/af-avalon-aglow-2026-12-05.webp?v=65bc14e9",
+   "w": 800,
+   "h": 534
+  },
+  "af-bartow-bloomin-arts-festival-2027-03-06": {
+   "src": "assets/event-img/af-bartow-bloomin-arts-festival-2027-03-06.webp?v=0fd3abe5",
+   "w": 800,
+   "h": 600
+  },
   "af-bartow-holiday-antique-market-2026-11-14": {
    "src": "assets/event-img/af-bartow-holiday-antique-market-2026-11-14.webp?v=504b3dda",
    "w": 200,
@@ -41,15 +61,80 @@
    "w": 800,
    "h": 600
   },
+  "af-bartow-mistletoe-market-2026-12-12": {
+   "src": "assets/event-img/af-bartow-mistletoe-market-2026-12-12.webp?v=ae119971",
+   "w": 800,
+   "h": 600
+  },
+  "af-bay-harbor-islands-arts-festival-2027-01-17": {
+   "src": "assets/event-img/af-bay-harbor-islands-arts-festival-2027-01-17.webp?v=be6f4f4c",
+   "w": 800,
+   "h": 593
+  },
   "af-big-pine-and-lower-keys-nautical-expo-2027-01-23": {
    "src": "assets/event-img/af-big-pine-and-lower-keys-nautical-expo-2027-01-23.webp?v=478cc9bd",
    "w": 453,
    "h": 587
   },
+  "af-blountstown-river-fest-2027-02-27": {
+   "src": "assets/event-img/af-blountstown-river-fest-2027-02-27.webp?v=96a4d6aa",
+   "w": 800,
+   "h": 517
+  },
+  "af-boca-raton-winter-fine-art-show-2027-01-30": {
+   "src": "assets/event-img/af-boca-raton-winter-fine-art-show-2027-01-30.webp?v=65940c62",
+   "w": 300,
+   "h": 250
+  },
+  "af-bonita-springs-national-art-festival-2027-02-06": {
+   "src": "assets/event-img/af-bonita-springs-national-art-festival-2027-02-06.webp?v=cb83558c",
+   "w": 800,
+   "h": 351
+  },
+  "af-bonita-springs-national-winter-art-festival-2027-01-09": {
+   "src": "assets/event-img/af-bonita-springs-national-winter-art-festival-2027-01-09.webp?v=cb83558c",
+   "w": 800,
+   "h": 351
+  },
+  "af-cedar-key-celebration-of-the-arts-2027-04-03": {
+   "src": "assets/event-img/af-cedar-key-celebration-of-the-arts-2027-04-03.webp?v=f647dc20",
+   "w": 400,
+   "h": 400
+  },
+  "af-central-florida-fair-2027-03-04": {
+   "src": "assets/event-img/af-central-florida-fair-2027-03-04.webp?v=008e83f2",
+   "w": 800,
+   "h": 226
+  },
+  "af-central-florida-flavor-fest-and-craft-fair-2027-02-06": {
+   "src": "assets/event-img/af-central-florida-flavor-fest-and-craft-fair-2027-02-06.webp?v=4c9863c9",
+   "w": 800,
+   "h": 400
+  },
+  "af-christmas-caravan-arts-and-crafts-show-2026-12-04": {
+   "src": "assets/event-img/af-christmas-caravan-arts-and-crafts-show-2026-12-04.webp?v=b5a7505a",
+   "w": 800,
+   "h": 420
+  },
   "af-christmas-in-the-cloud-2026-12-12": {
    "src": "assets/event-img/af-christmas-in-the-cloud-2026-12-12.webp?v=967e2107",
    "w": 743,
    "h": 712
+  },
+  "af-city-of-pompano-beach-saturday-green-market-2027-03-27": {
+   "src": "assets/event-img/af-city-of-pompano-beach-saturday-green-market-2027-03-27.webp?v=36c39150",
+   "w": 800,
+   "h": 1000
+  },
+  "af-city-of-pompano-beach-spring-green-market-2027-02-27": {
+   "src": "assets/event-img/af-city-of-pompano-beach-spring-green-market-2027-02-27.webp?v=36c39150",
+   "w": 800,
+   "h": 1000
+  },
+  "af-cocoa-beach-art-show-2026-11-28": {
+   "src": "assets/event-img/af-cocoa-beach-art-show-2026-11-28.webp?v=068fa6c3",
+   "w": 300,
+   "h": 300
   },
   "af-cocoa-beach-holiday-friday-fest-2026-11-20": {
    "src": "assets/event-img/af-cocoa-beach-holiday-friday-fest-2026-11-20.webp?v=33625fd6",
@@ -66,6 +151,16 @@
    "w": 800,
    "h": 493
   },
+  "af-crystal-river-train-show-2026-12-12": {
+   "src": "assets/event-img/af-crystal-river-train-show-2026-12-12.webp?v=4077bab3",
+   "w": 386,
+   "h": 217
+  },
+  "af-dade-city-holiday-farmers-market-2026-12-05": {
+   "src": "assets/event-img/af-dade-city-holiday-farmers-market-2026-12-05.webp?v=6b55df49",
+   "w": 443,
+   "h": 223
+  },
   "af-dade-city-mistletoe-market-2026-11-21": {
    "src": "assets/event-img/af-dade-city-mistletoe-market-2026-11-21.webp?v=ee17a298",
    "w": 800,
@@ -81,10 +176,25 @@
    "w": 800,
    "h": 450
   },
+  "af-daytona-holiday-market-2026-11-28": {
+   "src": "assets/event-img/af-daytona-holiday-market-2026-11-28.webp?v=48a02d42",
+   "w": 703,
+   "h": 489
+  },
   "af-deck-the-chairs-2026-11-25": {
    "src": "assets/event-img/af-deck-the-chairs-2026-11-25.webp?v=28fc0bed",
    "w": 800,
    "h": 420
+  },
+  "af-deerfield-beach-renaissance-festival-2027-02-06": {
+   "src": "assets/event-img/af-deerfield-beach-renaissance-festival-2027-02-06.webp?v=f27bdc72",
+   "w": 540,
+   "h": 360
+  },
+  "af-defuniak-springs-foodees-fest-2027-02-05": {
+   "src": "assets/event-img/af-defuniak-springs-foodees-fest-2027-02-05.webp?v=477e094b",
+   "w": 800,
+   "h": 400
   },
   "af-deland-fall-festival-of-the-arts-2026-11-21": {
    "src": "assets/event-img/af-deland-fall-festival-of-the-arts-2026-11-21.webp?v=b521539e",
@@ -95,6 +205,11 @@
    "src": "assets/event-img/af-deland-outdoor-art-festival-2027-03-27.webp?v=aac3c77c",
    "w": 507,
    "h": 377
+  },
+  "af-destin-commons-market-2026-12-05": {
+   "src": "assets/event-img/af-destin-commons-market-2026-12-05.webp?v=39598f6d",
+   "w": 518,
+   "h": 518
   },
   "af-destin-holiday-saturday-commons-market-2026-11-21": {
    "src": "assets/event-img/af-destin-holiday-saturday-commons-market-2026-11-21.webp?v=53005690",
@@ -111,10 +226,25 @@
    "w": 800,
    "h": 548
   },
+  "af-downtown-ocala-fall-vintage-market-2026-11-14": {
+   "src": "assets/event-img/af-downtown-ocala-fall-vintage-market-2026-11-14.webp?v=dd624ea6",
+   "w": 800,
+   "h": 420
+  },
+  "af-downtown-ocala-holiday-vintage-market-2026-12-19": {
+   "src": "assets/event-img/af-downtown-ocala-holiday-vintage-market-2026-12-19.webp?v=04229ed3",
+   "w": 555,
+   "h": 291
+  },
   "af-eartha-s-farm-market-2026-11-14": {
    "src": "assets/event-img/af-eartha-s-farm-market-2026-11-14.webp?v=a230a218",
    "w": 800,
    "h": 420
+  },
+  "af-edgewood-holiday-craft-fair-and-food-truck-event-2026-12-12": {
+   "src": "assets/event-img/af-edgewood-holiday-craft-fair-and-food-truck-event-2026-12-12.webp?v=d03711e1",
+   "w": 800,
+   "h": 296
   },
   "af-emerald-coast-cruizin-swap-meet-2026-11-12": {
    "src": "assets/event-img/af-emerald-coast-cruizin-swap-meet-2026-11-12.webp?v=1c47dabc",
@@ -141,15 +271,35 @@
    "w": 800,
    "h": 267
   },
+  "af-florida-craft-brew-and-wingfest-2027-02-20": {
+   "src": "assets/event-img/af-florida-craft-brew-and-wingfest-2027-02-20.webp?v=0e175b32",
+   "w": 800,
+   "h": 561
+  },
+  "af-florida-keys-seafood-festival-2027-02-13": {
+   "src": "assets/event-img/af-florida-keys-seafood-festival-2027-02-13.webp?v=9c93de74",
+   "w": 800,
+   "h": 800
+  },
   "af-florida-state-fair-2027-02-04": {
    "src": "assets/event-img/af-florida-state-fair-2027-02-04.webp?v=9ae4e43d",
    "w": 300,
    "h": 200
   },
+  "af-fort-lauderdale-holiday-shopping-bazaar-2026-12-02": {
+   "src": "assets/event-img/af-fort-lauderdale-holiday-shopping-bazaar-2026-12-02.webp?v=74df8d48",
+   "w": 800,
+   "h": 533
+  },
   "af-fort-myers-pickle-festival-2026-11-14": {
    "src": "assets/event-img/af-fort-myers-pickle-festival-2026-11-14.webp?v=1a80fa3a",
    "w": 800,
    "h": 400
+  },
+  "af-fort-walton-beach-arts-festival-2027-04-10": {
+   "src": "assets/event-img/af-fort-walton-beach-arts-festival-2027-04-10.webp?v=df6a8c56",
+   "w": 800,
+   "h": 419
   },
   "af-friendsgiving-fountain-thanksgiving-themed-food-tr-2026-11-21": {
    "src": "assets/event-img/af-friendsgiving-fountain-thanksgiving-themed-food-tr-2026-11-21.webp?v=3e6f12e2",
@@ -165,6 +315,36 @@
    "src": "assets/event-img/af-green-room-market-2026-11-20.webp?v=8223c6eb",
    "w": 800,
    "h": 420
+  },
+  "af-gulfport-fine-arts-festival-2027-02-13": {
+   "src": "assets/event-img/af-gulfport-fine-arts-festival-2027-02-13.webp?v=46ecb3d8",
+   "w": 600,
+   "h": 350
+  },
+  "af-habitat-strawberry-festival-2027-03-06": {
+   "src": "assets/event-img/af-habitat-strawberry-festival-2027-03-06.webp?v=10c658cc",
+   "w": 700,
+   "h": 537
+  },
+  "af-havana-winter-fest-and-parade-2026-12-12": {
+   "src": "assets/event-img/af-havana-winter-fest-and-parade-2026-12-12.webp?v=e3e84f51",
+   "w": 800,
+   "h": 800
+  },
+  "af-hoggetowne-medieval-faire-2027-01-22": {
+   "src": "assets/event-img/af-hoggetowne-medieval-faire-2027-01-22.webp?v=4d711cd9",
+   "w": 471,
+   "h": 248
+  },
+  "af-hoggetowne-winter-medieval-faire-2027-01-16": {
+   "src": "assets/event-img/af-hoggetowne-winter-medieval-faire-2027-01-16.webp?v=4d711cd9",
+   "w": 471,
+   "h": 248
+  },
+  "af-hyde-park-village-holiday-fresh-market-2026-12-06": {
+   "src": "assets/event-img/af-hyde-park-village-holiday-fresh-market-2026-12-06.webp?v=462da039",
+   "w": 800,
+   "h": 534
   },
   "af-jacksonville-beach-christmas-market-2026-11-29": {
    "src": "assets/event-img/af-jacksonville-beach-christmas-market-2026-11-29.webp?v=3d1d503d",
@@ -196,15 +376,70 @@
    "w": 800,
    "h": 420
   },
+  "af-jupiter-seafood-festival-2027-02-19": {
+   "src": "assets/event-img/af-jupiter-seafood-festival-2027-02-19.webp?v=9d638e8a",
+   "w": 800,
+   "h": 400
+  },
   "af-kensinglony-craft-fair-2026-11-14-2": {
    "src": "assets/event-img/af-kensinglony-craft-fair-2026-11-14-2.webp?v=8f8f667e",
    "w": 800,
    "h": 927
   },
+  "af-kiwanis-holiday-arts-and-crafts-show-2026-12-13": {
+   "src": "assets/event-img/af-kiwanis-holiday-arts-and-crafts-show-2026-12-13.webp?v=c94dbd82",
+   "w": 800,
+   "h": 267
+  },
+  "af-lake-city-holiday-growers-and-makers-market-2026-11-14": {
+   "src": "assets/event-img/af-lake-city-holiday-growers-and-makers-market-2026-11-14.webp?v=5655fa16",
+   "w": 600,
+   "h": 400
+  },
+  "af-lake-city-holiday-market-2026-12-12": {
+   "src": "assets/event-img/af-lake-city-holiday-market-2026-12-12.webp?v=5655fa16",
+   "w": 600,
+   "h": 400
+  },
+  "af-lake-helen-strawberry-fest-2027-03-20": {
+   "src": "assets/event-img/af-lake-helen-strawberry-fest-2027-03-20.webp?v=4279d179",
+   "w": 367,
+   "h": 323
+  },
+  "af-lakeland-first-fridays-event-2027-04-02": {
+   "src": "assets/event-img/af-lakeland-first-fridays-event-2027-04-02.webp?v=e7e01443",
+   "w": 800,
+   "h": 533
+  },
+  "af-lakeland-first-fridays-foodie-fest-2027-03-05": {
+   "src": "assets/event-img/af-lakeland-first-fridays-foodie-fest-2027-03-05.webp?v=47e25a9d",
+   "w": 800,
+   "h": 420
+  },
+  "af-lakeland-mardi-gras-first-fridays-event-2027-02-05": {
+   "src": "assets/event-img/af-lakeland-mardi-gras-first-fridays-event-2027-02-05.webp?v=e7e01443",
+   "w": 800,
+   "h": 533
+  },
+  "af-lakeland-original-sewing-and-quilt-expo-2027-03-18": {
+   "src": "assets/event-img/af-lakeland-original-sewing-and-quilt-expo-2027-03-18.webp?v=00e0cce1",
+   "w": 350,
+   "h": 160
+  },
   "af-lakeland-seafood-foodie-fest-2026-11-21": {
    "src": "assets/event-img/af-lakeland-seafood-foodie-fest-2026-11-21.webp?v=1eeb2611",
    "w": 800,
    "h": 1000
+  },
+  "af-lakewood-ranch-festival-of-the-arts-2027-03-06": {
+   "src": "assets/event-img/af-lakewood-ranch-festival-of-the-arts-2027-03-06.webp?v=b2e1831b",
+   "w": 800,
+   "h": 420
+  },
+  "af-largo-winter-train-show-2027-02-13": {
+   "src": "assets/event-img/af-largo-winter-train-show-2027-02-13.webp?v=27178777",
+   "w": 561,
+   "h": 229
   },
   "af-light-up-eustis-2026-2026-11-27": {
    "src": "assets/event-img/af-light-up-eustis-2026-2026-11-27.webp?v=341b056a",
@@ -226,20 +461,85 @@
    "w": 800,
    "h": 566
   },
+  "af-lutz-arts-and-crafts-festival-2026-12-05": {
+   "src": "assets/event-img/af-lutz-arts-and-crafts-festival-2026-12-05.webp?v=eafe7830",
+   "w": 800,
+   "h": 800
+  },
   "af-marco-island-thanksgiving-farmers-market-2026-11-25": {
    "src": "assets/event-img/af-marco-island-thanksgiving-farmers-market-2026-11-25.webp?v=49e0d418",
    "w": 800,
    "h": 721
+  },
+  "af-melbourne-blueberry-festival-2027-04-17": {
+   "src": "assets/event-img/af-melbourne-blueberry-festival-2027-04-17.webp?v=5790e559",
+   "w": 500,
+   "h": 500
+  },
+  "af-melbourne-galentine-s-girls-day-out-2027-02-13": {
+   "src": "assets/event-img/af-melbourne-galentine-s-girls-day-out-2027-02-13.webp?v=0d0f553f",
+   "w": 800,
+   "h": 534
+  },
+  "af-melbourne-holiday-food-fest-and-craft-fair-2026-12-05": {
+   "src": "assets/event-img/af-melbourne-holiday-food-fest-and-craft-fair-2026-12-05.webp?v=a6f1d1f9",
+   "w": 800,
+   "h": 400
+  },
+  "af-melbourne-strawberry-fest-2027-02-20": {
+   "src": "assets/event-img/af-melbourne-strawberry-fest-2027-02-20.webp?v=be304566",
+   "w": 756,
+   "h": 665
+  },
+  "af-mercato-art-celebration-2027-01-23": {
+   "src": "assets/event-img/af-mercato-art-celebration-2027-01-23.webp?v=d746b591",
+   "w": 800,
+   "h": 619
+  },
+  "af-merry-beach-market-holiday-festival-2026-12-11": {
+   "src": "assets/event-img/af-merry-beach-market-holiday-festival-2026-12-11.webp?v=1bf9e777",
+   "w": 800,
+   "h": 671
+  },
+  "af-midtown-tampa-holiday-sunshine-market-2026-11-28": {
+   "src": "assets/event-img/af-midtown-tampa-holiday-sunshine-market-2026-11-28.webp?v=872924b8",
+   "w": 800,
+   "h": 520
+  },
+  "af-midtown-tampa-winter-sunshine-market-2027-01-23": {
+   "src": "assets/event-img/af-midtown-tampa-winter-sunshine-market-2027-01-23.webp?v=3abc4249",
+   "w": 708,
+   "h": 471
+  },
+  "af-midtown-tampa-winter-thursday-sunset-market-2027-02-04": {
+   "src": "assets/event-img/af-midtown-tampa-winter-thursday-sunset-market-2027-02-04.webp?v=00db6216",
+   "w": 708,
+   "h": 471
   },
   "af-murray-hill-farmer-s-market-2026-11-11": {
    "src": "assets/event-img/af-murray-hill-farmer-s-market-2026-11-11.webp?v=3479413c",
    "w": 392,
    "h": 205
   },
+  "af-naples-holiday-fine-art-show-2026-12-05": {
+   "src": "assets/event-img/af-naples-holiday-fine-art-show-2026-12-05.webp?v=3121b77c",
+   "w": 300,
+   "h": 250
+  },
   "af-native-rhythms-festival-2026-11-13": {
    "src": "assets/event-img/af-native-rhythms-festival-2026-11-13.webp?v=698fc407",
    "w": 200,
    "h": 200
+  },
+  "af-new-smyrna-beach-festival-of-the-arts-2027-01-22": {
+   "src": "assets/event-img/af-new-smyrna-beach-festival-of-the-arts-2027-01-22.webp?v=817651c8",
+   "w": 400,
+   "h": 137
+  },
+  "af-new-smyrna-beach-holiday-craft-and-vendor-show-2026-12-06": {
+   "src": "assets/event-img/af-new-smyrna-beach-holiday-craft-and-vendor-show-2026-12-06.webp?v=94f808f6",
+   "w": 800,
+   "h": 450
   },
   "af-north-beaches-holiday-art-walk-2026-11-19": {
    "src": "assets/event-img/af-north-beaches-holiday-art-walk-2026-11-19.webp?v=cd34f933",
@@ -261,15 +561,60 @@
    "w": 800,
    "h": 449
   },
+  "af-orange-county-wedding-expo-2027-01-10": {
+   "src": "assets/event-img/af-orange-county-wedding-expo-2027-01-10.webp?v=34f79c20",
+   "w": 800,
+   "h": 300
+  },
+  "af-orlando-fusionfest-2026-11-28": {
+   "src": "assets/event-img/af-orlando-fusionfest-2026-11-28.webp?v=f8d54346",
+   "w": 800,
+   "h": 450
+  },
+  "af-orlando-renaissance-festival-2026-12-05": {
+   "src": "assets/event-img/af-orlando-renaissance-festival-2026-12-05.webp?v=3aa9ca2f",
+   "w": 800,
+   "h": 278
+  },
+  "af-orlando-scrapbook-expo-2027-02-26": {
+   "src": "assets/event-img/af-orlando-scrapbook-expo-2027-02-26.webp?v=6d19bee4",
+   "w": 800,
+   "h": 420
+  },
+  "af-oviedo-holiday-farmers-market-2026-12-05": {
+   "src": "assets/event-img/af-oviedo-holiday-farmers-market-2026-12-05.webp?v=b87338a3",
+   "w": 250,
+   "h": 298
+  },
+  "af-palmetto-european-holiday-market-2026-12-02": {
+   "src": "assets/event-img/af-palmetto-european-holiday-market-2026-12-02.webp?v=75109e72",
+   "w": 800,
+   "h": 801
+  },
+  "af-panama-city-beach-food-truck-and-craft-beer-festiv-2027-02-06": {
+   "src": "assets/event-img/af-panama-city-beach-food-truck-and-craft-beer-festiv-2027-02-06.webp?v=cd2fa4c9",
+   "w": 800,
+   "h": 534
+  },
   "af-panama-city-holly-fair-2026-11-12": {
    "src": "assets/event-img/af-panama-city-holly-fair-2026-11-12.webp?v=bd1ca852",
    "w": 350,
    "h": 300
   },
+  "af-pasco-flea-fest-2026-11-28": {
+   "src": "assets/event-img/af-pasco-flea-fest-2026-11-28.webp?v=b608c5d7",
+   "w": 800,
+   "h": 277
+  },
   "af-pensacola-fall-food-truck-fest-2026-11-14": {
    "src": "assets/event-img/af-pensacola-fall-food-truck-fest-2026-11-14.webp?v=941c5e38",
    "w": 742,
    "h": 389
+  },
+  "af-pensacola-foodees-fest-2027-02-12": {
+   "src": "assets/event-img/af-pensacola-foodees-fest-2027-02-12.webp?v=b360a9bd",
+   "w": 800,
+   "h": 400
   },
   "af-pinellas-park-strawberry-festival-2027-02-12": {
    "src": "assets/event-img/af-pinellas-park-strawberry-festival-2027-02-12.webp?v=17239c17",
@@ -286,10 +631,20 @@
    "w": 800,
    "h": 604
   },
+  "af-plant-city-merry-market-2026-12-05": {
+   "src": "assets/event-img/af-plant-city-merry-market-2026-12-05.webp?v=f856ecaa",
+   "w": 800,
+   "h": 315
+  },
   "af-plant-city-pig-jam-2026-11-20": {
    "src": "assets/event-img/af-plant-city-pig-jam-2026-11-20.webp?v=afe79dc5",
    "w": 800,
    "h": 296
+  },
+  "af-plant-city-strawberry-festival-2027-03-04": {
+   "src": "assets/event-img/af-plant-city-strawberry-festival-2027-03-04.webp?v=3028a22c",
+   "w": 300,
+   "h": 174
   },
   "af-pompano-beach-farmers-market-2026-11-14": {
    "src": "assets/event-img/af-pompano-beach-farmers-market-2026-11-14.webp?v=2c8f401e",
@@ -301,10 +656,35 @@
    "w": 800,
    "h": 533
   },
+  "af-port-orange-mistletoe-market-2026-12-19": {
+   "src": "assets/event-img/af-port-orange-mistletoe-market-2026-12-19.webp?v=dd2ae8cd",
+   "w": 800,
+   "h": 450
+  },
   "af-port-orange-night-market-2026-11-18": {
    "src": "assets/event-img/af-port-orange-night-market-2026-11-18.webp?v=9fd52c2b",
    "w": 800,
    "h": 968
+  },
+  "af-port-orange-pickle-and-jam-boree-fest-2027-01-23": {
+   "src": "assets/event-img/af-port-orange-pickle-and-jam-boree-fest-2027-01-23.webp?v=7e9edcb9",
+   "w": 800,
+   "h": 450
+  },
+  "af-port-saint-lucie-christmas-bazaar-2026-12-12": {
+   "src": "assets/event-img/af-port-saint-lucie-christmas-bazaar-2026-12-12.webp?v=b373c240",
+   "w": 800,
+   "h": 298
+  },
+  "af-port-saint-lucie-craft-fair-and-seafood-festival-2027-01-30": {
+   "src": "assets/event-img/af-port-saint-lucie-craft-fair-and-seafood-festival-2027-01-30.webp?v=d3c68bde",
+   "w": 300,
+   "h": 200
+  },
+  "af-port-saint-lucie-food-fest-and-craft-fair-2027-01-09": {
+   "src": "assets/event-img/af-port-saint-lucie-food-fest-and-craft-fair-2027-01-09.webp?v=460e6e2e",
+   "w": 800,
+   "h": 400
   },
   "af-port-st-lucie-international-fest-2026-11-21": {
    "src": "assets/event-img/af-port-st-lucie-international-fest-2026-11-21.webp?v=e4b17446",
@@ -326,6 +706,11 @@
    "w": 500,
    "h": 749
   },
+  "af-roser-holiday-market-2026-11-14": {
+   "src": "assets/event-img/af-roser-holiday-market-2026-11-14.webp?v=3c1fa107",
+   "w": 800,
+   "h": 450
+  },
   "af-saint-augustine-art-show-2027-03-20": {
    "src": "assets/event-img/af-saint-augustine-art-show-2027-03-20.webp?v=18361b27",
    "w": 757,
@@ -336,20 +721,120 @@
    "w": 800,
    "h": 396
   },
+  "af-saint-james-city-holiday-island-market-2026-11-28": {
+   "src": "assets/event-img/af-saint-james-city-holiday-island-market-2026-11-28.webp?v=78915149",
+   "w": 800,
+   "h": 500
+  },
+  "af-saint-james-city-outdoor-island-market-2027-04-24": {
+   "src": "assets/event-img/af-saint-james-city-outdoor-island-market-2027-04-24.webp?v=78915149",
+   "w": 800,
+   "h": 500
+  },
+  "af-saint-pete-holiday-night-market-2026-2026-12-02": {
+   "src": "assets/event-img/af-saint-pete-holiday-night-market-2026-2026-12-02.webp?v=12dd750b",
+   "w": 800,
+   "h": 400
+  },
+  "af-saint-petersburg-fine-art-festival-2027-02-06": {
+   "src": "assets/event-img/af-saint-petersburg-fine-art-festival-2027-02-06.webp?v=22bf338d",
+   "w": 800,
+   "h": 420
+  },
   "af-saint-petersburg-holiday-market-2026-11-21": {
    "src": "assets/event-img/af-saint-petersburg-holiday-market-2026-11-21.webp?v=2da6ca05",
    "w": 500,
    "h": 500
+  },
+  "af-saint-petersburg-indie-flea-market-2027-02-07": {
+   "src": "assets/event-img/af-saint-petersburg-indie-flea-market-2027-02-07.webp?v=e833c07a",
+   "w": 750,
+   "h": 750
+  },
+  "af-saint-petersburg-seafood-and-music-festival-2027-02-19": {
+   "src": "assets/event-img/af-saint-petersburg-seafood-and-music-festival-2027-02-19.webp?v=14cd5e71",
+   "w": 750,
+   "h": 522
+  },
+  "af-saint-petersburg-winter-indie-flea-market-2027-01-03": {
+   "src": "assets/event-img/af-saint-petersburg-winter-indie-flea-market-2027-01-03.webp?v=e833c07a",
+   "w": 750,
+   "h": 750
+  },
+  "af-sanford-holly-jolly-holiday-market-2026-12-20": {
+   "src": "assets/event-img/af-sanford-holly-jolly-holiday-market-2026-12-20.webp?v=3b1fee17",
+   "w": 800,
+   "h": 450
+  },
+  "af-sanford-love-is-in-the-air-artisan-event-2027-02-13": {
+   "src": "assets/event-img/af-sanford-love-is-in-the-air-artisan-event-2027-02-13.webp?v=1a1dd970",
+   "w": 800,
+   "h": 450
+  },
+  "af-sebastian-riverfront-fine-art-and-music-festival-2027-01-16": {
+   "src": "assets/event-img/af-sebastian-riverfront-fine-art-and-music-festival-2027-01-16.webp?v=8b90100d",
+   "w": 515,
+   "h": 526
   },
   "af-southwest-florida-wood-art-expo-competition-2027-01-08": {
    "src": "assets/event-img/af-southwest-florida-wood-art-expo-competition-2027-01-08.webp?v=c6a6d5ae",
    "w": 453,
    "h": 587
   },
+  "af-space-coast-kidfest-2027-03-20": {
+   "src": "assets/event-img/af-space-coast-kidfest-2027-03-20.webp?v=50a5f63e",
+   "w": 800,
+   "h": 1029
+  },
   "af-spring-market-plant-sale-chalk-festival-2027-03-14": {
    "src": "assets/event-img/af-spring-market-plant-sale-chalk-festival-2027-03-14.webp?v=44340391",
    "w": 782,
    "h": 587
+  },
+  "af-steinhatchee-fiddler-crab-festival-2027-02-12": {
+   "src": "assets/event-img/af-steinhatchee-fiddler-crab-festival-2027-02-12.webp?v=7ff75e55",
+   "w": 800,
+   "h": 800
+  },
+  "af-tallahassee-foodees-fest-2027-01-22": {
+   "src": "assets/event-img/af-tallahassee-foodees-fest-2027-01-22.webp?v=908e8f72",
+   "w": 800,
+   "h": 400
+  },
+  "af-tallahassee-market-days-2026-12-05": {
+   "src": "assets/event-img/af-tallahassee-market-days-2026-12-05.webp?v=56284e2a",
+   "w": 800,
+   "h": 450
+  },
+  "af-tampa-bay-snack-fest-2027-01-30": {
+   "src": "assets/event-img/af-tampa-bay-snack-fest-2027-01-30.webp?v=ea3b3561",
+   "w": 800,
+   "h": 400
+  },
+  "af-tampa-craft-fair-festival-2026-11-14": {
+   "src": "assets/event-img/af-tampa-craft-fair-festival-2026-11-14.webp?v=c0ecfb77",
+   "w": 800,
+   "h": 418
+  },
+  "af-tampa-fine-art-show-2027-02-27": {
+   "src": "assets/event-img/af-tampa-fine-art-show-2027-02-27.webp?v=a7c2e99e",
+   "w": 300,
+   "h": 250
+  },
+  "af-tampa-holiday-gift-market-2026-11-12": {
+   "src": "assets/event-img/af-tampa-holiday-gift-market-2026-11-12.webp?v=75fa237b",
+   "w": 800,
+   "h": 400
+  },
+  "af-tampa-home-and-garden-show-2027-04-03": {
+   "src": "assets/event-img/af-tampa-home-and-garden-show-2027-04-03.webp?v=7cd494a4",
+   "w": 800,
+   "h": 307
+  },
+  "af-tampa-jingle-bell-bazaar-2026-12-13": {
+   "src": "assets/event-img/af-tampa-jingle-bell-bazaar-2026-12-13.webp?v=5e75a050",
+   "w": 800,
+   "h": 333
   },
   "af-temple-terrace-arts-and-crafts-festival-2026-11-14": {
    "src": "assets/event-img/af-temple-terrace-arts-and-crafts-festival-2026-11-14.webp?v=e8496371",
@@ -371,15 +856,40 @@
    "w": 800,
    "h": 450
   },
+  "af-trinity-holiday-market-2026-12-05": {
+   "src": "assets/event-img/af-trinity-holiday-market-2026-12-05.webp?v=b26b8252",
+   "w": 800,
+   "h": 800
+  },
   "af-venice-holiday-festival-of-the-arts-2026-11-21": {
    "src": "assets/event-img/af-venice-holiday-festival-of-the-arts-2026-11-21.webp?v=32f48987",
    "w": 800,
    "h": 534
   },
+  "af-vero-beach-autumn-art-in-the-park-2026-11-22": {
+   "src": "assets/event-img/af-vero-beach-autumn-art-in-the-park-2026-11-22.webp?v=684c2ab3",
+   "w": 800,
+   "h": 533
+  },
+  "af-vero-beach-blues-festival-2027-02-27": {
+   "src": "assets/event-img/af-vero-beach-blues-festival-2027-02-27.webp?v=c1e07690",
+   "w": 800,
+   "h": 600
+  },
+  "af-volusia-senior-expo-2026-11-22": {
+   "src": "assets/event-img/af-volusia-senior-expo-2026-11-22.webp?v=56c5f4f7",
+   "w": 800,
+   "h": 1035
+  },
   "af-water-street-holiday-market-2026-11-15": {
    "src": "assets/event-img/af-water-street-holiday-market-2026-11-15.webp?v=60c58a0a",
    "w": 800,
    "h": 800
+  },
+  "af-west-palm-beach-craft-show-2027-02-12": {
+   "src": "assets/event-img/af-west-palm-beach-craft-show-2027-02-12.webp?v=194a6988",
+   "w": 800,
+   "h": 420
   },
   "af-west-palm-beach-holiday-shopping-fair-2026-11-14": {
    "src": "assets/event-img/af-west-palm-beach-holiday-shopping-fair-2026-11-14.webp?v=799d1a7e",
@@ -390,6 +900,11 @@
    "src": "assets/event-img/af-whimsy-holiday-market-2026-11-28.webp?v=19668299",
    "w": 800,
    "h": 671
+  },
+  "af-white-springs-festival-of-lights-2026-12-04": {
+   "src": "assets/event-img/af-white-springs-festival-of-lights-2026-12-04.webp?v=61422431",
+   "w": 800,
+   "h": 601
   },
   "af-winter-haven-fall-saturday-market-2026-11-14": {
    "src": "assets/event-img/af-winter-haven-fall-saturday-market-2026-11-14.webp?v=c1f70b57",
@@ -406,6 +921,11 @@
    "w": 800,
    "h": 534
   },
+  "af-winthrop-pop-up-market-2027-04-17": {
+   "src": "assets/event-img/af-winthrop-pop-up-market-2027-04-17.webp?v=743c1f81",
+   "w": 800,
+   "h": 251
+  },
   "af-withlacoochee-bluegrass-festival-2026-11-19": {
    "src": "assets/event-img/af-withlacoochee-bluegrass-festival-2026-11-19.webp?v=c2fa3028",
    "w": 500,
@@ -415,6 +935,11 @@
    "src": "assets/event-img/af-yankeetown-seafood-festival-2026-11-21.webp?v=2e9aa0d4",
    "w": 645,
    "h": 960
+  },
+  "af-zephyrhills-bbq-and-blues-fest-2027-02-06": {
+   "src": "assets/event-img/af-zephyrhills-bbq-and-blues-fest-2027-02-06.webp?v=7d3f0b92",
+   "w": 800,
+   "h": 450
   },
   "campus-fau-breezeway-tables": {
    "src": "assets/event-img/campus-fau-breezeway-tables.webp?v=b92e477b",
@@ -1006,6 +1531,11 @@
    "w": 800,
    "h": 450
   },
+  "wk-historic-eastside-marketplace-2026-12-12": {
+   "src": "assets/event-img/wk-historic-eastside-marketplace-2026-12-12.webp?v=65d5d29d",
+   "w": 800,
+   "h": 1000
+  },
   "wk-oyster-fest-jax-2027-04-17": {
    "src": "assets/event-img/wk-oyster-fest-jax-2027-04-17.webp?v=a631c0eb",
    "w": 800,
@@ -1022,5 +1552,5 @@
    "h": 1213
   }
  },
- "updated": "2026-11-10T14:53:05Z"
+ "updated": "2026-11-10T17:54:12Z"
 }
