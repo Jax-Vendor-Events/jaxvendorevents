@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-10T11:53:57Z",
+ "data_updated": "2026-11-10T17:40:31Z",
  "as_of": "2026-11-10",
- "count": 811,
+ "count": 810,
  "events": [
   {
    "id": "rd1-greater-jax-agricultural-fair-2026",
@@ -186,7 +186,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tampa-holiday-gift-market-2026-11-12",
    "details_locked": true
   },
@@ -807,7 +807,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-downtown-ocala-fall-vintage-market-2026-11-14",
    "details_locked": true
   },
@@ -1018,7 +1018,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lake-city-holiday-growers-and-makers-market-2026-11-14",
    "details_locked": true
   },
@@ -1062,7 +1062,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lutz-holiday-boutique-2026-11-14",
    "details_locked": true
   },
@@ -1328,7 +1328,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-roser-holiday-market-2026-11-14",
    "details_locked": true
   },
@@ -1363,7 +1363,7 @@
   },
   {
    "id": "af-safety-harbor-holiday-folly-faire-2026-11-14",
-   "title": "Holiday market · Safety Harbor",
+   "title": "Farmers market · Safety Harbor",
    "next_date": "2026-11-14",
    "dates": [
     "2026-11-14"
@@ -1379,7 +1379,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-safety-harbor-holiday-folly-faire-2026-11-14",
    "details_locked": true
   },
@@ -1424,7 +1424,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sarasota-medieval-fair-2026-11-14",
    "details_locked": true
   },
@@ -1535,7 +1535,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tampa-craft-fair-festival-2026-11-14",
    "details_locked": true
   },
@@ -1601,7 +1601,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-windermere-holiday-extravaganza-art-and-performing-2026-11-14",
    "details_locked": true
   },
@@ -2414,7 +2414,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-the-maker-s-market-at-bold-bean-riverside-2026-11-15",
    "details_locked": true
   },
@@ -3020,7 +3020,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-green-room-market-2026-11-20",
    "details_locked": true
   },
@@ -3086,7 +3086,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-safety-harbor-holiday-street-celebration-2026-11-20",
    "details_locked": true
   },
@@ -3320,7 +3320,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-clermont-s-hometown-holidays-2026-11-21",
    "details_locked": true
   },
@@ -3519,7 +3519,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-gulfport-fall-saturday-night-market-2026-11-21",
    "details_locked": true
   },
@@ -3833,7 +3833,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-rainbow-market-2026-11-21",
    "details_locked": true
   },
@@ -4397,7 +4397,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakeside-village-holiday-makers-market-2026-11-22",
    "details_locked": true
   },
@@ -4441,7 +4441,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-autumn-art-in-the-park-2026-11-22",
    "details_locked": true
   },
@@ -4463,7 +4463,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-volusia-senior-expo-2026-11-22",
    "details_locked": true
   },
@@ -4750,7 +4750,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-arcadia-holiday-antique-fair-2026-11-28",
    "details_locked": true
   },
@@ -4816,7 +4816,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-cocoa-beach-art-show-2026-11-28",
    "details_locked": true
   },
@@ -4838,7 +4838,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-daytona-holiday-market-2026-11-28",
    "details_locked": true
   },
@@ -4882,7 +4882,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-midtown-tampa-holiday-sunshine-market-2026-11-28",
    "details_locked": true
   },
@@ -4904,7 +4904,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-art-in-the-park-2026-11-28",
    "details_locked": true
   },
@@ -4926,7 +4926,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-orlando-fusionfest-2026-11-28",
    "details_locked": true
   },
@@ -4948,7 +4948,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pasco-flea-fest-2026-11-28",
    "details_locked": true
   },
@@ -4970,7 +4970,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pompano-beach-holiday-green-market-2026-11-28",
    "details_locked": true
   },
@@ -4992,7 +4992,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-punta-gorda-thanksgiving-craft-festival-2026-11-28",
    "details_locked": true
   },
@@ -5036,7 +5036,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-james-city-holiday-island-market-2026-11-28",
    "details_locked": true
   },
@@ -5058,7 +5058,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sarasota-holiday-medieval-fair-2026-11-28",
    "details_locked": true
   },
@@ -5485,7 +5485,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-fort-lauderdale-holiday-shopping-bazaar-2026-12-02",
    "details_locked": true
   },
@@ -5507,7 +5507,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-palmetto-european-holiday-market-2026-12-02",
    "details_locked": true
   },
@@ -5529,7 +5529,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-pete-holiday-night-market-2026-2026-12-02",
    "details_locked": true
   },
@@ -5684,7 +5684,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-christmas-caravan-arts-and-crafts-show-2026-12-04",
    "details_locked": true
   },
@@ -5860,7 +5860,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-white-springs-festival-of-lights-2026-12-04",
    "details_locked": true
   },
@@ -5970,7 +5970,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-avalon-aglow-2026-12-05",
    "details_locked": true
   },
@@ -5992,7 +5992,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-cocoa-art-and-craft-holiday-bazaar-2026-12-05",
    "details_locked": true
   },
@@ -6014,7 +6014,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-coconut-point-holiday-craft-festival-2026-12-05",
    "details_locked": true
   },
@@ -6036,7 +6036,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-corey-area-winter-craft-festival-2026-12-05",
    "details_locked": true
   },
@@ -6081,7 +6081,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-dade-city-holiday-farmers-market-2026-12-05",
    "details_locked": true
   },
@@ -6103,7 +6103,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-destin-commons-market-2026-12-05",
    "details_locked": true
   },
@@ -6147,7 +6147,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-downtown-delray-beach-art-festival-2026-12-05",
    "details_locked": true
   },
@@ -6237,7 +6237,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakewood-ranch-holiday-of-the-arts-2026-12-05",
    "details_locked": true
   },
@@ -6259,7 +6259,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lutz-arts-and-crafts-festival-2026-12-05",
    "details_locked": true
   },
@@ -6281,7 +6281,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-marco-island-holiday-art-in-the-park-2026-12-05",
    "details_locked": true
   },
@@ -6303,7 +6303,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-melbourne-holiday-food-fest-and-craft-fair-2026-12-05",
    "details_locked": true
   },
@@ -6347,7 +6347,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-holiday-fine-art-show-2026-12-05",
    "details_locked": true
   },
@@ -6392,7 +6392,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-orlando-renaissance-festival-2026-12-05",
    "details_locked": true
   },
@@ -6414,7 +6414,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-oviedo-holiday-farmers-market-2026-12-05",
    "details_locked": true
   },
@@ -6458,7 +6458,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-plant-city-merry-market-2026-12-05",
    "details_locked": true
   },
@@ -6502,7 +6502,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-winter-fest-2026-12-05",
    "details_locked": true
   },
@@ -6524,7 +6524,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sarasota-weekend-medieval-fair-2026-12-05",
    "details_locked": true
   },
@@ -6546,7 +6546,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tallahassee-market-days-2026-12-05",
    "details_locked": true
   },
@@ -6574,7 +6574,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-the-maker-s-market-at-bold-bean-jax-beach-2026-12-05",
    "details_locked": true
   },
@@ -6596,7 +6596,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-trinity-holiday-market-2026-12-05",
    "details_locked": true
   },
@@ -6972,7 +6972,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-hyde-park-village-holiday-fresh-market-2026-12-06",
    "details_locked": true
   },
@@ -7038,7 +7038,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-new-smyrna-beach-holiday-craft-and-vendor-show-2026-12-06",
    "details_locked": true
   },
@@ -7060,7 +7060,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-parkland-holiday-farmers-market-and-craft-fair-2026-12-06",
    "details_locked": true
   },
@@ -7219,7 +7219,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-holiday-girls-night-out-2026-12-10",
    "details_locked": true
   },
@@ -7355,7 +7355,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-merry-beach-market-holiday-festival-2026-12-11",
    "details_locked": true
   },
@@ -7487,7 +7487,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-atomic-holiday-bazaar-2026-12-12",
    "details_locked": true
   },
@@ -7509,7 +7509,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-bartow-mistletoe-market-2026-12-12",
    "details_locked": true
   },
@@ -7597,7 +7597,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-city-of-milton-holiday-market-2026-12-12",
    "details_locked": true
   },
@@ -7641,7 +7641,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-crystal-river-train-show-2026-12-12",
    "details_locked": true
   },
@@ -7685,7 +7685,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-edgewood-holiday-craft-fair-and-food-truck-event-2026-12-12",
    "details_locked": true
   },
@@ -7729,7 +7729,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-havana-winter-fest-and-parade-2026-12-12",
    "details_locked": true
   },
@@ -7795,7 +7795,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lake-city-holiday-market-2026-12-12",
    "details_locked": true
   },
@@ -7817,7 +7817,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-fine-art-and-craft-show-2026-12-12",
    "details_locked": true
   },
@@ -7950,7 +7950,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pompano-beach-green-market-2026-12-12",
    "details_locked": true
   },
@@ -7972,7 +7972,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-saint-lucie-christmas-bazaar-2026-12-12",
    "details_locked": true
   },
@@ -7996,7 +7996,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-green-market-and-bazaar-2026-12-12",
    "details_locked": true
   },
@@ -8084,7 +8084,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-holiday-bazaar-2026-12-12",
    "details_locked": true
   },
@@ -8106,7 +8106,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-wilton-manors-holiday-yard-sale-2026-12-12",
    "details_locked": true
   },
@@ -8150,7 +8150,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-winter-haven-holiday-saturday-market-2026-12-12",
    "details_locked": true
   },
@@ -8240,28 +8240,6 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=ej-eagle-landing-holiday-vendor-market",
-   "details_locked": true
-  },
-  {
-   "id": "ej-the-northside-market",
-   "title": "Pop-up market · Jacksonville",
-   "next_date": "2026-12-12",
-   "dates": [
-    "2026-12-12"
-   ],
-   "end_date": null,
-   "recurring": true,
-   "schedule": "Seasonal one-off markets (Fall Nov 7; Holiday Dec 12 per directory listing)",
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=ej-the-northside-market",
    "details_locked": true
   },
   {
@@ -8529,6 +8507,32 @@
    "details_locked": true
   },
   {
+   "id": "wk-historic-eastside-marketplace-2026-12-12",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-12-12",
+   "dates": [
+    "2026-12-12",
+    "2027-01-09",
+    "2027-02-13",
+    "2027-03-13",
+    "2027-04-10"
+   ],
+   "end_date": null,
+   "recurring": true,
+   "schedule": "Monthly (2nd Saturdays)",
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=wk-historic-eastside-marketplace-2026-12-12",
+   "details_locked": true
+  },
+  {
    "id": "wk-winter-market-fest-the-landing-2026-12-12",
    "title": "Holiday festival · St. Augustine",
    "next_date": "2026-12-12",
@@ -8590,7 +8594,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-kiwanis-holiday-arts-and-crafts-show-2026-12-13",
    "details_locked": true
   },
@@ -8678,7 +8682,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tampa-jingle-bell-bazaar-2026-12-13",
    "details_locked": true
   },
@@ -8799,7 +8803,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-holiday-night-market-2026-12-16",
    "details_locked": true
   },
@@ -9063,7 +9067,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-downtown-ocala-holiday-vintage-market-2026-12-19",
    "details_locked": true
   },
@@ -9151,7 +9155,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-mistletoe-market-2026-12-19",
    "details_locked": true
   },
@@ -9246,7 +9250,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-winter-haven-saturday-market-2026-12-19",
    "details_locked": true
   },
@@ -9423,7 +9427,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-fort-myers-beach-holly-jolly-market-2026-12-20",
    "details_locked": true
   },
@@ -9511,7 +9515,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sanford-holly-jolly-holiday-market-2026-12-20",
    "details_locked": true
   },
@@ -9533,7 +9537,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-christmas-art-in-the-park-2026-12-20",
    "details_locked": true
   },
@@ -10026,7 +10030,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-new-year-s-art-show-2027-01-02",
    "details_locked": true
   },
@@ -10048,7 +10052,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-pete-beach-craft-festival-2027-01-02",
    "details_locked": true
   },
@@ -10070,7 +10074,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sarasota-winter-fine-art-festival-2027-01-02",
    "details_locked": true
   },
@@ -10115,7 +10119,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-winter-arts-and-crafts-expo-2027-01-02",
    "details_locked": true
   },
@@ -10203,7 +10207,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-parkland-health-and-wellness-farmers-market-2027-01-03",
    "details_locked": true
   },
@@ -10225,7 +10229,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-petersburg-winter-indie-flea-market-2027-01-03",
    "details_locked": true
   },
@@ -10424,7 +10428,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-bonita-springs-national-winter-art-festival-2027-01-09",
    "details_locked": true
   },
@@ -10534,7 +10538,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-winter-fine-art-and-craft-show-2027-01-09",
    "details_locked": true
   },
@@ -10600,7 +10604,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-saint-lucie-food-fest-and-craft-fair-2027-01-09",
    "details_locked": true
   },
@@ -10735,7 +10739,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-wilton-manors-winter-yard-sale-2027-01-09",
    "details_locked": true
   },
@@ -10824,7 +10828,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-orange-county-wedding-expo-2027-01-10",
    "details_locked": true
   },
@@ -11001,7 +11005,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-winter-girls-night-out-2027-01-14",
    "details_locked": true
   },
@@ -11045,7 +11049,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tamiami-international-orchid-festival-2027-01-15",
    "details_locked": true
   },
@@ -11133,7 +11137,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-hoggetowne-winter-medieval-faire-2027-01-16",
    "details_locked": true
   },
@@ -11155,7 +11159,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-melbourne-winter-art-and-craft-expo-2027-01-16",
    "details_locked": true
   },
@@ -11199,7 +11203,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-winter-saturday-green-market-and--2027-01-16",
    "details_locked": true
   },
@@ -11221,7 +11225,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sebastian-riverfront-fine-art-and-music-festival-2027-01-16",
    "details_locked": true
   },
@@ -11355,7 +11359,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-bay-harbor-islands-arts-festival-2027-01-17",
    "details_locked": true
   },
@@ -11531,7 +11535,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-winter-night-market-2027-01-20",
    "details_locked": true
   },
@@ -11553,7 +11557,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-coquina-beach-seafood-and-music-festival-2027-01-22",
    "details_locked": true
   },
@@ -11575,7 +11579,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-hoggetowne-medieval-faire-2027-01-22",
    "details_locked": true
   },
@@ -11597,7 +11601,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-new-smyrna-beach-festival-of-the-arts-2027-01-22",
    "details_locked": true
   },
@@ -11619,7 +11623,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tallahassee-foodees-fest-2027-01-22",
    "details_locked": true
   },
@@ -11686,7 +11690,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-boca-raton-fine-art-show-2027-01-23",
    "details_locked": true
   },
@@ -11752,7 +11756,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-fort-myers-beach-festival-of-the-arts-2027-01-23",
    "details_locked": true
   },
@@ -11796,7 +11800,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakewood-ranch-fine-art-festival-2027-01-23",
    "details_locked": true
   },
@@ -11818,7 +11822,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-marco-island-winter-craft-show-2027-01-23",
    "details_locked": true
   },
@@ -11840,7 +11844,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-mercato-art-celebration-2027-01-23",
    "details_locked": true
   },
@@ -11884,7 +11888,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-midtown-tampa-winter-sunshine-market-2027-01-23",
    "details_locked": true
   },
@@ -11929,30 +11933,8 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pinellas-taco-fest-2027-01-23",
-   "details_locked": true
-  },
-  {
-   "id": "af-pinellas-tacofest-2027-01-23",
-   "title": "Pop-up market · Pinellas Park",
-   "next_date": "2027-01-23",
-   "dates": [
-    "2027-01-23"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Pinellas Park",
-   "county": "Pinellas",
-   "region": "Tampa Bay",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=af-pinellas-tacofest-2027-01-23",
    "details_locked": true
   },
   {
@@ -11973,7 +11955,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-pickle-and-jam-boree-fest-2027-01-23",
    "details_locked": true
   },
@@ -12238,7 +12220,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-spirit-of-the-buffalo-pow-wow-and-native-american--2027-01-29",
    "details_locked": true
   },
@@ -12282,7 +12264,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-boca-raton-winter-fine-art-show-2027-01-30",
    "details_locked": true
   },
@@ -12326,7 +12308,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-saint-lucie-craft-fair-and-seafood-festival-2027-01-30",
    "details_locked": true
   },
@@ -12370,7 +12352,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tampa-bay-snack-fest-2027-01-30",
    "details_locked": true
   },
@@ -12458,7 +12440,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-art-in-the-park-2027-01-31",
    "details_locked": true
   },
@@ -12535,7 +12517,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-midtown-tampa-winter-thursday-sunset-market-2027-02-04",
    "details_locked": true
   },
@@ -12579,7 +12561,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-defuniak-springs-foodees-fest-2027-02-05",
    "details_locked": true
   },
@@ -12623,7 +12605,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakeland-mardi-gras-first-fridays-event-2027-02-05",
    "details_locked": true
   },
@@ -12647,7 +12629,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-wesley-chapel-1st-friday-market-2027-02-05",
    "details_locked": true
   },
@@ -12758,7 +12740,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-boca-raton-art-festival-2027-02-06",
    "details_locked": true
   },
@@ -12781,7 +12763,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-bonita-springs-national-art-festival-2027-02-06",
    "details_locked": true
   },
@@ -12803,7 +12785,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-central-florida-flavor-fest-and-craft-fair-2027-02-06",
    "details_locked": true
   },
@@ -12848,7 +12830,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-deerfield-beach-renaissance-festival-2027-02-06",
    "details_locked": true
   },
@@ -12892,7 +12874,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-mount-dora-arts-festival-2027-02-06",
    "details_locked": true
   },
@@ -12914,7 +12896,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-winter-art-in-the-park-2027-02-06",
    "details_locked": true
   },
@@ -12936,7 +12918,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-panama-city-beach-food-truck-and-craft-beer-festiv-2027-02-06",
    "details_locked": true
   },
@@ -12959,7 +12941,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pinellas-creative-market-and-music-festival-2027-02-06",
    "details_locked": true
   },
@@ -12981,7 +12963,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-petersburg-fine-art-festival-2027-02-06",
    "details_locked": true
   },
@@ -13070,7 +13052,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-zephyrhills-bbq-and-blues-fest-2027-02-06",
    "details_locked": true
   },
@@ -13248,7 +13230,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-petersburg-indie-flea-market-2027-02-07",
    "details_locked": true
   },
@@ -13314,7 +13296,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-olustee-festival-2027-02-12",
    "details_locked": true
   },
@@ -13336,7 +13318,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pensacola-foodees-fest-2027-02-12",
    "details_locked": true
   },
@@ -13359,7 +13341,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pinellas-park-strawberry-festival-2027-02-12",
    "details_locked": true
   },
@@ -13381,7 +13363,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-steinhatchee-fiddler-crab-festival-2027-02-12",
    "details_locked": true
   },
@@ -13403,7 +13385,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-west-palm-beach-craft-show-2027-02-12",
    "details_locked": true
   },
@@ -13560,7 +13542,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-florida-keys-seafood-festival-2027-02-13",
    "details_locked": true
   },
@@ -13582,7 +13564,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-gulfport-fine-arts-festival-2027-02-13",
    "details_locked": true
   },
@@ -13604,7 +13586,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-largo-winter-train-show-2027-02-13",
    "details_locked": true
   },
@@ -13648,7 +13630,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-melbourne-galentine-s-girls-day-out-2027-02-13",
    "details_locked": true
   },
@@ -13738,7 +13720,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sanford-love-is-in-the-air-artisan-event-2027-02-13",
    "details_locked": true
   },
@@ -13760,7 +13742,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sun-and-shores-arts-festival-2027-02-13",
    "details_locked": true
   },
@@ -13804,7 +13786,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-wilton-manors-yard-sale-2027-02-13",
    "details_locked": true
   },
@@ -13894,7 +13876,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-spring-art-in-the-park-2027-02-14",
    "details_locked": true
   },
@@ -13940,7 +13922,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-jupiter-seafood-festival-2027-02-19",
    "details_locked": true
   },
@@ -13962,7 +13944,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-national-art-fair-2027-02-19",
    "details_locked": true
   },
@@ -14006,7 +13988,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-petersburg-seafood-and-music-festival-2027-02-19",
    "details_locked": true
   },
@@ -14072,7 +14054,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-bayfront-winter-art-in-the-park-2027-02-20",
    "details_locked": true
   },
@@ -14139,7 +14121,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-florida-craft-brew-and-wingfest-2027-02-20",
    "details_locked": true
   },
@@ -14206,7 +14188,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-melbourne-strawberry-fest-2027-02-20",
    "details_locked": true
   },
@@ -14559,7 +14541,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-orlando-scrapbook-expo-2027-02-26",
    "details_locked": true
   },
@@ -14603,7 +14585,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-blountstown-river-fest-2027-02-27",
    "details_locked": true
   },
@@ -14625,7 +14607,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-city-of-pompano-beach-spring-green-market-2027-02-27",
    "details_locked": true
   },
@@ -14691,7 +14673,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-gulfport-s-get-rescued-2027-02-27",
    "details_locked": true
   },
@@ -14713,7 +14695,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-homosassa-mullet-toss-and-spring-festival-2027-02-27",
    "details_locked": true
   },
@@ -14735,7 +14717,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lake-wales-arts-festival-2027-02-27",
    "details_locked": true
   },
@@ -14780,7 +14762,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-marco-island-craft-show-2027-02-27",
    "details_locked": true
   },
@@ -14912,7 +14894,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tampa-fine-art-show-2027-02-27",
    "details_locked": true
   },
@@ -14934,7 +14916,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-blues-festival-2027-02-27",
    "details_locked": true
   },
@@ -14957,7 +14939,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-spring-arts-and-crafts-expo-2027-02-27",
    "details_locked": true
   },
@@ -15133,7 +15115,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-central-florida-fair-2027-03-04",
    "details_locked": true
   },
@@ -15177,7 +15159,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-plant-city-strawberry-festival-2027-03-04",
    "details_locked": true
   },
@@ -15221,7 +15203,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakeland-first-fridays-foodie-fest-2027-03-05",
    "details_locked": true
   },
@@ -15244,7 +15226,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-wesley-chapel-spring-friday-market-2027-03-05",
    "details_locked": true
   },
@@ -15332,7 +15314,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-bartow-bloomin-arts-festival-2027-03-06",
    "details_locked": true
   },
@@ -15508,7 +15490,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-habitat-strawberry-festival-2027-03-06",
    "details_locked": true
   },
@@ -15574,7 +15556,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakewood-ranch-festival-of-the-arts-2027-03-06",
    "details_locked": true
   },
@@ -15838,7 +15820,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-spring-girls-night-out-2027-03-11",
    "details_locked": true
   },
@@ -15904,7 +15886,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-altamonte-uptown-art-expo-2027-03-13",
    "details_locked": true
   },
@@ -15971,7 +15953,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-clearwater-2nd-saturday-market-2027-03-13",
    "details_locked": true
   },
@@ -16081,7 +16063,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-spring-saturday-green-market-and--2027-03-13",
    "details_locked": true
   },
@@ -16126,7 +16108,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-wilton-manors-spring-yard-sale-2027-03-13",
    "details_locked": true
   },
@@ -16148,7 +16130,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-winter-haven-spring-saturday-market-2027-03-13",
    "details_locked": true
   },
@@ -16280,7 +16262,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-spring-night-market-2027-03-17",
    "details_locked": true
   },
@@ -16302,7 +16284,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakeland-original-sewing-and-quilt-expo-2027-03-18",
    "details_locked": true
   },
@@ -16390,7 +16372,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-crystal-river-spring-train-show-2027-03-20",
    "details_locked": true
   },
@@ -16479,7 +16461,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lake-helen-strawberry-fest-2027-03-20",
    "details_locked": true
   },
@@ -16501,7 +16483,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-marco-island-spring-craft-show-2027-03-20",
    "details_locked": true
   },
@@ -16523,7 +16505,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-downtown-art-fair-2027-03-20",
    "details_locked": true
   },
@@ -16545,7 +16527,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-nokomis-spring-art-and-craft-market-2027-03-20",
    "details_locked": true
   },
@@ -16589,7 +16571,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-spring-green-market-and-bazaar-2027-03-20",
    "details_locked": true
   },
@@ -16634,7 +16616,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-space-coast-kidfest-2027-03-20",
    "details_locked": true
   },
@@ -16791,7 +16773,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-vero-beach-outdoor-art-in-the-park-2027-03-21",
    "details_locked": true
   },
@@ -16857,7 +16839,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-city-of-pompano-beach-saturday-green-market-2027-03-27",
    "details_locked": true
   },
@@ -16880,7 +16862,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-deland-outdoor-art-festival-2027-03-27",
    "details_locked": true
   },
@@ -16969,7 +16951,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pinellas-plant-festival-2027-03-27",
    "details_locked": true
   },
@@ -17079,7 +17061,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-punta-gorda-last-sunday-artisans-market-2027-03-28",
    "details_locked": true
   },
@@ -17233,7 +17215,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakeland-first-fridays-event-2027-04-02",
    "details_locked": true
   },
@@ -17299,7 +17281,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-cedar-key-celebration-of-the-arts-2027-04-03",
    "details_locked": true
   },
@@ -17343,7 +17325,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-melbourne-spring-art-and-craft-expo-2027-04-03",
    "details_locked": true
   },
@@ -17410,7 +17392,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tampa-home-and-garden-show-2027-04-03",
    "details_locked": true
   },
@@ -17477,7 +17459,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-parkland-farmers-market-and-business-expo-2027-04-04",
    "details_locked": true
   },
@@ -17565,7 +17547,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-fort-walton-beach-arts-festival-2027-04-10",
    "details_locked": true
   },
@@ -17609,7 +17591,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-naples-spring-art-in-the-park-2027-04-10",
    "details_locked": true
   },
@@ -17653,7 +17635,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pinellas-park-train-show-2027-04-10",
    "details_locked": true
   },
@@ -17697,7 +17679,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-pete-beach-spring-art-and-craft-festival-2027-04-10",
    "details_locked": true
   },
@@ -17807,7 +17789,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-melbourne-blueberry-festival-2027-04-17",
    "details_locked": true
   },
@@ -17851,7 +17833,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-winthrop-pop-up-market-2027-04-17",
    "details_locked": true
   },
@@ -17895,7 +17877,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-parkland-farmers-market-and-environmental-expo-2027-04-18",
    "details_locked": true
   },
@@ -17939,7 +17921,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-orange-wednesday-night-market-2027-04-21",
    "details_locked": true
   },
@@ -18005,7 +17987,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-james-city-outdoor-island-market-2027-04-24",
    "details_locked": true
   },
@@ -18052,7 +18034,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sponge-docks-craft-art-festival-2027-04-24",
    "details_locked": true
   },
@@ -18164,7 +18146,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pinellas-pepper-fest-2027-05-01",
    "details_locked": true
   },
