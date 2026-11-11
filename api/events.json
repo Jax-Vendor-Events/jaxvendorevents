@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-11T05:54:26Z",
+ "data_updated": "2026-11-11T05:55:26Z",
  "as_of": "2026-11-11",
- "count": 812,
+ "count": 813,
  "events": [
   {
    "id": "af-murray-hill-farmer-s-market-2026-11-11",
@@ -18193,6 +18193,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pinellas-pepper-fest-2027-05-01",
+   "details_locked": true
+  },
+  {
+   "id": "af-boca-raton-night-market-2027-05-06",
+   "title": "Pop-up market · Boca Raton",
+   "next_date": "2027-05-06",
+   "dates": [
+    "2027-05-06"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Boca Raton",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-boca-raton-night-market-2027-05-06",
    "details_locked": true
   },
   {
