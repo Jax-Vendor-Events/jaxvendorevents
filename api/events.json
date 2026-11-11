@@ -6,37 +6,10 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-10T17:54:46Z",
- "as_of": "2026-11-10",
+ "data_updated": "2026-11-11T05:54:26Z",
+ "as_of": "2026-11-11",
  "count": 812,
  "events": [
-  {
-   "id": "rd1-greater-jax-agricultural-fair-2026",
-   "title": "Festival · Jacksonville",
-   "next_date": "2026-11-10",
-   "dates": [
-    "2026-11-10",
-    "2026-11-11",
-    "2026-11-12",
-    "2026-11-13",
-    "2026-11-14",
-    "2026-11-15"
-   ],
-   "end_date": "2026-11-15",
-   "recurring": false,
-   "schedule": "Nov 5-15, 2026 (11 days)",
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "50plus",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=rd1-greater-jax-agricultural-fair-2026",
-   "details_locked": true
-  },
   {
    "id": "af-murray-hill-farmer-s-market-2026-11-11",
    "title": "Farmers market · Jacksonville",
@@ -84,7 +57,8 @@
     "2026-12-23",
     "2026-12-30",
     "2027-01-06",
-    "2027-01-13"
+    "2027-01-13",
+    "2027-01-20"
    ],
    "end_date": null,
    "recurring": true,
@@ -99,6 +73,32 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=fl-0113",
+   "details_locked": true
+  },
+  {
+   "id": "rd1-greater-jax-agricultural-fair-2026",
+   "title": "Festival · Jacksonville",
+   "next_date": "2026-11-11",
+   "dates": [
+    "2026-11-11",
+    "2026-11-12",
+    "2026-11-13",
+    "2026-11-14",
+    "2026-11-15"
+   ],
+   "end_date": "2026-11-15",
+   "recurring": false,
+   "schedule": "Nov 5-15, 2026 (11 days)",
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=rd1-greater-jax-agricultural-fair-2026",
    "details_locked": true
   },
   {
