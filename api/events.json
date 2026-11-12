@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-12T05:08:56Z",
+ "data_updated": "2026-11-12T05:52:56Z",
  "as_of": "2026-11-12",
- "count": 813,
+ "count": 816,
  "events": [
   {
    "id": "af-emerald-coast-cruizin-swap-meet-2026-11-12",
@@ -457,6 +457,28 @@
    "details_locked": true
   },
   {
+   "id": "sc-bexley-friday-night-market-2026-11-13",
+   "title": "Pop-up market · Land O' Lakes",
+   "next_date": "2026-11-13",
+   "dates": [
+    "2026-11-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Land O' Lakes",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-bexley-friday-night-market-2026-11-13",
+   "details_locked": true
+  },
+  {
    "id": "sc-jax-greek-festival-2026",
    "title": "Festival · Jacksonville",
    "next_date": "2026-11-13",
@@ -605,10 +627,10 @@
    "region": "Tampa Bay",
    "state": "FL",
    "category": null,
-   "booth_fee": null,
+   "booth_fee": "$20 (10x10 craft vendor)",
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-christmas-angel-tree-car-show-and-craft-fair-2026-11-14",
    "details_locked": true
   },
@@ -1152,7 +1174,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-palmetto-fall-artisan-market-2026-11-14",
    "details_locked": true
   },
@@ -1240,7 +1262,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-punta-gorda-arts-and-crafts-fair-2026-11-14",
    "details_locked": true
   },
@@ -1291,7 +1313,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-2nd-saturday-green-market-and-baz-2026-11-14",
    "details_locked": true
   },
@@ -1381,7 +1403,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sebastian-holiday-craft-show-2026-11-14",
    "details_locked": true
   },
@@ -1425,7 +1447,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tallahassee-market-under-the-stars-2026-11-14",
    "details_locked": true
   },
@@ -2281,7 +2303,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-punta-gorda-sunday-artisans-market-2026-11-15",
    "details_locked": true
   },
@@ -2325,7 +2347,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-petersburg-holiday-shakers-and-makers-market-2026-11-15",
    "details_locked": true
   },
@@ -2948,7 +2970,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-bartow-holiday-friday-fest-2026-11-20",
    "details_locked": true
   },
@@ -3370,9 +3392,10 @@
    "title": "Holiday craft & art festival · Davie",
    "next_date": "2026-11-21",
    "dates": [
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-22"
    ],
-   "end_date": null,
+   "end_date": "2026-11-22",
    "recurring": false,
    "schedule": null,
    "city": "Davie",
@@ -3383,7 +3406,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-davie-holiday-craft-show-and-green-fair-2026-11-21",
    "details_locked": true
   },
@@ -3560,7 +3583,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-hwy-87-fall-market-2026-11-21",
    "details_locked": true
   },
@@ -3789,9 +3812,10 @@
    "title": "Holiday craft & art market · Punta Gorda",
    "next_date": "2026-11-21",
    "dates": [
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-22"
    ],
-   "end_date": null,
+   "end_date": "2026-11-22",
    "recurring": false,
    "schedule": null,
    "city": "Punta Gorda",
@@ -3802,7 +3826,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-punta-gorda-christmas-countdown-arts-and-crafts-sh-2026-11-21",
    "details_locked": true
   },
@@ -3896,7 +3920,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-the-atlantic-beach-music-festival-2026-11-21",
    "details_locked": true
   },
@@ -3962,7 +3986,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-wesley-chapel-fall-fresh-market-2026-11-21",
    "details_locked": true
   },
@@ -4394,7 +4418,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-brandon-holiday-gift-sunday-market-2026-11-22",
    "details_locked": true
   },
@@ -4422,7 +4446,7 @@
   },
   {
    "id": "af-new-port-richey-holiday-community-market-2026-11-22",
-   "title": "Holiday market · Odessa",
+   "title": "Holiday market · New Port Richey",
    "next_date": "2026-11-22",
    "dates": [
     "2026-11-22"
@@ -4430,7 +4454,7 @@
    "end_date": null,
    "recurring": false,
    "schedule": null,
-   "city": "Odessa",
+   "city": "New Port Richey",
    "county": "Pasco",
    "region": "Tampa Bay",
    "state": "FL",
@@ -4438,7 +4462,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-new-port-richey-holiday-community-market-2026-11-22",
    "details_locked": true
   },
@@ -4526,8 +4550,36 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-westshore-marina-district-holiday-sunday-market-2026-11-22",
+   "details_locked": true
+  },
+  {
+   "id": "ej-small-business-sunday-market-gators-oakleaf",
+   "title": "Pop-up market · Orange Park (Oakleaf)",
+   "next_date": "2026-11-22",
+   "dates": [
+    "2026-11-22",
+    "2026-12-06",
+    "2026-12-20",
+    "2026-12-27",
+    "2027-01-03",
+    "2027-01-10",
+    "2027-01-17"
+   ],
+   "end_date": null,
+   "recurring": true,
+   "schedule": "Select Sundays",
+   "city": "Orange Park (Oakleaf)",
+   "county": "Clay",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=ej-small-business-sunday-market-gators-oakleaf",
    "details_locked": true
   },
   {
@@ -4813,7 +4865,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-calvary-arts-and-crafts-fair-2026-11-28",
    "details_locked": true
   },
@@ -5637,8 +5689,30 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-midtown-tampa-holiday-sunset-market-2026-12-03",
+   "details_locked": true
+  },
+  {
+   "id": "sc-artisans-faire-atlantic-beach-2026-12-03",
+   "title": "Craft & art market · Atlantic Beach",
+   "next_date": "2026-12-03",
+   "dates": [
+    "2026-12-03"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": "Annual",
+   "city": "Atlantic Beach",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-artisans-faire-atlantic-beach-2026-12-03",
    "details_locked": true
   },
   {
@@ -7216,7 +7290,7 @@
    "booth_fee": null,
    "booth_fee_range": "unknown",
    "application_deadline": null,
-   "verified": false,
+   "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-boca-raton-holiday-night-market-2026-12-10",
    "details_locked": true
   },
@@ -7420,6 +7494,30 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-alligator-farm-holiday-night-market-2026-12-11",
+   "details_locked": true
+  },
+  {
+   "id": "sc-dickens-on-centre-2026-12-11",
+   "title": "Holiday market · Fernandina Beach",
+   "next_date": "2026-12-11",
+   "dates": [
+    "2026-12-11",
+    "2026-12-12",
+    "2026-12-13"
+   ],
+   "end_date": "2026-12-13",
+   "recurring": false,
+   "schedule": "Annual",
+   "city": "Fernandina Beach",
+   "county": "Nassau",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$350–$550 + processing fee",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-dickens-on-centre-2026-12-11",
    "details_locked": true
   },
   {
@@ -8703,30 +8801,6 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-tampa-jingle-bell-bazaar-2026-12-13",
-   "details_locked": true
-  },
-  {
-   "id": "ej-small-business-sunday-market-gators-oakleaf",
-   "title": "Pop-up market · Orange Park (Oakleaf)",
-   "next_date": "2026-12-13",
-   "dates": [
-    "2026-12-13",
-    "2027-01-10",
-    "2027-02-14"
-   ],
-   "end_date": null,
-   "recurring": true,
-   "schedule": "2nd Sundays",
-   "city": "Orange Park (Oakleaf)",
-   "county": "Clay",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=ej-small-business-sunday-market-gators-oakleaf",
    "details_locked": true
   },
   {
