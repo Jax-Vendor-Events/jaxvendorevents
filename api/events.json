@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-13T07:25:23Z",
+ "data_updated": "2026-11-13T22:15:42Z",
  "as_of": "2026-11-13",
- "count": 814,
+ "count": 828,
  "events": [
   {
    "id": "af-apopka-holiday-night-farmers-market-2026-11-20",
@@ -142,6 +142,29 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-land-o-lakes-fall-friday-moonlight-market-2026-11-13",
+   "details_locked": true
+  },
+  {
+   "id": "af-nathan-benderson-2nd-friday-market-2026-11-13",
+   "title": "Pop-up market · Sarasota",
+   "next_date": "2026-11-13",
+   "dates": [
+    "2026-11-13",
+    "2026-12-18"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-nathan-benderson-2nd-friday-market-2026-11-13",
    "details_locked": true
   },
   {
@@ -913,6 +936,28 @@
    "details_locked": true
   },
   {
+   "id": "af-manta-market-2026-11-14",
+   "title": "Pop-up market · Englewood",
+   "next_date": "2026-11-14",
+   "dates": [
+    "2026-11-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Englewood",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-manta-market-2026-11-14",
+   "details_locked": true
+  },
+  {
    "id": "af-mexico-beach-fall-saturday-farmers-and-craft-marke-2026-11-14",
    "title": "Craft & art farmers market · Mexico Beach",
    "next_date": "2026-11-14",
@@ -1252,6 +1297,28 @@
    "details_locked": true
   },
   {
+   "id": "af-sarasota-harvest-festival-2026-11-14",
+   "title": "Holiday festival · Sarasota",
+   "next_date": "2026-11-14",
+   "dates": [
+    "2026-11-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-sarasota-harvest-festival-2026-11-14",
+   "details_locked": true
+  },
+  {
    "id": "af-sarasota-medieval-fair-2026-11-14",
    "title": "Festival · Sarasota",
    "next_date": "2026-11-14",
@@ -1317,6 +1384,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-southern-fall-day-market-2026-11-14",
+   "details_locked": true
+  },
+  {
+   "id": "af-spring-hill-craft-and-vendor-show-2026-11-14",
+   "title": "Craft & art market · Spring Hill",
+   "next_date": "2026-11-14",
+   "dates": [
+    "2026-11-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Spring Hill",
+   "county": "Hernando",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-spring-hill-craft-and-vendor-show-2026-11-14",
    "details_locked": true
   },
   {
@@ -2772,6 +2861,28 @@
    "details_locked": true
   },
   {
+   "id": "af-delray-beach-art-and-craft-show-2026-11-19",
+   "title": "Craft & art market · Delray Beach",
+   "next_date": "2026-11-19",
+   "dates": [
+    "2026-11-19"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Delray Beach",
+   "county": "Palm Beach",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-delray-beach-art-and-craft-show-2026-11-19",
+   "details_locked": true
+  },
+  {
    "id": "af-north-beaches-holiday-art-walk-2026-11-19",
    "title": "Craft & art market · Neptune Beach",
    "next_date": "2026-11-19",
@@ -2931,6 +3042,50 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-green-room-market-2026-11-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-holiday-bites-and-beats-event-2026-11-20",
+   "title": "Holiday market · Port Saint Lucie",
+   "next_date": "2026-11-20",
+   "dates": [
+    "2026-11-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Port Saint Lucie",
+   "county": "St. Lucie",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-holiday-bites-and-beats-event-2026-11-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-nathan-benderson-fall-friday-market-2026-11-20",
+   "title": "Pop-up market · Sarasota",
+   "next_date": "2026-11-20",
+   "dates": [
+    "2026-11-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-nathan-benderson-fall-friday-market-2026-11-20",
    "details_locked": true
   },
   {
@@ -3563,6 +3718,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-jax-beer-fest-2026-2026-11-21",
+   "details_locked": true
+  },
+  {
+   "id": "af-jubilee-renaissance-faire-2026-11-21",
+   "title": "Festival · Pensacola",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Pensacola",
+   "county": "Escambia",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-jubilee-renaissance-faire-2026-11-21",
    "details_locked": true
   },
   {
@@ -4559,6 +4736,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-light-up-eustis-2026-2026-11-27",
+   "details_locked": true
+  },
+  {
+   "id": "af-nathan-benderson-thanksgiving-friday-market-2026-11-27",
+   "title": "Holiday market · Sarasota",
+   "next_date": "2026-11-27",
+   "dates": [
+    "2026-11-27"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-nathan-benderson-thanksgiving-friday-market-2026-11-27",
    "details_locked": true
   },
   {
@@ -5757,6 +5956,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-gulfport-holiday-night-market-2026-12-04",
+   "details_locked": true
+  },
+  {
+   "id": "af-nathan-benderson-holiday-friday-market-2026-12-04",
+   "title": "Holiday market · Sarasota",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-nathan-benderson-holiday-friday-market-2026-12-04",
    "details_locked": true
   },
   {
@@ -7343,6 +7564,28 @@
    "details_locked": true
   },
   {
+   "id": "af-nathan-benderson-outdoor-friday-market-2026-12-11",
+   "title": "Pop-up market · Sarasota",
+   "next_date": "2026-12-11",
+   "dates": [
+    "2026-12-11"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-nathan-benderson-outdoor-friday-market-2026-12-11",
+   "details_locked": true
+  },
+  {
    "id": "af-plant-city-jingle-jangle-market-2026-12-11",
    "title": "Holiday market · Plant City",
    "next_date": "2026-12-11",
@@ -7804,6 +8047,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lake-city-holiday-market-2026-12-12",
+   "details_locked": true
+  },
+  {
+   "id": "af-manta-holiday-market-2026-12-12",
+   "title": "Holiday market · Englewood",
+   "next_date": "2026-12-12",
+   "dates": [
+    "2026-12-12"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Englewood",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-manta-holiday-market-2026-12-12",
    "details_locked": true
   },
   {
@@ -8835,6 +9100,28 @@
    "details_locked": true
   },
   {
+   "id": "af-fridays-bites-and-beats-event-2026-12-18",
+   "title": "Pop-up market · Port Saint Lucie",
+   "next_date": "2026-12-18",
+   "dates": [
+    "2026-12-18"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Port Saint Lucie",
+   "county": "St. Lucie",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fridays-bites-and-beats-event-2026-12-18",
+   "details_locked": true
+  },
+  {
    "id": "af-port-st-lucie-noche-buena-2026-12-18",
    "title": "Pop-up market · Port St. Lucie",
    "next_date": "2026-12-18",
@@ -9677,6 +9964,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-marco-island-christmas-farmers-market-2026-12-23",
+   "details_locked": true
+  },
+  {
+   "id": "af-nathan-benderson-christmas-friday-market-2026-12-25",
+   "title": "Holiday market · Sarasota",
+   "next_date": "2026-12-25",
+   "dates": [
+    "2026-12-25"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-nathan-benderson-christmas-friday-market-2026-12-25",
    "details_locked": true
   },
   {
