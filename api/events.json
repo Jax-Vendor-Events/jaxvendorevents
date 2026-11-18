@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-18T07:44:51Z",
+ "data_updated": "2026-11-18T13:30:47Z",
  "as_of": "2026-11-18",
- "count": 784,
+ "count": 785,
  "events": [
   {
    "id": "af-marco-island-thanksgiving-farmers-market-2026-11-25",
@@ -997,6 +997,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-early-elf-art-market-2026-11-21",
+   "details_locked": true
+  },
+  {
+   "id": "af-eartha-farmers-market-2026-11-21",
+   "title": "Farmers market · Jacksonville",
+   "next_date": "2026-11-21",
+   "dates": [
+    "2026-11-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-eartha-farmers-market-2026-11-21",
    "details_locked": true
   },
   {
