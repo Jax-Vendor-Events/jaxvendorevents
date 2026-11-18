@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-17T03:00:31Z",
+ "data_updated": "2026-11-17T22:30:34Z",
  "as_of": "2026-11-17",
- "count": 782,
+ "count": 783,
  "events": [
   {
    "id": "af-marco-island-thanksgiving-farmers-market-2026-11-25",
@@ -3504,6 +3504,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-fired-arts-fair-2026-2026-11-29",
+   "details_locked": true
+  },
+  {
+   "id": "af-hyatt-place-wedding-experience-2026-11-29",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-11-29",
+   "dates": [
+    "2026-11-29"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-hyatt-place-wedding-experience-2026-11-29",
    "details_locked": true
   },
   {
