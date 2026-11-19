@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-19T09:28:55Z",
+ "data_updated": "2026-11-19T10:32:05Z",
  "as_of": "2026-11-19",
- "count": 785,
+ "count": 788,
  "events": [
   {
    "id": "af-delray-beach-art-and-craft-show-2026-11-19",
@@ -17663,6 +17663,72 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-wesley-chapel-summer-fresh-market-2027-06-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-hyde-park-village-summer-sunday-fresh-market-2027-06-06",
+   "title": "Pop-up market · Tampa",
+   "next_date": "2027-06-06",
+   "dates": [
+    "2027-06-06"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Tampa",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-hyde-park-village-summer-sunday-fresh-market-2027-06-06",
+   "details_locked": true
+  },
+  {
+   "id": "af-port-orange-summer-girls-night-out-2027-06-10",
+   "title": "Pop-up market · Port Orange",
+   "next_date": "2027-06-10",
+   "dates": [
+    "2027-06-10"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Port Orange",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-port-orange-summer-girls-night-out-2027-06-10",
+   "details_locked": true
+  },
+  {
+   "id": "af-winter-haven-summer-saturday-market-2027-06-12",
+   "title": "Holiday market · Winter Haven",
+   "next_date": "2027-06-12",
+   "dates": [
+    "2027-06-12"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Winter Haven",
+   "county": "Polk",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-winter-haven-summer-saturday-market-2027-06-12",
    "details_locked": true
   }
  ]
