@@ -6,103 +6,10 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-19T10:32:05Z",
- "as_of": "2026-11-19",
- "count": 788,
+ "data_updated": "2026-11-20T09:09:37Z",
+ "as_of": "2026-11-20",
+ "count": 786,
  "events": [
-  {
-   "id": "af-delray-beach-art-and-craft-show-2026-11-19",
-   "title": "Craft & art market · Delray Beach",
-   "next_date": "2026-11-19",
-   "dates": [
-    "2026-11-19"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Delray Beach",
-   "county": "Palm Beach",
-   "region": "Southeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=af-delray-beach-art-and-craft-show-2026-11-19",
-   "details_locked": true
-  },
-  {
-   "id": "af-north-beaches-holiday-art-walk-2026-11-19",
-   "title": "Craft & art market · Neptune Beach",
-   "next_date": "2026-11-19",
-   "dates": [
-    "2026-11-19",
-    "2026-12-17",
-    "2027-01-21"
-   ],
-   "end_date": null,
-   "recurring": true,
-   "schedule": "3rd Thursday monthly",
-   "city": "Neptune Beach",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=af-north-beaches-holiday-art-walk-2026-11-19",
-   "details_locked": true
-  },
-  {
-   "id": "af-withlacoochee-bluegrass-festival-2026-11-19",
-   "title": "Festival · Dunnellon",
-   "next_date": "2026-11-19",
-   "dates": [
-    "2026-11-19"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Dunnellon",
-   "county": "Marion",
-   "region": "North Central",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=af-withlacoochee-bluegrass-festival-2026-11-19",
-   "details_locked": true
-  },
-  {
-   "id": "wk-third-thursday-terminal-2026-11-19",
-   "title": "Pop-up market · Jacksonville",
-   "next_date": "2026-11-19",
-   "dates": [
-    "2026-11-19",
-    "2026-12-17",
-    "2027-01-21",
-    "2027-02-18"
-   ],
-   "end_date": null,
-   "recurring": true,
-   "schedule": "Monthly (3rd Thursday)",
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": "$50/month (10x10, covered; no power)",
-   "booth_fee_range": "50plus",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=wk-third-thursday-terminal-2026-11-19",
-   "details_locked": true
-  },
   {
    "id": "af-apopka-holiday-night-farmers-market-2026-11-20",
    "title": "Pop-up market · Apopka",
@@ -456,7 +363,8 @@
     "2027-01-01",
     "2027-01-08",
     "2027-01-15",
-    "2027-01-22"
+    "2027-01-22",
+    "2027-01-29"
    ],
    "end_date": null,
    "recurring": true,
@@ -487,7 +395,8 @@
     "2027-01-01",
     "2027-01-08",
     "2027-01-15",
-    "2027-01-22"
+    "2027-01-22",
+    "2027-01-29"
    ],
    "end_date": null,
    "recurring": true,
@@ -7472,6 +7381,29 @@
    "details_locked": true
   },
   {
+   "id": "af-north-beaches-holiday-art-walk-2026-11-19",
+   "title": "Craft & art market · Neptune Beach",
+   "next_date": "2026-12-17",
+   "dates": [
+    "2026-12-17",
+    "2027-01-21"
+   ],
+   "end_date": null,
+   "recurring": true,
+   "schedule": "3rd Thursday monthly",
+   "city": "Neptune Beach",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=af-north-beaches-holiday-art-walk-2026-11-19",
+   "details_locked": true
+  },
+  {
    "id": "sc-european-winter-market-palm-coast-2026-12-17",
    "title": "Holiday market · Palm Coast",
    "next_date": "2026-12-17",
@@ -7491,6 +7423,30 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-european-winter-market-palm-coast-2026-12-17",
+   "details_locked": true
+  },
+  {
+   "id": "wk-third-thursday-terminal-2026-11-19",
+   "title": "Pop-up market · Jacksonville",
+   "next_date": "2026-12-17",
+   "dates": [
+    "2026-12-17",
+    "2027-01-21",
+    "2027-02-18"
+   ],
+   "end_date": null,
+   "recurring": true,
+   "schedule": "Monthly (3rd Thursday)",
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": "$50/month (10x10, covered; no power)",
+   "booth_fee_range": "50plus",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=wk-third-thursday-terminal-2026-11-19",
    "details_locked": true
   },
   {
