@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-21T07:40:31Z",
+ "data_updated": "2026-11-21T13:03:45Z",
  "as_of": "2026-11-21",
- "count": 789,
+ "count": 817,
  "events": [
   {
    "id": "af-annual-1000-turkey-giveaway-2026-11-21",
@@ -1649,6 +1649,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-brandon-holiday-gift-sunday-market-2026-11-22",
+   "details_locked": true
+  },
+  {
+   "id": "af-conway-community-market-2026-11-22",
+   "title": "Pop-up market · Orlando",
+   "next_date": "2026-11-22",
+   "dates": [
+    "2026-11-22"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Orlando",
+   "county": "Orange",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-conway-community-market-2026-11-22",
    "details_locked": true
   },
   {
@@ -9217,6 +9239,28 @@
    "details_locked": true
   },
   {
+   "id": "af-odessa-trinity-winter-crafters-market-2027-01-09",
+   "title": "Holiday craft & art market · Odessa",
+   "next_date": "2027-01-09",
+   "dates": [
+    "2027-01-09"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Odessa",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-odessa-trinity-winter-crafters-market-2027-01-09",
+   "details_locked": true
+  },
+  {
    "id": "af-palmetto-winter-artisan-market-2027-01-09",
    "title": "Holiday craft & art market · Palmetto",
    "next_date": "2027-01-09",
@@ -9280,6 +9324,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-port-saint-lucie-food-fest-and-craft-fair-2027-01-09",
+   "details_locked": true
+  },
+  {
+   "id": "af-punta-gorda-winter-arts-and-crafts-festival-2027-01-09",
+   "title": "Holiday craft & art festival · Punta Gorda",
+   "next_date": "2027-01-09",
+   "dates": [
+    "2027-01-09"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Punta Gorda",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-punta-gorda-winter-arts-and-crafts-festival-2027-01-09",
    "details_locked": true
   },
   {
@@ -9706,6 +9772,28 @@
    "details_locked": true
   },
   {
+   "id": "af-port-saint-lucie-winter-bites-and-beats-event-2027-01-15",
+   "title": "Holiday market · Port Saint Lucie",
+   "next_date": "2027-01-15",
+   "dates": [
+    "2027-01-15"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Port Saint Lucie",
+   "county": "St. Lucie",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-port-saint-lucie-winter-bites-and-beats-event-2027-01-15",
+   "details_locked": true
+  },
+  {
    "id": "af-punta-gorda-seafood-and-music-festival-2027-01-15",
    "title": "Festival · Punta Gorda",
    "next_date": "2027-01-15",
@@ -9769,6 +9857,51 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-brooksville-winter-train-show-2027-01-16",
+   "details_locked": true
+  },
+  {
+   "id": "af-englewood-winter-arts-and-crafts-fair-2027-01-16",
+   "title": "Holiday craft & art festival · Englewood",
+   "next_date": "2027-01-16",
+   "dates": [
+    "2027-01-16"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Englewood",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-englewood-winter-arts-and-crafts-fair-2027-01-16",
+   "details_locked": true
+  },
+  {
+   "id": "af-fort-myers-winter-arts-and-crafts-fair-2027-01-16",
+   "title": "Holiday craft & art festival · Estero",
+   "next_date": "2027-01-16",
+   "dates": [
+    "2027-01-16",
+    "2027-01-17"
+   ],
+   "end_date": "2027-01-17",
+   "recurring": false,
+   "schedule": null,
+   "city": "Estero",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fort-myers-winter-arts-and-crafts-fair-2027-01-16",
    "details_locked": true
   },
   {
@@ -11095,6 +11228,28 @@
    "details_locked": true
   },
   {
+   "id": "af-bradenton-area-s-home-and-lifestyle-show-2027-01-30",
+   "title": "Pop-up market · Palmetto",
+   "next_date": "2027-01-30",
+   "dates": [
+    "2027-01-30"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Palmetto",
+   "county": "Manatee",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-bradenton-area-s-home-and-lifestyle-show-2027-01-30",
+   "details_locked": true
+  },
+  {
    "id": "af-miami-seafood-w-the-us-paella-championship-2027-01-30",
    "title": "Pop-up market · Miami",
    "next_date": "2027-01-30",
@@ -11292,6 +11447,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-enchantamas-princess-expo-2027-01-30",
+   "details_locked": true
+  },
+  {
+   "id": "af-bonita-bay-winter-coastal-arts-and-crafts-fair-2027-01-31",
+   "title": "Holiday craft & art festival · Bonita Springs",
+   "next_date": "2027-01-31",
+   "dates": [
+    "2027-01-31"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Bonita Springs",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-bonita-bay-winter-coastal-arts-and-crafts-fair-2027-01-31",
    "details_locked": true
   },
   {
@@ -11637,6 +11814,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-bonita-springs-national-art-festival-2027-02-06",
+   "details_locked": true
+  },
+  {
+   "id": "af-cape-coral-macho-expo-2027-02-06",
+   "title": "Festival · Cape Coral",
+   "next_date": "2027-02-06",
+   "dates": [
+    "2027-02-06"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Cape Coral",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-cape-coral-macho-expo-2027-02-06",
    "details_locked": true
   },
   {
@@ -12061,6 +12260,28 @@
    "details_locked": true
   },
   {
+   "id": "af-fort-myers-love-for-local-arts-and-crafts-fair-2027-02-07",
+   "title": "Craft & art festival · Fort Myers",
+   "next_date": "2027-02-07",
+   "dates": [
+    "2027-02-07"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Fort Myers",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fort-myers-love-for-local-arts-and-crafts-fair-2027-02-07",
+   "details_locked": true
+  },
+  {
    "id": "af-hyde-park-village-1st-sunday-fresh-market-2027-02-07",
    "title": "Pop-up market · Tampa",
    "next_date": "2027-02-07",
@@ -12460,6 +12681,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-florida-keys-seafood-festival-2027-02-13",
+   "details_locked": true
+  },
+  {
+   "id": "af-fort-myers-made-with-love-arts-and-crafts-fair-2027-02-13",
+   "title": "Craft & art festival · Estero",
+   "next_date": "2027-02-13",
+   "dates": [
+    "2027-02-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Estero",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fort-myers-made-with-love-arts-and-crafts-fair-2027-02-13",
    "details_locked": true
   },
   {
@@ -12933,6 +13176,28 @@
    "details_locked": true
   },
   {
+   "id": "af-port-saint-lucie-friday-bites-and-beats-event-2027-02-19",
+   "title": "Pop-up market · Port Saint Lucie",
+   "next_date": "2027-02-19",
+   "dates": [
+    "2027-02-19"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Port Saint Lucie",
+   "county": "St. Lucie",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-port-saint-lucie-friday-bites-and-beats-event-2027-02-19",
+   "details_locked": true
+  },
+  {
    "id": "af-punta-gorda-arts-and-crafts-show-2027-02-19",
    "title": "Craft & art market · Punta Gorda",
    "next_date": "2027-02-19",
@@ -13110,6 +13375,28 @@
    "details_locked": true
   },
   {
+   "id": "af-fort-myers-crafts-on-the-river-2027-02-20",
+   "title": "Craft & art market · Fort Myers",
+   "next_date": "2027-02-20",
+   "dates": [
+    "2027-02-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Fort Myers",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fort-myers-crafts-on-the-river-2027-02-20",
+   "details_locked": true
+  },
+  {
    "id": "af-gulfport-spring-night-market-2027-02-20",
    "title": "Pop-up market · Gulfport",
    "next_date": "2027-02-20",
@@ -13196,6 +13483,29 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-nokomis-3rd-saturday-art-and-craft-market-2027-02-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-odessa-trinity-saturday-crafters-market-2027-02-20",
+   "title": "Craft & art market · Odessa",
+   "next_date": "2027-02-20",
+   "dates": [
+    "2027-02-20",
+    "2027-04-17"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Odessa",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-odessa-trinity-saturday-crafters-market-2027-02-20",
    "details_locked": true
   },
   {
@@ -13505,6 +13815,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-englewood-seafood-and-music-festival-2027-02-26",
+   "details_locked": true
+  },
+  {
+   "id": "af-naples-area-s-home-and-lifestyle-show-2027-02-26",
+   "title": "Pop-up market · Naples",
+   "next_date": "2027-02-26",
+   "dates": [
+    "2027-02-26"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Naples",
+   "county": "Collier",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-naples-area-s-home-and-lifestyle-show-2027-02-26",
    "details_locked": true
   },
   {
@@ -13991,6 +14323,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-wings-n-wheels-2027-02-27",
+   "details_locked": true
+  },
+  {
+   "id": "af-bonita-bay-coastal-arts-and-crafts-fair-2027-02-28",
+   "title": "Craft & art festival · Bonita Springs",
+   "next_date": "2027-02-28",
+   "dates": [
+    "2027-02-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Bonita Springs",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-bonita-bay-coastal-arts-and-crafts-fair-2027-02-28",
    "details_locked": true
   },
   {
@@ -15052,6 +15406,28 @@
    "details_locked": true
   },
   {
+   "id": "af-shamrockin-arts-and-crafts-fair-2027-03-13",
+   "title": "Craft & art festival · Estero",
+   "next_date": "2027-03-13",
+   "dates": [
+    "2027-03-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Estero",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-shamrockin-arts-and-crafts-fair-2027-03-13",
+   "details_locked": true
+  },
+  {
    "id": "af-sponge-docks-spring-craft-art-festival-2027-03-13",
    "title": "Craft & art festival · Tarpon Springs",
    "next_date": "2027-03-13",
@@ -15160,6 +15536,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=fl-0101",
+   "details_locked": true
+  },
+  {
+   "id": "af-fort-myers-arts-and-crafts-fair-2027-03-14",
+   "title": "Craft & art festival · Fort Myers",
+   "next_date": "2027-03-14",
+   "dates": [
+    "2027-03-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Fort Myers",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fort-myers-arts-and-crafts-fair-2027-03-14",
    "details_locked": true
   },
   {
@@ -15361,6 +15759,28 @@
    "details_locked": true
   },
   {
+   "id": "af-englewood-spring-arts-and-crafts-fair-2027-03-20",
+   "title": "Craft & art festival · Englewood",
+   "next_date": "2027-03-20",
+   "dates": [
+    "2027-03-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Englewood",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-englewood-spring-arts-and-crafts-fair-2027-03-20",
+   "details_locked": true
+  },
+  {
    "id": "af-festival-of-women-authors-on-milestone-divas-day-2027-03-20",
    "title": "Festival · Tallahassee",
    "next_date": "2027-03-20",
@@ -15380,6 +15800,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-festival-of-women-authors-on-milestone-divas-day-2027-03-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-gainesville-spring-garden-festival-2027-03-20",
+   "title": "Festival · Gainesville",
+   "next_date": "2027-03-20",
+   "dates": [
+    "2027-03-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Gainesville",
+   "county": "Alachua",
+   "region": "North Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-gainesville-spring-garden-festival-2027-03-20",
    "details_locked": true
   },
   {
@@ -15513,6 +15955,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-nokomis-spring-art-and-craft-market-2027-03-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-odessa-trinity-spring-crafters-market-2027-03-20",
+   "title": "Craft & art market · Odessa",
+   "next_date": "2027-03-20",
+   "dates": [
+    "2027-03-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Odessa",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-odessa-trinity-spring-crafters-market-2027-03-20",
    "details_locked": true
   },
   {
@@ -15693,6 +16157,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-florida-bohemian-festival-2027",
+   "details_locked": true
+  },
+  {
+   "id": "af-bonita-bay-spring-coastal-arts-and-crafts-fair-2027-03-21",
+   "title": "Craft & art festival · Bonita Springs",
+   "next_date": "2027-03-21",
+   "dates": [
+    "2027-03-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Bonita Springs",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-bonita-bay-spring-coastal-arts-and-crafts-fair-2027-03-21",
    "details_locked": true
   },
   {
@@ -15937,6 +16423,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-pinellas-plant-festival-2027-03-27",
+   "details_locked": true
+  },
+  {
+   "id": "af-punta-gorda-home-and-lifestyle-show-2027-03-27",
+   "title": "Pop-up market · Punta Gorda",
+   "next_date": "2027-03-27",
+   "dates": [
+    "2027-03-27"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Punta Gorda",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-punta-gorda-home-and-lifestyle-show-2027-03-27",
    "details_locked": true
   },
   {
@@ -16226,6 +16734,28 @@
    "details_locked": true
   },
   {
+   "id": "af-tallahassee-springtime-festival-2027-04-02",
+   "title": "Festival · Tallahassee",
+   "next_date": "2027-04-02",
+   "dates": [
+    "2027-04-02"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Tallahassee",
+   "county": "Leon",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-tallahassee-springtime-festival-2027-04-02",
+   "details_locked": true
+  },
+  {
    "id": "af-west-palm-beach-antiques-festival-2027-04-02",
    "title": "Craft & art festival · West Palm Beach",
    "next_date": "2027-04-02",
@@ -16423,6 +16953,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-seawalk-music-festival-2027-02-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-bonita-bay-arts-and-crafts-fair-2027-04-04",
+   "title": "Craft & art festival · Bonita Springs",
+   "next_date": "2027-04-04",
+   "dates": [
+    "2027-04-04"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Bonita Springs",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-bonita-bay-arts-and-crafts-fair-2027-04-04",
    "details_locked": true
   },
   {
@@ -16646,6 +17198,28 @@
    "details_locked": true
   },
   {
+   "id": "af-punta-gorda-spring-arts-and-crafts-fair-2027-04-10",
+   "title": "Craft & art festival · Punta Gorda",
+   "next_date": "2027-04-10",
+   "dates": [
+    "2027-04-10"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Punta Gorda",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-punta-gorda-spring-arts-and-crafts-fair-2027-04-10",
+   "details_locked": true
+  },
+  {
    "id": "af-saint-pete-beach-spring-art-and-craft-festival-2027-04-10",
    "title": "Craft & art festival · Saint Pete Beach",
    "next_date": "2027-04-10",
@@ -16709,6 +17283,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-863-art-fest-2027-04-17",
+   "details_locked": true
+  },
+  {
+   "id": "af-estero-spring-arts-and-crafts-fair-2027-04-17",
+   "title": "Craft & art festival · Estero",
+   "next_date": "2027-04-17",
+   "dates": [
+    "2027-04-17"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Estero",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-estero-spring-arts-and-crafts-fair-2027-04-17",
    "details_locked": true
   },
   {
@@ -16841,6 +17437,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=wk-oyster-fest-jax-2027-04-17",
+   "details_locked": true
+  },
+  {
+   "id": "af-fort-myers-spring-arts-and-crafts-fair-2027-04-18",
+   "title": "Craft & art festival · Fort Myers",
+   "next_date": "2027-04-18",
+   "dates": [
+    "2027-04-18"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Fort Myers",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fort-myers-spring-arts-and-crafts-fair-2027-04-18",
    "details_locked": true
   },
   {
