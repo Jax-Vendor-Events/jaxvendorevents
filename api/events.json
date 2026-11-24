@@ -6,32 +6,10 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-23T07:55:27Z",
- "as_of": "2026-11-23",
- "count": 771,
+ "data_updated": "2026-11-24T05:55:06Z",
+ "as_of": "2026-11-24",
+ "count": 770,
  "events": [
-  {
-   "id": "campus-florida-classic-2026-vendors",
-   "title": "Campus market · Orlando",
-   "next_date": "2026-11-23",
-   "dates": [
-    "2026-11-23"
-   ],
-   "end_date": "2026-11-23",
-   "recurring": false,
-   "schedule": null,
-   "city": "Orlando",
-   "county": "Orange",
-   "region": "Central",
-   "state": "FL",
-   "category": "campus",
-   "booth_fee": "Non-food vendor $1,150 (Tampa Ave lots)",
-   "booth_fee_range": "50plus",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=campus-florida-classic-2026-vendors",
-   "details_locked": true
-  },
   {
    "id": "af-marco-island-thanksgiving-farmers-market-2026-11-25",
    "title": "Farmers market · Marco Island",
