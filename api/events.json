@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-24T05:55:06Z",
- "as_of": "2026-11-24",
- "count": 770,
+ "data_updated": "2026-11-25T05:39:55Z",
+ "as_of": "2026-11-25",
+ "count": 786,
  "events": [
   {
    "id": "af-marco-island-thanksgiving-farmers-market-2026-11-25",
@@ -77,7 +77,8 @@
     "2027-01-06",
     "2027-01-13",
     "2027-01-20",
-    "2027-01-27"
+    "2027-01-27",
+    "2027-02-03"
    ],
    "end_date": null,
    "recurring": true,
@@ -1747,7 +1748,8 @@
    "next_date": "2026-12-02",
    "dates": [
     "2026-12-02",
-    "2027-01-06"
+    "2027-01-06",
+    "2027-02-03"
    ],
    "end_date": null,
    "recurring": true,
@@ -7195,6 +7197,28 @@
    "details_locked": true
   },
   {
+   "id": "af-dade-city-winter-farmers-market-2027-01-02",
+   "title": "Holiday farmers market · Dade City",
+   "next_date": "2027-01-02",
+   "dates": [
+    "2027-01-02"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Dade City",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-dade-city-winter-farmers-market-2027-01-02",
+   "details_locked": true
+  },
+  {
    "id": "af-hwy-87-winter-market-2027-01-02",
    "title": "Holiday market · Navarre",
    "next_date": "2027-01-02",
@@ -7391,6 +7415,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-hyde-park-village-winter-fresh-market-2027-01-03",
+   "details_locked": true
+  },
+  {
+   "id": "af-new-port-richey-winter-indoor-vendor-market-2027-01-03",
+   "title": "Holiday market · New Port Richey",
+   "next_date": "2027-01-03",
+   "dates": [
+    "2027-01-03"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "New Port Richey",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-new-port-richey-winter-indoor-vendor-market-2027-01-03",
    "details_locked": true
   },
   {
@@ -8512,6 +8558,28 @@
    "details_locked": true
   },
   {
+   "id": "af-land-o-lakes-winter-community-market-2027-01-16",
+   "title": "Holiday market · Land O' Lakes",
+   "next_date": "2027-01-16",
+   "dates": [
+    "2027-01-16"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Land O' Lakes",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-land-o-lakes-winter-community-market-2027-01-16",
+   "details_locked": true
+  },
+  {
    "id": "af-melbourne-winter-art-and-craft-expo-2027-01-16",
    "title": "Holiday craft & art festival · Melbourne",
    "next_date": "2027-01-16",
@@ -8531,6 +8599,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-melbourne-winter-art-and-craft-expo-2027-01-16",
+   "details_locked": true
+  },
+  {
+   "id": "af-naples-art-fest-2027-01-16",
+   "title": "Festival · Naples",
+   "next_date": "2027-01-16",
+   "dates": [
+    "2027-01-16"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Naples",
+   "county": "Collier",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-naples-art-fest-2027-01-16",
    "details_locked": true
   },
   {
@@ -9606,6 +9696,28 @@
    "details_locked": true
   },
   {
+   "id": "af-odessa-winter-community-market-2027-01-24",
+   "title": "Holiday market · Odessa",
+   "next_date": "2027-01-24",
+   "dates": [
+    "2027-01-24"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Odessa",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-odessa-winter-community-market-2027-01-24",
+   "details_locked": true
+  },
+  {
    "id": "af-punta-gorda-sunday-artisans-market-2026-11-15",
    "title": "Craft & art market · Punta Gorda",
    "next_date": "2027-01-24",
@@ -9788,6 +9900,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-bradenton-area-s-home-and-lifestyle-show-2027-01-30",
+   "details_locked": true
+  },
+  {
+   "id": "af-dade-city-kumquat-festival-2027-01-30",
+   "title": "Festival · Dade City",
+   "next_date": "2027-01-30",
+   "dates": [
+    "2027-01-30"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Dade City",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-dade-city-kumquat-festival-2027-01-30",
    "details_locked": true
   },
   {
@@ -10874,6 +11008,28 @@
    "details_locked": true
   },
   {
+   "id": "af-new-port-richey-indoor-vendor-market-2027-02-07",
+   "title": "Pop-up market · New Port Richey",
+   "next_date": "2027-02-07",
+   "dates": [
+    "2027-02-07"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "New Port Richey",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-new-port-richey-indoor-vendor-market-2027-02-07",
+   "details_locked": true
+  },
+  {
    "id": "af-parkland-cultural-awareness-farmers-market-2027-02-07",
    "title": "Farmers market · Parkland",
    "next_date": "2027-02-07",
@@ -11474,6 +11630,28 @@
    "details_locked": true
   },
   {
+   "id": "af-texas-roadhouse-artisan-market-2027-02-13",
+   "title": "Craft & art market · Odessa",
+   "next_date": "2027-02-13",
+   "dates": [
+    "2027-02-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Odessa",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-texas-roadhouse-artisan-market-2027-02-13",
+   "details_locked": true
+  },
+  {
    "id": "af-venice-fine-art-festival-2027-02-13",
    "title": "Craft & art festival · Venice",
    "next_date": "2027-02-13",
@@ -12006,6 +12184,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-hwy-87-spring-market-2027-02-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-land-o-lakes-community-market-2027-02-20",
+   "title": "Pop-up market · Land O' Lakes",
+   "next_date": "2027-02-20",
+   "dates": [
+    "2027-02-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Land O' Lakes",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-land-o-lakes-community-market-2027-02-20",
    "details_locked": true
   },
   {
@@ -12938,6 +13138,28 @@
    "details_locked": true
   },
   {
+   "id": "af-odessa-community-market-2027-02-28",
+   "title": "Pop-up market · Odessa",
+   "next_date": "2027-02-28",
+   "dates": [
+    "2027-02-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Odessa",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-odessa-community-market-2027-02-28",
+   "details_locked": true
+  },
+  {
    "id": "af-vero-beach-spring-outdoor-art-in-the-park-2027-02-28",
    "title": "Pop-up market · Vero Beach",
    "next_date": "2027-02-28",
@@ -13247,6 +13469,28 @@
    "details_locked": true
   },
   {
+   "id": "af-chalo-nitka-festival-2027-03-06",
+   "title": "Festival · Moore Haven",
+   "next_date": "2027-03-06",
+   "dates": [
+    "2027-03-06"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Moore Haven",
+   "county": "Glades",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-chalo-nitka-festival-2027-03-06",
+   "details_locked": true
+  },
+  {
    "id": "af-cracker-cowboy-day-2027-03-06",
    "title": "Pop-up market · Dade City",
    "next_date": "2027-03-06",
@@ -13266,6 +13510,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-cracker-cowboy-day-2027-03-06",
+   "details_locked": true
+  },
+  {
+   "id": "af-dade-city-spring-farmers-market-2027-03-06",
+   "title": "Farmers market · Dade City",
+   "next_date": "2027-03-06",
+   "dates": [
+    "2027-03-06"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Dade City",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-dade-city-spring-farmers-market-2027-03-06",
    "details_locked": true
   },
   {
@@ -13643,6 +13909,28 @@
    "details_locked": true
   },
   {
+   "id": "af-new-port-richey-spring-vendor-market-2027-03-07",
+   "title": "Pop-up market · New Port Richey",
+   "next_date": "2027-03-07",
+   "dates": [
+    "2027-03-07"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "New Port Richey",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-new-port-richey-spring-vendor-market-2027-03-07",
+   "details_locked": true
+  },
+  {
    "id": "af-parkland-farmers-market-and-kidpreneur-marketplace-2027-03-07",
    "title": "Farmers market · Parkland",
    "next_date": "2027-03-07",
@@ -13816,6 +14104,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-bonita-springs-masters-art-festival-2027-03-13",
+   "details_locked": true
+  },
+  {
+   "id": "af-brooksville-art-in-the-park-2027-03-13",
+   "title": "Pop-up market · Brooksville",
+   "next_date": "2027-03-13",
+   "dates": [
+    "2027-03-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Brooksville",
+   "county": "Hernando",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-brooksville-art-in-the-park-2027-03-13",
    "details_locked": true
   },
   {
@@ -14460,6 +14770,28 @@
    "details_locked": true
   },
   {
+   "id": "af-land-o-lakes-spring-community-market-2027-03-20",
+   "title": "Pop-up market · Land O' Lakes",
+   "next_date": "2027-03-20",
+   "dates": [
+    "2027-03-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Land O' Lakes",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-land-o-lakes-spring-community-market-2027-03-20",
+   "details_locked": true
+  },
+  {
    "id": "af-marco-island-spring-craft-show-2027-03-20",
    "title": "Craft & art market · Marco Island",
    "next_date": "2027-03-20",
@@ -14769,6 +15101,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-lincoln-road-spring-antique-and-collectible-market-2027-03-21",
+   "details_locked": true
+  },
+  {
+   "id": "af-odessa-spring-community-market-2027-03-21",
+   "title": "Pop-up market · Odessa",
+   "next_date": "2027-03-21",
+   "dates": [
+    "2027-03-21"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Odessa",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-odessa-spring-community-market-2027-03-21",
    "details_locked": true
   },
   {
