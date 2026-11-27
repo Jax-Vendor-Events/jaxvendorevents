@@ -6,8 +6,8 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-26T08:54:41Z",
- "as_of": "2026-11-26",
+ "data_updated": "2026-11-27T08:08:41Z",
+ "as_of": "2026-11-27",
  "count": 788,
  "events": [
   {
@@ -156,7 +156,8 @@
     "2027-01-08",
     "2027-01-15",
     "2027-01-22",
-    "2027-01-29"
+    "2027-01-29",
+    "2027-02-05"
    ],
    "end_date": null,
    "recurring": true,
@@ -187,7 +188,8 @@
     "2027-01-08",
     "2027-01-15",
     "2027-01-22",
-    "2027-01-29"
+    "2027-01-29",
+    "2027-02-05"
    ],
    "end_date": null,
    "recurring": true,
