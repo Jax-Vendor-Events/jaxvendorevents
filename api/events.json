@@ -6,9 +6,9 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-27T08:08:41Z",
+ "data_updated": "2026-11-27T22:48:34Z",
  "as_of": "2026-11-27",
- "count": 788,
+ "count": 789,
  "events": [
   {
    "id": "af-land-o-lakes-holiday-moonlight-market-2026-11-27",
@@ -14988,6 +14988,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-saint-augustine-art-show-2027-03-20",
+   "details_locked": true
+  },
+  {
+   "id": "af-small-town-boots-and-brews-country-music-festival-2027-03-20",
+   "title": "Festival · Englewood",
+   "next_date": "2027-03-20",
+   "dates": [
+    "2027-03-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Englewood",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-small-town-boots-and-brews-country-music-festival-2027-03-20",
    "details_locked": true
   },
   {
