@@ -6,367 +6,10 @@
  "terms": "Link people to each event's url (or https://jaxvendorevents.com/pro.html to unlock details). Don't scrape the site or resell this data.",
  "home": "https://jaxvendorevents.com/",
  "upgrade_url": "https://jaxvendorevents.com/pro.html",
- "data_updated": "2026-11-27T22:48:34Z",
- "as_of": "2026-11-27",
- "count": 789,
+ "data_updated": "2026-11-28T08:08:54Z",
+ "as_of": "2026-11-28",
+ "count": 814,
  "events": [
-  {
-   "id": "af-land-o-lakes-holiday-moonlight-market-2026-11-27",
-   "title": "Holiday market · Land O' Lakes",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Land O' Lakes",
-   "county": "Pasco",
-   "region": "Tampa Bay",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=af-land-o-lakes-holiday-moonlight-market-2026-11-27",
-   "details_locked": true
-  },
-  {
-   "id": "af-light-up-eustis-2026-2026-11-27",
-   "title": "Pop-up market · Eustis",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Eustis",
-   "county": "Lake",
-   "region": "Central",
-   "state": "FL",
-   "category": null,
-   "booth_fee": "$25 - $125",
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=af-light-up-eustis-2026-2026-11-27",
-   "details_locked": true
-  },
-  {
-   "id": "af-nathan-benderson-thanksgiving-friday-market-2026-11-27",
-   "title": "Holiday market · Sarasota",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Sarasota",
-   "county": "Sarasota",
-   "region": "Southwest",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=af-nathan-benderson-thanksgiving-friday-market-2026-11-27",
-   "details_locked": true
-  },
-  {
-   "id": "af-riverfront-holiday-night-market-2026-11-27",
-   "title": "Holiday market · Daytona Beach",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Daytona Beach",
-   "county": "Volusia",
-   "region": "Central",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=af-riverfront-holiday-night-market-2026-11-27",
-   "details_locked": true
-  },
-  {
-   "id": "af-sunset-black-friday-makers-market-2026-11-27",
-   "title": "Craft & art market · Lakeland",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Lakeland",
-   "county": "Polk",
-   "region": "Central",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=af-sunset-black-friday-makers-market-2026-11-27",
-   "details_locked": true
-  },
-  {
-   "id": "af-unlocked-abilities-in-art-market-winter-wonder-ram-2026-11-27",
-   "title": "Holiday craft & art market · Jacksonville",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": false,
-   "url": "https://jaxvendorevents.com/#e=af-unlocked-abilities-in-art-market-winter-wonder-ram-2026-11-27",
-   "details_locked": true
-  },
-  {
-   "id": "fl-0022",
-   "title": "Craft & art farmers market · Jacksonville",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27",
-    "2026-12-04",
-    "2026-12-11",
-    "2026-12-18",
-    "2026-12-25",
-    "2027-01-01",
-    "2027-01-08",
-    "2027-01-15",
-    "2027-01-22",
-    "2027-01-29",
-    "2027-02-05"
-   ],
-   "end_date": null,
-   "recurring": true,
-   "schedule": "Open weekly · $11 tables on Fridays",
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "under50",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=fl-0022",
-   "details_locked": true
-  },
-  {
-   "id": "fl-0099",
-   "title": "Farmers market · Ponte Vedra Beach",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27",
-    "2026-12-04",
-    "2026-12-11",
-    "2026-12-18",
-    "2026-12-25",
-    "2027-01-01",
-    "2027-01-08",
-    "2027-01-15",
-    "2027-01-22",
-    "2027-01-29",
-    "2027-02-05"
-   ],
-   "end_date": null,
-   "recurring": true,
-   "schedule": "Every Friday, year-round",
-   "city": "Ponte Vedra Beach",
-   "county": "St. Johns",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=fl-0099",
-   "details_locked": true
-  },
-  {
-   "id": "sc-christmas-made-in-the-south-jax-2026",
-   "title": "Holiday market · Jacksonville",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": "2026-11-29",
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=sc-christmas-made-in-the-south-jax-2026",
-   "details_locked": true
-  },
-  {
-   "id": "sc-melanin-small-business-saturday-eventeny-2026-11-2",
-   "title": "Pop-up market · Jacksonville",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": "2026-11-22",
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=sc-melanin-small-business-saturday-eventeny-2026-11-2",
-   "details_locked": true
-  },
-  {
-   "id": "sc-omni-shops-holiday-lights-2026-11-27",
-   "title": "Holiday festival · Amelia",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27"
-   ],
-   "end_date": null,
-   "recurring": false,
-   "schedule": null,
-   "city": "Amelia",
-   "county": "Nassau",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=sc-omni-shops-holiday-lights-2026-11-27",
-   "details_locked": true
-  },
-  {
-   "id": "sc-palatka-christmas-market-2026",
-   "title": "Holiday market · Palatka",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27",
-    "2026-11-28",
-    "2026-11-29",
-    "2026-12-03",
-    "2026-12-04",
-    "2026-12-05",
-    "2026-12-06",
-    "2026-12-10",
-    "2026-12-11",
-    "2026-12-12",
-    "2026-12-13",
-    "2026-12-17"
-   ],
-   "end_date": "2026-12-20",
-   "recurring": false,
-   "schedule": "Thu–Sun, Nov 27–Dec 20 (15 days)",
-   "city": "Palatka",
-   "county": "Putnam",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=sc-palatka-christmas-market-2026",
-   "details_locked": true
-  },
-  {
-   "id": "sc-riverside-arts-market-local-love-night-market-2026",
-   "title": "Holiday market · Jacksonville",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27",
-    "2026-11-28",
-    "2026-11-29",
-    "2026-12-04",
-    "2026-12-05",
-    "2026-12-06",
-    "2026-12-11",
-    "2026-12-12",
-    "2026-12-13",
-    "2026-12-18",
-    "2026-12-19",
-    "2026-12-20"
-   ],
-   "end_date": "2026-12-27",
-   "recurring": true,
-   "schedule": "Fri-Sun, Nov 27-Dec 27",
-   "city": "Jacksonville",
-   "county": "Duval",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "unknown",
-   "application_deadline": null,
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026",
-   "details_locked": true
-  },
-  {
-   "id": "wk-greater-st-marys-christmas-market-2026-11-20",
-   "title": "Holiday market · St. Augustine",
-   "next_date": "2026-11-27",
-   "dates": [
-    "2026-11-27",
-    "2026-11-28",
-    "2026-12-04",
-    "2026-12-05",
-    "2026-12-11",
-    "2026-12-12",
-    "2026-12-18",
-    "2026-12-19"
-   ],
-   "end_date": "2026-12-19",
-   "recurring": false,
-   "schedule": "Fridays & Saturdays, Nov 20 - Dec 19",
-   "city": "St. Augustine",
-   "county": "St. Johns",
-   "region": "Northeast",
-   "state": "FL",
-   "category": null,
-   "booth_fee": null,
-   "booth_fee_range": "under50",
-   "application_deadline": "2026-11-11",
-   "verified": true,
-   "url": "https://jaxvendorevents.com/#e=wk-greater-st-marys-christmas-market-2026-11-20",
-   "details_locked": true
-  },
   {
    "id": "af-arcadia-holiday-antique-fair-2026-11-28",
    "title": "Holiday craft & art festival · Arcadia",
@@ -920,7 +563,8 @@
     "2027-01-09",
     "2027-01-16",
     "2027-01-23",
-    "2027-01-30"
+    "2027-01-30",
+    "2027-02-06"
    ],
    "end_date": null,
    "recurring": true,
@@ -951,7 +595,8 @@
     "2027-01-09",
     "2027-01-16",
     "2027-01-23",
-    "2027-01-30"
+    "2027-01-30",
+    "2027-02-06"
    ],
    "end_date": null,
    "recurring": true,
@@ -982,7 +627,8 @@
     "2027-01-09",
     "2027-01-16",
     "2027-01-23",
-    "2027-01-30"
+    "2027-01-30",
+    "2027-02-06"
    ],
    "end_date": null,
    "recurring": true,
@@ -1039,7 +685,8 @@
     "2027-01-09",
     "2027-01-16",
     "2027-01-23",
-    "2027-01-30"
+    "2027-01-30",
+    "2027-02-06"
    ],
    "end_date": null,
    "recurring": true,
@@ -1070,7 +717,8 @@
     "2027-01-09",
     "2027-01-16",
     "2027-01-23",
-    "2027-01-30"
+    "2027-01-30",
+    "2027-02-06"
    ],
    "end_date": null,
    "recurring": true,
@@ -1220,6 +868,72 @@
    "details_locked": true
   },
   {
+   "id": "sc-palatka-christmas-market-2026",
+   "title": "Holiday market · Palatka",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-03",
+    "2026-12-04",
+    "2026-12-05",
+    "2026-12-06",
+    "2026-12-10",
+    "2026-12-11",
+    "2026-12-12",
+    "2026-12-13",
+    "2026-12-17",
+    "2026-12-18"
+   ],
+   "end_date": "2026-12-20",
+   "recurring": false,
+   "schedule": "Thu–Sun, Nov 27–Dec 20 (15 days)",
+   "city": "Palatka",
+   "county": "Putnam",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-palatka-christmas-market-2026",
+   "details_locked": true
+  },
+  {
+   "id": "sc-riverside-arts-market-local-love-night-market-2026",
+   "title": "Holiday market · Jacksonville",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-04",
+    "2026-12-05",
+    "2026-12-06",
+    "2026-12-11",
+    "2026-12-12",
+    "2026-12-13",
+    "2026-12-18",
+    "2026-12-19",
+    "2026-12-20",
+    "2026-12-25"
+   ],
+   "end_date": "2026-12-27",
+   "recurring": true,
+   "schedule": "Fri-Sun, Nov 27-Dec 27",
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=sc-riverside-arts-market-local-love-night-market-2026",
+   "details_locked": true
+  },
+  {
    "id": "sc-sab-7th-annual-beach-art-walk-2026-11-28",
    "title": "Craft & art market · St. Augustine",
    "next_date": "2026-11-28",
@@ -1261,6 +975,34 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-san-marco-art-festival-2026-11-28",
+   "details_locked": true
+  },
+  {
+   "id": "wk-greater-st-marys-christmas-market-2026-11-20",
+   "title": "Holiday market · St. Augustine",
+   "next_date": "2026-11-28",
+   "dates": [
+    "2026-11-28",
+    "2026-12-04",
+    "2026-12-05",
+    "2026-12-11",
+    "2026-12-12",
+    "2026-12-18",
+    "2026-12-19"
+   ],
+   "end_date": "2026-12-19",
+   "recurring": false,
+   "schedule": "Fridays & Saturdays, Nov 20 - Dec 19",
+   "city": "St. Augustine",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "under50",
+   "application_deadline": "2026-11-11",
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=wk-greater-st-marys-christmas-market-2026-11-20",
    "details_locked": true
   },
   {
@@ -2182,6 +1924,68 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=fcvv-rolling-hills-holiday-2026-12-04",
+   "details_locked": true
+  },
+  {
+   "id": "fl-0022",
+   "title": "Craft & art farmers market · Jacksonville",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04",
+    "2026-12-11",
+    "2026-12-18",
+    "2026-12-25",
+    "2027-01-01",
+    "2027-01-08",
+    "2027-01-15",
+    "2027-01-22",
+    "2027-01-29",
+    "2027-02-05"
+   ],
+   "end_date": null,
+   "recurring": true,
+   "schedule": "Open weekly · $11 tables on Fridays",
+   "city": "Jacksonville",
+   "county": "Duval",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "under50",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fl-0022",
+   "details_locked": true
+  },
+  {
+   "id": "fl-0099",
+   "title": "Farmers market · Ponte Vedra Beach",
+   "next_date": "2026-12-04",
+   "dates": [
+    "2026-12-04",
+    "2026-12-11",
+    "2026-12-18",
+    "2026-12-25",
+    "2027-01-01",
+    "2027-01-08",
+    "2027-01-15",
+    "2027-01-22",
+    "2027-01-29",
+    "2027-02-05"
+   ],
+   "end_date": null,
+   "recurring": true,
+   "schedule": "Every Friday, year-round",
+   "city": "Ponte Vedra Beach",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": true,
+   "url": "https://jaxvendorevents.com/#e=fl-0099",
    "details_locked": true
   },
   {
@@ -7561,6 +7365,28 @@
    "details_locked": true
   },
   {
+   "id": "af-riverfront-winter-market-2027-01-08",
+   "title": "Holiday market · Daytona Beach",
+   "next_date": "2027-01-08",
+   "dates": [
+    "2027-01-08"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-riverfront-winter-market-2027-01-08",
+   "details_locked": true
+  },
+  {
    "id": "af-southwest-florida-wood-art-expo-competition-2027-01-08",
    "title": "Festival · Punta Gorda",
    "next_date": "2027-01-08",
@@ -8027,6 +7853,28 @@
    "details_locked": true
   },
   {
+   "id": "af-south-miami-winter-night-market-2027-01-09",
+   "title": "Holiday market · South Miami",
+   "next_date": "2027-01-09",
+   "dates": [
+    "2027-01-09"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "South Miami",
+   "county": "Miami-Dade",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-south-miami-winter-night-market-2027-01-09",
+   "details_locked": true
+  },
+  {
    "id": "af-treasure-coast-winter-renaissance-festival-2027-01-09",
    "title": "Holiday festival · Vero Beach",
    "next_date": "2027-01-09",
@@ -8113,6 +7961,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-north-jax-vendors-market-2nd-saturdays",
+   "details_locked": true
+  },
+  {
+   "id": "af-brandon-winter-market-2027-01-10",
+   "title": "Holiday market · Brandon",
+   "next_date": "2027-01-10",
+   "dates": [
+    "2027-01-10"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Brandon",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-brandon-winter-market-2027-01-10",
    "details_locked": true
   },
   {
@@ -8337,6 +8207,28 @@
    "details_locked": true
   },
   {
+   "id": "af-nathan-benderson-winter-market-2027-01-15",
+   "title": "Holiday market · Sarasota",
+   "next_date": "2027-01-15",
+   "dates": [
+    "2027-01-15"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-nathan-benderson-winter-market-2027-01-15",
+   "details_locked": true
+  },
+  {
    "id": "af-port-saint-lucie-winter-bites-and-beats-event-2027-01-15",
    "title": "Holiday market · Port Saint Lucie",
    "next_date": "2027-01-15",
@@ -8378,6 +8270,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-punta-gorda-seafood-and-music-festival-2027-01-15",
+   "details_locked": true
+  },
+  {
+   "id": "af-riverfront-winter-friday-night-market-2027-01-15",
+   "title": "Holiday market · Daytona Beach",
+   "next_date": "2027-01-15",
+   "dates": [
+    "2027-01-15"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-riverfront-winter-friday-night-market-2027-01-15",
    "details_locked": true
   },
   {
@@ -8665,6 +8579,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-royal-palm-beach-winter-saturday-green-market-and--2027-01-16",
+   "details_locked": true
+  },
+  {
+   "id": "af-sarasota-pirates-parrots-and-paradise-festival-2027-01-16",
+   "title": "Festival · Sarasota",
+   "next_date": "2027-01-16",
+   "dates": [
+    "2027-01-16"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-sarasota-pirates-parrots-and-paradise-festival-2027-01-16",
    "details_locked": true
   },
   {
@@ -9121,6 +9057,28 @@
    "details_locked": true
   },
   {
+   "id": "af-riverfront-winter-night-market-2027-01-22",
+   "title": "Holiday market · Daytona Beach",
+   "next_date": "2027-01-22",
+   "dates": [
+    "2027-01-22"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-riverfront-winter-night-market-2027-01-22",
+   "details_locked": true
+  },
+  {
    "id": "af-tallahassee-foodees-fest-2027-01-22",
    "title": "Festival · Tallahassee",
    "next_date": "2027-01-22",
@@ -9497,6 +9455,28 @@
    "details_locked": true
   },
   {
+   "id": "af-punta-gorda-pirates-parrots-and-paradise-festival-2027-01-23",
+   "title": "Festival · Punta Gorda",
+   "next_date": "2027-01-23",
+   "dates": [
+    "2027-01-23"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Punta Gorda",
+   "county": "Charlotte",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-punta-gorda-pirates-parrots-and-paradise-festival-2027-01-23",
+   "details_locked": true
+  },
+  {
    "id": "af-royal-palm-beach-outdoor-green-market-and-bazaar-2027-01-23",
    "title": "Craft & art farmers market · Royal Palm Beach",
    "next_date": "2027-01-23",
@@ -9674,6 +9654,28 @@
    "details_locked": true
   },
   {
+   "id": "af-lakeside-village-winter-sunday-makers-market-2027-01-24",
+   "title": "Holiday craft & art market · Lakeland",
+   "next_date": "2027-01-24",
+   "dates": [
+    "2027-01-24"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Lakeland",
+   "county": "Polk",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-lakeside-village-winter-sunday-makers-market-2027-01-24",
+   "details_locked": true
+  },
+  {
    "id": "af-lincoln-road-mall-antique-and-collectible-market-2027-01-24",
    "title": "Craft & art market · Miami",
    "next_date": "2027-01-24",
@@ -9793,6 +9795,28 @@
    "details_locked": true
   },
   {
+   "id": "af-daytona-riverfront-winter-night-market-2027-01-29",
+   "title": "Holiday market · Daytona Beach",
+   "next_date": "2027-01-29",
+   "dates": [
+    "2027-01-29"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-daytona-riverfront-winter-night-market-2027-01-29",
+   "details_locked": true
+  },
+  {
    "id": "af-fort-myers-seafood-and-music-festival-2027-01-29",
    "title": "Festival · Fort Myers",
    "next_date": "2027-01-29",
@@ -9834,6 +9858,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-spirit-of-the-buffalo-pow-wow-and-native-american--2027-01-29",
+   "details_locked": true
+  },
+  {
+   "id": "af-vintage-market-days-of-south-gulf-coast-florida-2027-01-29",
+   "title": "Craft & art market · Fort Myers",
+   "next_date": "2027-01-29",
+   "dates": [
+    "2027-01-29"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Fort Myers",
+   "county": "Lee",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-vintage-market-days-of-south-gulf-coast-florida-2027-01-29",
    "details_locked": true
   },
   {
@@ -10265,6 +10311,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-auburndale-pow-wow-and-native-american-festival-2027-02-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-daytona-riverfront-friday-night-market-2027-02-05",
+   "title": "Pop-up market · Daytona Beach",
+   "next_date": "2027-02-05",
+   "dates": [
+    "2027-02-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-daytona-riverfront-friday-night-market-2027-02-05",
    "details_locked": true
   },
   {
@@ -11586,6 +11654,28 @@
    "details_locked": true
   },
   {
+   "id": "af-saint-augustine-art-and-craft-festival-2027-02-13",
+   "title": "Craft & art festival · St. Augustine",
+   "next_date": "2027-02-13",
+   "dates": [
+    "2027-02-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "St. Augustine",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-saint-augustine-art-and-craft-festival-2027-02-13",
+   "details_locked": true
+  },
+  {
    "id": "af-sanford-love-is-in-the-air-artisan-event-2027-02-13",
    "title": "Craft & art market · Sanford",
    "next_date": "2027-02-13",
@@ -11605,6 +11695,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-sanford-love-is-in-the-air-artisan-event-2027-02-13",
+   "details_locked": true
+  },
+  {
+   "id": "af-south-miami-puppy-love-night-market-2027-02-13",
+   "title": "Pop-up market · South Miami",
+   "next_date": "2027-02-13",
+   "dates": [
+    "2027-02-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "South Miami",
+   "county": "Miami-Dade",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-south-miami-puppy-love-night-market-2027-02-13",
    "details_locked": true
   },
   {
@@ -11739,6 +11851,51 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=sc-rodeheaver-boys-ranch-2027-02",
+   "details_locked": true
+  },
+  {
+   "id": "af-brandon-valentines-sweetheart-market-2027-02-14",
+   "title": "Holiday craft & art market · Brandon",
+   "next_date": "2027-02-14",
+   "dates": [
+    "2027-02-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Brandon",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-brandon-valentines-sweetheart-market-2027-02-14",
+   "details_locked": true
+  },
+  {
+   "id": "af-lakeland-village-2nd-sunday-makers-market-2027-02-14",
+   "title": "Craft & art market · Lakeland",
+   "next_date": "2027-02-14",
+   "dates": [
+    "2027-02-14",
+    "2027-02-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Lakeland",
+   "county": "Polk",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-lakeland-village-2nd-sunday-makers-market-2027-02-14",
    "details_locked": true
   },
   {
@@ -13116,6 +13273,28 @@
    "details_locked": true
   },
   {
+   "id": "af-brandon-hometown-hoedown-market-2027-02-28",
+   "title": "Pop-up market · Brandon",
+   "next_date": "2027-02-28",
+   "dates": [
+    "2027-02-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Brandon",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-brandon-hometown-hoedown-market-2027-02-28",
+   "details_locked": true
+  },
+  {
    "id": "af-lincoln-road-sunday-antique-and-collectible-market-2027-02-28",
    "title": "Craft & art market · Miami",
    "next_date": "2027-02-28",
@@ -13333,6 +13512,50 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-lakeland-first-fridays-foodie-fest-2027-03-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-panama-city-beach-scottish-festival-2027-03-05",
+   "title": "Festival · Panama City Beach",
+   "next_date": "2027-03-05",
+   "dates": [
+    "2027-03-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Panama City Beach",
+   "county": "Bay",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-panama-city-beach-scottish-festival-2027-03-05",
+   "details_locked": true
+  },
+  {
+   "id": "af-riverfront-spring-night-market-2027-03-05",
+   "title": "Pop-up market · Daytona Beach",
+   "next_date": "2027-03-05",
+   "dates": [
+    "2027-03-05"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-riverfront-spring-night-market-2027-03-05",
    "details_locked": true
   },
   {
@@ -14019,6 +14242,28 @@
    "details_locked": true
   },
   {
+   "id": "af-daytona-riverfront-spring-night-market-2027-03-12",
+   "title": "Pop-up market · Daytona Beach",
+   "next_date": "2027-03-12",
+   "dates": [
+    "2027-03-12"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-daytona-riverfront-spring-night-market-2027-03-12",
+   "details_locked": true
+  },
+  {
    "id": "af-manatee-county-seafood-and-music-festival-2027-03-12",
    "title": "Festival · Bradenton Beach",
    "next_date": "2027-03-12",
@@ -14284,6 +14529,50 @@
    "details_locked": true
   },
   {
+   "id": "af-saint-augustine-spring-art-and-craft-festival-2027-03-13",
+   "title": "Craft & art festival · St. Augustine",
+   "next_date": "2027-03-13",
+   "dates": [
+    "2027-03-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "St. Augustine",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-saint-augustine-spring-art-and-craft-festival-2027-03-13",
+   "details_locked": true
+  },
+  {
+   "id": "af-sarasota-spring-pirates-parrots-and-paradise-festi-2027-03-13",
+   "title": "Festival · Sarasota",
+   "next_date": "2027-03-13",
+   "dates": [
+    "2027-03-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Sarasota",
+   "county": "Sarasota",
+   "region": "Southwest",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-sarasota-spring-pirates-parrots-and-paradise-festi-2027-03-13",
+   "details_locked": true
+  },
+  {
    "id": "af-shamrockin-arts-and-crafts-fair-2027-03-13",
    "title": "Craft & art festival · Estero",
    "next_date": "2027-03-13",
@@ -14303,6 +14592,50 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-shamrockin-arts-and-crafts-fair-2027-03-13",
+   "details_locked": true
+  },
+  {
+   "id": "af-shrimpa-palooza-2027-03-13",
+   "title": "Festival · Homosassa",
+   "next_date": "2027-03-13",
+   "dates": [
+    "2027-03-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Homosassa",
+   "county": "Citrus",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-shrimpa-palooza-2027-03-13",
+   "details_locked": true
+  },
+  {
+   "id": "af-south-miami-caribbean-night-market-2027-03-13",
+   "title": "Pop-up market · South Miami",
+   "next_date": "2027-03-13",
+   "dates": [
+    "2027-03-13"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "South Miami",
+   "county": "Miami-Dade",
+   "region": "Southeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-south-miami-caribbean-night-market-2027-03-13",
    "details_locked": true
   },
   {
@@ -14439,6 +14772,28 @@
    "details_locked": true
   },
   {
+   "id": "af-brandon-easter-sunday-market-2027-03-14",
+   "title": "Holiday market · Brandon",
+   "next_date": "2027-03-14",
+   "dates": [
+    "2027-03-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Brandon",
+   "county": "Hillsborough",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-brandon-easter-sunday-market-2027-03-14",
+   "details_locked": true
+  },
+  {
    "id": "af-fort-myers-arts-and-crafts-fair-2027-03-14",
    "title": "Craft & art festival · Fort Myers",
    "next_date": "2027-03-14",
@@ -14458,6 +14813,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-fort-myers-arts-and-crafts-fair-2027-03-14",
+   "details_locked": true
+  },
+  {
+   "id": "af-lakeland-village-spring-makers-market-2027-03-14",
+   "title": "Craft & art market · Lakeland",
+   "next_date": "2027-03-14",
+   "dates": [
+    "2027-03-14"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Lakeland",
+   "county": "Polk",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-lakeland-village-spring-makers-market-2027-03-14",
    "details_locked": true
   },
   {
@@ -14590,6 +14967,72 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-bonita-springs-seafood-and-music-festival-2027-03-19",
+   "details_locked": true
+  },
+  {
+   "id": "af-daytona-riverfront-night-market-2027-03-19",
+   "title": "Pop-up market · Daytona Beach",
+   "next_date": "2027-03-19",
+   "dates": [
+    "2027-03-19"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-daytona-riverfront-night-market-2027-03-19",
+   "details_locked": true
+  },
+  {
+   "id": "af-north-florida-renaissance-faire-2027-03-19",
+   "title": "Pop-up market · Milton",
+   "next_date": "2027-03-19",
+   "dates": [
+    "2027-03-19"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Milton",
+   "county": "Santa Rosa",
+   "region": "Panhandle",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-north-florida-renaissance-faire-2027-03-19",
+   "details_locked": true
+  },
+  {
+   "id": "af-winter-park-sidewalk-art-festival-2027-03-19",
+   "title": "Holiday craft & art festival · Winter Park",
+   "next_date": "2027-03-19",
+   "dates": [
+    "2027-03-19"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Winter Park",
+   "county": "Orange",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-winter-park-sidewalk-art-festival-2027-03-19",
    "details_locked": true
   },
   {
@@ -15035,6 +15478,28 @@
    "details_locked": true
   },
   {
+   "id": "af-starke-strawberry-festival-2027-03-20",
+   "title": "Festival · Starke",
+   "next_date": "2027-03-20",
+   "dates": [
+    "2027-03-20"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Starke",
+   "county": "Bradford",
+   "region": "North Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-starke-strawberry-festival-2027-03-20",
+   "details_locked": true
+  },
+  {
    "id": "af-wesley-chapel-saturday-fresh-market-2027-03-20",
    "title": "Pop-up market · Wesley Chapel",
    "next_date": "2027-03-20",
@@ -15280,6 +15745,28 @@
    "details_locked": true
   },
   {
+   "id": "af-riverfront-night-market-2027-03-26",
+   "title": "Pop-up market · Daytona Beach",
+   "next_date": "2027-03-26",
+   "dates": [
+    "2027-03-26"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Daytona Beach",
+   "county": "Volusia",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-riverfront-night-market-2027-03-26",
+   "details_locked": true
+  },
+  {
    "id": "af-city-of-pompano-beach-saturday-green-market-2027-03-27",
    "title": "Farmers market · Pompano Beach",
    "next_date": "2027-03-27",
@@ -15322,6 +15809,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=af-deland-outdoor-art-festival-2027-03-27",
+   "details_locked": true
+  },
+  {
+   "id": "af-fiction-in-bloom-fest-2027-03-27",
+   "title": "Festival · Dade City",
+   "next_date": "2027-03-27",
+   "dates": [
+    "2027-03-27"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Dade City",
+   "county": "Pasco",
+   "region": "Tampa Bay",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-fiction-in-bloom-fest-2027-03-27",
    "details_locked": true
   },
   {
@@ -15499,6 +16008,28 @@
    "application_deadline": null,
    "verified": true,
    "url": "https://jaxvendorevents.com/#e=sc-jacksonville-womens-expo-2027-recheck",
+   "details_locked": true
+  },
+  {
+   "id": "af-lakeland-village-spring-sunday-makers-market-2027-03-28",
+   "title": "Craft & art market · Lakeland",
+   "next_date": "2027-03-28",
+   "dates": [
+    "2027-03-28"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "Lakeland",
+   "county": "Polk",
+   "region": "Central",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-lakeland-village-spring-sunday-makers-market-2027-03-28",
    "details_locked": true
   },
   {
@@ -16205,6 +16736,28 @@
    "application_deadline": null,
    "verified": false,
    "url": "https://jaxvendorevents.com/#e=af-punta-gorda-spring-arts-and-crafts-fair-2027-04-10",
+   "details_locked": true
+  },
+  {
+   "id": "af-saint-augustine-weekend-art-and-craft-festival-2027-04-10",
+   "title": "Craft & art festival · St. Augustine",
+   "next_date": "2027-04-10",
+   "dates": [
+    "2027-04-10"
+   ],
+   "end_date": null,
+   "recurring": false,
+   "schedule": null,
+   "city": "St. Augustine",
+   "county": "St. Johns",
+   "region": "Northeast",
+   "state": "FL",
+   "category": null,
+   "booth_fee": null,
+   "booth_fee_range": "unknown",
+   "application_deadline": null,
+   "verified": false,
+   "url": "https://jaxvendorevents.com/#e=af-saint-augustine-weekend-art-and-craft-festival-2027-04-10",
    "details_locked": true
   },
   {
